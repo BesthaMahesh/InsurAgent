@@ -1,0 +1,150 @@
+{
+  "policy_id": "star-health__health-premier__wordings",
+  "insurer_name": "Star Health and Allied Insurance Company Limited",
+  "insurer_slug": "star-health",
+  "policy_name": "Health Premier",
+  "policy_type": "senior_citizen",
+  "uin_code": "SHAHLIP22226V012122",
+  "min_entry_age_years": 50,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": null,
+  "sum_insured_options_inr": [
+    1000000,
+    2000000,
+    3000000,
+    5000000,
+    7500000,
+    10000000
+  ],
+  "premium_payment_modes": [
+    "quarterly",
+    "half_yearly",
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 24,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Bariatric Surgery and Hospice Care: 24-month waiting period each. SI up to Rs 1 Cr for entrants up to 65; above 65 capped at Rs 50L.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": 20000,
+    "limit_text": "Room: 1% of SI per day or Rs 20,000/day, whichever lower",
+    "notes": "Proportionate deductions for higher room categories (except hospitals without differential billing)."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All day-care procedures up to Sum Insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Treatment exceeding 3 days at home",
+    "notes": "Excludes listed common conditions (asthma, hypertension, diabetes, epilepsy, etc.)."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH in-patient and day-care up to SI (excluding Yoga & Naturopathy)",
+    "notes": null
+  },
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Over and above Limit of Coverage up to SI; for Donor's expenses only",
+    "notes": "Includes donor complications requiring redo surgery / ICU."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 500000,
+    "limit_text": "Road: actual; Air ambulance: Rs 2,50,000/hosp, max Rs 5,00,000/policy year",
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Automatic Restoration once at 100% of SI",
+    "notes": "Triggers on partial or full utilization; usable for all subsequent claims in policy period; per-claim cap = Limit of Coverage."
+  },
+  "no_claim_bonus_pct": 20.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": 10000,
+    "limit_text": "Rs 3,000 (SI 10L) up to Rs 10,000 (Floater SI 75L-1Cr) per claim-free year",
+    "notes": "Paid on renewal."
+  },
+  "room_rent_capping": "1% of SI per day or Rs 20,000/day whichever lower",
+  "icu_capping": "No cap (within Sum Insured)",
+  "copayment_pct": 20.0,
+  "copayment_trigger_notes": "20% mandatory copay if entry age > 65 years (including renewals).",
+  "disease_wise_sub_limits": {
+    "cataract": "Per eye Rs 50,000 (SI 10/20/30L) / Rs 60,000 (SI 50L+); per policy year Rs 80,000 / Rs 1,00,000",
+    "bariatric_surgery": "Rs 2,50,000 (SI 10/20L) / Rs 5,00,000 (SI > 20L)",
+    "modern_treatment": "Up to 50% of Sum Insured",
+    "rehabilitation_pain_management": "Up to 10% of SI per policy year",
+    "hospice_care": "10% of SI or Rs 5L (once in lifetime)",
+    "home_care_treatment": "10% of SI or Rs 5L per policy year"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": 14000,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Diseases (Code Excl 01)",
+    "Specified disease/procedure waiting (Code Excl 02)",
+    "Investigation & Evaluation (Code Excl 04)",
+    "Rest Cure, Rehabilitation and Respite Care (Code Excl 05)",
+    "Obesity/Weight Control (Code Excl 06, except Bariatric Surgery benefit)",
+    "Change of Gender",
+    "Cosmetic / Plastic Surgery",
+    "Hazardous Activities",
+    "Breach of Law",
+    "Substance Abuse",
+    "Treatments outside India",
+    "Unproven Treatments"
+  ],
+  "temporary_exclusions": [
+    "Pre-existing diseases: 24 months",
+    "Specified disease/procedure: 24 months",
+    "Bariatric Surgery: 24 months",
+    "Hospice Care: 24 months"
+  ],
+  "notable_exclusions_summary": "PED 24-month waiting plus standard IRDAI permanent exclusions. Bariatric covered only on cashless basis with clinical-protocol compliance. Diagnostic-only admissions and rest cure excluded.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via 14,000+ network hospitals; reimbursement via Star Health TPA/insurer claim portal.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Outpatient Medical Expenses (OPD)",
+    "Star Wellness Program (Premium Discount)",
+    "Voluntary Co-payment"
+  ],
+  "top_rider_examples": [
+    "OPD Cover",
+    "Wellness Program"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/star-health/health-premier__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 86
+}

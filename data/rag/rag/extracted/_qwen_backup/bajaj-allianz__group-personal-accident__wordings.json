@@ -1,0 +1,127 @@
+{
+  "policy_id": "bajaj-allianz__group-personal-accident__wordings",
+  "insurer_name": "Bajaj Allianz General Insurance Co. Ltd.",
+  "insurer_slug": "bajaj-allianz",
+  "policy_name": "Group Personal Accident",
+  "policy_type": "other",
+  "uin_code": "IRDA/NL-HLT/BAGI/P-P/V.I/151/13-14",
+  "min_entry_age_years": null,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": null,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": null,
+  "residency_requirement": null,
+  "sum_insured_options_inr": [],
+  "premium_payment_modes": null,
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": null,
+  "initial_waiting_period_days": null,
+  "pre_existing_disease_waiting_months": null,
+  "specific_disease_waiting_months": null,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": null,
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Admission for minimum 24 consecutive hours except for specified procedures"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Covered under hospital definition if facility meets criteria"
+  },
+  "domiciliary_treatment": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Covered under AYUSH Hospital or AYUSH Day Care Centre meeting specified criteria"
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "restoration_benefit": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "room_rent_capping": "no_capping_stated",
+  "icu_capping": "no_capping_stated",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": 0,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Illness or disease solely and directly caused by non-accidental means",
+    "Pre-existing conditions (implied by waiting period context)",
+    "Self-inflicted injury",
+    "War, terrorism, nuclear risks"
+  ],
+  "temporary_exclusions": [
+    "Conditions during initial waiting period",
+    "Non-medically necessary treatments"
+  ],
+  "notable_exclusions_summary": "Excludes illnesses, diseases, and non-accidental injuries; coverage limited to accidents meeting external, visible, violent criteria.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Claim to be intimated through recognized modes of communication; requires medical practitioner certification.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [],
+  "top_rider_examples": [],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "",
+  "source_pdf_url": "www.bajajallianz.com",
+  "last_updated_date": null,
+  "extraction_confidence_pct": 90.0
+}

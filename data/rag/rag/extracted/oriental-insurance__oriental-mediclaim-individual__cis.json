@@ -1,0 +1,129 @@
+{
+  "policy_id": "oriental-insurance__oriental-mediclaim-individual__cis",
+  "insurer_name": "The Oriental Insurance Company Limited",
+  "insurer_slug": "oriental-insurance",
+  "policy_name": "Oriental Mediclaim Insurance Policy (Individual)",
+  "policy_type": "individual",
+  "uin_code": "OICHLIP23084V042223",
+  "min_entry_age_years": null,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids", "self+spouse+kids+parents"],
+  "residency_requirement": "Indian resident; treatment in India only",
+  "sum_insured_options_inr": [100000, 200000, 300000, 500000, 1000000, 1500000, 2000000, 2500000, 3000000, 4000000, 5000000],
+  "premium_payment_modes": ["annual"],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": null,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 48,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "90 days for named diseases; 12 months for clauses 4.3 (i & ii); 24 months for clauses 4.3 (iii-xxii); 48 months for clauses 4.3 (xxiii & xxiv)",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured (Rs. 1 lac to Rs. 50 lacs)",
+    "notes": "Minimum 24-hour hospitalization for inpatient claim"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Listed day care procedures",
+    "notes": null
+  },
+  "domiciliary_treatment": null,
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Ayurveda, Yoga, Siddha, Unani, Homeopathy treatment covered",
+    "notes": null
+  },
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor expenses covered",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Road and air ambulance covered",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Cover for 22 critical illnesses",
+    "notes": "Lump-sum benefit on diagnosis"
+  },
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": 5000,
+    "limit_text": "Up to 1% of average sum insured subject to maximum Rs. 5,000 per insured person, after every 3 claim-free policy years",
+    "notes": null
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": 10.0,
+  "copayment_trigger_notes": "Voluntary co-payment options of 10% and 20% with corresponding premium discount of 10% and 20% respectively (available on SI of Rs. 2.0 lacs and above)",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Treatment outside India excluded"
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "any hospital admission primarily for investigation/diagnostic purpose",
+    "sex change surgery, cosmetic surgery, plastic surgery",
+    "pregnancy (except ectopic), infertility",
+    "hazardous or adventure sports",
+    "refractive error, cosmetic dental surgeries",
+    "unproven treatments",
+    "substance abuse, self-inflicted injuries",
+    "breach of law",
+    "hospital admission/registration fees",
+    "treatment outside India",
+    "external congenital diseases"
+  ],
+  "temporary_exclusions": [
+    "pre-existing diseases (48 months)",
+    "specific diseases (24 months for cls 4.3(iii-xxii))",
+    "initial 30 days for non-accident illness"
+  ],
+  "notable_exclusions_summary": "Standard IRDAI individual mediclaim; covers 22 critical illnesses and dental/ophthalmic OPD. Maternity (except ectopic), infertility, cosmetic surgery and out-of-India treatment are excluded.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless services via network hospitals (list at www.orientalinsurance.org.in); reimbursement via policy issuing office or TPA. Helpline: 1800118485 / 011-33208485.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Personal Accident (optional cover)",
+    "Voluntary co-payment option",
+    "Daily hospital cash",
+    "OPD benefit (dental & ophthalmic)",
+    "Medical Second Opinion",
+    "Air ambulance",
+    "Family discount",
+    "Portal discount"
+  ],
+  "top_rider_examples": ["Personal Accident", "Daily hospital cash"],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/oriental-insurance/oriental-mediclaim-individual__cis.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 86.0
+}

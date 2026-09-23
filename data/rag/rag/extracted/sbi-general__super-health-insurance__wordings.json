@@ -1,0 +1,186 @@
+{
+  "policy_id": "sbi-general__super-health-insurance__wordings",
+  "insurer_name": "SBI General Insurance Company Limited",
+  "insurer_slug": "sbi-general",
+  "policy_name": "Super Health Insurance",
+  "policy_type": "family_floater",
+  "uin_code": "SBIHLIP24141V022324",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Bariatric Surgery",
+    "Maternity (per Schedule)",
+    "Hypertension/Diabetes/Cardiac (reducible to 30/60 days via Early Start)"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Both Indemnity and Benefit product. Early Start add-on reduces HBP/Diabetes/Cardiac waiting periods. Health Multiplier enhances SI for 37 listed serious illnesses.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured per policy year",
+    "notes": "Health Multiplier multiplies SI for 37 listed serious illnesses. Shared accommodation cash benefit available."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured for inpatient AYUSH Hospital",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Maternity + Pre-natal + Post-natal check-ups (Maternity and Related Expenses Cover)",
+    "notes": null
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "New Born Baby Cover + Child Vaccination until age 12",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Organ donor's hospitalization for harvesting up to SI",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Emergency Road Ambulance + Air Ambulance (Domestic)",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Health Multiplier: SI enhanced by multiplier for 37 listed serious illnesses",
+    "notes": "Indemnity-based, not lump-sum."
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "ReInsure Benefit: unlimited times up to 100%/200% of SI for subsequent claims (related + unrelated)",
+    "notes": "Enhanced ReInsure rider available for 200% Basic SI restoration."
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Annual Health Check-up for listed preventive purposes",
+    "notes": null
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "Optional 10%/20% co-payment.",
+  "disease_wise_sub_limits": {
+    "bariatric_surgery": "Rs.50,000 or Rs.2,00,000",
+    "domestic_help_indemnity": "Rs.50K-1L"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Medical Treatment Abroad - Planned inpatient care outside India for listed Major Illnesses (diagnosis in India)",
+    "notes": null
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "PED 36 months",
+    "30-day initial waiting",
+    "Investigation & Evaluation",
+    "Cosmetic/Plastic Surgery",
+    "Hazardous/Adventure Sports",
+    "Breach of Law",
+    "Alcohol/Drug/Substance Abuse",
+    "Refractive Error",
+    "Unproven Treatments",
+    "Sterility/Infertility (covered as rider)",
+    "War/Nuclear",
+    "Treatment outside India (covered as Medical Treatment Abroad rider)"
+  ],
+  "temporary_exclusions": [
+    "30-day initial",
+    "24 months Bariatric",
+    "36 months PED",
+    "Maternity per Schedule",
+    "HBP/DM/Cardiac (reducible via Early Start)"
+  ],
+  "notable_exclusions_summary": "Super Health Insurance is SBI's flagship comprehensive policy with Health Multiplier (SI enhancement for 37 serious illnesses), ReInsure Benefit (unlimited 100%/200% restoration), Loyalty Credit, Medical Treatment Abroad, Maternity & Newborn coverage, OPD/Dental/Vision/Cancer diagnostic, Wellness Benefit, and Early Start add-on for HBP/Diabetes/Cardiac waiting reduction.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA at network hospitals; reimbursement via document submission. Helpline 18001021111.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Enhanced ReInsure Benefit (200%)",
+    "Enhanced CB Safeguard",
+    "Co-payment (10%/20%)",
+    "Aggregate Deductible",
+    "Domestic Help/Staff Indemnity",
+    "Additional Basic SI for Accidental Hospitalization (2x)",
+    "Wellness Benefit",
+    "Early Start (reduce HBP/DM/Cardiac waiting)",
+    "Maternity + Pre/Post-natal",
+    "New Born Baby + Child Vaccination",
+    "Enhanced Cumulative Bonus (50%)",
+    "Loyalty Credit (50% SI per renewal)",
+    "Medical Treatment Abroad",
+    "OPD Cover (Diagnostics + Pharmacy)",
+    "OPD Dental/Vision",
+    "OPD Cancer Diagnostic",
+    "Health Multiplier",
+    "Shared Accommodation Cash Benefit",
+    "Recovery Benefit",
+    "Claims Shield",
+    "E-Opinion",
+    "Home Health Care"
+  ],
+  "top_rider_examples": [
+    "Health Multiplier (37 illnesses)",
+    "ReInsure Benefit (unlimited)",
+    "Maternity & Newborn",
+    "Loyalty Credit",
+    "Medical Treatment Abroad"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/sbi-general/super-health-insurance__wordings.pdf",
+  "source_pdf_url": "https://www.sbigeneral.in",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 85.0
+}

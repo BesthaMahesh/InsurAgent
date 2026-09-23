@@ -1,0 +1,15 @@
+{
+  "policy_id": "care-health__care-classic__wordings",
+  "insurer_name": "Care Health Insurance Limited",
+  "insurer_slug": "care-health",
+  "policy_name": "Care Classic",
+  "policy_type": "family_floater",
+  "uin_code": "CHIHLIP22071V012122",
+  "free_look_period_days": 30,
+  "ayush_coverage": {"covered": true, "notes": "AYUSH hospitalization under Ayurveda, Yoga, Unani, Siddha, Homeopathy in registered AYUSH hospitals."},
+  "domiciliary_treatment": {"covered": true, "notes": "Where patient cannot be moved to hospital or hospital room unavailable."},
+  "cashless_treatment_supported": true,
+  "geographic_coverage": "pan_india",
+  "source_pdf_path": "rag/corpus/care-health/care-classic__wordings.pdf",
+  "extraction_confidence_pct": 60
+}

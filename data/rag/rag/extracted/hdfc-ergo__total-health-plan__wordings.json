@@ -1,0 +1,164 @@
+{
+  "policy_id": "hdfc-ergo__total-health-plan__wordings",
+  "insurer_name": "HDFC ERGO General Insurance Company Limited",
+  "insurer_slug": "hdfc-ergo",
+  "policy_name": "Total Health Plan",
+  "policy_type": "individual",
+  "uin_code": "HDHHLIP21317V032021",
+  "min_entry_age_years": null,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids", "self+spouse+kids+parents"],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": ["annual"],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 48,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Sinusitis", "Rhinitis", "Tonsillitis", "Adenoidectomy", "Mastoidectomy", "Tonsillectomy",
+    "Tympanoplasty", "Nasal septum deviation surgery", "Nasal concha resection",
+    "Cataract", "Hernia", "Hysterectomy", "Hydrocele", "Fistula", "Piles", "Fissure",
+    "Knee/hip joint replacement", "Internal tumors, cysts, nodules, polyps, skin tumors",
+    "Surgery of varicose veins and varicose ulcers"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "30-day initial waiting (Excl03); 24-month specific disease waiting (Excl02); 48-month PED waiting (Excl01).",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured; room rent, ICU charges, surgeon fees, anaesthesia, drugs, diagnostics included",
+    "notes": null
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All day care procedures listed in Appendix 1",
+    "notes": "Procedures <24 hours under general/local anaesthesia covered"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "When patient cannot be moved to hospital or hospital room unavailable"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "In-patient AYUSH treatment covered",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Optional maternity benefit; if opted with waiting period; limited to 2 deliveries/terminations during lifetime"
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Applicable if Maternity benefit is opted and a maternity claim accepted; coverage starts upon premium receipt"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor in-patient hospitalisation covered",
+    "notes": "Pre/post hospitalisation of donor not covered"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Rs.2,000 per hospitalisation for SI 1L-15L; Rs.5,000 for SI 20L-50L",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "E-opinion in respect of 8 Critical Illnesses (Cancer, Open Chest CABG, First Heart Attack, Kidney Failure, Major Organ/Bone Marrow Transplant, Multiple Sclerosis, Permanent Paralysis of Limbs, Stroke)",
+    "notes": "E-opinion benefit only; lump sum CI cover via optional rider"
+  },
+  "restoration_benefit": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Not explicitly stated as base benefit; Multiplier Benefit (cumulative bonus) mentioned"
+  },
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Health Checkup benefit referenced; subject to product variant"
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Treatment availed outside India excluded under in-patient treatment; all payments in INR within India"
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation (Excl04)",
+    "Rest cure, rehabilitation and respite care (Excl05)",
+    "Obesity / Weight Control (Excl06)",
+    "Change-of-Gender treatments (Excl07)",
+    "Cosmetic or plastic surgery (Excl08)",
+    "Hazardous or Adventure sports (Excl09)",
+    "Breach of law (Excl10)",
+    "Excluded Providers (Excl11)",
+    "Treatment for Alcoholism, drug or substance abuse (Excl12)",
+    "Treatments in non-medical establishments (Excl13)",
+    "Dietary supplements and substances bought without prescription (Excl14)",
+    "Refractive Error correction (Excl15)",
+    "Unproven Treatments (Excl16)",
+    "Sterility and Infertility (Excl17)",
+    "Maternity Expenses unless opted (Excl18)",
+    "War, civil war, nuclear, biological, chemical contamination",
+    "Treatment outside India",
+    "Intentional self injury / attempted suicide"
+  ],
+  "temporary_exclusions": [
+    "30-day initial waiting period for non-accident claims",
+    "24-month specific disease/procedure waiting period",
+    "48-month pre-existing disease waiting period"
+  ],
+  "notable_exclusions_summary": "Investigation-only admissions, cosmetic surgery, refractive errors, infertility/sterility, weight-control treatments, hazardous sports as professional, treatment outside India, and self-inflicted injury are permanently excluded. Maternity is excluded unless the rider is opted. 30-day initial wait for illnesses, 24-month wait for ENT/cataract/hernia/hysterectomy/joint replacement, and 48-month PED wait apply.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via empanelled HDFC ERGO network with pre-authorisation by TPA; reimbursement claims to be intimated within stipulated timelines with bills, discharge summary and KYC documents.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Maternity Cover",
+    "Newborn Baby Cover",
+    "Critical Illness Lump Sum",
+    "Hospital Cash",
+    "Health Checkup",
+    "Multiplier Benefit (Cumulative Bonus)"
+  ],
+  "top_rider_examples": [
+    "Maternity & Newborn Baby Cover",
+    "Critical Illness Lump Sum",
+    "Multiplier Benefit / Cumulative Bonus"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/hdfc-ergo/total-health-plan__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 78.0
+}

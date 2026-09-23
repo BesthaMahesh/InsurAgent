@@ -1,0 +1,178 @@
+{
+  "policy_id": "icici-lombard__health-booster-top-up__wordings",
+  "insurer_name": "ICICI Lombard General Insurance Company Limited",
+  "insurer_slug": "icici-lombard",
+  "policy_name": "Health Booster (top-up)",
+  "policy_type": "super_top_up",
+  "uin_code": "ICIHLIP22100V032122",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    300000,
+    500000,
+    700000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    5000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 24,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Hypertension (90-day wait unless disclosed)",
+    "Diabetes (90-day wait unless disclosed)",
+    "Cardiac conditions (90-day wait unless disclosed)",
+    "Cataract",
+    "Hernia",
+    "Hysterectomy",
+    "Joint replacement"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Top Up: deductible applies per hospitalisation (except for same-illness relapse within 45 days). Super Top Up: deductible applies on aggregate hospitalisation expenses during policy year. 30-day initial wait, 24-month PED wait, 90-day waiting on undisclosed hypertension/diabetes/cardiac.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Hospitalisation expenses above the deductible, up to Annual Sum Insured",
+    "notes": "Operates on top of base health insurance / employer cover above the chosen deductible threshold"
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All day care procedures covered (above deductible)",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured (above deductible)",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Not covered under top-up product"
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor in-patient expenses covered",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Road ambulance covered subject to limits",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Not a base benefit"
+  },
+  "restoration_benefit": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": 20.0,
+  "copayment_trigger_notes": "20% co-pay above the deductible for insureds above 60 years of age. Does NOT apply if first issued at age <=45 and renewed continuously.",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Treatment within India"
+  },
+  "network_hospital_count": 6500,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation (Excl04)",
+    "Rest cure / rehabilitation (Excl05)",
+    "Obesity / weight control (Excl06)",
+    "Change of gender (Excl07)",
+    "Cosmetic or plastic surgery (Excl08)",
+    "Hazardous or Adventure sports (Excl09)",
+    "Breach of law (Excl10)",
+    "Excluded providers (Excl11)",
+    "Substance abuse (Excl12)",
+    "Treatments in non-medical establishments (Excl13)",
+    "Dietary supplements (Excl14)",
+    "Refractive errors (Excl15)",
+    "Unproven treatments (Excl16)",
+    "Sterility and infertility (Excl17)",
+    "Maternity (Excl18)",
+    "Medical expenses below deductible"
+  ],
+  "temporary_exclusions": [
+    "30-day initial waiting period",
+    "24-month PED waiting",
+    "90-day waiting on undisclosed hypertension/diabetes/cardiac"
+  ],
+  "notable_exclusions_summary": "Indemnity top-up / super top-up product — insurer pays only above the chosen deductible. Top-up deductible applies per hospitalisation (except same illness within 45 days); super top-up deductible applies on aggregate hospitalisation expenses in the policy year. 20% mandatory co-pay for insureds above 60 (waived if first issued before 45 and continuously renewed). Maternity, infertility, cosmetic surgery, and other standard IRDAI exclusions apply.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless or reimbursement above deductible threshold; via 6500+ network hospitals.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Critical Illness",
+    "Personal Accident",
+    "Hospital Daily Cash",
+    "Compassionate Visit",
+    "Convalescence Benefit"
+  ],
+  "top_rider_examples": [
+    "Critical Illness",
+    "Personal Accident"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/icici-lombard/health-booster-top-up__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 82.0
+}

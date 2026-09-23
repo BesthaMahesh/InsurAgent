@@ -1,0 +1,191 @@
+{
+  "policy_id": "icici-lombard__complete-health-insurance-health-shield__wordings",
+  "insurer_name": "ICICI Lombard General Insurance Company Limited",
+  "insurer_slug": "icici-lombard",
+  "policy_name": "Complete Health Insurance (Health Shield)",
+  "policy_type": "family_floater",
+  "uin_code": "ICIHLIP22096V062122",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    300000,
+    400000,
+    500000,
+    700000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    5000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 24,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Hypertension (90-day waiting unless disclosed)",
+    "Diabetes (90-day waiting unless disclosed)",
+    "Cardiac conditions (90-day waiting unless disclosed)",
+    "Cataract",
+    "Hernia",
+    "Hysterectomy",
+    "Joint replacement",
+    "ENT surgeries"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "PED 24 months (declared and accepted PED). Hypertension/Diabetes/Cardiac 90-day waiting unless disclosed as PED. Specific disease 24 months. Critical illness add-on 90-day waiting.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured plus Additional Sum Insured plus Super No Claim Bonus plus Sum Insured Protector",
+    "notes": "Cashless across 6500+ network hospitals"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All day care procedures covered",
+    "notes": "Less than 24-hour in-patient treatments"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured (over and above annual SI when opted)",
+    "notes": "Extension 20"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured for in-patient AYUSH hospitalisation",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Subject to product variant; not in indicative base coverage"
+  },
+  "newborn_coverage": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": 1000000,
+    "limit_text": "Up to Sum Insured for organ transplant donor expenses, subject to Rs.10 Lakh limit (over and above annual SI)",
+    "notes": "Extension 9"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 10000,
+    "limit_text": "1% of Sum Insured, maximum Rs.10,000 per emergency hospitalisation event (road); Air ambulance up to Sum Insured (Extension 21)",
+    "notes": "Domestic road ambulance + air ambulance (over and above SI)"
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured for SI <=10L; 50% of SI for SI >10L; covers Cancer, CABG, Heart Attack, Major Organ/Bone Marrow Transplant, Permanent Paralysis, Kidney Failure, End-Stage Liver Disease",
+    "notes": "Optional rider — Extension 7; 90-day waiting; lump-sum payout over and above annual SI"
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Unlimited Reset Benefit — refills sum insured unlimited times in a policy year",
+    "notes": "Extension 22; total reset capped at annual SI per reset event"
+  },
+  "no_claim_bonus_pct": 10.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Free health check-up coupon every Policy Year (max 2 coupons/year for floater policies)",
+    "notes": null
+  },
+  "room_rent_capping": "No cap (subject to variant); single private AC room",
+  "icu_capping": "No cap",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "Worldwide cover (add-on) carries 10% co-pay",
+  "disease_wise_sub_limits": {
+    "cataract": "Rs.20,000 per eye per Policy year for SI up to 5L; Rs.1,00,000 per eye for SI above 5L"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Worldwide hospitalisation up to limit specified, subject to 10% co-pay (over and above annual SI)",
+    "notes": "Extension 23 — optional add-on"
+  },
+  "network_hospital_count": 6500,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Acupressure, acupuncture, magnetic therapies",
+    "Unproven treatments (Excl16)",
+    "Cosmetic or plastic surgery (Excl08)",
+    "Dental treatment unless due to accident",
+    "Breach of law (Excl10)",
+    "Investigation & Evaluation (Excl04)",
+    "Rest cure / rehabilitation (Excl05)",
+    "Obesity / weight control (Excl06)",
+    "Change of gender (Excl07)",
+    "Hazardous/adventure sports (Excl09)",
+    "Excluded providers (Excl11)",
+    "Substance abuse (Excl12)",
+    "Dietary supplements (Excl14)",
+    "Refractive errors (Excl15)",
+    "Sterility / infertility (Excl17)",
+    "Maternity unless rider opted (Excl18)"
+  ],
+  "temporary_exclusions": [
+    "30-day initial waiting period",
+    "24-month PED waiting",
+    "90-day waiting on hypertension/diabetes/cardiac unless disclosed",
+    "90-day waiting on Critical Illness add-on",
+    "24-month specific disease waiting"
+  ],
+  "notable_exclusions_summary": "30-day initial waiting; 24-month PED waiting (declared and accepted); 90-day waiting on undisclosed hypertension/diabetes/cardiac. Cataract sub-limit Rs.20,000-Rs.1,00,000 per eye by SI band. Optional worldwide cover carries 10% co-pay. Standard IRDAI exclusions (cosmetic, infertility, refractive error, weight-control, hazardous sports) apply.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless or reimbursement; over 6500+ network hospitals; Claim Service Guarantee.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Critical Illness",
+    "Personal Accident",
+    "Nursing at Home",
+    "Compassionate Visit",
+    "Hospital Daily Cash",
+    "Convalescence Benefit",
+    "Claim Protector",
+    "Sum Insured Protector",
+    "Worldwide Cover",
+    "Super No Claim Bonus"
+  ],
+  "top_rider_examples": [
+    "Critical Illness Cover",
+    "Super No Claim Bonus",
+    "Worldwide Cover",
+    "Sum Insured Protector"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/icici-lombard/complete-health-insurance-health-shield__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 86.0
+}

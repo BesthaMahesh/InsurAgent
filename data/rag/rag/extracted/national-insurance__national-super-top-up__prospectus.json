@@ -1,0 +1,148 @@
+{
+  "policy_id": "national-insurance__national-super-top-up__prospectus",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Super Top Up Mediclaim",
+  "policy_type": "super_top_up",
+  "uin_code": "NICHLIP24154V042324",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    300000,
+    500000,
+    700000,
+    800000,
+    1000000,
+    1500000,
+    2000000,
+    3000000,
+    5000000,
+    8000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 12,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 36,
+  "sub_limits_waiting_notes": "PED: 12 months full then 50%/25%/0% taper. HIV 3 months. Morbid obesity 36 months. Maternity 36 months. Refractive error 36 months.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured above Threshold",
+    "notes": "Threshold-based super top-up; available with or without an underlying Base Policy. SI 3L-80L based on threshold."
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "140+ day care procedures",
+    "notes": "Less than 24 hours hospitalization"
+  },
+  "domiciliary_treatment": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": "Excluded",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "In-patient AYUSH at AYUSH Hospital"
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Per Table of Benefits",
+    "notes": "36 months continuous coverage; female 18-45; max 2 deliveries lifetime"
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Auto-covered for 3 months from birth",
+    "notes": "Includes vaccination"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor's hospitalisation expenses",
+    "notes": "Per Transplantation Act 1994"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Per Table of Benefits (road only)",
+    "notes": "Available as additional benefit"
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "No explicit per-day cap; super top-up activates above cumulative threshold",
+  "icu_capping": "No explicit cap",
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Loss-sharing for PED: 50% in months 13-24, 25% in months 25-36, nil thereafter. Migration to non-threshold product allowed if entered before 45 and renewed continuously for 5 years.",
+  "disease_wise_sub_limits": {
+    "modern_treatments": "25% of SI per treatment",
+    "hazardous_sports": "25% of SI per any one illness"
+  },
+  "deductible_amount_inr": 200000,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Domiciliary and OPD",
+    "Birth control, Sterility, Infertility",
+    "Hormone Replacement Therapy",
+    "Dental treatment",
+    "Cosmetic Surgery",
+    "Hazardous Sports",
+    "Drug/Alcohol Abuse",
+    "Stem Cell Surgery",
+    "Vaccination",
+    "Self Inflicted Injury",
+    "War",
+    "Radioactivity",
+    "Treatment outside India",
+    "Investigation & Evaluation",
+    "Unproven Treatments"
+  ],
+  "temporary_exclusions": [
+    "PED - 12 months full + loss-sharing till 36 months",
+    "Specified diseases - 90 days/1 year/2 years",
+    "HIV - 3 months",
+    "Morbid Obesity - 36 months",
+    "Maternity - 36 months",
+    "Refractive Error - 36 months"
+  ],
+  "notable_exclusions_summary": "Super Top-Up: claims payable only after cumulative threshold crossed in policy year. Domiciliary and OPD excluded. PED has 12-month full wait then 50%/25%/0% taper. Discounts for early entry, family, online/direct, long-term.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA, pre-auth 1 hour, final 3 hours. Reimbursement: documents within 15 days. Original/certified copies needed to validate threshold. Claim decision within 15 days of last document.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": null,
+  "top_rider_examples": null,
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-super-top-up__prospectus.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 83
+}

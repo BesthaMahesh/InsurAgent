@@ -1,0 +1,112 @@
+{
+  "policy_id": "indusind-general__group-mediclaim__wordings",
+  "insurer_name": "IndusInd General Insurance Company Limited (formerly Reliance General Insurance)",
+  "insurer_slug": "indusind-general",
+  "policy_name": "IndusInd Group Mediclaim",
+  "policy_type": "group",
+  "uin_code": "RELHLGP21523V022021",
+  "min_entry_age_years": null,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents",
+    "custom"
+  ],
+  "residency_requirement": "Group policy issued to corporate/employer; insured persons listed in schedule",
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": null,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Group policy — waiting periods and benefits typically negotiated by employer/group; PED waiting may be waived for group cover at corporate discretion",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured (per group policy schedule)",
+    "notes": "Standard indemnity inpatient cover"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All listed day care procedures",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "As per policy schedule",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH inpatient treatment covered",
+    "notes": null
+  },
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": null,
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "As per policy schedule",
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "As per group policy schedule",
+  "icu_capping": "As per group policy schedule",
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Co-payment, if any, defined in group schedule",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "investigation and evaluation (Excl04)",
+    "obesity/weight control (Excl06)",
+    "change-of-gender treatments (Excl07)",
+    "cosmetic surgery (Excl08)",
+    "hazardous or adventure sports (Excl09)",
+    "breach of law (Excl10)",
+    "alcohol/drug abuse (Excl12)",
+    "unproven treatments (Excl16)",
+    "treatment outside India"
+  ],
+  "temporary_exclusions": [
+    "pre-existing diseases (36 months unless waived for group)",
+    "specific listed diseases (24 months)",
+    "initial 30 days for non-accident illness"
+  ],
+  "notable_exclusions_summary": "Standard IRDAI group mediclaim — exact benefit and exclusion structure depends on the employer-negotiated schedule. PED waiting period typically waived for employee group cover.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via IndusInd/Reliance General network hospitals on pre-authorization; reimbursement via insurer's group claims helpdesk.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": null,
+  "top_rider_examples": null,
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/reliance-general/group-mediclaim__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 70.0,
+  "legacy_issuer": "Reliance General Insurance"
+}

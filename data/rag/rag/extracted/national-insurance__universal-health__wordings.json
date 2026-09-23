@@ -1,0 +1,92 @@
+{
+  "policy_id": "national-insurance__universal-health__wordings",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "Universal Health Insurance",
+  "policy_type": "family_floater",
+  "uin_code": "NICHLIP21593V042021",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 70,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident; treatment in India only",
+  "sum_insured_options_inr": [
+    30000,
+    50000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "maternity_waiting_months": 12,
+  "sub_limits_waiting_notes": "Hospital Cash benefit has 3-day waiting period; daily compensation from day 4 of hospitalisation up to 15 days",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "Room rent up to 0.5% of SI/day; ICU 1% of SI/day; doctor fees and other expenses each up to 15% of SI per any-one-illness; total modern-treatment cap 50% of SI per any-one-illness"
+  },
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "Modern Treatments list of 12 (robotic surgery, stem cell therapy, immunotherapy, intravitreal injections, bronchial thermoplasty etc.) up to 50% of SI per procedure"
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": 5000,
+    "limit_text": "Rs 2,500 for normal delivery and Rs 5,000 for caesarean/extra-uterine delivery",
+    "notes": "12-month waiting period; one delivery per lifetime; expenses must be incurred as in-patient in India; voluntary termination of pregnancy in first 12 weeks excluded"
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "notes": "Newborn baby (up to 90 days) covered when maternity claim is admitted"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "Inpatient AYUSH treatment in qualified AYUSH Hospital or Day Care Centre"
+  },
+  "no_claim_bonus_pct": 0.0,
+  "room_rent_capping": "0.5% of Sum Insured per day",
+  "icu_capping": "1% of Sum Insured per day",
+  "copayment_pct": 0.0,
+  "deductible_amount_inr": 0,
+  "disease_wise_sub_limits": {
+    "medical_practitioner_fees": "15% of SI per any-one-illness",
+    "other_hospitalisation_expenses": "15% of SI per any-one-illness",
+    "modern_treatments_total": "50% of SI per any-one-illness",
+    "maternity_normal_delivery": "Rs 2,500",
+    "maternity_caesarean": "Rs 5,000"
+  },
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation (Excl 04)",
+    "Rest Cure, Rehabilitation and Respite Care (Excl 05)",
+    "Change-of-Gender Treatments (Excl 07)",
+    "Cosmetic or Plastic Surgery (Excl 08)",
+    "Excluded Providers (Excl 11)",
+    "Drug/Alcohol Abuse (Excl 12)",
+    "Non Medical Admissions (Excl 13)",
+    "Vitamins and Tonics (Excl 14)",
+    "Birth control, Sterility and Infertility (Excl 17)",
+    "Hormone Replacement Therapy",
+    "General Debility, Congenital External Anomaly",
+    "Circumcision",
+    "Vaccination or Inoculation",
+    "Massages, Steam Bath, Alternative Treatment",
+    "Dental treatment",
+    "Spectacles, Contact Lens, Hearing Aid, Cochlear Implants",
+    "War / Radioactivity",
+    "Treatment outside India"
+  ],
+  "notable_exclusions_summary": "Cover restricted to India. Standard IRDAI exclusion list applies (cosmetic, fertility, addiction, change-of-gender, congenital external anomalies, vaccinations, dental, vision aids).",
+  "claim_process_summary": "Pre-authorisation via TPA: 72 hrs before planned hospitalisation or within 24 hrs of emergency. Cashless TAT 1 hour for pre-auth, 3 hours for final bill. Reimbursement documents within 30 days of discharge. Company offers settlement within 15 days and pays within 7 days of acceptance; 2% above bank rate interest payable on delay.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/national-insurance/universal-health__wordings.pdf",
+  "extraction_confidence_pct": 90
+}

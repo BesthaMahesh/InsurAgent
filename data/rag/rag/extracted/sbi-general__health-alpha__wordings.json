@@ -1,0 +1,169 @@
+{
+  "policy_id": "sbi-general__health-alpha__wordings",
+  "insurer_name": "SBI General Insurance Company Limited",
+  "insurer_slug": "sbi-general",
+  "policy_name": "Health Alpha",
+  "policy_type": "family_floater",
+  "uin_code": "SBIHLIP26038V012526",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Bariatric Surgery (24 months from inception)"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Bariatric Surgery: 24 months waiting period. Personal Accident optional rider in Base Cover Option 2.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured per policy year for admission beyond 24 hours",
+    "notes": "Comprehensive cover including room rent, ICU, OT, surgeon/anaesthetist fees, telemedicine, medicines, diagnostics, prosthetics implanted."
+  },
+  "pre_hospitalization_days": 90,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All Day Care procedures",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to limit specified in Policy Schedule",
+    "notes": "Minimum 3 continuous days of treatment required."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to limit specified in Schedule",
+    "notes": "Inpatient under Ayurveda/Yoga/Naturopathy/Unani/Siddha/Homeopathy in AYUSH Hospital or AYUSH Day Care."
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured for organ donation expenses",
+    "notes": "Per Transplantation of Human Organs Act 1994. Excludes donor's screening, pre/post hospitalization, complications."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Road Ambulance + Air Ambulance + Radio Cab (limits per Schedule)",
+    "notes": "Three tiers: Road Ambulance per hospitalization; Air Ambulance within India; Radio Cab to nearest Hospital/home."
+  },
+  "critical_illness_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Not standalone benefit; Personal Accident rider available."
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Unlimited times during Policy Year - Restore Base Sum Insured after claim payment",
+    "notes": "Restored SI available for subsequent claims only. Each restoration ≤ Base SI."
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Annual",
+    "notes": null
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "Optional Co-payment may be selected per Policy Schedule.",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Diseases until 36 months",
+    "30-day initial waiting (Excl03)",
+    "Investigation & Evaluation (Excl04)",
+    "Rest Cure/Rehabilitation/Respite Care (Excl05)",
+    "Obesity/Weight Control (Excl06) - waived if Bariatric Surgery benefit opted",
+    "Change-of-Gender (Excl07)",
+    "Cosmetic/Plastic Surgery (Excl08)",
+    "Hazardous/Adventure Sports without conformance to safety protocols (Excl09)",
+    "Breach of Law (Excl10)",
+    "Excluded Providers (Excl11)",
+    "Alcoholism/Drug/Substance Abuse (Excl12)",
+    "Dietary supplements without prescription (Excl14)",
+    "Refractive Error (Excl15)",
+    "Unproven Treatments (Excl16)",
+    "Sterility/Infertility (Excl17)",
+    "Maternity (Excl18)",
+    "War and war-like situations",
+    "Nuclear/chemical/biological",
+    "Treatment outside India"
+  ],
+  "temporary_exclusions": [
+    "30-day initial waiting",
+    "24 months Bariatric Surgery waiting",
+    "36 months PED"
+  ],
+  "notable_exclusions_summary": "Health Alpha is a comprehensive hospitalization plan with optional Personal Accident, Critical Illness, Bariatric Surgery, Home Health Care, Modern Treatments add-ons. Covers AYUSH, Domiciliary, Organ Donor, Restore Benefit (unlimited). Adventure sports covered subject to safety protocol compliance. Excludes maternity, infertility, refractive error, and treatment outside India.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA; reimbursement via document submission. Toll-free 18001021111. Modern treatments and home health care available on empanelled provider basis.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Section 1: Personal Accident (AD, PTD, PPD, TTD, Home Modification, Child Education, Loan Protector)",
+    "Section 2: Hospitalization Cover with optional Road/Air Ambulance, Radio Cab, Organ Donor, Modern Treatments, Home Health Care, Consumables, Restore Benefit, AYUSH, Domiciliary, Bariatric Surgery",
+    "Gym and Sports Injury Cover",
+    "Adventure Sports Cover (with safety conditions)",
+    "Cumulative Bonus 50%",
+    "Discount in Premium 2.5%"
+  ],
+  "top_rider_examples": [
+    "Personal Accident",
+    "Restore Benefit (unlimited)",
+    "Modern Treatments",
+    "Home Health Care"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/sbi-general/health-alpha__wordings.pdf",
+  "source_pdf_url": "https://www.sbigeneral.in",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 80.0
+}

@@ -1,0 +1,182 @@
+{
+  "policy_id": "iffco-tokio__health-protector-plus__wordings",
+  "insurer_name": "IFFCO-Tokio General Insurance Company Limited",
+  "insurer_slug": "iffco-tokio",
+  "policy_name": "Health Protector Plus",
+  "policy_type": "super_top_up",
+  "uin_code": "IFFHLIP21328V022021",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    300000,
+    500000,
+    700000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    5000000,
+    10000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Cataract",
+    "Benign Prostatic Hypertrophy",
+    "Hysterectomy (non-carcinoma) / Myomectomy / Endometriosis",
+    "Hernia / Hydrocele",
+    "Fissure / Fistula in anus / Piles / Pilonidal sinus",
+    "Sinusitis & related disorders",
+    "Stones in urinary and biliary systems",
+    "Gastric / Duodenal Ulcers",
+    "Dilatation and Curettage",
+    "Joint Replacement (non-accident)"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "PED 36 months. Specific disease 24 months. 30-day initial wait. Coverage above the chosen Deductible only. Modern treatments capped at 50% of SI.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Room rent, surgeon, anaesthesia, drugs, blood, oxygen, OT, diagnostic, dialysis, chemotherapy, radiotherapy, pacemaker, organ transplant, plus 0.10% SI per day Daily Allowance — all above the deductible.",
+    "notes": "Top-up / super top-up product"
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Day care procedures covered (above deductible)",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Maximum aggregate sub-limit 20% of Sum Insured",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH hospitalisation in AYUSH Hospitals or Day Care Centres",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Not covered under top-up product"
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Organ donor hospitalisation expenses payable subject to overall SI",
+    "notes": "Donor's pre/post hospitalisation not payable"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 3000,
+    "limit_text": "Actual or Rs.3,000 per claim, whichever is less",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Available as separate IFFCO-Tokio product"
+  },
+  "restoration_benefit": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": {
+    "modern_treatments": "50% of SI for listed advanced procedures (Uterine Artery Embolisation, Balloon Sinuplasty, Deep Brain Stimulation, Oral Chemotherapy, Immunotherapy, Intra Vitreal injections, Robotic surgery, Stereotactic radiosurgery, Bronchial Thermoplasty, Prostate vaporisation, IONM)"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Medical expenses below the deductible",
+    "Investigation & Evaluation (Excl04)",
+    "Rest cure / rehabilitation (Excl05)",
+    "Obesity / weight control (Excl06)",
+    "Change of gender (Excl07)",
+    "Cosmetic or plastic surgery (Excl08)",
+    "Hazardous / adventure sports (Excl09)",
+    "Breach of law (Excl10)",
+    "Excluded providers (Excl11)",
+    "Substance abuse (Excl12)",
+    "Non-medical establishments (Excl13)",
+    "Dietary supplements (Excl14)",
+    "Refractive errors (Excl15)",
+    "Unproven treatments (Excl16)",
+    "Sterility and infertility (Excl17)",
+    "Maternity (Excl18)"
+  ],
+  "temporary_exclusions": [
+    "30-day initial waiting period",
+    "36-month PED waiting",
+    "24-month specific disease waiting"
+  ],
+  "notable_exclusions_summary": "Top-up / super top-up indemnity product — pays only above the chosen deductible. 36-month PED, 30-day initial, and 24-month specific disease waits. Maternity, infertility, and standard IRDAI exclusions apply. Modern treatments capped at 50% of SI. Option to migrate to standalone health policy with waiver of waiting periods if continuously renewed 4+ years and first issued before age 50.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via IFFCO-Tokio empanelled network; all bills (including those within deductible) to be submitted; coverage triggered above deductible threshold.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Personal Accident",
+    "Hospital Daily Cash",
+    "Critical Illness"
+  ],
+  "top_rider_examples": [
+    "Personal Accident",
+    "Critical Illness"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/iffco-tokio/health-protector-plus__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 82.0
+}

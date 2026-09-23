@@ -1,0 +1,106 @@
+{
+  "policy_id": "star-health__star-cardiac-care__wordings",
+  "insurer_name": "Star Health and Allied Insurance Company Limited",
+  "insurer_slug": "star-health",
+  "policy_name": "Star Cardiac Care",
+  "policy_type": "disease_specific",
+  "uin_code": "SHAHLIP22032V022122",
+  "min_entry_age_years": 10,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": [
+    "self"
+  ],
+  "residency_requirement": null,
+  "sum_insured_options_inr": [
+    300000,
+    400000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": null,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": null,
+  "specific_diseases_listed": [
+    "Cardiac/Cardiovascular Diseases"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Designed for persons with diagnosed cardiac conditions; sub-limits apply on specific cardiac procedures (e.g. CABG, angioplasty).",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured for cardiac hospitalizations",
+    "notes": null
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "domiciliary_treatment": null,
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": null,
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Cardiac/cardiovascular conditions only",
+    "notes": "Disease-specific cardiac indemnity plan."
+  },
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "Per policy schedule",
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": 14000,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Diseases (non-declared) until 36 months",
+    "Cosmetic/Plastic Surgery",
+    "Substance Abuse",
+    "Self-inflicted injury",
+    "Unproven Treatments"
+  ],
+  "temporary_exclusions": [
+    "Pre-existing diseases (non-cardiac): 36 months"
+  ],
+  "notable_exclusions_summary": "Cardiac disease-specific plan; standard IRDAI exclusions; non-cardiac PED waiting 36 months.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via Star Health network. Pre-authorization required for cardiac procedures.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": null,
+  "top_rider_examples": null,
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/star-health/star-cardiac-care__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 70
+}

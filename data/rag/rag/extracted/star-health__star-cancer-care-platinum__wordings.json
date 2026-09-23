@@ -1,0 +1,110 @@
+{
+  "policy_id": "star-health__star-cancer-care-platinum__wordings",
+  "insurer_name": "Star Health and Allied Insurance Company Limited",
+  "insurer_slug": "star-health",
+  "policy_name": "Star Cancer Care Platinum",
+  "policy_type": "disease_specific",
+  "uin_code": "SHAHLIP22031V022122",
+  "min_entry_age_years": 5,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": [
+    "self"
+  ],
+  "residency_requirement": null,
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": null,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": null,
+  "specific_diseases_listed": [
+    "Cancer (of Specified Severity per IRDAI definition)"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Designed for insured persons with pre-existing/diagnosed cancer; benefits trigger on diagnosis of Cancer of Specified Severity. Excludes certain in-situ, low-grade, and non-invasive cancers per IRDAI definition.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured for cancer treatment hospitalization",
+    "notes": "Treatment for Cancer of Specified Severity (excluding carcinoma in situ, CIN-1/2/3, non-melanoma skin carcinoma without metastasis, low-grade prostate/thyroid/bladder/GIST tumors)."
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Day-care chemotherapy and radiation covered",
+    "notes": null
+  },
+  "domiciliary_treatment": null,
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "AYUSH in-patient up to SI in AYUSH Hospital."
+  },
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": null,
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Cancer-only critical illness cover (single disease focus)",
+    "notes": "Plan exclusively for cancer. Indemnifies hospitalization and treatment expenses arising from cancer diagnosis and management."
+  },
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "Per policy schedule; proportionate deduction on associated medical expenses if higher room category chosen",
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": {
+    "cancer_treatment": "All cancer-related hospitalization, chemotherapy, radiotherapy, surgical procedures covered up to SI"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": 14000,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Disease (other than declared/accepted cancer) until 36 months",
+    "Carcinoma in situ (CIN-1, 2, 3)",
+    "Non-melanoma skin carcinoma without metastasis",
+    "Melanoma not invading beyond epidermis",
+    "Low-grade prostate cancer (Gleason <=6, <T2N0M0)",
+    "T1N0M0 Thyroid cancers",
+    "Chronic lymphocytic leukaemia < RAI stage 3",
+    "Non-invasive papillary bladder cancer (TaN0M0)",
+    "Low-mitotic GIST (T1N0M0, <=5/50 HPF)",
+    "Unproven/Experimental treatments"
+  ],
+  "temporary_exclusions": [
+    "Pre-existing diseases (non-cancer): 36 months"
+  ],
+  "notable_exclusions_summary": "Cancer-only indemnity plan. Excludes pre-cancerous conditions, in-situ tumors, and very early stage / low-grade variants per IRDAI cancer definition. Non-cancer PEDs have 36-month waiting.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via Star Health network. Histological evidence of malignancy required for claim.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": null,
+  "top_rider_examples": null,
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/star-health/star-cancer-care-platinum__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 78
+}

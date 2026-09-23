@@ -1,0 +1,86 @@
+{
+  "policy_id": "niva-bupa__health-plus-top-up__wordings",
+  "insurer_name": "Niva Bupa Health Insurance Company Limited",
+  "insurer_slug": "niva-bupa",
+  "policy_name": "Health Plus (Top-up)",
+  "policy_type": "super_top_up",
+  "uin_code": "NBHHLIP24135V012324",
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident; treatment in India only (allopathic and AYUSH)",
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 36,
+  "sub_limits_waiting_notes": "Aggregate deductible (super top-up) applies before any cover; PED and specific disease 36 months",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "Indemnity above aggregate deductible. Room rent eligibility per schedule with proportionate deduction if higher room opted"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "Listed day care + 12 Modern Treatments; robotic surgery capped at Rs 1L except for radical prostatectomy / cardiac / partial nephrectomy / malignancies"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_text": "Per schedule limit"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_text": "Up to Sum Insured (India only)"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_text": "Emergency ground ambulance within India per limit in schedule"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Donor inpatient harvesting expenses only"
+  },
+  "maternity_coverage": {
+    "covered": false
+  },
+  "no_claim_bonus_pct": 0.0,
+  "room_rent_capping": "Per plan eligibility; proportionate deduction for higher room",
+  "copayment_pct": 0.0,
+  "deductible_amount_inr": 300000,
+  "disease_wise_sub_limits": {
+    "robotic_surgery": "Rs 1,00,000 (except prostatectomy, cardiac, partial nephrectomy, malignancies)"
+  },
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & evaluation",
+    "OPD treatment",
+    "First 30 days (except accident)",
+    "PED (36 months)",
+    "Specific waiting diseases (36 months)",
+    "Cosmetic / plastic surgery",
+    "Change of gender",
+    "Maternity / sterility / infertility",
+    "Hazardous adventure sports",
+    "Drug / alcohol abuse",
+    "Unproven treatments",
+    "Treatment outside India",
+    "Dental / oral (unless accident)",
+    "Self-inflicted injury / suicide"
+  ],
+  "notable_exclusions_summary": "Super top-up indemnity above chosen aggregate deductible. Pre/post 30/60 days. AYUSH covered up to SI. Maternity not covered.",
+  "claim_process_summary": "Pre-authorisation via network hospital. Aggregate deductible accumulates across claims in a policy year before cover triggers. Cashless TPA within 1 hour; reimbursement via document submission.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/niva-bupa/health-plus-top-up__wordings.pdf",
+  "extraction_confidence_pct": 82
+}

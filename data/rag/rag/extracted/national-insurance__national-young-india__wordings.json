@@ -1,0 +1,147 @@
+{
+  "policy_id": "national-insurance__national-young-india__wordings",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Young India Mediclaim",
+  "policy_type": "individual",
+  "uin_code": "NICHLIP24005V022324",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 45,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    300000,
+    500000,
+    1000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 24,
+  "sub_limits_waiting_notes": "PED 36, maternity 24, morbid obesity 36, refractive 24, mental illness (Depression+Schizophrenia) 2 years.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Basic Sum Insured",
+    "notes": "Room/ICU caps per SI tier"
+  },
+  "pre_hospitalization_days": 45,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": "Excluded",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "INR 30k-50k tiered by SI",
+    "notes": "24-month wait; female 18-45"
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "3 months from birth under mother's SI",
+    "notes": null
+  },
+  "organ_donor_expenses": null,
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2000,
+    "limit_text": "INR 2,000/year road",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional Double SI for 11 CIs",
+    "notes": null
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Reinstatement of Basic SI",
+    "notes": "Basic SI 5L+; once/year; not for 11 CIs"
+  },
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "INR 5,000-10,000/day per SI tier",
+  "icu_capping": "INR 10,000-20,000/day per SI tier",
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Three-zone copay 12.5%/20%/35% depending on premium zone vs treatment zone",
+  "disease_wise_sub_limits": {
+    "cataract": "10% of SI max INR 50,000 per eye/year",
+    "modern_treatments": "25% of SI per procedure"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Domiciliary and OPD",
+    "Sterility/Infertility",
+    "Refractive Error <7.5D",
+    "Cosmetic Surgery",
+    "Hazardous Sports",
+    "Drug/Alcohol Abuse",
+    "Self Inflicted Injury",
+    "War",
+    "Radioactivity",
+    "Treatment outside India",
+    "Dental",
+    "Stem Cell Surgery",
+    "Unproven Treatments"
+  ],
+  "temporary_exclusions": [
+    "PED 36 months",
+    "Specific 90 days to 3 years",
+    "Maternity 24 months",
+    "Morbid Obesity 3 years",
+    "Refractive Error 2 years"
+  ],
+  "notable_exclusions_summary": "Young adult indemnity, no infertility, no domiciliary. Optional double-SI for 11 CIs.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless 1h pre-auth, 3h final. Reimbursement 30 days post-discharge. Settlement 15 days.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Diabetes/Hypertension waiver",
+    "Double SI for 11 Critical Illnesses"
+  ],
+  "top_rider_examples": [
+    "Double SI for 11 CIs"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-young-india__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 79
+}

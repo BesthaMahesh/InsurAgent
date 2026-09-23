@@ -1,0 +1,176 @@
+{
+  "policy_id": "tata-aig__medicare-premier__cis",
+  "insurer_name": "Tata AIG General Insurance Company Limited",
+  "insurer_slug": "tata-aig",
+  "policy_name": "MediCare Premier",
+  "policy_type": "family_floater",
+  "uin_code": "TATHLIP26052V052526",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": null,
+  "sum_insured_options_inr": [
+    5000000,
+    7500000,
+    10000000,
+    20000000,
+    30000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 24,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 36,
+  "sub_limits_waiting_notes": "Maternity benefit kicks in after 3 years of continuous coverage. Pre-existing disease waiting only 24 months (low).",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured (admission > 24 hrs)",
+    "notes": "Indemnity + Benefit hybrid policy."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 200,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "In-patient or Day Care AYUSH up to Sum Insured",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": 100000,
+    "limit_text": "Rs 50,000 (SI <=50L), Rs 1,00,000 (SI 75L-3Cr) per policy; girl child Rs 60,000-1,20,000",
+    "notes": "After 3 years of continuous coverage."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": 15000,
+    "limit_text": "First Year Vaccinations up to Rs 10,000 (boy) or Rs 15,000 (girl) - lifetime limit",
+    "notes": "Applicable for each child."
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 30000,
+    "limit_text": "Rs 5,000 (SI <=50L); Rs 7,500 (75L); Rs 10,000 (1Cr); Rs 20,000 (2Cr); Rs 30,000 (3Cr) per hospitalization",
+    "notes": "Plus Emergency Air Ambulance over and above Sum Insured."
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Restore Benefit - once during Policy Year",
+    "notes": null
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Health Check-up over and above Sum Insured",
+    "notes": null
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": {
+    "delivery_complications": "Rs 10,000 (SI <=50L); Rs 25,000 (SI 75L-3Cr)",
+    "first_year_vaccinations": "Rs 10,000 boy / Rs 15,000 girl per child lifetime",
+    "hearing_aid": "50% of actual or Rs 10,000 per policy whichever lower (over and above SI)",
+    "daily_cash_shared_accom_or_child_accompany": "0.25% of base SI, max Rs 2,000/day (over and above SI)",
+    "prolonged_hospitalisation": "1% of Sum Insured (over and above SI)",
+    "accidental_death_benefit": "100% of base SI, max Rs 50L (over and above SI)",
+    "home_care_treatment": "For SI Rs 75L+ only",
+    "opd_treatment_and_dental": "Per Schedule (over and above SI)",
+    "high_end_diagnostics": "Per Schedule (over and above SI)",
+    "global_cover_planned_hosp": "Up to Sum Insured"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Global Cover for Planned Hospitalisation (per Schedule)",
+    "notes": "Emergency Air Ambulance Cover separately."
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Alcoholism (Code Excl 12)",
+    "Obesity (Code Excl 06)",
+    "Investigation & Evaluation only (Code Excl 04)",
+    "Sterility/Infertility (Code Excl 17)",
+    "Refractive Error (Code Excl 15)",
+    "Change of Gender (Code Excl 07)",
+    "Cosmetic / Plastic Surgery (Code Excl 08)",
+    "Rest cure, rehabilitation, respite care (Code Excl 05)",
+    "Unproven treatments (Code Excl 16)",
+    "Admission for domestic reasons (Code Excl 13)",
+    "Dietary Supplements (Code Excl 14)",
+    "Hazardous/Adventure Sports (Code Excl 09)",
+    "Breach of Law (Code Excl 10)",
+    "Excluded Providers (Code Excl 11)",
+    "War / nuclear / chemical / biological attack",
+    "Naval/military/air force operations",
+    "Intentional self-injury / suicide attempt"
+  ],
+  "temporary_exclusions": [
+    "Initial waiting: 30 days",
+    "Specified disease/procedure: 24 months",
+    "Pre-existing diseases: 24 months",
+    "Maternity: 36 months"
+  ],
+  "notable_exclusions_summary": "Premium indemnity+benefit hybrid with global cover. Low PED waiting (24 months) and full Maternity, OPD, vaccinations, and prolonged hospitalisation features. Standard IRDAI permanent exclusions.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless: notify 48 hrs pre-planned or 24 hrs post-emergency. Reimbursement: intimate within 7 days, submit docs within 15 days. 24x7 support 022 6489 8282.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Wellness Services",
+    "Wellness Program",
+    "Consumables Benefit",
+    "OPD Treatment (incl. Dental)",
+    "Home Care Treatment (SI 75L+)"
+  ],
+  "top_rider_examples": [
+    "OPD Cover",
+    "Global Cover",
+    "Maternity"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/tata-aig/medicare-premier__cis.pdf",
+  "source_pdf_url": "https://www.tataaig.com",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 90
+}

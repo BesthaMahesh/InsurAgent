@@ -1,0 +1,129 @@
+{
+  "policy_id": "hdfc-ergo__optima-restore__brochure",
+  "insurer_name": "HDFC ERGO",
+  "insurer_slug": "hdfc-ergo",
+  "policy_name": "Optima Restore Health Insurance Plan",
+  "policy_type": null,
+  "uin_code": null,
+  "min_entry_age_years": null,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": null,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": null,
+  "residency_requirement": null,
+  "sum_insured_options_inr": [
+    2000000,
+    2500000,
+    3000000,
+    5000000,
+    10000000,
+    15000000,
+    50000000
+  ],
+  "premium_payment_modes": null,
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": null,
+  "grace_period_days": null,
+  "free_look_period_days": null,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 3,
+  "specific_disease_waiting_months": 2,
+  "specific_diseases_listed": [
+    "cataract",
+    "hernia",
+    "hysterectomy",
+    "joint replacement"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": null,
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Covered upto sum insured",
+    "notes": null
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All Day Care Treatments Covered",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Covered upto sum insured",
+    "notes": null
+  },
+  "ayush_coverage": null,
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": null,
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2000,
+    "limit_text": "Upto Rs. 2,000 / Hospitalisation",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": 250000,
+    "limit_text": "Covered upto Rs. 2.5 Lacs per Critical Illness",
+    "notes": null
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "100% of Basic Sum Insured",
+    "notes": "Restored after utilization"
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": 5000,
+    "limit_text": "Upto Rs. 5000",
+    "notes": "Applicable 1500, 2000, 4000 for higher sums"
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": 10000,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pregnancy",
+    "dental treatment",
+    "external aids and appliances",
+    "hospitalization due to war/act of war",
+    "non-allopathic treatments",
+    "congenital diseases",
+    "cosmetic surgery"
+  ],
+  "temporary_exclusions": null,
+  "notable_exclusions_summary": null,
+  "claim_settlement_ratio_pct": 95.0,
+  "claim_process_summary": null,
+  "tat_cashless_authorization_hours": 24.0,
+  "available_riders": [
+    "Lifelong Renewal",
+    "Quick Claim Payment",
+    "No Claim Based Loading",
+    "Room Rent No Sub-Limit"
+  ],
+  "top_rider_examples": [
+    "Stay Active Discount",
+    "Family Discount",
+    "Tax Benefit"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "hdfc-ergo__optima-restore__brochure.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 90.0
+}

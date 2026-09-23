@@ -1,0 +1,174 @@
+{
+  "policy_id": "national-insurance__bob-national-health__cis",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "BOB National Health",
+  "policy_type": "family_floater",
+  "uin_code": "NICHLIP22045V012122",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": "Bank of Baroda account holder (Proposer); Indian resident",
+  "sum_insured_options_inr": [
+    300000,
+    500000,
+    1000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "90 days for 3 diseases (lifestyle conditions)",
+    "1 year for 5 diseases/procedures",
+    "2 years for 19 diseases/procedures",
+    "3 years for 4 diseases/procedures"
+  ],
+  "maternity_waiting_months": 12,
+  "sub_limits_waiting_notes": "Maternity optional cover with 12-month waiting; 36-month PED waiting. Specific procedures range from 90 days to 3 years.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Hospitalisation beyond 24 hours covered up to SI, subject to room/ICU caps",
+    "notes": "Proportionate clause applies if room rent exceeds 1% of SI per day (does not apply to ICU)."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "140+ day care procedures",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Domiciliary hospitalization and OPD treatment excluded."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH inpatient up to Sum Insured",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": 50000,
+    "limit_text": "Up to Rs. 50,000 per policy year as Optional Cover (8% discount on premium if not opted)",
+    "notes": "Max 2 claims during lifetime. 12-month waiting period."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Automatic cover from birth under mother's SI during maternity policy period",
+    "notes": "Tied to maternity optional cover."
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor's hospitalisation expenses for organ harvest",
+    "notes": "Excludes pre/post hosp of donor, organ acquisition cost, transport/preservation, complications."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 1000,
+    "limit_text": "Up to Rs. 1,000 per hospitalisation",
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Good Health Incentive (every 4th policy period, expense reimbursement)",
+    "notes": null
+  },
+  "room_rent_capping": "Up to 1% of SI per day",
+  "icu_capping": "Up to 2% of SI per day",
+  "copayment_pct": 10.0,
+  "copayment_trigger_notes": "Optional 10% co-pay on each admissible claim (including optional cover), with 8% discount in premium.",
+  "disease_wise_sub_limits": {
+    "cataract": "Up to 10% of SI, max Rs. 40,000 per eye per year",
+    "modern_treatments": "Up to 25% of SI (12 listed)",
+    "hazardous_sports_treatment": "Up to 25% of SI",
+    "hospital_cash": "Rs. 500/day for max 5 days"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation (Excl 04)",
+    "Rest Cure / Rehabilitation (Excl 05)",
+    "Obesity / Weight Control (Excl 06)",
+    "Change-of-Gender (Excl 07)",
+    "Cosmetic / Plastic Surgery (Excl 08)",
+    "Hazardous Sports (Excl 09)",
+    "Breach of Law (Excl 10)",
+    "Excluded Providers (Excl 11)",
+    "Drug / Alcohol Abuse (Excl 12)",
+    "Non Medical Admissions (Excl 13)",
+    "Vitamins / Tonics (Excl 14)",
+    "Refractive Error (Excl 15)",
+    "Unproven Treatments (Excl 16)",
+    "Birth control / Sterility / Infertility (Excl 17)",
+    "Hormone Replacement Therapy",
+    "General Debility / Congenital External Anomaly",
+    "Self Inflicted Injury",
+    "Stem Cell Surgery",
+    "Circumcision",
+    "Vaccination / Inoculation",
+    "Massages / Steam Bath / non-AYUSH alt treatment",
+    "Dental treatment",
+    "Domiciliary Hospitalization / OPD",
+    "Spectacles / Contact Lens / Hearing Aid",
+    "Non Prescription Drug",
+    "Equipments",
+    "Items of personal comfort",
+    "Service / registration fee",
+    "Home visit charges",
+    "War",
+    "Radioactivity",
+    "Treatment outside India"
+  ],
+  "temporary_exclusions": [
+    "30 days initial waiting",
+    "90 days for 3 lifestyle conditions",
+    "1 year for 5 procedures",
+    "2 years for 19 procedures",
+    "3 years for 4 procedures",
+    "PED: 36 months",
+    "Maternity: 12 months (optional cover)"
+  ],
+  "notable_exclusions_summary": "PED 36 months. Co-pay 10% optional (with discount). No domiciliary / OPD / overseas. Maternity is optional with Rs 50,000 limit and 12-month wait. Hospital cash Rs 500/day max 5 days included.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA; 72-hour pre-notification for planned, 24-hour for emergency. 30-day submission for reimbursement. 15-day settlement (45 if investigation). Helpline 1800 345 0330.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Maternity Benefit (Optional Cover)"
+  ],
+  "top_rider_examples": [
+    "Maternity Benefit"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/bob-national-health__cis.pdf",
+  "source_pdf_url": "https://nationalinsurance.nic.co.in/en/health-insurance",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 90
+}

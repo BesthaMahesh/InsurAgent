@@ -1,0 +1,82 @@
+{
+  "policy_id": "new-india__new-india-mediclaim-policy__brochure",
+  "insurer_name": "The New India Assurance Co. Ltd.",
+  "insurer_slug": "new-india",
+  "policy_name": "New India Mediclaim Policy",
+  "policy_type": "individual",
+  "uin_code": "NIAHLIP25040V082425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids", "self+spouse+kids+parents"],
+  "residency_requirement": "Treatment in India only",
+  "sum_insured_options_inr": [100000, 200000, 300000, 500000, 800000, 1000000, 1200000, 1500000],
+  "premium_payment_modes": ["annual"],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "sub_limits_waiting_notes": "PED 36 months; cataract 24 months; long-term policy 1/2/3 years available with 5%/7% discount; 2L-15L SI range available for fresh policy (4/6/7L only on renewal)",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "Room rent and ICU caps per plan; zone-based premium (Zone 1: Maharashtra/Gujarat, Zone 2: Rest of India)"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "Listed procedures plus 12 Modern Treatments"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_text": "Up to 100% of Sum Insured"
+  },
+  "ambulance_cover": {"covered": true},
+  "organ_donor_expenses": {"covered": true},
+  "maternity_coverage": {"covered": false},
+  "newborn_coverage": {
+    "covered": true,
+    "notes": "Newborn covered from birth until policy expiry if mother has 24 months of continuous coverage"
+  },
+  "restoration_benefit": {
+    "covered": false,
+    "notes": "Cumulative bonus mechanism instead of restoration"
+  },
+  "no_claim_bonus_pct": 25.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_text": "Health checkup cost reimbursed at intervals subject to continuous coverage"
+  },
+  "room_rent_capping": "Room/ICU caps per plan (typically 1% / 2% of SI per day with sub-limit table)",
+  "copayment_pct": 20.0,
+  "copayment_trigger_notes": "20% co-pay if Zone-2 insured gets treated in Zone-1 (Maharashtra/Gujarat). No co-pay for accident; no co-pay for sub-limited items.",
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "PED within 36 months",
+    "First 30 days (except accident)",
+    "Specific waiting diseases (24/48 months)",
+    "Treatment outside India",
+    "Maternity expenses",
+    "Sterility / infertility",
+    "Cosmetic / plastic surgery",
+    "Change of gender",
+    "Hazardous adventure sports (professional)",
+    "Drug / alcohol abuse",
+    "Dental treatment (unless accident)",
+    "Spectacles, contact lenses, hearing aids",
+    "War / nuclear",
+    "Unproven treatments",
+    "Refractive error correction <7.5D"
+  ],
+  "notable_exclusions_summary": "Flagship indemnity plan. Maternity NOT covered. Zone-based premium, 20% co-pay if Zone-2 customer gets treated in Maharashtra/Gujarat. Cumulative bonus 25% per claim-free year up to 50%.",
+  "claim_process_summary": "Cashless via TPA at network hospital; pre-auth required. Intimate TPA within 24 hours of hospitalisation. Reimbursement claim documents within 15 days of discharge. Pre-acceptance medical check-up for entry above 50 yrs.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/new-india/new-india-mediclaim-policy__brochure.pdf",
+  "extraction_confidence_pct": 88
+}

@@ -1,0 +1,92 @@
+{
+  "policy_id": "new-india__janata-mediclaim-policy__wordings",
+  "insurer_name": "The New India Assurance Co. Ltd.",
+  "insurer_slug": "new-india",
+  "policy_name": "Janata Mediclaim Policy",
+  "policy_type": "individual",
+  "uin_code": "NIAHLIP25046V042425",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": ["self", "self+spouse+kids"],
+  "residency_requirement": "Indian resident; treatment in India only",
+  "sum_insured_options_inr": [50000, 75000],
+  "premium_payment_modes": ["annual", "monthly"],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "sub_limits_waiting_notes": "PED 36 months; specific disease waiting per IRDAI list; AYUSH up to 100% SI",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "General Ward room rent capped at Rs 450 per day; surgical sub-limits per schedule (e.g. cataract Rs 10,800; hysterectomy Rs 22,500; appendicectomy Rs 16,200; angiography Rs 12,000; CABG/angioplasty/knee replacement up to SI)"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "Listed procedures including angiography, angioplasty, hernia repair, lithotripsy, chemotherapy, radiotherapy, eye surgery, dialysis"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_text": "15% of Sum Insured",
+    "notes": "Treatment exceeding 3 days at home when hospitalisation not possible"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_text": "Up to 100% of Sum Insured for Ayurveda/Yoga/Naturopathy/Unani/Siddha/Homeopathy"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 1000,
+    "limit_text": "Actual or Rs 1,000 whichever less"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Hospitalisation expenses excluding cost of organ; within recipient's SI"
+  },
+  "maternity_coverage": {"covered": false},
+  "no_claim_bonus_pct": 0.0,
+  "room_rent_capping": "General Ward up to Rs 450 per day",
+  "disease_wise_sub_limits": {
+    "cataract": "Rs 10,800 per eye",
+    "hysterectomy": "Rs 22,500",
+    "appendicectomy": "Rs 16,200",
+    "cholecystectomy": "Rs 18,000",
+    "TURP": "Rs 18,000",
+    "hernia_inguinal": "Rs 16,200",
+    "hernia_ventral": "Rs 19,800",
+    "septoplasty": "Rs 9,000",
+    "haemorrhoidectomy": "Rs 8,100",
+    "tonsillectomy": "Rs 7,200",
+    "kidney_stone": "Rs 13,500",
+    "PID_discectomy": "Rs 31,500",
+    "mastectomy_radical": "Rs 36,000",
+    "home_care": "10% of SI above post-hospitalisation",
+    "domiciliary": "15% of SI",
+    "OPD_followup": "Rs 250 (SI 50k) / Rs 375 (SI 75k), once per policy"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-existing disease (within 36 months)",
+    "Specific waiting period diseases (24 months)",
+    "First 30 days (except accident)",
+    "Cosmetic/plastic surgery",
+    "Dental treatment (unless accident)",
+    "Maternity",
+    "Sterility and infertility",
+    "Treatment outside India",
+    "War / nuclear",
+    "Drug / alcohol abuse",
+    "Self-inflicted injury / suicide",
+    "Unproven treatments",
+    "Refractive error correction"
+  ],
+  "notable_exclusions_summary": "Basic, low-premium mediclaim covering only essential hospitalisation. Maternity excluded. Tight surgical sub-limit schedule (e.g. cataract Rs 10,800, hysterectomy Rs 22,500). General-ward room rent capped at Rs 450/day.",
+  "claim_process_summary": "Cashless via TPA at network hospital with pre-authorisation; reimbursement via document submission within prescribed period. Helpline and grievance via newindia.co.in. ABHA-enabled.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/new-india/janata-mediclaim-policy__wordings.pdf",
+  "extraction_confidence_pct": 84
+}

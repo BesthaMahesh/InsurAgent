@@ -1,0 +1,115 @@
+{
+  "policy_id": "star-health__star-hospital-cash__brochure",
+  "insurer_name": "Star Health and Allied Insurance Company Limited",
+  "insurer_slug": "star-health",
+  "policy_name": "Star Hospital Cash",
+  "policy_type": "other",
+  "uin_code": "SHAHLIP20046V011920",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": null,
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": null,
+  "pre_existing_disease_waiting_months": null,
+  "specific_disease_waiting_months": null,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 24,
+  "sub_limits_waiting_notes": "Hospital Cash is a daily lump-sum benefit, not indemnity. Child Birth Hospital Cash waiting period 24 months from first commencement.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Daily Hospital Cash on lump-sum basis (Rs 1,000 to Rs 3,000+/day)",
+    "notes": "Pays daily benefit for hospitalization due to illness/sickness/injury; supplements indemnity policies for incidental expenses (travel, food)."
+  },
+  "pre_hospitalization_days": null,
+  "post_hospitalization_days": null,
+  "day_care_treatments": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Only triggers on hospitalization with overnight stay."
+  },
+  "domiciliary_treatment": null,
+  "ayush_coverage": null,
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Child Birth Hospital Cash (Enhanced Plan only)",
+    "notes": "24-month waiting period from first commencement."
+  },
+  "newborn_coverage": null,
+  "organ_donor_expenses": null,
+  "ambulance_cover": null,
+  "critical_illness_cover": null,
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": null,
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": {
+    "convalescence_cash_benefit": "Enhanced Plan: 1 additional Hospital Cash amount if hospitalization beyond 5 consecutive days",
+    "child_birth_hospital_cash": "Enhanced Plan only; 24-month waiting"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": 14000,
+  "cashless_treatment_supported": false,
+  "permanent_exclusions": [
+    "Circumcision, Preputioplasty, Frenuloplasty, SMEGMA removal",
+    "Congenital External Conditions/Defects",
+    "Convalescence, general debility, rest cure, nutritional deficiency",
+    "Intentional self-injury",
+    "Substance abuse, drugs/alcohol, smoking, tobacco chewing",
+    "War, invasion, foreign enemy, warlike operations",
+    "Nuclear weapons/materials",
+    "Weight control / bariatric surgery / obesity",
+    "HIFU, Uterine Fibroid Embolisation, Balloon Sinoplasty, EECP, Chelation, Deep Brain Stimulation, HBOT, RFQMR, VAX-D",
+    "Stem Cell Therapy, Chondrocyte Implantation, PRP, intra-articular injections",
+    "Oral chemotherapy/immunotherapy (unless in-patient clinically indicated)",
+    "Cosmetic/Aesthetic treatment, erectile dysfunction, Change of Sex",
+    "Plastic surgery (unless accident or illness-related)",
+    "Inoculation/vaccination (except post-bite or therapeutic)",
+    "Dental treatment unless accident-related",
+    "Pregnancy/childbirth (except Child Birth Hospital Cash)",
+    "Sub-fertility, assisted conception",
+    "Sleep apnea, endocrine disorders",
+    "Cochlear implants"
+  ],
+  "temporary_exclusions": [
+    "Child Birth Hospital Cash: 24 months"
+  ],
+  "notable_exclusions_summary": "Daily cash payout supplement; excludes pregnancy/cosmetic/congenital/substance-abuse cases and a long list of specific procedures. Hospitalization with overnight stay required.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Submit claim form + discharge summary + hospital bill + KYC + NEFT. Helpline 044-69006900, toll-free 1800 425 2255.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Convalescence Cash Benefit (Enhanced Plan)",
+    "Child Birth Hospital Cash (Enhanced Plan)"
+  ],
+  "top_rider_examples": [
+    "Enhanced Plan with Convalescence + Child Birth Cash"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/star-health/star-hospital-cash__brochure.pdf",
+  "source_pdf_url": "https://www.starhealth.in",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 80
+}

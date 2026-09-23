@@ -1,0 +1,72 @@
+{
+  "policy_id": "aditya-birla__activ-secure-personal-accident-cancer-secure__wordings",
+  "insurer_name": "Aditya Birla Health Insurance Co. Limited",
+  "insurer_slug": "aditya-birla",
+  "policy_name": "Activ Secure (Personal Accident / Cancer Secure)",
+  "policy_type": "personal_accident",
+  "uin_code": "ADIPAIP21527V022021",
+  "min_entry_age_years": 5,
+  "max_entry_age_years": 70,
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 90,
+  "pre_existing_disease_waiting_months": 48,
+  "sum_insured_options_inr": [
+    500000,
+    1000000,
+    2500000,
+    5000000,
+    10000000,
+    25000000
+  ],
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_text": "Combined PA + Cancer Secure plan. Cancer cover: 25% SI Minor Stage, 100% SI Major Stage."
+  },
+  "inpatient_hospitalization": {
+    "covered": false,
+    "notes": "Benefit / fixed-payout plan, not indemnity"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Emergency ambulance benefit per accident"
+  },
+  "geographic_coverage": "worldwide",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "notes": "PA cover applies worldwide"
+  },
+  "cashless_treatment_supported": false,
+  "permanent_exclusions": [
+    "Accidents due to suicide / self-inflicted injury",
+    "Pre-existing disability or condition",
+    "War, nuclear, chemical, biological",
+    "Substance abuse, drug use, alcohol intoxication at time of accident",
+    "Adventure sports as professional",
+    "Aerial activities except as fare-paying passenger",
+    "Pregnancy / childbirth complications",
+    "VD / STD / HIV",
+    "Congenital external defects",
+    "Bacterial infections (except pyogenic infection through accidental wound)",
+    "Hernia",
+    "Cancer in situ / non-invasive / low-grade (TNM T1N0M0)",
+    "Self-harm, criminal acts"
+  ],
+  "notable_exclusions_summary": "Combined Personal Accident + Cancer fixed-benefit plan. PA benefits include: Accidental Death (100% SI), Permanent Total Disability (100% SI), Permanent Partial Disability (per schedule of percentages), Temporary Total Disability (weekly benefit). Cancer cover on diagnosis as fixed payout.",
+  "available_riders": [
+    "Loss of employment cover",
+    "Funeral expenses",
+    "Education fund / Orphan benefit",
+    "Emergency ambulance",
+    "Hospital cash daily allowance",
+    "Premium waiver"
+  ],
+  "claim_process_summary": "PA claims: submit FIR, post-mortem (death), disability certificate from civil surgeon, X-rays/MRI. Cancer claims: diagnosis report, histopathology. Lump-sum payment within 30 days of complete documentation.",
+  "source_pdf_path": "rag/corpus/aditya-birla/activ-secure-personal-accident-cancer-secure__wordings.pdf",
+  "extraction_confidence_pct": 68
+}

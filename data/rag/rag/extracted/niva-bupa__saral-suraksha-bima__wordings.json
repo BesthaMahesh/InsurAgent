@@ -1,0 +1,113 @@
+{
+  "policy_id": "niva-bupa__saral-suraksha-bima__wordings",
+  "insurer_name": "Niva Bupa Health Insurance Co. Ltd.",
+  "insurer_slug": "niva-bupa",
+  "policy_name": "Saral Suraksha Bima",
+  "policy_type": "personal_accident",
+  "uin_code": "NBHPAIP22153V012122",
+  "min_entry_age_years": null,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids", "self+spouse+kids+parents"],
+  "residency_requirement": "Indian resident only; treatment taken outside India not covered",
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": ["annual"],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": null,
+  "pre_existing_disease_waiting_months": null,
+  "specific_disease_waiting_months": null,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Standard IRDAI Saral Suraksha Bima (personal accident) product; waiting periods limited to optional hospitalization expenses section.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional cover (Section 3.2(b)) — Hospitalisation expenses due to Accident, up to 10% of base sum insured",
+    "notes": "Only payable on accident-related hospitalization; AYUSH covered without sub-limits; road ambulance up to Rs.2,000 per hospitalization"
+  },
+  "pre_hospitalization_days": null,
+  "post_hospitalization_days": null,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All day care treatments covered under the optional hospitalization expenses cover",
+    "notes": "Within the 10% of base SI cap"
+  },
+  "domiciliary_treatment": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Domiciliary hospitalization and OPD treatment explicitly excluded"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Covered without any sub-limits under hospitalization-due-to-accident cover",
+    "notes": "Within the 10% of base SI optional hospitalization cap"
+  },
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": null,
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2000,
+    "limit_text": "Maximum Rs. 2,000 per hospitalization (road ambulance)",
+    "notes": "Linked to admissible accident hospitalization"
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": null,
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "No mandatory co-payment under Saral Suraksha Bima base cover",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Treatment taken outside the geographical limits of India is excluded"
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "intentional self-injury, suicide or attempted suicide",
+    "under influence of intoxicating liquor, drugs or other intoxicants",
+    "aviation/ballooning other than as a fare-paying passenger in scheduled airlines",
+    "breach of law with criminal intent",
+    "war, invasion, civil war, rebellion, mutiny, military or usurped power",
+    "nuclear, chemical or biological terrorism and ionizing radiation",
+    "professional hazardous or adventure sports (mountaineering, scuba diving, sky diving, etc.)",
+    "domiciliary hospitalization and OPD treatment",
+    "treatment outside India",
+    "investigation and evaluation (Excl04)",
+    "dietary supplements without prescription (Excl14)"
+  ],
+  "temporary_exclusions": null,
+  "notable_exclusions_summary": "Standard IRDAI personal accident exclusions: no cover for self-inflicted injury, intoxication, professional adventure sports, war/nuclear risks, treatment outside India, and OPD/domiciliary care. The hospitalization-expenses optional cover is restricted to accident-related admissions only.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Standard IRDAI Saral Suraksha Bima claim process — intimate insurer/TPA, submit claim form with treating physician's certificate and hospital documents; cashless via network hospitals, reimbursement otherwise.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Temporary Total Disablement",
+    "Hospitalisation Expenses due to Accident",
+    "Education Grant"
+  ],
+  "top_rider_examples": [
+    "Temporary Total Disablement",
+    "Hospitalisation Expenses due to Accident"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/niva-bupa/saral-suraksha-bima__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 80.0
+}

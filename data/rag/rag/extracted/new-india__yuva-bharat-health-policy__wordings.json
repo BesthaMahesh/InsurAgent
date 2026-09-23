@@ -1,0 +1,82 @@
+{
+  "policy_id": "new-india__yuva-bharat-health-policy__wordings",
+  "insurer_name": "The New India Assurance Co. Ltd.",
+  "insurer_slug": "new-india",
+  "policy_name": "Yuva Bharat Health Policy",
+  "policy_type": "family_floater",
+  "uin_code": "NIAHLIP22025V022223",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 45,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids"],
+  "residency_requirement": "Indian resident; product targeted at younger insured (Yuva = youth)",
+  "premium_payment_modes": ["annual", "monthly"],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "maternity_waiting_months": 24,
+  "sub_limits_waiting_notes": "Plan-tiered: Base (3.1-3.16), Gold (Critical Care, Personal Accident, Air Ambulance, Auto Top-Up), Platinum (Maternity, Infertility, Well Baby, Birth Right Benefit)",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "Indemnity to full Sum Insured; reinstatement of SI in Base plan; auto top-up in Gold/Platinum"
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "All listed day care procedures plus 12 Modern Treatments"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_text": "Up to 100% of Sum Insured for Ayurveda / Yoga / Naturopathy / Homeopathy / Siddha / Unani"
+  },
+  "ambulance_cover": {"covered": true, "notes": "Road ambulance in Base; Air ambulance in Gold/Platinum"},
+  "organ_donor_expenses": {"covered": true},
+  "maternity_coverage": {
+    "covered": true,
+    "notes": "Platinum plan only; enhanced maternity limit at additional premium; includes well baby cover and birth right benefit"
+  },
+  "newborn_coverage": {"covered": true, "notes": "Covered in Base; Well Baby cover under Platinum"},
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_text": "Gold/Platinum only — 15 critical illnesses (cancer, MI, CABG, valve surgery, coma, kidney failure, stroke, organ transplant, paralysis, MND, MS, third-degree burns, major head trauma, end-stage lung failure, end-stage liver failure)"
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_text": "Reinstatement of Sum Insured included in Base plan"
+  },
+  "no_claim_bonus_pct": 25.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {"covered": true, "limit_text": "Health check-up cost included in Base plan"},
+  "room_rent_capping": "No room rent capping (premium youth product)",
+  "icu_capping": "No cap",
+  "copayment_pct": 0.0,
+  "deductible_amount_inr": 0,
+  "available_riders": ["Personal Accident", "Critical Care", "Air Ambulance", "Auto Top-Up", "Maternity", "Infertility", "Well Baby", "Birth Right Benefit"],
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "PED (within 36 months)",
+    "First 30 days (except accident)",
+    "Specific waiting diseases",
+    "Cosmetic / plastic surgery",
+    "Change of gender",
+    "Hazardous adventure sports (professional)",
+    "Drug / alcohol abuse",
+    "War / nuclear",
+    "Unproven treatments",
+    "Refractive error <7.5D",
+    "Spectacles, contact lenses, hearing aids",
+    "Treatment outside India",
+    "Self-inflicted injury / suicide"
+  ],
+  "notable_exclusions_summary": "Plan-tiered product (Base / Gold / Platinum). Maternity and infertility only on Platinum. Critical illness only on Gold/Platinum. Hazardous sports covered (Base+). Includes medical second opinion and health check-up.",
+  "claim_process_summary": "Cashless via TPA at network hospital. Pre-auth within 1 hour, final discharge within 3 hours. Reimbursement document submission post-discharge.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/new-india/yuva-bharat-health-policy__wordings.pdf",
+  "extraction_confidence_pct": 85
+}

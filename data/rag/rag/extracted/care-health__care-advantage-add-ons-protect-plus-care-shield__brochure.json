@@ -1,0 +1,71 @@
+{
+  "policy_id": "care-health__care-advantage-add-ons-protect-plus-care-shield__brochure",
+  "insurer_name": "Care Health Insurance Limited",
+  "insurer_slug": "care-health",
+  "policy_name": "Care Advantage + add-ons (Protect Plus + Care Shield)",
+  "policy_type": "family_floater",
+  "uin_code": "CHIHLIP26049V042526",
+  "sum_insured_options_inr": [
+    2500000,
+    5000000,
+    10000000,
+    20000000,
+    30000000,
+    60000000
+  ],
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "ayush_coverage": {
+    "covered": true,
+    "limit_text": "Up to Sum Insured."
+  },
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "Up to Sum Insured."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_text": "Up to Sum Insured. Air ambulance up to Rs 5 lakhs as optional cover."
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_text": "Up to Sum Insured."
+  },
+  "no_claim_bonus_pct": 10,
+  "no_claim_bonus_cap_pct": 50,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_text": "Automatic recharge up to SI; available for unrelated or same illness. Unlimited recharge optional."
+  },
+  "room_rent_capping": "No sub-limit; single private room category as optional add-on.",
+  "icu_capping": "No sub-limit",
+  "copayment_pct": 20,
+  "copayment_trigger_notes": "20% co-payment for age 61 and above (optional cover) and for non-listed hospitals under Smart Select.",
+  "geographic_coverage": "worldwide_ex_usa_canada",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "notes": "Protect Plus add-on offers global coverage excluding USA/Canada/India for planned hospitalization; option for worldwide ex-India incl. emergency."
+  },
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_text": "Annual health check-up (optional)."
+  },
+  "available_riders": [
+    "Protect Plus (Global Coverage)",
+    "Care OPD",
+    "Care Advanced (Claim Shield, NCB Shield, Inflation Shield)",
+    "Air Ambulance",
+    "Smart Select",
+    "Reduction in PED wait period",
+    "Annual Health Check-up",
+    "Room Rent Modification",
+    "Unlimited Automatic Recharge",
+    "Unlimited E-consultations"
+  ],
+  "cashless_treatment_supported": true,
+  "source_pdf_path": "rag/corpus/care-health/care-advantage-add-ons-protect-plus-care-shield__brochure.pdf",
+  "extraction_confidence_pct": 80
+}

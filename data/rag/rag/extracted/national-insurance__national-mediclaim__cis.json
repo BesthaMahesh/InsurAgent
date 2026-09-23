@@ -1,0 +1,175 @@
+{
+  "policy_id": "national-insurance__national-mediclaim__cis",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Mediclaim Policy (Individual)",
+  "policy_type": "individual",
+  "uin_code": "NICHLIP25036V082425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents",
+    "custom"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    100000,
+    200000,
+    300000,
+    400000,
+    500000,
+    600000,
+    700000,
+    800000,
+    900000,
+    1000000
+  ],
+  "premium_payment_modes": [
+    "quarterly",
+    "half_yearly",
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "90 days for 3 lifestyle conditions",
+    "1 year for 5 ENT",
+    "2 years for 20 procedures",
+    "3 years for 4 procedures"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Standalone individual indemnity policy (SI Rs 1-10L). Reinstatement of Basic SI available for SI >= Rs 6L. Each member can have separate SI.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Room up to 25% SI per illness (1% SI/day, max Rs 10,000/day); ICU 2% SI/day, max Rs 20,000/day",
+    "notes": "Proportionate clause applies if room rent exceeds limit."
+  },
+  "pre_hospitalization_days": 45,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Day care procedures (less than 24 hours hospitalisation)",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Domiciliary and OPD excluded."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH inpatient up to SI",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Maternity excluded (Excl 18)."
+  },
+  "newborn_coverage": null,
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor hospitalisation expenses",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2000,
+    "limit_text": "1% of SI per period subject to max Rs. 2,000",
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Reinstatement of Basic SI once per year (available for SI Rs 6L+)",
+    "notes": "Reinstated SI applies to subsequent hospitalisations only; lapses if not used. Available only on SI >= Rs 6L."
+  },
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Preventive Health Check Up at end of 4 continuous claim-free years",
+    "notes": null
+  },
+  "room_rent_capping": "1% of SI per day, max Rs. 10,000/day; total per illness 25% of SI",
+  "icu_capping": "2% of SI per day, max Rs. 20,000/day",
+  "copayment_pct": 10.0,
+  "copayment_trigger_notes": "Optional: 10% co-pay for 12.5% discount OR 20% co-pay for 25% discount.",
+  "disease_wise_sub_limits": {
+    "medical_practitioners_fees": "Up to 25% of SI per illness",
+    "other_expenses": "Up to 50% of SI per illness",
+    "dialysis_chemo_radio": "Up to 50% of SI or PPN package rate",
+    "modern_treatments": "Up to 25% of SI per treatment",
+    "hazardous_sports": "Up to 25% of SI",
+    "morbid_obesity": "Per policy clause (3-year waiting)"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Cosmetic / Plastic Surgery (Excl 08)",
+    "Obesity / Weight Control (Excl 06)",
+    "Change-of-Gender (Excl 07)",
+    "Hazardous Sports (Excl 09)",
+    "Breach of Law (Excl 10)",
+    "Drug / Alcohol Abuse (Excl 12)",
+    "Non Medical Admissions (Excl 13)",
+    "Vitamins / Tonics (Excl 14)",
+    "Refractive Error (Excl 15)",
+    "Unproven Treatments (Excl 16)",
+    "Birth control / Sterility / Infertility (Excl 17)",
+    "Maternity (Excl 18)",
+    "Hormone Replacement Therapy",
+    "General Debility / Congenital External",
+    "Self-Inflicted Injury",
+    "Stem Cell Surgery",
+    "Circumcision",
+    "Vaccination",
+    "Massages / Steam Bath",
+    "Dental",
+    "Domiciliary / OPD",
+    "Spectacles / Hearing Aid",
+    "War",
+    "Radioactivity",
+    "Treatment outside India"
+  ],
+  "temporary_exclusions": [
+    "30 days initial",
+    "90 days for 3 lifestyle conditions",
+    "1 year for 5 ENT",
+    "2 years for 20 procedures",
+    "3 years for 4 procedures",
+    "PED 36 months"
+  ],
+  "notable_exclusions_summary": "Granular sub-limits: room/doctor fees/other expenses each capped at % of SI. Pre-hosp 45 days; post 60 days. Reinstatement of SI only for SI >= Rs 6L. Optional 10/20% copay for premium discount.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA at network/PPN with 1-hour pre-auth. Reimbursement within 30 days. 15-day claim decision; 45 if investigation.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": null,
+  "top_rider_examples": null,
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-mediclaim__cis.pdf",
+  "source_pdf_url": "https://nationalinsurance.nic.co.in/en/health-insurance",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 92
+}

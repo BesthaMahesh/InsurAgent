@@ -1,0 +1,166 @@
+{
+  "policy_id": "icici-lombard__health-shield-360-retail__cis",
+  "insurer_name": "ICICI Lombard General Insurance Company Limited",
+  "insurer_slug": "icici-lombard",
+  "policy_name": "Health Shield 360 Retail",
+  "policy_type": "family_floater",
+  "uin_code": "ICIHLIP23165V012223",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids", "self+spouse+kids+parents"],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [500000, 1000000, 1500000, 2000000, 2500000, 5000000, 10000000, 20000000, 50000000],
+  "premium_payment_modes": ["annual"],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 24,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Hypertension (90-day wait unless disclosed)",
+    "Diabetes (90-day wait unless disclosed)",
+    "Cardiac conditions (90-day wait unless disclosed)",
+    "Cataract", "Hernia", "Hysterectomy", "Joint replacement", "ENT surgeries"
+  ],
+  "maternity_waiting_months": 24,
+  "sub_limits_waiting_notes": "PED 12 or 24 months (plan opted). Specific disease 24 months. Hypertension/diabetes/cardiac 90-day unless disclosed. Maternity & New Born Baby 24 or 36 months (plan opted); both insured person and spouse must be covered. BeFit cover 30-day waiting.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured plus Guaranteed Cumulative Bonus, Super NCB, SI Protector",
+    "notes": null
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All day care procedures",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to SI for in-patient AYUSH",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional Maternity Cover; 24-36 month waiting depending on plan; requires both insured and spouse on policy",
+    "notes": null
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "New Born Baby cover linked to Maternity Cover; same waiting period",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor hospitalisation expenses covered",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Road ambulance + Air ambulance",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional Critical Illness add-on",
+    "notes": null
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Reset Benefit (unlimited reset add-on)",
+    "notes": null
+  },
+  "no_claim_bonus_pct": 10.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Preventive health check-up available",
+    "notes": "BeFit cover with 30-day waiting"
+  },
+  "room_rent_capping": "No cap (subject to variant)",
+  "icu_capping": "No cap",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "Voluntary co-pay optional",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Worldwide Cover add-on available",
+    "notes": null
+  },
+  "network_hospital_count": 6000,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation (Excl04)",
+    "Rest cure / rehabilitation",
+    "Cosmetic surgery",
+    "Sterility and infertility",
+    "Unproven treatment",
+    "Dental treatment",
+    "Criminal acts",
+    "Refractive error correction, hearing impairment",
+    "Substance abuse / self-inflicted injuries / STDs",
+    "Treatment by family-member medical practitioner",
+    "Hazardous sports, war, civil war, breach of law",
+    "Non-medical excluded expenses (IRDAI list)"
+  ],
+  "temporary_exclusions": [
+    "12/24-month PED waiting (plan-dependent)",
+    "24-month specific disease waiting",
+    "90-day waiting on undisclosed hypertension/diabetes/cardiac",
+    "30-day initial waiting",
+    "24/36-month Maternity & New Born Baby waiting (plan-dependent)",
+    "30-day BeFit add-on waiting"
+  ],
+  "notable_exclusions_summary": "Plan-dependent PED waiting (12 or 24 months — premium variant offers 12-month). Maternity and New Born are optional with 24-36 month waiting. Standard IRDAI exclusions plus 90-day waits on undisclosed lifestyle conditions. BeFit OPD/wellness cover has 30-day own waiting.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via 6000+ network hospitals; Claim Service Guarantee.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Maternity Cover",
+    "New Born Baby Cover",
+    "Critical Illness",
+    "Personal Accident",
+    "BeFit (OPD/Wellness)",
+    "Sum Insured Protector",
+    "Super No Claim Bonus",
+    "Worldwide Cover",
+    "Hospital Daily Cash",
+    "Nursing at Home",
+    "Compassionate Visit"
+  ],
+  "top_rider_examples": [
+    "Maternity & New Born Baby",
+    "BeFit OPD/Wellness",
+    "Critical Illness",
+    "Super No Claim Bonus"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/icici-lombard/health-shield-360-retail__cis.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 86.0
+}

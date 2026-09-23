@@ -1,0 +1,138 @@
+{
+  "policy_id": "aditya-birla__activ-secure-personal-accident-cancer-secure__wordings",
+  "insurer_name": "Aditya Birla Health Insurance",
+  "insurer_slug": "aditya-birla",
+  "policy_name": "Activ Secure",
+  "policy_type": "other",
+  "uin_code": "ADIHLIP18076V011718",
+  "min_entry_age_years": null,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": null,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": null,
+  "residency_requirement": null,
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": [
+    "annual",
+    "half_yearly",
+    "quarterly",
+    "monthly"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": null,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 48,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": null,
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "restoration_benefit": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "room_rent_capping": "no_capping",
+  "icu_capping": "no_capping",
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": 0,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "congenital anomalies",
+    "self-inflicted injuries",
+    "war-related injuries",
+    "nuclear radiation",
+    "hazardous sports",
+    "pre-existing diseases during waiting period"
+  ],
+  "temporary_exclusions": [
+    "pre-existing diseases (waiting period applies)",
+    "dental treatments (unless due to accident)",
+    "cosmetic surgeries",
+    "vision correction (eyeglasses, contact lenses)",
+    "infertility treatments",
+    "alternative medicine (unless Ayush covered)"
+  ],
+  "notable_exclusions_summary": "Congenital anomalies, pre-existing diseases during waiting period, cosmetic procedures, dental treatments (unless accident-related), infertility, and hazardous activities are excluded.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Claim intimation must be made through notified channels; cashless facility available at network hospitals upon pre-authorization; reimbursement requires submission of original bills and medical records.",
+  "tat_cashless_authorization_hours": 48.0,
+  "available_riders": null,
+  "top_rider_examples": null,
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "aditya-birla__activ-secure-personal-accident-cancer-secure__wordings",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 90.0
+}

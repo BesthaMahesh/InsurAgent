@@ -1,0 +1,139 @@
+{
+  "policy_id": "oriental-insurance__happy-family-floater__wordings",
+  "insurer_name": "The Oriental Insurance Company Limited",
+  "insurer_slug": "oriental-insurance",
+  "policy_name": "Happy Family Floater Policy 2021",
+  "policy_type": "family_floater",
+  "uin_code": "OICHLIP22010V042223",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents",
+    "custom"
+  ],
+  "residency_requirement": "Indian resident; treatment in India only",
+  "sum_insured_options_inr": [
+    100000,
+    200000,
+    300000,
+    400000,
+    500000,
+    750000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    3000000,
+    4000000,
+    5000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 48,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Plan-tiered policy (Silver, Gold, Diamond, Platinum); maternity in Diamond/Platinum only",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured (plan-dependent), subject to room-rent and ICU limits per schedule",
+    "notes": "Modern treatments included up to specified amount per schedule"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Listed day care procedures",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Where hospitalization is not feasible",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Inpatient care under AYUSH systems in an AYUSH hospital",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Diamond and Platinum plans only",
+    "notes": null
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Diamond and Platinum plans only",
+    "notes": null
+  },
+  "organ_donor_expenses": null,
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Registered ambulance service charges, payable only if hospitalization is admissible",
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "Plan-dependent; refer to room rent limit specified in policy schedule",
+  "icu_capping": "Plan-dependent; refer to ICU limit specified in policy schedule",
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Plan-tier dependent; standard IRDAI co-payment definition applies",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "investigation and evaluation (Excl04)",
+    "obesity/weight control (Excl06)",
+    "change-of-gender treatments (Excl07)",
+    "cosmetic surgery (Excl08) unless reconstructive",
+    "hazardous or adventure sports (Excl09)",
+    "breach of law (Excl10)",
+    "alcohol/drug/substance abuse (Excl12)",
+    "external congenital anomalies",
+    "unproven treatments (Excl16)",
+    "treatment outside India"
+  ],
+  "temporary_exclusions": [
+    "pre-existing diseases (48 months)",
+    "specific listed diseases (24 months)",
+    "initial 30 days for non-accident illness"
+  ],
+  "notable_exclusions_summary": "Standard IRDAI family-floater exclusions. Maternity available in higher plan tiers only. Treatment outside India is excluded.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA if opted; reimbursement via policy issuing office. Hospital cashless network listed at orientalinsurance.org.in.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Personal Accident cover (optional)"
+  ],
+  "top_rider_examples": [
+    "Personal Accident"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/oriental-insurance/happy-family-floater__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 76.0
+}

@@ -1,0 +1,16 @@
+{
+  "policy_id": "care-health__care-supreme__wordings",
+  "insurer_name": "Care Health Insurance Limited",
+  "insurer_slug": "care-health",
+  "policy_name": "Care Supreme",
+  "policy_type": "family_floater",
+  "uin_code": "CHIHLIP23128V012223",
+  "free_look_period_days": 30,
+  "ayush_coverage": {"covered": true, "notes": "Hospitalization under Ayurveda, Yoga, Naturopathy, Unani, Siddha, Homeopathy systems."},
+  "day_care_treatments": {"covered": true},
+  "domiciliary_treatment": {"covered": true},
+  "cashless_treatment_supported": true,
+  "geographic_coverage": "pan_india",
+  "source_pdf_path": "rag/corpus/care-health/care-supreme__wordings.pdf",
+  "extraction_confidence_pct": 60
+}

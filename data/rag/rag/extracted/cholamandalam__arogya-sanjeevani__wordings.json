@@ -1,0 +1,69 @@
+{
+  "policy_id": "cholamandalam__arogya-sanjeevani__wordings",
+  "insurer_name": "Cholamandalam MS General Insurance Company Limited",
+  "insurer_slug": "cholamandalam",
+  "policy_name": "Arogya Sanjeevani Policy, Chola MS",
+  "policy_type": "family_floater",
+  "uin_code": "CHOHLIP20035V021920",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents",
+    "custom"
+  ],
+  "sum_insured_options_inr": [
+    100000,
+    200000,
+    300000,
+    400000,
+    500000,
+    600000,
+    700000,
+    800000,
+    900000,
+    1000000
+  ],
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 36,
+  "initial_waiting_period_days": 30,
+  "ayush_coverage": {
+    "covered": true,
+    "limit_text": "Up to Sum Insured for inpatient and day care AYUSH treatment."
+  },
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "All day care treatments covered."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2000,
+    "limit_text": "Maximum Rs 2,000 per hospitalization."
+  },
+  "room_rent_capping": "Up to 2% of Sum Insured per day, subject to maximum Rs 5,000/day.",
+  "icu_capping": "Up to 5% of Sum Insured per day, subject to maximum Rs 10,000/day.",
+  "copayment_pct": 5,
+  "copayment_trigger_notes": "5% co-payment on all admissible claims (standard IRDAI Arogya Sanjeevani product feature).",
+  "disease_wise_sub_limits": {
+    "cataract": "25% of Sum Insured or Rs 40,000 per eye (whichever is lower)"
+  },
+  "no_claim_bonus_pct": 5,
+  "no_claim_bonus_cap_pct": 50,
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "free_look_period_days": 30,
+  "grace_period_days": 30,
+  "available_riders": [
+    "Flexi OP Care - Add On Cover",
+    "Home Care Treatment - Add on Cover"
+  ],
+  "claim_process_summary": "Cashless via network providers with TPA. Reimbursement available for non-network. Settlement under IRDAI claim regulations.",
+  "source_pdf_path": "rag/corpus/cholamandalam/arogya-sanjeevani__wordings.pdf",
+  "extraction_confidence_pct": 92
+}

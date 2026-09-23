@@ -1,0 +1,15 @@
+{
+  "policy_id": "care-health__ultimate-care__wordings",
+  "insurer_name": "Care Health Insurance Limited",
+  "insurer_slug": "care-health",
+  "policy_name": "Ultimate Care",
+  "policy_type": "family_floater",
+  "uin_code": "CHIHLIP25044V012425",
+  "free_look_period_days": 30,
+  "ayush_coverage": {"covered": true, "notes": "Hospitalization under Ayurveda, Yoga, Naturopathy, Unani, Siddha, Homeopathy."},
+  "day_care_treatments": {"covered": true},
+  "cashless_treatment_supported": true,
+  "geographic_coverage": "pan_india",
+  "source_pdf_path": "rag/corpus/care-health/ultimate-care__wordings.pdf",
+  "extraction_confidence_pct": 55
+}

@@ -1,0 +1,122 @@
+{
+  "policy_id": "national-insurance__national-hospi-cash__prospectus",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Hospi Cash",
+  "policy_type": "other",
+  "uin_code": "NICHLIP25046V012425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    500,
+    1000,
+    2000,
+    3000,
+    5000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Policy can be issued for 1/2/3 years. Discounts: 10% direct sale; 2.5% for combined with indemnity Retail; 15% staff. Floater requires minimum 2 insured persons.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Illness 100% / Accident 150% / ICU 200% / AYUSH 100% of Daily Cash Amount per 24 hours",
+    "notes": "Only one sub-section applies per hospitalisation (highest eligible)."
+  },
+  "pre_hospitalization_days": null,
+  "post_hospitalization_days": null,
+  "day_care_treatments": null,
+  "domiciliary_treatment": null,
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "100% Daily Cash for 24-hour AYUSH Hospital stay",
+    "notes": null
+  },
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": null,
+  "ambulance_cover": null,
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional Cover: 100% Daily Cash + 450% lumpsum (if >10 days post-Time Excess) for 37 listed CIs",
+    "notes": null
+  },
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": null,
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": {
+    "convalescence_benefit": "500% lumpsum after 10 days continuous hospitalisation post-Time Excess (once/year)",
+    "funeral_grant": "200% Daily Cash on death during hospitalisation in India"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Worldwide Hospi Cash optional: 200% Daily Cash, max 10 days/year",
+    "notes": "Only on Rs 3000 and Rs 5000 Daily Cash options."
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": false,
+  "permanent_exclusions": [
+    "Cosmetic surgery",
+    "Obesity",
+    "Hazardous Sports",
+    "Drug abuse",
+    "Maternity",
+    "Sterility / Infertility",
+    "Self-inflicted injury",
+    "Dental",
+    "Domiciliary / OPD",
+    "War",
+    "Radioactivity",
+    "Treatment outside India (except Worldwide Hospi Cash optional)"
+  ],
+  "temporary_exclusions": [
+    "30 days initial",
+    "90 days / 1-3 years specific diseases",
+    "PED 36 months",
+    "Time Excess deductible 1-2 days"
+  ],
+  "notable_exclusions_summary": "Defined benefit hospital cash policy. Pays fixed daily amount. Time Excess of 1-2 days acts as deductible. Indemnity Period 30/60 days/year.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Direct claim to Company/TPA. 30-day submission window. 15-day claim settlement window.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Critical Illness Hospi Cash",
+    "Worldwide Hospi Cash"
+  ],
+  "top_rider_examples": [
+    "Critical Illness Hospi Cash"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-hospi-cash__prospectus.pdf",
+  "source_pdf_url": "https://nationalinsurance.nic.co.in/en/health-insurance",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 90
+}

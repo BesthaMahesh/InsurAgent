@@ -1,0 +1,177 @@
+{
+  "policy_id": "tata-aig__medicare-premier__wordings",
+  "insurer_name": "Tata AIG General Insurance Company Limited",
+  "insurer_slug": "tata-aig",
+  "policy_name": "MediCare Premier",
+  "policy_type": "family_floater",
+  "uin_code": "TATHLIP26052V052526",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": null,
+  "sum_insured_options_inr": [
+    5000000,
+    7500000,
+    10000000,
+    20000000,
+    30000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 24,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 36,
+  "sub_limits_waiting_notes": "Maternity Cover available after 3 years of continuous coverage. PED waiting 24 months.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured (hospitalization > 24 hours)",
+    "notes": "Indemnity + Benefit hybrid."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 200,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "In-Patient or Day Care AYUSH up to Sum Insured",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": 100000,
+    "limit_text": "Rs 50,000 (SI <=50L) up to Rs 1,00,000 (SI 75L-3Cr); girl child Rs 60,000-1,20,000",
+    "notes": "After 3 years continuous coverage."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": 15000,
+    "limit_text": "First Year Vaccinations Rs 10,000 (boy) / Rs 15,000 (girl) lifetime per child",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 30000,
+    "limit_text": "Rs 5,000 to Rs 30,000 per hospitalization by SI tier; plus Emergency Air Ambulance Cover",
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Restore Benefit - once during Policy year",
+    "notes": null
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Health Check-up over and above Sum Insured",
+    "notes": null
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": {
+    "delivery_complications": "Rs 10,000 (SI <=50L); Rs 25,000 (SI 75L-3Cr)",
+    "first_year_vaccinations": "Rs 10,000 boy / Rs 15,000 girl per child (lifetime)",
+    "hearing_aid": "50% of actual or Rs 10,000 per policy",
+    "daily_cash_shared_accom_child": "0.25% of base SI, max Rs 2,000/day",
+    "prolonged_hospitalisation": "1% of SI (over and above SI)",
+    "accidental_death_benefit": "100% of base SI, max Rs 50L (over and above SI)",
+    "home_care_treatment": "Applicable only for SI Rs 75L+",
+    "opd_treatment_and_dental": "Per Schedule",
+    "high_end_diagnostics": "Per Schedule",
+    "global_cover_planned_hosp": "Up to Sum Insured"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Global Cover for Planned Hospitalisation",
+    "notes": "Emergency Air Ambulance separately covered."
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Alcoholism (Code Excl 12)",
+    "Obesity (Code Excl 06)",
+    "Investigation & Evaluation (Code Excl 04)",
+    "Sterility/Infertility (Code Excl 17)",
+    "Refractive Error (Code Excl 15)",
+    "Change of Gender (Code Excl 07)",
+    "Cosmetic / Plastic Surgery (Code Excl 08)",
+    "Rest cure, rehabilitation, respite care (Code Excl 05)",
+    "Unproven treatments (Code Excl 16)",
+    "Hazardous/Adventure Sports (Code Excl 09)",
+    "Breach of Law (Code Excl 10)",
+    "Excluded Providers (Code Excl 11)",
+    "Dietary supplements (Code Excl 14)",
+    "Maternity excluded prior to 3 years continuous coverage",
+    "War / Nuclear / Chemical / Biological",
+    "Naval/military operations",
+    "Intentional self-injury"
+  ],
+  "temporary_exclusions": [
+    "Initial waiting: 30 days",
+    "Specified disease/procedure: 24 months",
+    "Pre-existing diseases: 24 months",
+    "Maternity: 36 months"
+  ],
+  "notable_exclusions_summary": "High-SI premium product with low PED waiting (24 months), global cover, full maternity after 3 years, OPD and prolonged hospitalisation benefits.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless: notify 48 hrs pre-planned / 24 hrs post-emergency. Reimbursement: intimate within 7 days, submit docs within 15 days. 24x7 support 022 6489 8282.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Wellness Services",
+    "Wellness Program",
+    "Consumables Benefit",
+    "OPD Treatment",
+    "Home Care Treatment (SI 75L+)",
+    "Accidental Death Benefit"
+  ],
+  "top_rider_examples": [
+    "OPD Cover",
+    "Global Cover",
+    "Home Care"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/tata-aig/medicare-premier__wordings.pdf",
+  "source_pdf_url": "https://www.tataaig.com",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 88
+}

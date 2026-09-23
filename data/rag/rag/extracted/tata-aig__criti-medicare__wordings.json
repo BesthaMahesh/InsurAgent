@@ -1,0 +1,136 @@
+{
+  "policy_id": "tata-aig__criti-medicare__wordings",
+  "insurer_name": "Tata AIG General Insurance Company Limited",
+  "insurer_slug": "tata-aig",
+  "policy_name": "Criti-MediCare",
+  "policy_type": "critical_illness",
+  "uin_code": "TATHLIP22176V012122",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": null,
+  "sum_insured_options_inr": [
+    1000000,
+    2000000,
+    5000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": null,
+  "pre_existing_disease_waiting_months": 48,
+  "specific_disease_waiting_months": null,
+  "specific_diseases_listed": [
+    "Cancer of Specified Severity",
+    "Critical Illness Category A/B/C (Multi-Pay)"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "90-day initial waiting from commencement; survival period as specified in Schedule. PED waiting 48 months. Multi-pay 60-day waiting between successive claims.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "In-Patient Treatment (Section B1) covered",
+    "notes": null
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Day Care Treatment (Section B4)",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "When patient cannot be moved or no hospital room available."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": null,
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 5000,
+    "limit_text": "Rs 5,000 per hospitalization",
+    "notes": "Either Transportation Expenses (B11) or Ambulance Cover (B12) can be claimed."
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Multi-Pay Feature across 3 categories (A/B/C); up to 3 claims over policy lifetime",
+    "notes": "Lump-sum benefit on diagnosis with survival period. Category A includes Cancer; Categories B/C cover other listed CIs. 60-day waiting between claims; only one claim per category. Critical Illness coverage ceases after 3 admissible claims for that insured."
+  },
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "Per policy schedule",
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": {
+    "palliative_care_post_cancer": "Up to Rs 5 lakhs per policy year (supersedes Excl 05)",
+    "psychiatric_counseling": "Per schedule",
+    "high_end_diagnostics": "Reasonable and Customary charges"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Diseases (Code Excl 01) until 48 months",
+    "Investigation & Evaluation only (Code Excl 04)",
+    "Rest cure, rehabilitation, respite care (Code Excl 05, except Palliative Care for Cancer)",
+    "Obesity/Weight Control",
+    "Change of Gender",
+    "Cosmetic / Plastic Surgery",
+    "Hazardous Activities",
+    "Substance Abuse",
+    "Self-inflicted injury",
+    "Unproven/Experimental treatment",
+    "War/Nuclear risks",
+    "Breach of Law"
+  ],
+  "temporary_exclusions": [
+    "Pre-existing diseases: 48 months",
+    "Initial 90-day waiting from commencement",
+    "60-day waiting between Multi-Pay CI claims"
+  ],
+  "notable_exclusions_summary": "Critical illness plan with multi-pay feature (up to 3 claims across 3 categories). PED 48-month waiting. Standard IRDAI permanent exclusions. Survival period required after CI diagnosis.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via Tata AIG network; claim via toll-free 1800 266 7780 (senior citizens 1800 22 9966); diagnosis must be histologically supported.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Palliative Care",
+    "Psychiatric Counseling",
+    "High End Diagnostics",
+    "Home Care"
+  ],
+  "top_rider_examples": [
+    "Multi-Pay Critical Illness",
+    "Palliative Care for Cancer"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/tata-aig/criti-medicare__wordings.pdf",
+  "source_pdf_url": "https://www.tataaig.com",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 80
+}

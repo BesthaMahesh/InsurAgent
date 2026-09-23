@@ -1,0 +1,194 @@
+{
+  "policy_id": "royal-sundaram__multiplier__brochure",
+  "insurer_name": "Royal Sundaram General Insurance Co. Limited",
+  "insurer_slug": "royal-sundaram",
+  "policy_name": "Multiplier",
+  "policy_type": "family_floater",
+  "uin_code": "RSAHLIP23030V012223",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    500000,
+    750000,
+    1000000,
+    1500000,
+    2000000,
+    2500000
+  ],
+  "premium_payment_modes": [
+    "monthly",
+    "quarterly",
+    "half_yearly",
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Cataract",
+    "Stones in biliary and urinary systems",
+    "Hernia/Hydrocele",
+    "Hysterectomy for any benign disorder",
+    "Lumps/cysts/nodules/polyps/internal tumours",
+    "Gastric and Duodenal Ulcers",
+    "Surgery on tonsils/adenoids",
+    "Osteoarthrosis/Arthritis/Gout/Rheumatism/Spondylosis/Spondylitis/Intervertebral Disc Prolapse",
+    "Fissure/Fistula/Haemorrhoid",
+    "Sinusitis/Deviated Nasal Septum/Tympanoplasty/Chronic Suppurative Otitis Media",
+    "Benign Prostatic Hypertrophy",
+    "Knee/Hip Joint replacement",
+    "Dilatation and Curettage",
+    "Varicose veins",
+    "Dysfunctional Uterine Bleeding/Fibroids/Prolapse Uterus/Endometriosis",
+    "Chronic Renal Failure or end stage Renal Failure or Chronic liver failure"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "PED Coverage: 50% co-pay up to Rs.2 lakhs in 2nd & 3rd year (during 36-month PED waiting period). Not for 16 specified illnesses.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Covered up to Sum Insured. 4X Multiplier benefit for Life Threatening Conditions (up to 11X SI total with NCB+Reload)",
+    "notes": "No room rent capping."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All Day Care Treatments covered up to SI; pre/post 30 days each",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Covered up to SI",
+    "notes": "Pre/post hospitalization 60/90 days respectively."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Maternity not covered under Multiplier base plan."
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Covered up to Sum Insured",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 5000,
+    "limit_text": "Up to Rs.5,000 per hospitalization (includes app-based cab cover)",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Second Medical Opinion for 22 specified critical illnesses; 4X Multiplier Benefit available in Life Threatening Conditions (4 times in Policy lifetime)",
+    "notes": "Includes Cancer, Heart Attack, CABG, Heart Valve, Coma, Kidney Failure, Stroke, Major Organ Transplant, Paralysis, Motor Neuron, Multiple Sclerosis + 11 additional CIs."
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Flexi Reload up to 100% of Base SI from 2nd claim onwards; available even for same illness same insured",
+    "notes": "Once per policy year. Not for first claim."
+  },
+  "no_claim_bonus_pct": 20.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Annual",
+    "notes": "Over and above Base SI."
+  },
+  "room_rent_capping": "No Room Rent Capping",
+  "icu_capping": "No cap",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "Voluntary Co-payment options 5%, 10%, 15%, 20%. Zone 2 priced 20% lower than Zone 1.",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Domestic only; emergency domestic evacuation covered up to Rs.100,000."
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation",
+    "Rest Cure, Rehabilitation and Respite Care",
+    "Obesity/Weight Control",
+    "Change-of-Gender Treatments",
+    "Cosmetic or Plastic Surgery",
+    "Hazardous or Adventure Sports",
+    "Breach of Law",
+    "Excluded Providers",
+    "Treatment for Alcoholism/Drug/Substance Abuse",
+    "Treatments in health hydros, nature cure clinics, spas",
+    "Dietary supplements without prescription",
+    "Refractive Error",
+    "Unproven Treatments",
+    "Sterility and Infertility",
+    "Maternity",
+    "Alternative Treatment (excl. AYUSH)",
+    "OPD Treatment",
+    "Preventive Care",
+    "Self-inflicted injuries",
+    "Treatment outside India",
+    "Artificial life maintenance",
+    "Nuclear/chemical/biological attack"
+  ],
+  "temporary_exclusions": [
+    "30-day initial waiting",
+    "Specific 16 diseases 24 months",
+    "Pre-existing 36 months (50% co-pay PED rider available in years 2-3)"
+  ],
+  "notable_exclusions_summary": "Multiplier excludes maternity, infertility, OPD treatment, refractive error, and treatments outside India. The 4X Multiplier Benefit provides emergency cover up to 4 times Sum Insured plus NCB in Life Threatening Conditions, available 4 times during policy lifetime.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA in network hospitals; reimbursement claims by submitting documents. Settlement within 15 days of last document; 2% above bank rate for delay.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Health & Wellness Plus (app, teleconsult, virtual health coach)",
+    "ABCD Benefit (Asthma, BP, Cholesterol, Diabetes inpatient PED 30+ days)",
+    "Hospital Plus (consumables + mobility devices up to Rs.50,000)",
+    "Voluntary Co-payment (5%, 10%, 15%, 20%)"
+  ],
+  "top_rider_examples": [
+    "4X Multiplier Benefit (built-in)",
+    "Flexi Reload (built-in)",
+    "ABCD Benefit",
+    "Health & Wellness Plus"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/royal-sundaram/multiplier__brochure.pdf",
+  "source_pdf_url": "https://www.royalsundaram.in",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 88.0
+}

@@ -1,0 +1,130 @@
+{
+  "policy_id": "niva-bupa__senior-first__wordings",
+  "insurer_name": "Niva Bupa Health Insurance Co. Ltd.",
+  "insurer_slug": "niva-bupa",
+  "policy_name": "Senior First",
+  "policy_type": "senior_citizen",
+  "uin_code": "MAXHLIP21575V012021",
+  "min_entry_age_years": 61,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": ["self", "self+spouse"],
+  "residency_requirement": "Indian resident; treatment in India only",
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": ["annual"],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 24,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Senior citizen plan; PED waiting at 24 months from inception",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured",
+    "notes": "Minimum 2 hours admission required (lower than usual 24-hour rule) for hospitalization claims; modern treatments covered with sub-limits"
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All listed day care procedures covered up to sum insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured",
+    "notes": "Treating doctor must certify hospital admission was not possible; minimum 3 consecutive days"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured",
+    "notes": "Minimum 24-hour admission in an AYUSH Hospital required"
+  },
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Hospitalisation expenses of donor for organ harvesting, only when the insured's hospitalization claim is paid",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 250000,
+    "limit_text": "Road ambulance up to Rs. 2,000 per hospitalization; air ambulance up to Rs. 2,50,000 per hospitalization (emergency only)",
+    "notes": "Registered ambulance/air ambulance providers only"
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "ReAssure benefit — unlimited sum insured triggered after first paid claim; maximum amount per single claim capped at base sum insured",
+    "notes": "Available after first paid claim during the policy year"
+  },
+  "no_claim_bonus_pct": 10.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Available once every policy year from day 1, up to amount specified in policy schedule",
+    "notes": "Tests must be completed within 7 days"
+  },
+  "room_rent_capping": "Eligible room category as per policy schedule; additional 10% co-payment applies if higher room category chosen",
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Voluntary co-payment chosen at inception (fixed for the policy); additional 10% co-payment if treatment taken in higher than eligible room category",
+  "disease_wise_sub_limits": {
+    "robotic_surgery": "Rs. 1,00,000 per claim (except radical prostatectomy, cardiac surgeries, partial nephrectomy, and surgeries for malignancies)"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Policy covers treatment taken in India only"
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "investigation and evaluation only (Excl04)",
+    "rest cure and respite care (Excl05)",
+    "obesity/weight control (Excl06)",
+    "change-of-gender treatments (Excl07)",
+    "cosmetic or plastic surgery (Excl08)",
+    "hazardous or adventure sports (Excl09)",
+    "breach of law (Excl10)",
+    "alcohol/drug/substance abuse (Excl12)",
+    "refractive error correction (Excl15)",
+    "unproven treatments (Excl16)",
+    "sterility and infertility (Excl17)"
+  ],
+  "temporary_exclusions": [
+    "pre-existing diseases (24 months)",
+    "specific diseases (24 months)",
+    "initial 30 days for non-accident illness"
+  ],
+  "notable_exclusions_summary": "Senior-citizen indemnity plan with shortened 24-month PED and specific waiting. Excludes standard IRDAI list (cosmetic surgery, refractive error, infertility, adventure sports, breach of law). Out-of-India treatment not covered.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via Niva Bupa network hospitals on pre-authorization; reimbursement claims submitted to insurer with hospital documents post-discharge.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Annual Aggregate Deductible (optional)",
+    "Co-payment options (voluntary)"
+  ],
+  "top_rider_examples": ["Annual Aggregate Deductible"],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/niva-bupa/senior-first__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 82.0
+}

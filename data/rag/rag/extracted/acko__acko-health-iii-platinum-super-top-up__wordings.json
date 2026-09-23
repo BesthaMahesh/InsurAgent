@@ -1,0 +1,122 @@
+{
+  "policy_id": "acko__acko-health-iii-platinum-super-top-up__wordings",
+  "insurer_name": "Acko General Insurance Limited",
+  "insurer_slug": "acko",
+  "policy_name": "ACKO Health III Platinum Super Top-up",
+  "policy_type": "super_top_up",
+  "uin_code": "ACKHLIP27040V012627",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 36,
+  "specific_diseases_listed": [
+    "Cataract, Glaucoma, disorders of lens, disorders of retina",
+    "Pancreatitis and stones in biliary and urinary system",
+    "Female genital prolapse, endometriosis/adenomyosis, fibroids, PCOD, hysterectomy",
+    "All benign or in situ neoplasms/tumors, cyst, sinus, polyp, nodules, swelling, mass or lump",
+    "Hyperplasia of prostate, hydrocele, varicocele, spermatocele",
+    "Hemorrhoids, fissure/fistula/abscess of anal/rectal region, pilonidal sinus, rectal prolapse",
+    "Hernia of all sites",
+    "Osteoarthritis, rheumatoid arthritis, gout, intervertebral disc disorders, joint replacement",
+    "Chronic kidney disease and failure",
+    "Varicose veins of lower extremities",
+    "Middle ear & mastoid disease, tonsils & adenoids, nasal septum, nasal sinuses/polyp",
+    "Internal congenital anomaly",
+    "Gastritis, GERD, ulcer, erosion, varices of upper GI tract",
+    "Ligament, tendon & meniscal tear",
+    "Neurodegenerative disorders (Parkinson's, Alzheimer's, dementia)"
+  ],
+  "inpatient_hospitalization": {
+    "covered": true,
+    "notes": "In-patient hospitalization after deductible is exhausted; aggregate deductible per Schedule"
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "All listed day-care procedures per Acko list"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "≥3 consecutive days required"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "In-patient AYUSH treatment"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Within insured's sum insured"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Reasonable road ambulance / public transport up to SI"
+  },
+  "modern_treatments": {
+    "covered": true,
+    "notes": "12 listed modern treatments including HIFU, robotic surgery, stem cell BMT"
+  },
+  "room_rent_capping": "No cap (actual room rent and ICU charges)",
+  "icu_capping": "No cap",
+  "deductible_amount_inr": null,
+  "deductible_notes": "This is a super top-up product. Aggregate / individual deductible applies per Schedule; insurer pays only above deductible. Specific value mentioned in policy schedule (not in wording).",
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "notes": "Treatment outside India excluded unless Worldwide IP cover specified"
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "notes": "Excluded except ectopic pregnancy"
+  },
+  "permanent_exclusions": [
+    "Treatment outside India (unless WW IP cover)",
+    "OPD (unless OPD add-on)",
+    "Self-harm",
+    "Dental (unless accident)",
+    "Circumcision (unless medically necessary)",
+    "External prosthetics",
+    "War, nuclear, biological, chemical",
+    "Hormonal therapies",
+    "Substance abuse",
+    "Sleep disorders",
+    "STDs except HIV",
+    "Professional hazardous sports",
+    "External congenital anomaly",
+    "Spinal subluxation adjustment, muscle stimulation (except for specific fractures)",
+    "Pre-existing diseases (until waiting period)",
+    "Investigation-only admissions",
+    "Rest cure / respite care",
+    "Obesity surgery (unless BMI criteria met)",
+    "Change-of-gender",
+    "Cosmetic / plastic surgery (unless reconstructive)",
+    "Breach of law",
+    "Health hydros / spas / nature cure",
+    "OTC dietary supplements",
+    "Refractive error < 7.5 diopters",
+    "Unproven / experimental treatments",
+    "Sterility / infertility / IVF / surrogacy",
+    "Maternity (except ectopic)"
+  ],
+  "notable_exclusions_summary": "Super top-up that kicks in above aggregate deductible. Excludes treatment outside India unless WW IP cover, OPD unless add-on, maternity except ectopic, sleep disorders, STDs except HIV.",
+  "available_riders": [
+    "Reduction in Specific Illness Waiting Period - Essential (waiver except cataract/arthropathy for age 50+)",
+    "Initial 30 Days Waiting Period Waiver",
+    "Individual Deductible options",
+    "Worldwide In-Patient Hospitalization (optional)",
+    "OPD add-on",
+    "Waiver of Non-payable Medical Expenses"
+  ],
+  "claim_process_summary": "Cashless or reimbursement; planned cashless notice 2 days, emergency 48 hours, pre-auth TAT 1 hour. Reimbursement submit within 15 days. Penal interest 2% above bank rate for delays beyond 15 days.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/acko/acko-health-iii-platinum-super-top-up__wordings.pdf",
+  "extraction_confidence_pct": 87
+}

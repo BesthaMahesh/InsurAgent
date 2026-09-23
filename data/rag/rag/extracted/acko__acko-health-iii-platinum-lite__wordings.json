@@ -1,0 +1,131 @@
+{
+  "policy_id": "acko__acko-health-iii-platinum-lite__wordings",
+  "insurer_name": "Acko General Insurance Limited",
+  "insurer_slug": "acko",
+  "policy_name": "ACKO Health III Platinum Lite",
+  "policy_type": "family_floater",
+  "uin_code": "ACKHLIP27040V012627",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 36,
+  "specific_diseases_listed": [
+    "Cataract, Glaucoma, disorders of lens, disorders of retina",
+    "Pancreatitis and stones in biliary and urinary system",
+    "Abnormal utero-vaginal bleeding, female genital prolapse, endometriosis/adenomyosis, fibroids, PCOD, hysterectomy",
+    "All benign or in situ neoplasms/tumors, cyst, sinus, polyp, nodules, swelling, mass or lump",
+    "Hyperplasia of prostate, hydrocele, varicocele, spermatocele",
+    "Hemorrhoids, fissure/fistula/abscess of anal/rectal region, pilonidal sinus, rectal prolapse",
+    "Hernia of all sites",
+    "Osteoarthritis, rheumatoid arthritis, gout, intervertebral disc disorders, joint replacement",
+    "Chronic kidney disease and failure",
+    "Varicose veins of lower extremities",
+    "Middle ear & mastoid disease, tonsils & adenoids, nasal septum, nasal sinuses/polyp",
+    "Internal congenital anomaly",
+    "Gastritis, GERD, ulcer, erosion, varices of upper GI tract",
+    "Ligament, tendon & meniscal tear",
+    "Neurodegenerative disorders (Parkinson's, Alzheimer's, dementia)"
+  ],
+  "inpatient_hospitalization": {
+    "covered": true,
+    "notes": "Includes room rent, ICU/CCU/HDU, OT, doctor fees, medicines, diagnostics, internally implanted prosthetics"
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "All listed day-care procedures per Acko day care list",
+    "notes": "Includes AYUSH day care treatment"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "Covered if continues for at least 3 consecutive days; reimbursement only"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "In-patient AYUSH treatment only - Ayurveda, Yoga, Naturopathy, Unani, Siddha, Homeopathy"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Donor in-patient harvesting expenses up to insured's SI; excludes pre/post hospitalization, screening, acquisition, transport"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Reasonable road ambulance / public transport cost up to sum insured"
+  },
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "notes": "Treatment outside India excluded unless Worldwide In-Patient Hospitalization cover is available per schedule"
+  },
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": 900,
+    "limit_text": "Network-based preventive tests for insureds >18 years; reimbursable up to Rs 900 if network not available",
+    "notes": "CBC, ESR, HbA1C, Sr Creatinine, Lipid profile, RUA, SGOT, SGPT, GGT, Uric Acid"
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "notes": "Excluded except ectopic pregnancy"
+  },
+  "modern_treatments": {
+    "covered": true,
+    "notes": "Uterine Artery Embolization, HIFU, Balloon Sinuplasty, Deep Brain Stimulation, Oral chemotherapy, Immunotherapy, Intravitreal injections, Robotic surgeries, Stereotactic radiosurgeries, Bronchial Thermoplasty, IONM, Stem cell therapy (hematopoietic for BMT)"
+  },
+  "room_rent_capping": "No cap (actual room rent and ICU charges covered)",
+  "icu_capping": "No cap",
+  "deductible_amount_inr": null,
+  "deductible_notes": "Individual deductible applies per member on cumulative admissible claims as specified in schedule; does not reduce SI",
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Treatment outside India (unless Worldwide IP cover available)",
+    "OPD (unless OPD add-on opted or part of pre/post hospitalization)",
+    "Self-harm / attempted suicide",
+    "Dental treatment (unless accident-related)",
+    "Circumcision (unless medically necessary)",
+    "External prosthetics",
+    "War, terrorism, nuclear/biological/chemical",
+    "Hormonal therapies (HRT, growth hormone)",
+    "Substance abuse / addictions; tobacco-user oral/oropharynx/respiratory cancer",
+    "Sleep disorders (sleep apnea, snoring)",
+    "STDs except HIV",
+    "Hazardous / adventure sports as a professional",
+    "External congenital anomaly",
+    "Spinal subluxation adjustment / skeletal manipulation",
+    "Muscle stimulation (except for fractures and dislocations)",
+    "Pre-existing diseases until waiting period",
+    "Investigation-only admissions",
+    "Rest cure, rehabilitation, respite care",
+    "Obesity surgery not meeting BMI criteria",
+    "Change-of-gender treatments",
+    "Cosmetic/plastic surgery (unless reconstructive)",
+    "Breach of law with criminal intent",
+    "Treatments at health hydros, nature cure, spas",
+    "OTC dietary supplements without prescription",
+    "Refractive error correction < 7.5 diopters",
+    "Unproven / experimental treatments",
+    "Sterility, infertility, IVF/ICSI, surrogacy",
+    "Maternity (except ectopic pregnancy)"
+  ],
+  "notable_exclusions_summary": "Treatment outside India unless Worldwide IP cover available; OPD unless OPD add-on; maternity (except ectopic); sleep disorders; sexually transmitted diseases except HIV; professional hazardous sports; experimental treatments.",
+  "available_riders": [
+    "Worldwide In-Patient Hospitalization",
+    "OPD add-on cover",
+    "Doctor-on-call (included)",
+    "Preventive Health Check-up",
+    "Individual Deductible",
+    "Waiver of Non-payable Medical Expenses"
+  ],
+  "claim_process_summary": "Two modes: Cashless at network hospitals (planned: notify 2 days before; emergency: within 48 hours; pre-auth TAT 1 hour, final bill TAT 3 hours) or Reimbursement (submit within 15 days of discharge via app). Settlement within 15 days; penal interest 2% above RBI bank rate for delay.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/acko/acko-health-iii-platinum-lite__wordings.pdf",
+  "extraction_confidence_pct": 90
+}

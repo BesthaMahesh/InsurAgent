@@ -1,0 +1,196 @@
+{
+  "policy_id": "national-insurance__national-parivar-plus__cis",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Parivar Mediclaim Plus (Floater)",
+  "policy_type": "family_floater",
+  "uin_code": "NICHLIP25039V032425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": [
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents",
+    "custom"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    200000,
+    300000,
+    400000,
+    500000,
+    600000,
+    700000,
+    800000,
+    900000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    3000000,
+    4000000,
+    5000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "90 days for 3 conditions",
+    "1 year for 5 procedures",
+    "2 years for 19 procedures",
+    "3 years for 4 procedures"
+  ],
+  "maternity_waiting_months": 24,
+  "sub_limits_waiting_notes": "Family floater policy. 3 plans (A/B/C). Includes maternity (24-month wait), infertility (24-month wait), domiciliary, doctor home visit, vaccinations. Reinstatement on RTA. Zonal copay structure. Optional CI, OPD, PED diabetes/HTN rider.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Plan A: 1% SI room/day or actual + 2% SI ICU/day or actual; Plans B/C: actuals",
+    "notes": "Per insured person per day cap."
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Day care procedures",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Plan A: Up to Rs 1,00,000. Plans B/C: Up to Rs 2,00,000.",
+    "notes": "Floater basis."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH inpatient up to SI",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Plan A: Rs 30K normal / Rs 50K caesarean. Plans B/C: actuals.",
+    "notes": "24-month waiting period. Includes Baby from Birth cover."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Baby from Birth covered under maternity",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor hospitalisation expenses",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Plan A: Rs 2,500 / Plan B: Rs 4,000 / Plan C: Rs 5,000 per insured per year",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional Cover (benefit-based lumpsum on CI diagnosis)",
+    "notes": "Optional rider."
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Reinstatement of Sum Insured due to Road Traffic Accident",
+    "notes": null
+  },
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Health Check Up every 2 years (Good Health Incentive)",
+    "notes": null
+  },
+  "room_rent_capping": "Plan A: 1% SI/day per insured or actual; Plan B/C: actual",
+  "icu_capping": "Plan A: 2% SI/day per insured or actual; Plan B/C: actual",
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Zone-based copay: e.g. 22.5% if Zone IV premium but treated in Zone I; 10% if Zone IV premium but treated in Zone III. Zones: I=Mumbai/Gujarat; II=Delhi NCR/Chandigarh/Pune; III=Chennai/Hyd/Bangalore/Kolkata; IV=Rest. Plus optional 10%/20% copay for 12.5%/25% premium discount.",
+  "disease_wise_sub_limits": {
+    "cataract": "Plan A: 15% SI or Rs 60,000/eye (lower). Plan B/C: actuals.",
+    "hospital_cash": "Plan A: Rs 500 / Plan B: Rs 1,000 / Plan C: Rs 2,000 per day max 5 days (after 3 days)",
+    "air_ambulance": "Plan B/C: 5% of SI per year",
+    "anti_rabies_vaccination": "Plan A: Rs 5,000 / Plan B/C: Rs 5,000",
+    "infertility": "Plan A: Rs 50,000 / Plan B/C: Rs 1,00,000 per insured per year",
+    "vaccination_children": "Plan A: Rs 1,000 / Plan B/C: actuals (male <=12yr, female <=14yr)",
+    "doctor_home_visit": "Plan B: Rs 1,000 / Plan C: Rs 2,000 per day max 10 days (post-hosp nursing care)",
+    "modern_treatments": "25% of SI per treatment (all plans)",
+    "hazardous_sports": "25% of SI",
+    "pre_existing_diabetes_hypertension_optional": "Year 1: 25% SI / Year 2: 50% SI / Year 3: 75% SI"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Diseases (Excl 01)",
+    "Cosmetic / Plastic Surgery (Excl 08)",
+    "Obesity (Excl 06)",
+    "Change of Gender (Excl 07)",
+    "Hazardous Sports (Excl 09)",
+    "Breach of Law (Excl 10)",
+    "Drug / Alcohol Abuse (Excl 12)",
+    "Non Medical Admissions",
+    "Vitamins / Tonics",
+    "Refractive Error",
+    "Unproven Treatments",
+    "Hormone Replacement Therapy",
+    "General Debility / Congenital External",
+    "Self-Inflicted Injury",
+    "Stem Cell Surgery",
+    "Circumcision",
+    "Vaccination (general)",
+    "Massages / Steam Bath",
+    "Dental",
+    "OPD (except optional)",
+    "Spectacles / Hearing Aid",
+    "War",
+    "Radioactivity",
+    "Treatment outside India"
+  ],
+  "temporary_exclusions": [
+    "30 days initial",
+    "90 days / 1-3 yrs specific",
+    "PED 36 months",
+    "Maternity 24 months",
+    "Infertility 24 months"
+  ],
+  "notable_exclusions_summary": "Family floater with maternity, infertility, domiciliary, doctor home visit, child vaccination. Optional CI, OPD, PED diabetes/HTN riders. Zonal copay based on premium zone vs treatment zone.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless TPA at network/PPN; 1-hour pre-auth; 3-hour final bill TAT. Reimbursement within 15 days of discharge.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Pre-existing Diabetes / Hypertension",
+    "Out-patient treatment",
+    "Critical illness"
+  ],
+  "top_rider_examples": [
+    "Critical Illness",
+    "PED Diabetes/Hypertension"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-parivar-plus__cis.pdf",
+  "source_pdf_url": "https://nationalinsurance.nic.co.in/en/health-insurance",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 92
+}

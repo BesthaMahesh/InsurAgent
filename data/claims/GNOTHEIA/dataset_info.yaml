@@ -1,0 +1,11 @@
+---
+configs:
+  - config_name: polycontexts
+    default: true
+    data_files:
+      - split: train
+        path: data.parquet
+  - config_name: rules
+    data_files:
+      - split: train
+        path: rules-dataset.parquet

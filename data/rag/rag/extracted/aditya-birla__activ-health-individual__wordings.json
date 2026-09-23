@@ -1,0 +1,123 @@
+{
+  "policy_id": "aditya-birla__activ-health-individual__wordings",
+  "insurer_name": "Aditya Birla Health Insurance Co. Limited",
+  "insurer_slug": "aditya-birla",
+  "policy_name": "Activ Health (individual)",
+  "policy_type": "individual",
+  "uin_code": "ADIHLIP21504V032021",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Cataract, Glaucoma",
+    "ENT: Sinusitis, Rhinitis, Tonsillitis, Tympanitis, Deviated Nasal Septum, Otitis Media, Adenoiditis, Mastoiditis",
+    "Gynecology: PCOD, Uterine Prolapse, Fibroids, Endometriosis, DUB, PID, Menorrhagia",
+    "Orthopedic: Gout, RA, Osteoarthritis, Osteoporosis, Prolapsed IV disc, Spondylopathies",
+    "Gastro: Gall bladder stones, Cholecystitis, Pancreatitis, Fissure/Fistula/Piles, GERD, Ulcers, Appendicitis",
+    "Urogenital: Stones, BHP, Hernia, Hydrocele, Varicocele",
+    "Skin tumours, all skin diseases",
+    "Any swelling/tumour/cyst/nodule/polyp; Varicose veins; Congenital internal anomalies"
+  ],
+  "inpatient_hospitalization": {
+    "covered": true,
+    "notes": "Room/ICU, OT, doctor fees, qualified nurses, medicines, diagnostics, surgical/prosthetic appliances implanted intra-operatively"
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "586+ listed day-care procedures"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "≥3 consecutive days"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "In-patient AYUSH treatment up to SI"
+  },
+  "organ_donor_expenses": {
+    "covered": true
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Road ambulance; inter-hospital transfer for advanced/super-speciality"
+  },
+  "preventive_health_checkup": {
+    "covered": true,
+    "notes": "Annual cashless health check-up; test panel varies by SI tier"
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "notes": "Vaccination cover up to 18 years (BCG, OPV, Hep B, DPT, Measles, TT, JE, Hib)"
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "notes": "Excluded except ectopic pregnancy"
+  },
+  "modern_treatments": {
+    "covered": true,
+    "notes": "Activ Health Platinum/Enhanced typically covers modern treatments including HIFU, robotic surgery, oral chemo, stem cell BMT, IONM, immunotherapy (12 modern treatments per IRDAI standardization)"
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "notes": "Reload of Sum Insured once per policy year"
+  },
+  "no_claim_bonus_pct": 10.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "no_claim_bonus_notes": "10% NCB per claim-free year, cap 50% of base SI; Super NCB optional cap 100%",
+  "room_rent_capping": "Single Private A/C Room or per Schedule; proportional deduction on excess",
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "notes": "International Emergency Assistance (Air Ambulance) available as benefit"
+  },
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "War, terrorism, nuclear, chemical, biological events",
+    "Self-harm, suicide, criminal acts",
+    "Adventure sports as professional",
+    "Substance abuse, smoking/nicotine cessation",
+    "Weight management / obesity (unless BMI criteria for bariatric)",
+    "Refractive error correction",
+    "Routine / preventive examinations",
+    "Cosmetic / plastic surgery (unless reconstructive)",
+    "Non-allopathic treatment (non-AYUSH)",
+    "OPD only consultations / diagnostics",
+    "Unproven / experimental treatments",
+    "Hearing aids, spectacles, contact lenses",
+    "Psychiatric disorders, Parkinson's, Alzheimer's, dementia",
+    "External congenital anomaly",
+    "Growth hormone, hormone replacement therapy",
+    "STDs, HIV/AIDS",
+    "Maternity (except ectopic)",
+    "Sterility / infertility / IVF / surrogacy",
+    "Treatment outside India (unless covered as add-on)",
+    "Genetic disorders (4-year waiting period)"
+  ],
+  "notable_exclusions_summary": "Activ Health is ABHI's premium individual product. Covers modern treatments unlike Activ Assure. 36-month PED, 24-month specific waiting, 30-day initial. Includes HealthReturns wellness program.",
+  "available_riders": [
+    "Reduction in PED Waiting Period",
+    "Super NCB",
+    "Unlimited Reload of Sum Insured",
+    "Accidental / Cancer Hospitalization Booster",
+    "Any Room Upgrade",
+    "HealthReturns (wellness rewards)",
+    "Health Coach for chronic conditions",
+    "Second E-Opinion on Critical Illnesses",
+    "Domestic / International Emergency Assistance with Air Ambulance"
+  ],
+  "claim_process_summary": "Cashless or Reimbursement; planned cashless 72 hours notice, emergency 24 hours; authorization issued within 24 hours. Reimbursement claim documents within 30 days of discharge. Settlement within 30 days of last document; penal interest 2% above bank rate.",
+  "tat_cashless_authorization_hours": 24.0,
+  "source_pdf_path": "rag/corpus/aditya-birla/activ-health-individual__wordings.pdf",
+  "extraction_confidence_pct": 78
+}

@@ -1,0 +1,93 @@
+{
+  "policy_id": "new-india__new-india-mediclaim-policy__wordings",
+  "insurer_name": "The New India Assurance Co. Ltd.",
+  "insurer_slug": "new-india",
+  "policy_name": "New India Mediclaim Policy",
+  "policy_type": "individual",
+  "uin_code": "NIAHLIP23187V052223",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids", "self+spouse+kids+parents"],
+  "residency_requirement": "Treatment in India only",
+  "sum_insured_options_inr": [100000, 200000, 300000, 500000, 800000, 1000000, 1500000],
+  "premium_payment_modes": ["annual"],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "sub_limits_waiting_notes": "PED 36 months; specific disease waiting per IRDAI list. Cumulative bonus 25% per claim-free year up to 50%.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "Indemnity cover up to SI; room/ICU caps applicable per plan; Zone-based premium and co-pay"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "Listed day care procedures plus 12 Modern Treatments (robotic surgery, stem cell therapy, etc.)"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_text": "Domiciliary treatment subject to policy conditions and 3-day rule"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_text": "Up to 100% of Sum Insured for inpatient AYUSH"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 1000,
+    "limit_text": "Per emergency, up to limit defined in schedule"
+  },
+  "organ_donor_expenses": {"covered": true, "notes": "Donor hospitalisation excluding cost of organ"},
+  "maternity_coverage": {"covered": false},
+  "newborn_coverage": {
+    "covered": true,
+    "notes": "Newborn covered from birth until policy expiry if mother is continuously insured 24 months"
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_text": "Critical illness benefit per IRDAI standardised list (cancer, MI, CABG, valve surgery, coma, kidney failure, stroke, organ transplant, paralysis, MND, MS)"
+  },
+  "no_claim_bonus_pct": 25.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_text": "Health check-up reimbursement subject to continuous coverage"
+  },
+  "room_rent_capping": "Per plan (typically 1% of SI per day for general, 2% ICU)",
+  "icu_capping": "Typically 2% of SI per day",
+  "copayment_pct": 20.0,
+  "copayment_trigger_notes": "20% co-pay if Zone-2 insured opts treatment in Zone-1; not applicable to accident or sub-limited claims",
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "PED (within 36 months)",
+    "First 30 days (except accident)",
+    "Specific waiting diseases",
+    "Maternity",
+    "Sterility / infertility",
+    "Cosmetic / plastic surgery",
+    "Change of gender",
+    "Hazardous adventure sports",
+    "Breach of law",
+    "Drug / alcohol abuse",
+    "Dental (unless accident)",
+    "Spectacles, contact lenses, hearing aids",
+    "War / nuclear",
+    "Unproven treatments",
+    "Refractive error <7.5D",
+    "Treatment outside India",
+    "Self-inflicted injury"
+  ],
+  "notable_exclusions_summary": "Cover restricted to India. Maternity, infertility, cosmetic, dental (non-accident), war and self-harm excluded. Zone-1 vs Zone-2 co-pay applies.",
+  "claim_process_summary": "Cashless via TPA in network hospital (1-hour pre-auth, 3-hour discharge approval). Reimbursement within 15 days of discharge. Intimation within 24 hours.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/new-india/new-india-mediclaim-policy__wordings.pdf",
+  "extraction_confidence_pct": 85
+}

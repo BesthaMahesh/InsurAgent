@@ -1,0 +1,194 @@
+{
+  "policy_id": "iffco-tokio__essential-health-plan__wordings",
+  "insurer_name": "IFFCO-Tokio General Insurance Company Limited",
+  "insurer_slug": "iffco-tokio",
+  "policy_name": "Essential Health Plan",
+  "policy_type": "family_floater",
+  "uin_code": "IFFHLIP25040V022425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    200000,
+    300000,
+    400000,
+    500000,
+    750000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    5000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Tonsillitis/Adenoids (12 months)",
+    "Tympanoplasty/Septoplasty (12 months)",
+    "Fistula in anus / Anal Sinus / Piles (12 months)",
+    "Carcinoma / Sarcoma / Blood Cancer (12 months)",
+    "Varicose Veins / Ulcers (12 months)",
+    "Ligament/Meniscus Tears (12 months)",
+    "Cataract (24 months)",
+    "Benign Prostatic Hypertrophy (24 months)",
+    "DUB (24 months)",
+    "Uterine Fibroids / PV Bleeding / Hysterectomy / Myomectomy (24 months)",
+    "Hernia / Hydrocele (24 months)",
+    "Sinusitis (24 months)",
+    "Gall Bladder / Biliary / Renal / Urinary Stones (24 months)",
+    "Spondylitis / Spondylosis / Disc prolapse (24 months)",
+    "Knee / Joint / Hip Replacement (24 months)",
+    "Chronic Renal Failure (24 months)",
+    "Benign growth / Cyst / Nodules / Polyps / Tumor (24 months)"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "PED 36 months. Specific disease 12 or 24 months by condition. 30-day initial waiting (except accident).",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Room Rent 2% SI/day or single AC private room; ICU 3% SI/day. Variant plans cap rooms (1.5%/1.25% for Class A cities).",
+    "notes": "Proportionate deduction if room category higher than entitled; clause floors at 40% of claim if hospital tariff unavailable"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Day care procedures covered",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to SI per IRDAI definition",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH hospitalisation covered",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Not a base benefit; check specific variant for optional rider"
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor hospitalisation expenses covered",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Road ambulance covered subject to limit",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Available as optional add-on or separate IFFCO-Tokio CI Benefit Policy"
+  },
+  "restoration_benefit": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "no_claim_bonus_pct": 25.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Preventive health check-up benefit subject to plan variant",
+    "notes": null
+  },
+  "room_rent_capping": "2% of SI per day or single private AC room (default); variant plans cap to 1.5%/1.25% per day in metro/non-metro cities",
+  "icu_capping": "3% of SI per day (default); variant plans cap to 2.5%/2% per day",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "Voluntary co-pay options 10%, 20% or 25% available for premium discount. Once opted cannot be removed mid-policy.",
+  "disease_wise_sub_limits": {
+    "service_charges_and_surcharge": "Subject to maximum 0.5% of SI per item"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation (Excl04)",
+    "Rest cure / rehabilitation / respite care (Excl05)",
+    "Obesity / weight control (Excl06)",
+    "Change of gender (Excl07)",
+    "Cosmetic or plastic surgery (Excl08)",
+    "Hazardous / adventure sports (Excl09)",
+    "Breach of law (Excl10)",
+    "Excluded providers (Excl11)",
+    "Substance abuse (Excl12)",
+    "Treatments in non-medical establishments (Excl13)",
+    "Dietary supplements (Excl14)",
+    "Refractive errors (Excl15)",
+    "Unproven treatments (Excl16)",
+    "Sterility and infertility (Excl17)",
+    "Maternity (Excl18)",
+    "War / nuclear contamination"
+  ],
+  "temporary_exclusions": [
+    "30-day initial waiting period",
+    "36-month PED waiting",
+    "12 or 24-month specific disease waiting"
+  ],
+  "notable_exclusions_summary": "Indemnity plan with 36-month PED, 30-day initial wait, and tiered 12/24-month specific disease waits. Room rent capped 2% SI/day, ICU 3% SI/day by default with stricter variant caps. Voluntary 10%/20%/25% co-pay available for premium discount. Maternity, infertility, cosmetic surgery, and other standard IRDAI exclusions apply.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via IFFCO-Tokio empanelled network; pre-authorisation via TPA; proportionate clause for hospitalisation in room above entitlement.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Voluntary Co-payment",
+    "Personal Accident",
+    "Critical Illness",
+    "Hospital Daily Cash",
+    "Preventive Health Check-up",
+    "Restoration Benefit"
+  ],
+  "top_rider_examples": [
+    "Voluntary Co-pay for premium discount",
+    "Critical Illness",
+    "Personal Accident"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/iffco-tokio/essential-health-plan__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 82.0
+}

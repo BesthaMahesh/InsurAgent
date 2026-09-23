@@ -1,0 +1,177 @@
+{
+  "policy_id": "sbi-general__arogya-top-up__wordings",
+  "insurer_name": "SBI General Insurance Company Limited",
+  "insurer_slug": "sbi-general",
+  "policy_name": "Arogya Top-Up",
+  "policy_type": "top_up",
+  "uin_code": "SBIHLIP22137V032122",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 12,
+  "specific_diseases_listed": [
+    "Gastric or duodenal ulcers",
+    "Tonsillectomy/Adenoidectomy/Mastoidectomy/Tympanoplasty",
+    "Surgery on internal or external tumours/cysts/nodules/polyps/breast lumps",
+    "All types of Hernia and Hydrocele",
+    "Anal Fissures, Fistula and Piles",
+    "Benign Prostatic Hypertrophy",
+    "Hysterectomy/Myomectomy for menorrhagia or fibromyoma",
+    "Non-infective Arthritis, Spondylosis/Spondylitis, Gout & Rheumatism",
+    "Surgery of Genitourinary tract",
+    "Calculus Diseases (stones)",
+    "Sinusitis, nasal disorders",
+    "Gall bladder stones",
+    "Surgery for prolapsed intervertebral disc",
+    "Vertebro-spinal disorders (including disc) and knee conditions",
+    "Surgery of varicose veins and varicose ulcers",
+    "Chronic Renal failure",
+    "Joint replacement (age-related/osteoarthritis/osteoporosis)",
+    "Hypertension, Heart Disease (90 days)",
+    "Diabetes and complications (90 days)"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "12 months for specified surgical conditions; 90 days for Hypertension/Heart Disease/Diabetes; 30 days initial; 36 months PED.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Eligible hospitalization expenses over and above the deductible - up to SI",
+    "notes": "Room rent, ICU, OT, doctor fees, medicines, diagnostics, prosthetics/implants part of operation, physiotherapy as inpatient."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Day care procedures up to Sum Insured",
+    "notes": "Less than 24 hours hospitalization due to technological advancement."
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Reasonable and customary charges including pre/post hospitalization",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Government hospital or institute recognized by government / accredited by QCI / NABH",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Reasonable and customary charges towards maternity expenses during hospitalisation",
+    "notes": null
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Organ donor's treatment for harvesting, including pre/post hospitalization",
+    "notes": "Per Transplantation of Human Organs Act 1994."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 5000,
+    "limit_text": "Actual ambulance expenses or Rs.5,000 whichever lower per valid hospitalization claim",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "restoration_benefit": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Deductible (aggregate) applies to all claims; top-up plan structure - kicks in after deductible threshold breached.",
+  "disease_wise_sub_limits": {
+    "genetic_disorders": "Rs.1,00,000",
+    "internal_congenital_diseases": "10% of SI"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Diseases until 36 months (Excl01)",
+    "30-day initial waiting (Excl03)",
+    "Investigation & Evaluation",
+    "Treatment outside India",
+    "War/invasion/civil war/rebellion",
+    "Nuclear weapons/materials",
+    "Cosmetic or Plastic Surgery (Excl08)",
+    "Refractive Error (Excl15)",
+    "Personal comfort items",
+    "External medical equipment for home use (CPAP, CAPD, oxygen concentrator)",
+    "Convalescence/general debility/rest cure/external congenital anomaly",
+    "Intentional self-injury (incl. intoxicants)",
+    "Breach of Law (Excl10)",
+    "Venereal/STDs (excl. HIV/AIDS)",
+    "Sterility and Infertility (Excl17)",
+    "Dietary supplements without prescription (Excl14)",
+    "Mental healthcare (limited per Mental Health Care Act 2017)"
+  ],
+  "temporary_exclusions": [
+    "30 days initial waiting (Excl03)",
+    "12 months specific surgical procedures waiting",
+    "90 days HBP/Heart/Diabetes",
+    "36 months PED (Excl01)"
+  ],
+  "notable_exclusions_summary": "Arogya Top-Up is an aggregate-deductible top-up policy. Excludes external congenital anomalies, refractive error, infertility, war/nuclear injuries, treatment outside India, and home-use medical equipment. Covers HIV/AIDS, Mental Illness, Genetic Disorders (Rs.1L), Internal Congenital Diseases (10% SI), and 12 advance procedures.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA at network hospitals; reimbursement claims processed after deductible threshold met. Helpline 91 22 42412000.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": null,
+  "top_rider_examples": null,
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/sbi-general/arogya-top-up__wordings.pdf",
+  "source_pdf_url": "https://www.sbigeneral.in",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 82.0
+}

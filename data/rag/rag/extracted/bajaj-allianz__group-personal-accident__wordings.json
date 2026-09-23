@@ -1,0 +1,28 @@
+{
+  "policy_id": "bajaj-allianz__group-personal-accident__wordings",
+  "insurer_name": "Bajaj Allianz General Insurance Co. Ltd.",
+  "insurer_slug": "bajaj-allianz",
+  "policy_name": "Group Personal Accident",
+  "policy_type": "personal_accident",
+  "uin_code": "IRDA/NL-HLT/BAGI/P-P/V.I/151/13-14",
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "geographic_coverage": "worldwide",
+  "permanent_exclusions": [
+    "Suicide, attempted suicide or self-inflicted injury",
+    "Under the influence of liquor or drugs",
+    "Breach of law with criminal intent",
+    "Aviation/ballooning except as fare-paying passenger in licensed standard aircraft",
+    "Motor racing or trail runs",
+    "Naval, military or air force operations",
+    "Venereal or Sexually transmitted diseases",
+    "HIV/AIDS",
+    "War, civil war, invasion, terrorism (as carved out)",
+    "Nuclear energy, radiation",
+    "Maternity expenses except ectopic pregnancy"
+  ],
+  "notable_exclusions_summary": "Group personal accident policy excludes self-inflicted injury, intoxication, illegal acts, hazardous aviation, motor racing, military operations, HIV/AIDS, war, nuclear and maternity-related expenses.",
+  "claim_process_summary": "Claims must be settled or rejected within 30 days of receipt of last necessary document. Investigation cases close within 45 days. Penal interest at 2% above RBI bank rate applies on delays.",
+  "source_pdf_path": "rag/corpus/bajaj-allianz/group-personal-accident__wordings.pdf",
+  "extraction_confidence_pct": 75
+}

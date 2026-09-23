@@ -1,0 +1,19 @@
+{
+  "policy_id": "bajaj-allianz__health-guard__wordings",
+  "insurer_name": "Bajaj Allianz General Insurance Co. Ltd.",
+  "insurer_slug": "bajaj-allianz",
+  "policy_name": "Health Guard",
+  "policy_type": "family_floater",
+  "uin_code": "BAJHLIP25035V072425",
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids", "self+spouse+kids+parents"],
+  "grace_period_days": 30,
+  "premium_payment_modes": ["monthly", "quarterly", "half_yearly", "annual"],
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "AYUSH inpatient and day-care treatment covered under Ayurveda, Yoga, Naturopathy, Unani, Siddha, Homeopathy systems."
+  },
+  "cashless_treatment_supported": true,
+  "geographic_coverage": "pan_india",
+  "source_pdf_path": "rag/corpus/bajaj-allianz/health-guard__wordings.pdf",
+  "extraction_confidence_pct": 65
+}

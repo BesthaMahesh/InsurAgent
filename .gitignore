@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment and secrets
+.env
+.venv/
+env/
+venv/
+ENV/
+.streamlit/secrets.toml
+
+# Database and cache
+data/insuragent.db
+data/chromadb/
+*.sqlite3
+*.db
+.cache/
+data/**/.cache/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary files
+temp/
+tmp/
+*.log

@@ -1,0 +1,189 @@
+{
+  "policy_id": "icici-lombard__complete-health-insurance-umbrella__wordings",
+  "insurer_name": "ICICI Lombard General Insurance Company Limited",
+  "insurer_slug": "icici-lombard",
+  "policy_name": "Complete Health Insurance (umbrella)",
+  "policy_type": "family_floater",
+  "uin_code": "ICIHLIP23144V072223",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    500000,
+    700000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    5000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 24,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Hypertension (90-day wait unless disclosed)",
+    "Diabetes (90-day wait unless disclosed)",
+    "Cardiac conditions (90-day wait unless disclosed)",
+    "Cataract",
+    "Hernia",
+    "Hysterectomy",
+    "Joint replacement",
+    "ENT surgeries"
+  ],
+  "maternity_waiting_months": 36,
+  "sub_limits_waiting_notes": "PED 24 months. Hypertension/diabetes/cardiac 90-day waiting if undisclosed. Worldwide cover has 2-year waiting from opt-in.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Annual Sum Insured plus GCB plus Super NCB plus SI Protector",
+    "notes": null
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All day care procedures (less than 24 hours under GA/LA)",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Standard IRDAI conditions"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured for in-patient AYUSH",
+    "notes": "Ayurveda, Yoga, Naturopathy, Unani, Siddha, Homeopathy"
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Maternity expenses including caesarean delivery and lawful termination — optional cover with specified waiting period",
+    "notes": "Optional add-on; requires waiting period"
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Medical Expenses of new born baby up to 90 days from birth, when Maternity Cover is applicable",
+    "notes": "Available only if Maternity Cover opted"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor expenses covered up to specified limit",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Road ambulance and Air ambulance available; emergency ambulance services",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional Critical Illness add-on; lump-sum payout",
+    "notes": "Add-on cover"
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Unlimited Reset Benefit add-on; SI refilled unlimited times in a policy year",
+    "notes": "Optional"
+  },
+  "no_claim_bonus_pct": 20.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Wellness Program / Preventive Health Check-up included; not subject to voluntary co-pay"
+  },
+  "room_rent_capping": "No cap (subject to variant)",
+  "icu_capping": "No cap (subject to variant)",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "Voluntary co-pay optional for premium discount; mandatory 10% co-pay on Worldwide Cover claims",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Worldwide Cover (optional) — hospitalisation including USA & Canada, up to Annual SI; 2-year waiting, 10% co-pay, 45 days/trip and 90 days cumulative per year",
+    "notes": "Optional add-on; entry age cap 65; insured must be Indian resident"
+  },
+  "network_hospital_count": 6500,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation (Excl04)",
+    "Rest cure / rehabilitation (Excl05)",
+    "Obesity / weight control (Excl06)",
+    "Change of gender (Excl07)",
+    "Cosmetic or plastic surgery (Excl08)",
+    "Hazardous or Adventure sports (Excl09)",
+    "Breach of law (Excl10)",
+    "Excluded providers (Excl11)",
+    "Substance abuse (Excl12)",
+    "Treatments in non-medical establishments (Excl13)",
+    "Dietary supplements (Excl14)",
+    "Refractive errors (Excl15)",
+    "Unproven treatments (Excl16)",
+    "Sterility and infertility (Excl17)",
+    "Maternity unless rider opted (Excl18)",
+    "Dental treatment unless due to accident"
+  ],
+  "temporary_exclusions": [
+    "30-day initial waiting period",
+    "24-month PED waiting",
+    "90-day waiting on undisclosed hypertension/diabetes/cardiac",
+    "Worldwide Cover 2-year waiting from opt-in"
+  ],
+  "notable_exclusions_summary": "Standard IRDAI exclusions plus 24-month PED, 30-day initial, and 90-day undisclosed chronic-condition waits. Optional Worldwide Cover (USA & Canada included) has 2-year waiting, 10% co-pay, 45-day per-trip cap. Maternity, Newborn, and Critical Illness require add-on opt-in.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via 6500+ network hospitals; toll-free 1800 2666; CSE-assisted ambulance dispatch and tele-consultation.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Maternity Cover",
+    "New Born Baby Cover",
+    "Voluntary Co-Payment",
+    "Super No Claim Bonus",
+    "Sum Insured Protector",
+    "Claim Protector",
+    "Worldwide Cover",
+    "Critical Illness",
+    "Personal Accident",
+    "Hospital Daily Cash",
+    "Unlimited Reset",
+    "Nursing at Home",
+    "Convalescence Benefit"
+  ],
+  "top_rider_examples": [
+    "Worldwide Cover (incl. USA/Canada)",
+    "Super No Claim Bonus",
+    "Maternity & Newborn",
+    "Critical Illness"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/icici-lombard/complete-health-insurance-umbrella__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 84.0
+}

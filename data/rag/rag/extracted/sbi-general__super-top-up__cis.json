@@ -1,0 +1,190 @@
+{
+  "policy_id": "sbi-general__super-top-up__cis",
+  "insurer_name": "SBI General Insurance Company Limited",
+  "insurer_slug": "sbi-general",
+  "policy_name": "Super Top-Up",
+  "policy_type": "super_top_up",
+  "uin_code": null,
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 24,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Internal Congenital Diseases",
+    "Diseases of gall bladder (cholecystitis, Pancreatitis)",
+    "All forms of Cirrhosis",
+    "Perineal Abscesses",
+    "Cataract",
+    "Pilonidal sinus",
+    "Benign tumors, Cysts, Nodules, Polyps including breast lumps",
+    "Polycystic ovarian diseases",
+    "Sinusitis, Rhinitis",
+    "Skin tumors",
+    "Genetic Disorder"
+  ],
+  "maternity_waiting_months": 36,
+  "sub_limits_waiting_notes": "Indemnity and Benefit both. Initial waiting 30 days. PED waiting can be changed to 36/12 months. Specific Disease Waiting can be reduced to 12 months. Maternity Waiting can be changed to 48/24/12 months. Hypertension/Diabetes 90 days (covered after 24 months PED). Global Treatment 36 months.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Admission beyond 24 hours - up to SI above aggregate deductible",
+    "notes": "Super Top-Up structure - covers expenses exceeding the deductible."
+  },
+  "pre_hospitalization_days": null,
+  "post_hospitalization_days": null,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Day Care procedures up to SI",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Domiciliary Hospitalization up to SI",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH inpatient treatment up to Sum Insured",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": 200000,
+    "limit_text": "Up to Rs.2 lakhs for deductible Rs.5L and above (optional)",
+    "notes": "36-month waiting period (changeable to 48/24/12 months)."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to amount specified in Schedule (optional)",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Organ donor's hospitalization for harvesting up to Sum Insured",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 5000,
+    "limit_text": "Road Ambulance up to Rs.5,000/hospitalization; Radio Cab up to Rs.3,000/hospitalization; Air Ambulance up to Rs.5 lakhs",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Personal Accident rider available (Rs.10L or Rs.20L)."
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Unlimited Restore Benefit: Restore Base Sum Insured unlimited times during Policy Year after claim payment",
+    "notes": null
+  },
+  "no_claim_bonus_pct": 10.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Stay Fit Health Check-up up to sub-limit in Schedule",
+    "notes": "Preventive purposes only."
+  },
+  "room_rent_capping": "Reduction in Room Rent option (Single Pvt AC or Twin Sharing) available",
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Aggregate deductible applies (top-up structure).",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Global Cover - Inpatient Care outside India for listed Illness/Procedures (optional)",
+    "notes": "36-month waiting period."
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Diseases (24 months, changeable)",
+    "30-day initial waiting",
+    "Investigation & Evaluation (Excl04)",
+    "Cosmetic/Plastic Surgery (Excl08)",
+    "Hazardous/Adventure Sports (Excl09)",
+    "Breach of Law (Excl10)",
+    "Excluded Providers (Excl11)",
+    "Substance Abuse and Alcohol (Excl12)",
+    "Wellness and Rejuvenation (Excl13)",
+    "Dietary Supplements (Excl14)",
+    "Refractive Error (Excl15)",
+    "Unproven Treatments (Excl16)",
+    "Sterility and Infertility (Excl17)",
+    "Maternity (Excl18) - covered as rider"
+  ],
+  "temporary_exclusions": [
+    "30-day initial waiting",
+    "24 months specific diseases",
+    "24 months PED (changeable to 36/12)",
+    "36 months Maternity (changeable)",
+    "36 months Global Treatment",
+    "90 days HBP/Diabetes (covered after 24 months PED)"
+  ],
+  "notable_exclusions_summary": "SBIG Health Super Top-Up is an aggregate-deductible top-up policy with Unlimited Restore Benefit and flexibility to change PED/Specific Disease/Maternity waiting periods. Covers Inpatient, Day Care, Domiciliary, AYUSH, Organ Donor, Modern Treatments, Home Health Care, and Global Treatment for listed illnesses. Optional Personal Accident rider available.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA at network hospitals; reimbursement via document submission. Pre-authorization TAT 1 hour; final bill settlement TAT 3 hours. Toll-free 1800 102 1111 (24/7); senior citizens 1800 102 1111.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Maternity Expenses (rider, waiting period changeable)",
+    "New-Born Baby Cover",
+    "Hospital Daily Cash (Rs.500/1000 x 10 days; ICU 2x)",
+    "Consumables (waiver of List-I)",
+    "Global Cover (Inpatient outside India for listed illnesses)",
+    "Radio Cab",
+    "Modern Treatments",
+    "AYUSH Treatment",
+    "Domiciliary Hospitalization",
+    "Personal Accident Cover (AD+PTD, Rs.10L/Rs.20L)",
+    "Unlimited Restore Benefit",
+    "Reduction in Room Rent",
+    "Change in PED Waiting (24->36/12)",
+    "Change in Maternity Waiting (36->48/24/12)",
+    "Reduction in Specific Disease Waiting (24->12)",
+    "E-Opinion",
+    "Stay Fit Health Check-up",
+    "Recovery Benefit (Rs.5000/10000/25000)"
+  ],
+  "top_rider_examples": [
+    "Unlimited Restore Benefit",
+    "Personal Accident",
+    "Maternity Expenses",
+    "Global Cover",
+    "Hospital Daily Cash"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/sbi-general/super-top-up__cis.pdf",
+  "source_pdf_url": "https://www.sbigeneral.in",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 85.0
+}

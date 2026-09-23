@@ -1,0 +1,119 @@
+{
+  "policy_id": "go-digit__digit-health-care-plus__wordings",
+  "insurer_name": "Go Digit General Insurance Limited",
+  "insurer_slug": "go-digit",
+  "policy_name": "Digit Health Care Plus",
+  "policy_type": "individual",
+  "uin_code": "GODHLIP27048V052627",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents",
+    "multi_generation"
+  ],
+  "residency_requirement": "Indian resident",
+  "premium_payment_modes": [
+    "monthly",
+    "quarterly",
+    "half_yearly",
+    "annual"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "maternity_waiting_months": 9,
+  "sub_limits_waiting_notes": "Wide modular product with 30 sections including hospitalization, critical illness, cancer, OPD, maternity, infertility, organ donor, health checkup, NCB protection, and wellness program. Specific waiting periods apply to bariatric surgery, psychiatric illness, maternity, infertility and CI.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "Up to SI; room rent and proportionate deduction rules apply if higher room category chosen than opted.",
+    "notes": "Accidental & Illness Hospitalization Cover (Section 1A) and Accidental Hospitalization Cover (Section 1B)."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "notes": "Day care procedures covered when stay < 24 hours."
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "Home hospitalisation when transfer impossible or no bed; excludes listed chronic conditions."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "Inpatient AYUSH treatment in NABH/NQAS-certified AYUSH hospital."
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_text": "Maternity Benefit Wallet starts at Rs.15,000 Y1; grows annually if unused.",
+    "notes": "9-month waiting period; covers two childbirth events; complications included; lawful termination unlimited."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "notes": "Newborn baby cover from Day 1 when maternity benefit is opted."
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Donor hospitalisation + 5% pre/post-hospitalisation expenses."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Road ambulance up to limit in schedule; Emergency Air Ambulance (Section 4) covers airplane/helicopter transport in life-threatening emergencies within India."
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "notes": "Critical Illness Benefit Cover (lump sum) and Critical Illness Hospitalization Cover; Cancer benefit/hospitalization sections; Woman Cancer Benefit."
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_text": "Sum Insured Refill Benefit available.",
+    "notes": "Unused SI Benefit and SI Multiplier additional options."
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "notes": "Health Checkup Cover from Day One; benefit doesn't deduct from SI."
+  },
+  "copayment_pct": 0.0,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Cosmetic / aesthetic surgery (non-accident, non-cancer)",
+    "Sex-change / gender reassignment",
+    "Hazardous adventure sports (professional)",
+    "Self-inflicted injury, suicide attempts",
+    "Substance abuse / alcoholism",
+    "Investigation-only admissions",
+    "Unproven / experimental treatments",
+    "Sterility, infertility (unless OPD-Infertility section opted)",
+    "Treatment outside India (unless overseas worldwide section)",
+    "Breach of law / criminal acts"
+  ],
+  "notable_exclusions_summary": "Comprehensive policy with up to 30 optional sections. Standard health-insurance exclusions; PED 36-month waiting; specific procedures (bariatric, psychiatric, CI, maternity) have specific waiting periods.",
+  "available_riders": [
+    "Critical Illness Benefit Cover",
+    "Cancer Benefit Cover",
+    "Woman Cancer Benefit",
+    "OPD Benefit",
+    "Daily Hospital Cash",
+    "Long Hospitalization Cash",
+    "Loss of Income Cover",
+    "Consumable Cover",
+    "Sum Insured Refill",
+    "Wellness Program",
+    "Maternity & Newborn",
+    "Infertility Treatment",
+    "Advance Heart Ambulance",
+    "Cumulative Bonus Protection",
+    "Smart Save"
+  ],
+  "claim_process_summary": "1800-258-5956 / hello@godigit.com. In-house claims team plus TPA network for cashless authorisation; reimbursement via app/portal upload.",
+  "source_pdf_path": "rag/corpus/go-digit/digit-health-care-plus__wordings.pdf",
+  "extraction_confidence_pct": 84
+}

@@ -1,0 +1,87 @@
+{
+  "policy_id": "new-india__universal-health-insurance__wordings",
+  "insurer_name": "The New India Assurance Co. Ltd.",
+  "insurer_slug": "new-india",
+  "policy_name": "Universal Health Insurance",
+  "policy_type": "family_floater",
+  "uin_code": "NIAHLIP25052V032425",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Below-Poverty-Line / APL group scheme; Indian resident; treatment in India",
+  "sum_insured_options_inr": [
+    30000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "sub_limits_waiting_notes": "Mental illness, ARMD and genetic disorders 36 months; puberty/menopause and behavioural disorders 24 months",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "Room rent 0.5% of SI/day; ICU 1% of SI/day; doctor/surgeon fees 15% of SI per illness; other expenses 15% of SI per illness; total any-one-illness capped at Rs 15,000; total liability Rs 30,000 per family",
+    "notes": "Group APL scheme with Rs 30,000 floater SI"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "Listed day care procedures (dialysis, chemotherapy, radiotherapy, eye surgery, lithotripsy, D&C, tonsillectomy)"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_text": "Up to 100% of Sum Insured"
+  },
+  "ambulance_cover": {
+    "covered": false
+  },
+  "organ_donor_expenses": {
+    "covered": false
+  },
+  "maternity_coverage": {
+    "covered": false
+  },
+  "critical_illness_cover": {
+    "covered": false
+  },
+  "no_claim_bonus_pct": 0.0,
+  "room_rent_capping": "0.5% of Sum Insured per day",
+  "icu_capping": "1% of Sum Insured per day",
+  "copayment_pct": 0.0,
+  "disease_wise_sub_limits": {
+    "doctor_surgeon_fees": "15% of SI per illness/injury",
+    "other_hospitalisation_expenses": "15% of SI per illness/injury",
+    "total_any_one_illness": "Rs 15,000",
+    "death_due_to_accident_earning_head": "Rs 25,000",
+    "disability_compensation": "Rs 50/day up to 15 days (3-day excess)"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "PED (within 36 months)",
+    "First 30 days (except accident)",
+    "Specific waiting period diseases",
+    "Maternity",
+    "Sterility / infertility",
+    "Cosmetic / plastic surgery",
+    "Treatment outside India",
+    "Dental (unless accident)",
+    "Spectacles, hearing aids",
+    "War / nuclear / hazardous sports",
+    "Drug / alcohol abuse",
+    "Self-inflicted injury / suicide"
+  ],
+  "notable_exclusions_summary": "Targeted at APL/BPL groups with Rs 30,000 family floater plus accident death cover Rs 25,000 for earning head. Standard IRDAI exclusions; treatment confined to India; small per-illness Rs 15,000 cap.",
+  "claim_process_summary": "Cashless via TPA at network hospital; reimbursement otherwise. 1-hour pre-authorisation TAT per IRDAI norms.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/new-india/universal-health-insurance__wordings.pdf",
+  "extraction_confidence_pct": 82
+}

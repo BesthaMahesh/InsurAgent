@@ -1,0 +1,151 @@
+{
+  "policy_id": "national-insurance__national-senior-citizen__wordings",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Senior Citizen Mediclaim",
+  "policy_type": "senior_citizen",
+  "uin_code": "NICHLIP25040V042425",
+  "min_entry_age_years": 60,
+  "max_entry_age_years": 80,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 24,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Senior citizen product with 24-month PED wait, no maternity, lifelong renewability. Morbid obesity 3 years; refractive error 2 years.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "Plan A: Room 1% of SI/day max INR 5,000, ICU 2% of SI/day max INR 10,000. Plan B: Room 2% of SI/day max INR 10,000, ICU 4% of SI/day max INR 20,000."
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "Less than 24 hours hospitalization at hospital or day care centre"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to 20% of Sum Insured",
+    "notes": "Min 3 days; allopathy + AYUSH only"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "Inpatient AYUSH at AYUSH Hospital"
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": "Excluded",
+    "notes": "Senior citizen product excludes maternity"
+  },
+  "newborn_coverage": null,
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Hospitalisation expenses of donor",
+    "notes": "Per Transplantation of Human Organs Act 1994"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2500,
+    "limit_text": "Up to INR 2,500 per illness",
+    "notes": "Road ambulance only"
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional cover on additional premium",
+    "notes": null
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Plan B only - SI reinstatement if exhausted due to Road Traffic Accident",
+    "notes": "Once per policy period"
+  },
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Plan A: 2-year block; Plan B: 6-month block",
+    "notes": "Continuous renewal required"
+  },
+  "room_rent_capping": "Plan A: 1% of SI/day max INR 5,000. Plan B: 2% of SI/day max INR 10,000.",
+  "icu_capping": "Plan A: 2% of SI/day max INR 10,000. Plan B: 4% of SI/day max INR 20,000.",
+  "copayment_pct": 18.5,
+  "copayment_trigger_notes": "Zone II premium / Zone I treatment = 18.5% copay. Optional copay 10% or 20% with premium discount.",
+  "disease_wise_sub_limits": {
+    "cataract_plan_a": "15% of SI or INR 75,000 per eye, lower",
+    "benign_prostatic_hyperplasia_plan_a": "20% of SI",
+    "modern_treatments": "25% of SI per procedure"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Maternity",
+    "Birth control, Sterility and Infertility",
+    "Investigation & Evaluation",
+    "Rest Cure",
+    "Obesity/Weight Control",
+    "Change-of-Gender Treatments",
+    "Cosmetic Surgery",
+    "Hazardous Sports",
+    "Drug/Alcohol Abuse",
+    "Dental treatment",
+    "OPD",
+    "War",
+    "Radioactivity",
+    "Treatment outside India"
+  ],
+  "temporary_exclusions": [
+    "Pre-Existing Diseases - 24 months",
+    "Specified diseases - 90 days to 3 years",
+    "Morbid Obesity - 3 years",
+    "Refractive Error - 2 years"
+  ],
+  "notable_exclusions_summary": "Senior-citizen contract with 24-month PED wait, no maternity, no infertility. Zone copay applies if treatment in Zone I but premium paid for Zone II.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA. Pre-auth 1 hour. Final auth 3 hours. Claim settlement 15 days of last document. Reimbursement documents within 30 days of discharge.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Pre-existing Diabetes/Hypertension",
+    "Out-patient treatment",
+    "Critical Illness",
+    "Personal Accident"
+  ],
+  "top_rider_examples": [
+    "Personal Accident",
+    "OPD"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-senior-citizen__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 80
+}

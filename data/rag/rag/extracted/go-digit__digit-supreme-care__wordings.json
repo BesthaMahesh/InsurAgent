@@ -1,0 +1,101 @@
+{
+  "policy_id": "go-digit__digit-supreme-care__wordings",
+  "insurer_name": "Go Digit General Insurance Limited",
+  "insurer_slug": "go-digit",
+  "policy_name": "Digit Supreme Care",
+  "policy_type": "group",
+  "uin_code": "GODHLGP24055V012324",
+  "premium_payment_modes": [
+    "annual",
+    "single"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "maternity_waiting_months": 9,
+  "sub_limits_waiting_notes": "Group umbrella policy with 49 modular sections combining Personal Accident, Critical Illness, Cancer, Hospitalization, Maternity, OPD, Card/Wallet/Identity Theft and Wellness covers. Specific waiting periods per section.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "notes": "Section 26 Hospitalization Cover; up to Sum Insured per schedule."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "notes": "All listed day care procedures covered."
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "Section 38 — home hospitalization > 3 days, listed chronic conditions excluded."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "Section 30 Alternate Treatment (AYUSH) — inpatient AYUSH treatment in NABH/NQAS-certified hospital."
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "notes": "Sections 33-35: maternity benefit, newborn baby cover, miscarriage due to accident; 9-month waiting period."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "notes": "Section 33 — newborn baby cover linked to maternity benefit."
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Section 29 — donor harvesting expenses plus 5% donor pre/post-hospitalisation."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Road ambulance and Section 31 Emergency Air Ambulance (within India only)."
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_text": "Sections 19/20/21 — CI benefit, CI hospitalisation, CI hospitalisation cash allowance covers; Sections 22/23 Cancer benefit and cancer hospitalisation."
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "notes": "Section 39 — Sum Insured Refill Benefit."
+  },
+  "preventive_health_checkup": {
+    "covered": true,
+    "notes": "Section 40 Wellness Benefit Programme + complimentary check-up."
+  },
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-existing disease (PED) for 36 months",
+    "Cosmetic / aesthetic surgery (non-accident, non-cancer)",
+    "Sex change / gender reassignment",
+    "Hazardous adventure sports (unless Adventure Sports Cover opted)",
+    "Self-inflicted injury / suicide attempts",
+    "Substance abuse / alcoholism",
+    "War, nuclear, radioactive contamination",
+    "Investigation-only admissions",
+    "Unproven / experimental treatments",
+    "Treatment outside India"
+  ],
+  "notable_exclusions_summary": "Group umbrella policy with 49 modular sections — Personal Accident, Critical Illness, Cancer, comprehensive Hospitalization, Maternity, OPD, plus Cards/Wallet/Identity Theft/Purchase Protection. Optional Adventure Sports and HIV covers reduce standard exclusions.",
+  "available_riders": [
+    "Critical Illness Benefit Cover",
+    "Cancer Benefit Cover",
+    "EMI Protection Cover",
+    "Loss of Employment Cover",
+    "Adventure Sports Cover",
+    "HIV Cover",
+    "OPD Benefit",
+    "Maternity & Newborn",
+    "Infertility Treatment",
+    "Wellness Program",
+    "Card Cover",
+    "Identity Theft",
+    "Purchase Protection",
+    "Wallet Protection",
+    "Companion Benefit"
+  ],
+  "claim_process_summary": "1800-258-4242 / healthclaims@godigit.com. Digital claim intimation through portal/app.",
+  "source_pdf_path": "rag/corpus/go-digit/digit-supreme-care__wordings.pdf",
+  "extraction_confidence_pct": 76
+}

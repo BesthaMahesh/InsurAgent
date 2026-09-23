@@ -1,0 +1,82 @@
+{
+  "policy_id": "national-insurance__universal-health__prospectus",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "Universal Health Insurance",
+  "policy_type": "family_floater",
+  "uin_code": "NICHLIP21593V042021",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 70,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident; treatment within India only",
+  "sum_insured_options_inr": [
+    30000,
+    50000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "maternity_waiting_months": 12,
+  "sub_limits_waiting_notes": "Hospital Cash benefit has 3-day waiting period; daily compensation paid from 4th day",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "Room rent 0.5% of SI/day; ICU 1% of SI/day; medical practitioner fees 15% of SI per any-one-illness; other expenses 15% of SI per any-one-illness"
+  },
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "Modern Treatments (12 listed) up to 50% of SI per procedure"
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": 5000,
+    "limit_text": "Rs 2,500 normal / Rs 5,000 caesarean or extra-uterine",
+    "notes": "12-month waiting period; once per lifetime; covers newborn medical expenses; benefit available only to earning head or spouse"
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "notes": "New Born Baby defined as baby aged up to 90 days; medical expenses covered when linked to maternity claim"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "AYUSH inpatient hospitalisation covered per IRDAI standardised AYUSH Hospital definition"
+  },
+  "no_claim_bonus_pct": 0.0,
+  "room_rent_capping": "0.5% of Sum Insured per day",
+  "icu_capping": "1% of Sum Insured per day",
+  "copayment_pct": 0.0,
+  "deductible_amount_inr": 0,
+  "disease_wise_sub_limits": {
+    "medical_practitioner_fees": "15% of SI per any-one-illness",
+    "other_inpatient_expenses": "15% of SI per any-one-illness",
+    "modern_treatments": "50% of SI per modern procedure"
+  },
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Treatment outside India",
+    "Cosmetic / plastic surgery",
+    "Change of gender",
+    "Birth control, sterility and infertility",
+    "Hormone replacement therapy",
+    "Dental treatment",
+    "Vitamins and tonics",
+    "War / nuclear / radioactivity",
+    "Self-inflicted injury (Section II)",
+    "Drug / alcohol abuse"
+  ],
+  "notable_exclusions_summary": "Geographically limited to India; no fertility, dental, cosmetic, sex-change or vitamin/tonic expenses; Section II accident cover excludes self-inflicted injury and intoxication.",
+  "claim_process_summary": "Online discount of 10% on premium when bought without intermediary. Premium paid annually before policy starts. Cashless via TPA in network hospitals; reimbursement otherwise. Renewable for lifetime; portability and migration permitted.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/national-insurance/universal-health__prospectus.pdf",
+  "extraction_confidence_pct": 90
+}

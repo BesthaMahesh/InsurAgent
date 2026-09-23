@@ -1,0 +1,157 @@
+{
+  "policy_id": "royal-sundaram__advanced-top-up__wordings",
+  "insurer_name": "Royal Sundaram General Insurance Co. Limited",
+  "insurer_slug": "royal-sundaram",
+  "policy_name": "Advanced Top Up",
+  "policy_type": "super_top_up",
+  "uin_code": "RSAHLIP23029V012223",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    3000000,
+    3500000,
+    4000000,
+    4500000,
+    5000000,
+    5500000,
+    6000000,
+    6500000,
+    7000000,
+    7500000,
+    8000000,
+    8500000,
+    9000000,
+    9500000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Top-up product with annual aggregate deductible. Cover triggered only after deductible exhaustion in the policy year.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured after deductible exhausted",
+    "notes": null
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All day care procedures up to sum insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Maternity expenses excluded"
+  },
+  "newborn_coverage": null,
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor inpatient expenses up to sum insured",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 3000,
+    "limit_text": "Up to Rs. 3,000 per hospitalization (including app-based cab)",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Second Opinion for 22 specified critical illnesses",
+    "notes": null
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Life Protect Benefit — 10% of SI per policy year for life-threatening claims",
+    "notes": null
+  },
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "No room rent capping",
+  "icu_capping": null,
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "No co-payment under base plan",
+  "disease_wise_sub_limits": {
+    "home_care_treatment": "Up to Rs. 50,000 per event and Rs. 1,00,000 per policy year per insured person"
+  },
+  "deductible_amount_inr": 500000,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "investigation only admissions (Excl04)",
+    "rest cure (Excl05)",
+    "obesity/weight control (Excl06)",
+    "change-of-gender treatments (Excl07)",
+    "cosmetic or plastic surgery (Excl08)",
+    "hazardous or adventure sports (Excl09)",
+    "breach of law (Excl10)",
+    "alcohol/drug/substance abuse (Excl12)",
+    "refractive error (Excl15)",
+    "unproven treatments (Excl16)",
+    "sterility and infertility (Excl17)",
+    "maternity expenses (Excl18)"
+  ],
+  "temporary_exclusions": [
+    "pre-existing diseases (36 months)",
+    "specific listed diseases (24 months)",
+    "initial 30 days for non-accident illness"
+  ],
+  "notable_exclusions_summary": "Top-up plan; payable only after annual aggregate deductible (Rs. 5L-Rs. 25L) is exhausted. No room rent cap. Maternity, cosmetic, refractive error and adventure sports excluded.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via network hospitals through TPA; reimbursement claims to be submitted within 30 days of discharge.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "PED waiting reduction (36 to 24 months)"
+  ],
+  "top_rider_examples": [
+    "PED waiting reduction"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/royal-sundaram/advanced-top-up__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 84.0
+}

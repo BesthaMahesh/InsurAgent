@@ -1,0 +1,171 @@
+{
+  "policy_id": "national-insurance__national-parivar-plus__prospectus",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Parivar Mediclaim Plus (Floater)",
+  "policy_type": "family_floater",
+  "uin_code": "NICHLIP25039V032425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    600000,
+    700000,
+    800000,
+    900000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    3000000,
+    4000000,
+    5000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 24,
+  "sub_limits_waiting_notes": "Morbid obesity: 36 months. Correction of refractive error: 24 months. Infertility: 24 months continuous coverage. Mental Illnesses Depression and Schizophrenia: 2 years.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "Plan A has per-day room/ICU sub-limit; Plan B/C have higher caps; no sub-limit in Preferred Provider Network packaged procedures"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "Less than 24 hours hospitalization at hospital or day care centre"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to limit shown in Table of Benefits",
+    "notes": "Excludes asthma, bronchitis, epilepsy, gastroenteritis, psychiatric disorders, etc."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "In-patient treatment in AYUSH Hospital"
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Table of Benefits limit (varies by Plan)",
+    "notes": "24-month waiting period. Female covered 18-45 years. Max 2 deliveries/terminations lifetime. Includes Pre-Natal and Post-Natal hospitalisation, newborn vaccination."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Auto-covered under mother's SI for 3 months from birth",
+    "notes": "After 3 months, requires policy mid-term inclusion and premium"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor's hospitalisation expenses",
+    "notes": "Per Transplantation of Human Organs Act 1994; excludes pre/post hospitalization of donor, organ acquisition, transportation"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Table of Benefits limit",
+    "notes": "Road ambulance; air ambulance also covered separately"
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional cover on payment of additional premium",
+    "notes": "Critical Illness available as optional cover"
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Reinstatement of Sum Insured if exhausted due to Road Traffic Accident",
+    "notes": "Allowed once per policy year"
+  },
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 5.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Reimbursed at end of every block of two continuous policy years",
+    "notes": "Subject to continuous renewal without break"
+  },
+  "room_rent_capping": "Plan A: per Table of Benefits per-day limit; Plan B/C: higher caps. No cap if treated in PPN packaged listed procedure.",
+  "icu_capping": "Plan A: per Table of Benefits per-day limit; Plan B/C: higher caps. No cap if treated in PPN packaged listed procedure.",
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Optional Co-payment: 20% with 25% premium discount or 10% with 12.5% premium discount.",
+  "disease_wise_sub_limits": {
+    "cataract": "As per Table of Benefits (Plan A only) - limit applies",
+    "modern_treatments": "25% of SI per modern procedure/component/medicine",
+    "hazardous_sports": "Lower of 25% of SI per any one illness"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation (Excl 04)",
+    "Rest Cure, Rehabilitation and Respite Care (Excl 05)",
+    "Obesity/Weight Control (Excl 06)",
+    "Change-of-Gender Treatments (Excl 07)",
+    "Cosmetic or Plastic Surgery (Excl 08)",
+    "Hazardous or Adventure Sports (Excl 09)",
+    "Breach of Law (Excl 10)",
+    "Excluded Providers (Excl 11)",
+    "Drug/Alcohol Abuse (Excl 12)",
+    "Non-Medical Admissions (Excl 13)",
+    "Refractive Error (Excl 15)",
+    "Unproven Treatments (Excl 16)",
+    "Self Inflicted Injury",
+    "War",
+    "Radioactivity",
+    "Treatment outside India"
+  ],
+  "temporary_exclusions": [
+    "Pre-Existing Diseases - 36 months",
+    "Maternity - 24 months",
+    "Infertility - 24 months",
+    "Morbid Obesity - 36 months",
+    "Correction of Refractive Error - 24 months",
+    "Depression and Schizophrenia - 2 years"
+  ],
+  "notable_exclusions_summary": "Standard IRDAI exclusions: cosmetic surgery, change-of-gender, hazardous sports, self-inflicted injury, drug/alcohol abuse, unproven treatments, refractive error <7.5D, war, radioactivity, and treatment outside India. Time-bound: 30-day initial wait, 36-month PED wait, 24-month maternity and infertility wait.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA (request form to TPA, pre-authorisation within 1 hour, final auth within 3 hours). Reimbursement: notify within 24-72 hours; submit documents within 30 days of discharge. Claim settled within 15 days of last necessary document.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Pre-existing Diabetes and/or Hypertension cover",
+    "Outpatient Treatment cover",
+    "Critical Illness cover"
+  ],
+  "top_rider_examples": [
+    "Pre-existing Diabetes/Hypertension",
+    "Critical Illness"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-parivar-plus__prospectus.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 82
+}

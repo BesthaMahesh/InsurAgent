@@ -1,0 +1,184 @@
+{
+  "policy_id": "royal-sundaram__family-plus__cis",
+  "insurer_name": "Royal Sundaram General Insurance Co. Limited",
+  "insurer_slug": "royal-sundaram",
+  "policy_name": "Family Plus",
+  "policy_type": "family_floater",
+  "uin_code": "RSAHLIP22200V032122",
+  "min_entry_age_years": null,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents",
+    "custom"
+  ],
+  "residency_requirement": "Indian resident; worldwide emergency hospitalization available",
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": [
+    "annual",
+    "half_yearly",
+    "quarterly",
+    "monthly"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Stones in biliary and urinary systems",
+    "Lumps/cysts/nodules/polyps/internal tumours",
+    "Gastric and Duodenal Ulcers",
+    "Surgery on tonsils/adenoids",
+    "Osteoarthrosis/Arthritis/Gout/Rheumatism/Spondylosis/IVD Prolapse",
+    "Cataract",
+    "Fissure/Fistula/Hemorrhoids",
+    "Hernia/Hydrocele",
+    "Chronic Renal Failure/end stage Renal Failure",
+    "Sinusitis/Deviated Nasal Septum/Tympanoplasty/CSOM",
+    "Benign Prostatic Hypertrophy",
+    "Knee/Hip Joint replacement",
+    "Dilatation and Curettage",
+    "Varicose veins",
+    "Dysfunctional Uterine Bleeding/Fibroids/Prolapse Uterus/Endometriosis",
+    "Hysterectomy for benign disorder"
+  ],
+  "maternity_waiting_months": 24,
+  "sub_limits_waiting_notes": "Grace period 15 days monthly / 30 days quarterly-half yearly-yearly; free look 30 days; renewable lifelong",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured; modern treatments up to 50% of SI",
+    "notes": "Includes diagnostics, OT, ICU, intravenous fluids, blood transfusion, prosthetic devices implanted during surgery"
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All day care procedures covered",
+    "notes": "Including chemotherapy, radiotherapy, hemodialysis; less than 24 hours admission"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured",
+    "notes": "Continuous treatment \u2265 3 days; pre/post hospitalization payable"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to 100% of sum insured",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": 50000,
+    "limit_text": "Up to Rs. 50,000 per delivery, after 2-year waiting period; max 2 deliveries per female member during lifetime of policy",
+    "notes": "Miscarriage payable only if due to accident"
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Newborn covered from birth (policy year) up to base SI if maternity claim accepted; vaccination sub-limit Rs. 10,000 in first year",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor harvesting medical expenses covered",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 4000,
+    "limit_text": "Sub-limit of Rs. 4,000 per hospitalization",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Second Opinion for 11 critical illnesses (Cancer, First Heart Attack, CABG, Heart valve replacement/repair, Coma, Kidney Failure, Stroke, Major Organ/Bone Marrow Transplant, Permanent paralysis of limbs, Motor Neurone Disease, Multiple Sclerosis)",
+    "notes": "Once per policy year; once per lifetime for same illness"
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Re-load of 100% of Individual Base Sum Insured of any one member once per policy year",
+    "notes": "Triggers when base SI + NCB + floater SI insufficient; for different illness/injury"
+  },
+  "no_claim_bonus_pct": 20.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Annual health check-up for prescribed tests, over and above base SI; subject to renewal",
+    "notes": null
+  },
+  "room_rent_capping": "As per policy schedule",
+  "icu_capping": "As per policy schedule",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "Not applicable",
+  "disease_wise_sub_limits": {
+    "modern_treatments": "Up to 50% of sum insured",
+    "nutrition_allowance_post_delivery": "Up to Rs. 10,000 paid two months post-discharge",
+    "newborn_vaccination_first_year": "Up to Rs. 10,000",
+    "emergency_domestic_evacuation": "Up to Rs. 1 lakh (part of SI; once per policy)"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Worldwide Emergency Hospitalization on reimbursement basis",
+    "notes": null
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "investigation and evaluation (Excl04)",
+    "rest cure and respite care (Excl05)",
+    "obesity/weight control (Excl06)",
+    "change-of-gender treatments (Excl07)",
+    "cosmetic or plastic surgery (Excl08)",
+    "hazardous or adventure sports (Excl09)",
+    "breach of law (Excl10)",
+    "excluded providers (Excl11)",
+    "alcohol/drug/substance abuse (Excl12)",
+    "refractive error (Excl15)",
+    "unproven treatments (Excl16)",
+    "sterility and infertility (Excl17)",
+    "alternative treatment (non-AYUSH)",
+    "congenital conditions",
+    "nuclear/chemical/biological attack",
+    "self-inflicted injuries",
+    "OPD treatment (except preventive)"
+  ],
+  "temporary_exclusions": [
+    "pre-existing diseases (36 months)",
+    "specific listed diseases (24 months)",
+    "initial 30 days for non-accident illness",
+    "maternity (24 months waiting)"
+  ],
+  "notable_exclusions_summary": "Family floater with maternity (Rs. 50,000), reload, worldwide emergency, and 11 CI second opinion. Excludes adventure sports, refractive error, cosmetic surgery, infertility and OPD (except preventive checkup).",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via Royal Sundaram network hospitals (MediAssist TPA 04068213621 / Paramount TPA 1800226655); reimbursement within 30 days of discharge. Customer Services 1860-258-0000 / 1860-425-0000. TAT pre-auth 1 hour, final bill 3 hours.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Hospital Cash (max Rs. 60,000 per insured for 30 days hospitalization)"
+  ],
+  "top_rider_examples": [
+    "Hospital Cash"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/royal-sundaram/family-plus__cis.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 92.0
+}

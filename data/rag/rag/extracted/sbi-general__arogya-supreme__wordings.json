@@ -1,0 +1,197 @@
+{
+  "policy_id": "sbi-general__arogya-supreme__wordings",
+  "insurer_name": "SBI General Insurance Company Limited",
+  "insurer_slug": "sbi-general",
+  "policy_name": "Arogya Supreme",
+  "policy_type": "family_floater",
+  "uin_code": "SBIHLIP21043V012122",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    300000,
+    400000,
+    500000,
+    600000,
+    800000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    5000000,
+    7500000,
+    10000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Internal Congenital Anomaly (24 months)",
+    "Cataract (24 months)",
+    "Hypertension/Diabetes/Cardiac Conditions (90 days)",
+    "Major Illness Benefit (90 days)",
+    "COVID-19 (15 days)"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Both Indemnity (Section A) and Benefit (Section B Major Illness rider). 3 plans: Pro/Plus/Premium with different SI ranges.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured per policy year",
+    "notes": "Covers room rent, ICU, surgeon/anaesthetist fees, blood, OT charges, telemedicine consultation, prosthetics implanted internally."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All Day Care procedures up to SI (537 covered)",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured (includes pre/post hospitalization)",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "Ayurvedic, Unani, Siddha, Homeopathy in hospital, AYUSH Hospital or AYUSH Day Care Centre."
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Maternity excluded."
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured for harvesting",
+    "notes": "Excludes donor's other hospitalization expenses."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 7000,
+    "limit_text": "Rs.3,000/5,000/7,000 per hospitalization based on plan",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": 2500000,
+    "limit_text": "Major Illness Benefit optional rider: 100% SI or max Rs.25L",
+    "notes": "Survival 30 days, IWP 90 days, eligibility 18+."
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Sum Insured Refill 100% Basic SI on complete or partial utilization",
+    "notes": "Includes Cumulative Bonus or Enhanced Cumulative Bonus."
+  },
+  "no_claim_bonus_pct": 15.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Annual from 1st renewal year (varies by plan)",
+    "notes": null
+  },
+  "room_rent_capping": "Pro Plan: Single Pvt AC Room (1% restriction option for 3-4L); Plus Plan: Single Pvt AC Room (Upgrade option, excluding suite); Premium Plan: Actuals up to SI",
+  "icu_capping": "Actuals (Plus/Premium); Pro 3-4L: Actuals with 2% restriction option",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "Optional Co-payment 10% or 20% (applied to each admissible claim after Deductible).",
+  "disease_wise_sub_limits": {
+    "genetic_disorder": "Rs.1,00,000 max",
+    "internal_congenital_anomaly": "25% of SI",
+    "advance_procedures": "25% of SI",
+    "cataract_pro": "Rs.50,000/eye",
+    "cataract_plus_premium": "Rs.1,00,000/eye"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Domestic Emergency Assistance up to Rs.5L (Plus)/Rs.10L (Premium) including Air Ambulance within India for travel 150+ km from home."
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation (Excl04)",
+    "Rest Cure/Rehabilitation/Respite Care (Excl05)",
+    "Obesity/Weight Control (Excl06)",
+    "Change-of-Gender (Excl07)",
+    "Cosmetic/Plastic Surgery (Excl08)",
+    "Hazardous/Adventure Sports (Excl09)",
+    "Breach of Law (Excl10)",
+    "Excluded Providers (Excl11)",
+    "Alcoholism/Drug/Substance Abuse (Excl12)",
+    "Health hydros/nature cure/spa (Excl13)",
+    "Dietary supplements without prescription (Excl14)",
+    "Refractive Error (Excl15)",
+    "Unproven Treatments (Excl16)",
+    "Sterility/Infertility (Excl17)",
+    "Maternity (Excl18)",
+    "War/war-like situations",
+    "Nuclear/chemical/biological",
+    "Treatment outside India",
+    "Circumcision unless medically necessary"
+  ],
+  "temporary_exclusions": [
+    "30-day generic waiting (Excl03)",
+    "2-year specific illnesses/procedures (Excl02)",
+    "3-year pre-existing diseases (Excl01)",
+    "90-day Hypertension/Diabetes/Cardiac",
+    "90-day Major Illness Benefit",
+    "15-day COVID-19"
+  ],
+  "notable_exclusions_summary": "Arogya Supreme excludes maternity, infertility, OPD, refractive error, war/nuclear injuries, and treatment outside India. Comprehensive policy covering 20 basic benefits and 8 optional add-ons. Sum Insured Refill provides 100% top-up of Basic SI on exhaustion.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA at network hospitals; reimbursement via document submission. 24/7 helpline 1800 210 3366. Settlement timelines per IRDAI norms.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Hospital Cash Benefit (Rs.500-5000/day)",
+    "Major Illness Benefit (lump-sum up to Rs.25L)",
+    "Additional Sum Insured for Accidental Hospitalization (1.5x/2x)",
+    "Enhanced Cumulative Bonus (25%/50% up to 200%)",
+    "No Claim Bonus Protector",
+    "Co-Payment (10%/20%)",
+    "Any Room Upgrade",
+    "Deductible (Rs.10,000/Rs.25,000)"
+  ],
+  "top_rider_examples": [
+    "Major Illness Benefit",
+    "Enhanced Cumulative Bonus",
+    "Additional SI for Accidental Hospitalization",
+    "Hospital Cash Benefit"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/sbi-general/arogya-supreme__wordings.pdf",
+  "source_pdf_url": "https://www.sbigeneral.in",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 90.0
+}

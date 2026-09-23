@@ -1,0 +1,120 @@
+{
+  "policy_id": "care-health__care-senior__brochure",
+  "insurer_name": "Care Health Insurance Limited",
+  "insurer_slug": "care-health-insurance",
+  "policy_name": "Care for Senior Citizens",
+  "policy_type": "individual",
+  "uin_code": "RHIHLIP21017V052021",
+  "min_entry_age_years": 61,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": null,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": null,
+  "residency_requirement": null,
+  "sum_insured_options_inr": [
+    300000,
+    500000,
+    700000,
+    1000000
+  ],
+  "premium_payment_modes": null,
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": null,
+  "grace_period_days": 30,
+  "free_look_period_days": null,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 48,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "cataract",
+    "hernia",
+    "hysterectomy",
+    "benign prostate hypertrophy",
+    "stones of renal system",
+    "cerebrovascular disorders",
+    "cardiovascular disorders",
+    "cancer",
+    "renal complications",
+    "breakage of bones"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": null,
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to SI, 541 Procedures",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to 10% of SI, covered after 3 days",
+    "notes": null
+  },
+  "ayush_coverage": null,
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": 100000,
+    "limit_text": "Up to ` 1,00,000",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2000,
+    "limit_text": "Up to ` 2,000 per hospitalization",
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Yes, Up to SI (Once in a Policy Year)",
+    "notes": null
+  },
+  "no_claim_bonus_pct": 10.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Annual Health check-up for all insured persons"
+  },
+  "room_rent_capping": "1% SI per day Single Private AC Room",
+  "icu_capping": "2% SI per day",
+  "copayment_pct": 20.0,
+  "copayment_trigger_notes": "If age is 61 years or more, option to choose co-payment of 20% per claim; additional 20% co-pay if hospitalization outside SMART SELECT network hospitals",
+  "disease_wise_sub_limits": {
+    "Cataract": "Up to ` 30,000 per eye",
+    "Total Knee Replacement": "Up to ` 1,00,000 per knee",
+    "Hernia, Hysterectomy, Benign Prostate Hypertrophy, Stones of renal system": "Up to ` 65,000/-",
+    "Cerebrovascular and Cardiovascular disorders, Cancer, other renal complications, breakage of bones": "Up to ` 2,50,000/-"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": null,
+  "temporary_exclusions": null,
+  "notable_exclusions_summary": null,
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": null,
+  "tat_cashless_authorization_hours": null,
+  "available_riders": null,
+  "top_rider_examples": null,
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": null,
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 85.0
+}

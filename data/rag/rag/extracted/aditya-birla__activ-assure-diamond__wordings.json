@@ -1,0 +1,131 @@
+{
+  "policy_id": "aditya-birla__activ-assure-diamond__wordings",
+  "insurer_name": "Aditya Birla Health Insurance Co. Limited",
+  "insurer_slug": "aditya-birla",
+  "policy_name": "Activ Assure Diamond",
+  "policy_type": "family_floater",
+  "uin_code": "ADIHLIP18077V011718",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 48,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Eye: Cataract, Glaucoma",
+    "ENT: Sinusitis, Rhinitis, Tonsillitis, Tympanitis, Deviated Nasal Septum, Otitis Media, Adenoiditis, Mastoiditis, Cholesteatoma",
+    "Gynecology: PCOD, Uterine Prolapse, Fibroids, Endometriosis, DUB, PID, Menorrhagia",
+    "Orthopedic: Gout, RA, Osteoarthritis, Osteoporosis, Prolapsed IV disc, Spondylopathies",
+    "Gastroenterology: Gall Bladder stones, Cholecystitis, Pancreatitis, Fissure/Fistula/Piles, Pilonidal sinus, GERD, Ulcers, Cirrhosis, Appendicitis",
+    "Urogenital: Stones in urinary system, BHP, Hernia, Hydrocele, Varicocele",
+    "Skin: Skin tumours (unless malignant), all skin diseases",
+    "General Surgery: Any swelling, tumour, cyst, nodule, polyp; Varicose veins; Congenital internal anomalies"
+  ],
+  "inpatient_hospitalization": {
+    "covered": true,
+    "notes": "Room/ICU, OT, doctor fees, qualified nurses, medicines, diagnostics, surgical appliances, prosthetic devices implanted intra-operatively"
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "586 listed day-care procedures"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "≥3 consecutive days; excludes asthma/bronchitis/URTI, arthritis/gout, chronic nephritis, diarrhea, diabetes, epilepsy, hypertension, psychiatric, PUO"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "In-patient AYUSH at recognised hospitals (15+ beds, 5+ qualified AYUSH doctors); pre/post hospitalization excluded"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Harvesting expenses per Transplantation of Human Organs Act 1994"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Road ambulance to nearest hospital; inter-hospital shifting also covered for advanced diagnostics or super-speciality treatment"
+  },
+  "preventive_health_checkup": {
+    "covered": true,
+    "notes": "Annual cashless health check-up; test panel varies by SI - basic (CBC, urine, FBS, cholesterol, SGPT, creatinine, ECG) up to comprehensive (LFT, TMT, Hba1C, chest X-ray, USG abdomen) for SI >75L. Children get height/weight/eye/dental/growth charting"
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_text": "Vaccination cover up to 18 years - BCG, OPV, Hep B, DPT, Measles, TT, JE, Hib"
+  },
+  "modern_treatments": {
+    "covered": false,
+    "notes": "Many modern treatments (RFQMR, ECP/EECP, HBOT, balloon sinuplasty, DBS, Holmium laser, KTP/cyber knife/Femto laser, bioabsorbable stents, oral chemo, Infliximab/Rituximab/Avastin/Lucentis, robotic surgery, bariatric) excluded"
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "notes": "Reload of Sum Insured once per policy year (after 1st claim); Unlimited Reload available as optional add-on"
+  },
+  "no_claim_bonus_pct": 10.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "no_claim_bonus_notes": "10% NCB per claim-free year, cap 50% of base SI. Super NCB optional add-on up to 100% cap (50% reduction on claim)",
+  "room_rent_capping": "Single Private A/C Room or as specified in Schedule. Proportional deduction on associated medical expenses if room category exceeds entitlement. 'Any Room Upgrade' optional add-on available.",
+  "icu_capping": "Per Schedule; proportional deduction on associated medical expenses if ICU exceeds entitlement",
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Mandatory co-payment per claim if entry age 61+ years (over and above any voluntary co-pay)",
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "notes": "International Emergency Assistance (Air Ambulance) for trips up to 90 days, >150 km from residence; emergency medical evacuation and repatriation only - not routine treatment"
+  },
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "War, terrorism, nuclear, chemical, biological events",
+    "Breach of law / criminal intent, self-harm, suicide attempts",
+    "Adventure sports as professional",
+    "Substance abuse, smoking cessation, nicotine addiction",
+    "Weight management / obesity treatment",
+    "Refractive error correction (eyesight)",
+    "Routine examinations / preventive check-ups",
+    "Cosmetic/plastic/aesthetic surgery (unless reconstructive after accident/cancer/burns)",
+    "Circumcision (unless medically necessary), sex change",
+    "Non-allopathic treatment",
+    "OPD treatments (where no hospitalization needed)",
+    "Unproven / experimental treatments",
+    "Hearing aids, spectacles, contact lenses, optometric therapy",
+    "Alopecia, baldness, wigs",
+    "Diabetic test strips, elastic stockings, medical supplies",
+    "Prosthesis, CPAP, BIPAP, nebulizers, glucometers, oxygen concentrators outside hospital",
+    "Psychiatric / psychological disorders, mental health, Parkinson's, Alzheimer's, dementia",
+    "External congenital anomaly",
+    "Stem cell therapy / growth hormone",
+    "Venereal/sexually transmitted diseases, HIV/AIDS",
+    "Maternity (except ectopic pregnancy)",
+    "Sterility/infertility/surrogacy/IVF",
+    "Treatment outside India (unless covered)",
+    "Robotic surgery (unless approved), Bariatric surgery",
+    "Radio Frequency Ablation (unless approved)",
+    "RFQMR, ECP/EECP, HBOT, balloon sinuplasty, DBS, KTP/cyber knife, Femto laser, bioabsorbable stents/valves/implants, oral chemotherapy, Infliximab/Rituximab/Avastin/Lucentis"
+  ],
+  "notable_exclusions_summary": "Diamond plan has extensive exclusions list (50 permanent + 24-month specific + 48-month PED + 4-year for Genetic Disorders). Modern treatments largely excluded - this is a relatively traditional product compared to newer Acko Health III. PED waiting period can be reduced to 24 months via optional cover.",
+  "available_riders": [
+    "Reduction in PED Waiting Period (to 24 months)",
+    "Unlimited Reload of Sum Insured",
+    "Super NCB (up to 100% SI)",
+    "Accidental Hospitalization Booster",
+    "Cancer Hospitalization Booster",
+    "Any Room Upgrade",
+    "HealthReturns (up to 30% premium back via Healthy Heart Score and Active Dayz)",
+    "Health Coach for chronic conditions",
+    "Second E-Opinion on 15 Critical Illnesses",
+    "Domestic / International Emergency Assistance with Air Ambulance"
+  ],
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless at network hospitals (planned: 72 hours notice; emergency: 24 hours notice; authorization within 24 hours) or Reimbursement (claim notice within 48 hours of admission or before discharge; documents within 30 days of discharge). Settlement within 30 days of last document; penal interest 2% above bank rate.",
+  "tat_cashless_authorization_hours": 24.0,
+  "source_pdf_path": "rag/corpus/aditya-birla/activ-assure-diamond__wordings.pdf",
+  "extraction_confidence_pct": 89
+}

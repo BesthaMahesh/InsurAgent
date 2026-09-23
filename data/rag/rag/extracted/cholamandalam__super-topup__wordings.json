@@ -1,0 +1,117 @@
+{
+  "policy_id": "cholamandalam__super-topup__wordings",
+  "insurer_name": "Cholamandalam MS General Insurance Company Limited",
+  "insurer_slug": "cholamandalam",
+  "policy_name": "Chola Super Topup",
+  "policy_type": "super_top_up",
+  "uin_code": "CHOHLIP21309V022021",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    500000,
+    750000,
+    1000000,
+    1500000,
+    2000000,
+    2500000
+  ],
+  "premium_payment_modes": [
+    "monthly",
+    "quarterly",
+    "half_yearly",
+    "annual"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 12,
+  "specific_diseases_listed": [
+    "Congenital internal anomaly",
+    "Varicose veins and varicose ulcers",
+    "Rheumatism and arthritis of any kind",
+    "Diseases of ears / tonsils / adenoids / paranasal sinuses / deviated nasal septum",
+    "Stones in urinary and biliary systems",
+    "Gastric or duodenal ulcer",
+    "Benign cyst, nodule, polyp, tumour, breast lump",
+    "Intervertebral disc prolapse / degenerative disc disorders",
+    "Cataract",
+    "Benign prostatic hypertrophy",
+    "Myomectomy, Hysterectomy (non-malignant)",
+    "Dilatation and curettage (D&C)",
+    "Anal fistula, fissure, piles",
+    "Hernia (all types)",
+    "Hydrocele",
+    "Chronic renal failure",
+    "Joint replacement surgery (non-accident)"
+  ],
+  "sub_limits_waiting_notes": "Super top-up pays only over the aggregate deductible per policy year. PREMIERE plan excludes pre/post-hospitalisation; SUPREME plan includes 60-day pre and 90-day post hospitalisation.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "Covered above deductible up to Sum Insured.",
+    "notes": "Includes room, ICU, OT, surgeon, anaesthetist, drugs, implants, donor harvesting expenses."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "141 listed day-care procedures covered up to SI above deductible."
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "Covered if condition prevents transfer or hospital bed unavailable; excludes asthma, arthritis, hypertension and other listed chronic conditions."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "Inpatient AYUSH treatment in recognised AYUSH hospital, up to SI above deductible."
+  },
+  "maternity_coverage": {
+    "covered": false
+  },
+  "newborn_coverage": {
+    "covered": false
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Donor in-patient hospitalisation expenses covered for harvesting organ for insured."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Road ambulance reimbursed on submission of original bills; cashless not available."
+  },
+  "critical_illness_cover": {
+    "covered": false
+  },
+  "restoration_benefit": {
+    "covered": false
+  },
+  "preventive_health_checkup": {
+    "covered": false
+  },
+  "copayment_pct": 0.0,
+  "deductible_amount_inr": 500000,
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation and evaluation only admissions",
+    "Rest cure, rehabilitation, custodial / respite care",
+    "Obesity / weight-control surgery (unless BMI/comorbidity criteria met)",
+    "Change-of-gender treatments",
+    "Hazardous or adventure sports (professional)",
+    "Breach of law, intentional self-injury, attempted suicide",
+    "Treatment at excluded hospitals/providers",
+    "Alcoholism, drug or substance abuse",
+    "Non-prescription dietary supplements",
+    "Cosmetic / aesthetic surgery"
+  ],
+  "notable_exclusions_summary": "Top-up only pays above the aggregate deductible. Standard health-insurance exclusions apply (cosmetic, weight-control without criteria, change-of-gender, hazardous sports, alcohol/drug abuse, self-inflicted, breach of law). PED waiting 36 months; specific-disease waiting 12 months.",
+  "claim_process_summary": "In-house claim settlement team; helpline 1800 208 9100; WhatsApp 7305234433. Deductible applied aggregate per policy year before insurer pays.",
+  "source_pdf_path": "rag/corpus/cholamandalam/super-topup__wordings.pdf",
+  "extraction_confidence_pct": 78
+}

@@ -1,0 +1,86 @@
+{
+  "policy_id": "hdfc-ergo__energy-diabetes-hypertension__wordings",
+  "insurer_name": "HDFC ERGO General Insurance Company Limited",
+  "insurer_slug": "hdfc-ergo",
+  "policy_name": "Energy (Diabetes/Hypertension)",
+  "policy_type": "disease_specific",
+  "uin_code": "HDFHLIP26048V052526",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse"
+  ],
+  "residency_requirement": "Indian resident",
+  "premium_payment_modes": [
+    "monthly",
+    "quarterly",
+    "half_yearly",
+    "annual"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "sub_limits_waiting_notes": "Designed specifically for individuals with Type 1 / Type 2 Diabetes, IFG, IGT, and/or Hypertension. Diabetes and hypertension covered from Day 1 once policy issued. Wellness Programme included.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "notes": "Includes room, ICU, OT, anaesthesia, blood, oxygen, surgical appliances, drugs, diagnostics, implants."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "Inpatient AYUSH treatment in certified AYUSH hospital."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Road ambulance cover."
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Donor hospitalisation expenses for transplant to insured."
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "notes": "Restore benefit refills SI after exhaustion."
+  },
+  "no_claim_bonus_pct": 10.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "notes": "HbA1C checkup benefit + structured Wellness Programme for Diabetes and Hypertension."
+  },
+  "maternity_coverage": {
+    "covered": false
+  },
+  "newborn_coverage": {
+    "covered": false
+  },
+  "critical_illness_cover": {
+    "covered": false
+  },
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Treatment outside India",
+    "Treatment at non-Hospital facility",
+    "Cosmetic / aesthetic surgery",
+    "Investigation-only admissions",
+    "Hazardous / adventure sports",
+    "Self-inflicted injury / suicide",
+    "Substance abuse / alcoholism",
+    "Maternity / infertility",
+    "War, nuclear, radiation"
+  ],
+  "notable_exclusions_summary": "Disease-specific (diabetes/hypertension) indemnity plan. Diabetes/HTN covered from Day 1 once underwritten. Other PED waiting 36 months. Standard health exclusions apply.",
+  "available_riders": [
+    "Wellness Programme for Diabetes & Hypertension"
+  ],
+  "source_pdf_path": "rag/corpus/hdfc-ergo/energy-diabetes-hypertension__wordings.pdf",
+  "extraction_confidence_pct": 80
+}

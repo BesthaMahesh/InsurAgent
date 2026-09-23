@@ -1,0 +1,122 @@
+{
+  "policy_id": "cholamandalam__flexi-health__wordings",
+  "insurer_name": "Cholamandalam MS General Insurance Company Limited",
+  "insurer_slug": "cholamandalam",
+  "policy_name": "Chola Flexi Health",
+  "policy_type": "individual",
+  "uin_code": "CHOHLIP24145V062526",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse+kids",
+    "self+spouse+kids+parents",
+    "multi_generation"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    50000,
+    100000,
+    200000,
+    300000,
+    500000,
+    750000,
+    1000000,
+    1500000,
+    2000000,
+    2500000
+  ],
+  "premium_payment_modes": [
+    "monthly",
+    "quarterly",
+    "half_yearly",
+    "annual"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "2 year waiting period applies to listed specified ailments; 36 months for pre-existing diseases.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "Covered up to Sum Insured; room rent capped at Rs.2000/day for SI ≤ Rs.2 Lakh, no cap above.",
+    "notes": "Includes room, ICU, nursing, surgeon, OT, drugs, implants and diagnostic costs."
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "539+ day-care procedures covered up to Sum Insured."
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "Covered when condition prevents hospital transfer or no room available."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "Inpatient AYUSH treatment in recognised AYUSH hospitals."
+  },
+  "maternity_coverage": {
+    "covered": false
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_text": "Coverage from Day 1 for newborn baby."
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Donor hospitalisation expenses covered for transplant to insured."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2000,
+    "limit_text": "Up to 1% of SI subject to maximum Rs.2,000 per hospitalisation."
+  },
+  "critical_illness_cover": {
+    "covered": false
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_text": "100% restoration of SI for unrelated claims; recharge benefit for related claims (SI ≥ Rs.3 lakh).",
+    "notes": "Not applicable for claims due to road traffic accidents."
+  },
+  "no_claim_bonus_pct": 10.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_text": "Once in two claim-free years, up to defined limits."
+  },
+  "room_rent_capping": "Rs.2000/day for SI Rs.50,000 / 1L / 2L; no room rent cap for SI above Rs.2 Lakh.",
+  "icu_capping": "No specific ICU cap mentioned; included under inpatient hospitalisation.",
+  "copayment_pct": 20.0,
+  "copayment_trigger_notes": "20% co-pay applies if treatment is taken in Tier-1 city when policy was rated for Tier-2 location.",
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Cosmetic or aesthetic surgery (unless reconstructive after accident/cancer)",
+    "Self-inflicted injury / suicide",
+    "Treatment due to substance abuse or alcohol",
+    "Unproven or experimental treatments",
+    "War, riots, civil commotion, nuclear/radioactive contamination",
+    "Hazardous sports and adventure activities",
+    "Treatment outside India",
+    "Dental treatment unless arising out of accident",
+    "Refractive error correction below 7.5 dioptres",
+    "Sterility, infertility and assisted reproduction"
+  ],
+  "notable_exclusions_summary": "Cosmetic, dental (non-accidental), refractive corrections, infertility, self-inflicted, substance abuse, war, hazardous sports and overseas treatment are excluded. Pre-existing diseases are excluded for the first 36 months.",
+  "claim_process_summary": "In-house claim settlement team; 24x7 helpline 1800 208 9100; WhatsApp 7305234433. Cashless authorisation through network hospitals or reimbursement via claim form with discharge summary and bills.",
+  "available_riders": [
+    "Medical Second Opinion",
+    "Flexi OP Care (OPD)",
+    "Home Care Treatment"
+  ],
+  "source_pdf_path": "rag/corpus/cholamandalam/flexi-health__wordings.pdf",
+  "extraction_confidence_pct": 82
+}

@@ -1,0 +1,91 @@
+{
+  "policy_id": "niva-bupa__aspire__wordings",
+  "insurer_name": "Niva Bupa Health Insurance Company Limited",
+  "insurer_slug": "niva-bupa",
+  "policy_name": "Aspire",
+  "policy_type": "family_floater",
+  "uin_code": "NBHHLIP26049V022526",
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids", "self+spouse+kids+parents"],
+  "residency_requirement": "Indian resident; global cover for allopathic; AYUSH limited to India",
+  "premium_payment_modes": ["annual", "monthly", "quarterly", "half_yearly"],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "sub_limits_waiting_notes": "PED 36 months; specific waiting 24 months for listed conditions; maternity if opted",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "No room rent or ICU cap. Choose any room. Hospitalisation for 2+ hours including all day-care procedures."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "All day care + 12 Modern Treatments (robotic, stem cell, deep brain stimulation, etc.)"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "Home Care for chronic conditions with daily monitoring; peritoneal dialysis and chemotherapy at home covered"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_text": "Up to Base Sum Insured (AYUSH covered only in India)"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_text": "Road and Air ambulance up to Base Sum Insured (Air ambulance in emergency only)"
+  },
+  "maternity_coverage": {"covered": false, "notes": "Optional in some variants; not in base"},
+  "newborn_coverage": {"covered": false, "notes": "Optional add-on"},
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Donor harvesting expenses covered when insured undergoes covered transplant; also covered when insured donates an organ"
+  },
+  "critical_illness_cover": {"covered": false, "notes": "Available as optional rider"},
+  "restoration_benefit": {
+    "covered": true,
+    "limit_text": "ReAssure+ Forever: unlimited sum insured restoration on first claim; max per claim = Base SI",
+    "notes": "Triggers on first paid claim and stays for life if renewed without break"
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": 200.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_text": "Annual health checkup from Day 1 (cashless only via app); comprehensive panel including CBC, lipid, LFT, KFT, ECG, TMT/2D-Echo, USG, mammogram, PAP smear, colonoscopy >50"
+  },
+  "room_rent_capping": "No cap",
+  "icu_capping": "No cap",
+  "copayment_pct": 0.0,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "worldwide",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_text": "Allopathic treatments covered anywhere in the world (Borderless benefit)"
+  },
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "PED (within 36 months)",
+    "First 30 days (except accident)",
+    "Specific waiting list diseases",
+    "Cosmetic / plastic surgery",
+    "Change of gender",
+    "Sterility / infertility (unless opted)",
+    "Maternity (unless opted)",
+    "War / nuclear",
+    "Hazardous adventure sports (professional)",
+    "Drug / alcohol abuse",
+    "Unproven / experimental treatments",
+    "Investigations not linked to admission",
+    "Self-inflicted injury / suicide"
+  ],
+  "notable_exclusions_summary": "Borderless allopathic cover globally; AYUSH limited to India. No room rent cap. Lock-the-Clock locks premium age at entry until first claim. ReAssure+ Forever gives unlimited SI refills.",
+  "available_riders": ["Booster+", "Safeguard / Safeguard+", "ReAssure+ / ReAssureX", "M-iracle benefit", "Personal Accident"],
+  "claim_process_summary": "Cashless via Niva Bupa network; pre-auth within 1 hour, final discharge within 3 hours. App-based health checkup booking. Reimbursement via web portal for non-network providers.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/niva-bupa/aspire__wordings.pdf",
+  "extraction_confidence_pct": 90
+}

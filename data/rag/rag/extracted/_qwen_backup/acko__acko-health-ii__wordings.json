@@ -1,0 +1,156 @@
+{
+  "policy_id": "acko__acko-health-ii__wordings",
+  "insurer_name": "Acko General Insurance Limited",
+  "insurer_slug": "acko",
+  "policy_name": "Acko Health II",
+  "policy_type": "other",
+  "uin_code": "ACKHLIP26036V012526",
+  "min_entry_age_years": null,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": null,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": null,
+  "residency_requirement": null,
+  "sum_insured_options_inr": [],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 24,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [],
+  "maternity_waiting_months": 48,
+  "sub_limits_waiting_notes": null,
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "room_rent_capping": "no_capping",
+  "icu_capping": "no_capping",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "network_hospital_count": 0,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "pre_existing_diseases",
+    "investigation_and_evaluation",
+    "rest_cure_rehabilitation_respite_care",
+    "obesity_weight_control",
+    "change_of_gender_treatments",
+    "cosmetic_or_plastic_surgery",
+    "breach_of_law",
+    "excluded_providers",
+    "refractive_error",
+    "unproven_treatments",
+    "sterility_and_infertility",
+    "maternity"
+  ],
+  "temporary_exclusions": [
+    "30_day_waiting_period",
+    "specific_disease_waiting_period"
+  ],
+  "notable_exclusions_summary": "Maternity, pre-existing diseases, cosmetic surgery, infertility, and refractive errors are excluded. Certain exclusions may be waived under specific rider options.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": null,
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "doctor_on_call",
+    "family_physician",
+    "opd_medical_services",
+    "daily_hospital_cash",
+    "accidental_death_or_disability_cover",
+    "accidental_disability_cover",
+    "value_added_services",
+    "super_top_up"
+  ],
+  "top_rider_examples": [
+    "OPD Medical Services",
+    "Daily Hospital Cash",
+    "Accidental Death or Disability Cover",
+    "Super Top-up"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": null,
+  "source_pdf_url": "www.acko.com/gi",
+  "last_updated_date": null,
+  "extraction_confidence_pct": 95.0
+}

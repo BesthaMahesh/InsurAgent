@@ -1,0 +1,156 @@
+{
+  "policy_id": "iffco-tokio__critical-illness-benefit__wordings",
+  "insurer_name": "IFFCO-Tokio General Insurance Company Limited",
+  "insurer_slug": "iffco-tokio",
+  "policy_name": "Critical Illness Benefit",
+  "policy_type": "critical_illness",
+  "uin_code": "IFFHLIP19036V011920",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    500000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    5000000,
+    10000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": null,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "30-day initial waiting from policy inception before any CI is payable. 28-day survival period from date of diagnosis. PED waiting 36 months. Standalone individual CI lump-sum benefit.",
+  "inpatient_hospitalization": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Pure lump-sum CI benefit — does not reimburse hospitalisation expenses"
+  },
+  "pre_hospitalization_days": null,
+  "post_hospitalization_days": null,
+  "day_care_treatments": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Pregnancy, childbirth, infertility explicitly excluded"
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Covers 25 critical illnesses, medical events and surgical procedures: Cancer, Kidney failure, Multiple Sclerosis, Benign Brain Tumor, Motor Neuron Disease, End-stage Lung/Liver Failure, Primary Pulmonary Hypertension, Parkinson's <50, Alzheimer's <50, Major Organ/Bone Marrow Transplant, Heart valve repair/replacement, Open chest CABG, Aorta surgery, Stroke, Permanent Paralysis, First Heart Attack, Third Degree Burns, Loss of Speech/Limbs/Hearing/Sight, Coma, Major Head Trauma, Muscular Dystrophy",
+    "notes": "One-time lump-sum payment on first diagnosis with 28-day survival; policy terminates for that insured after claim"
+  },
+  "restoration_benefit": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "50% diagnostic-test reimbursement on pre-policy check-up if accepted"
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": false,
+  "permanent_exclusions": [
+    "Pre-existing conditions before policy issue (subject to 36-month waiting)",
+    "Treatment from family member or self-medication",
+    "Treatment at excluded provider hospitals",
+    "Congenital anomaly / birth defects",
+    "Non-prescribed drug ingestion",
+    "Elective / cosmetic / plastic surgery",
+    "Pregnancy, childbirth and consequences",
+    "Infertility / sub-fertility / assisted conception",
+    "Birth control / hormone replacement therapy",
+    "Self-inflicted injury / suicide",
+    "War, civil war, nuclear",
+    "Substance abuse"
+  ],
+  "temporary_exclusions": [
+    "30-day initial waiting period from inception",
+    "28-day survival period from CI diagnosis",
+    "36-month PED waiting"
+  ],
+  "notable_exclusions_summary": "Standalone Critical Illness lump-sum product covering 25 conditions. Pays once per insured on first diagnosis subject to 28-day survival; policy terminates for that insured. 30-day initial wait and 36-month PED wait. Pregnancy, infertility, congenital anomalies, cosmetic surgery, and self-inflicted injuries are permanently excluded.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Lump-sum benefit on diagnosis — submit specialist medical certificate, diagnostic reports, and survival proof at 28 days.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [],
+  "top_rider_examples": [],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/iffco-tokio/critical-illness-benefit__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 86.0
+}

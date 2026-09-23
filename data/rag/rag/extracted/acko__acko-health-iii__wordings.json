@@ -1,0 +1,143 @@
+{
+  "policy_id": "acko__acko-health-iii__wordings",
+  "insurer_name": "Acko General Insurance Limited",
+  "insurer_slug": "acko",
+  "policy_name": "ACKO Health III",
+  "policy_type": "family_floater",
+  "uin_code": "ACKHLIP27040V012627",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 36,
+  "specific_diseases_listed": [
+    "Cataract, Glaucoma, disorders of lens, disorders of retina",
+    "Pancreatitis and stones in biliary and urinary system",
+    "Female genital prolapse, endometriosis/adenomyosis, fibroids, PCOD, hysterectomy",
+    "All benign or in situ neoplasms, cyst, sinus, polyp",
+    "Hyperplasia of prostate, hydrocele, varicocele",
+    "Hemorrhoids, fistula, pilonidal sinus, rectal prolapse",
+    "Hernia of all sites",
+    "Osteoarthritis, rheumatoid arthritis, joint replacement",
+    "Chronic kidney disease and failure",
+    "Varicose veins",
+    "Middle ear / tonsils / nasal sinuses",
+    "Internal congenital anomaly",
+    "Gastritis, GERD, ulcer, varices of upper GI tract",
+    "Ligament / tendon / meniscal tear",
+    "Neurodegenerative disorders (Parkinson's, Alzheimer's, dementia)"
+  ],
+  "inpatient_hospitalization": {
+    "covered": true,
+    "notes": "Room/ICU, OT, doctor fees, medicines, diagnostics, internal implants"
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "All listed day-care procedures incl AYUSH"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "≥3 consecutive days; reimbursement only"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "In-patient AYUSH treatment - Ayurveda, Yoga & Naturopathy, Unani, Siddha, Homeopathy"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Within insured's SI"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Road ambulance and public transport"
+  },
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": 900,
+    "notes": "12 specified tests for age >18 at network; up to Rs 900 reimburse"
+  },
+  "modern_treatments": {
+    "covered": true,
+    "notes": "12 listed modern treatments"
+  },
+  "room_rent_capping": "No cap (actual room rent and ICU)",
+  "icu_capping": "No cap",
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "maternity_coverage": {
+    "covered": false,
+    "notes": "Excluded except ectopic pregnancy"
+  },
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "notes": "Treatment outside India excluded unless Worldwide IP add-on opted"
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "notes": "Restore Sum Insured optional add-on"
+  },
+  "no_claim_bonus_notes": "Multiple optional NCB choices: Cumulative Bonus, NCB Sum Insured, No Claim Discount, Inflation Protect SI",
+  "permanent_exclusions": [
+    "Treatment outside India (unless WW IP cover)",
+    "OPD (unless add-on)",
+    "Self-harm",
+    "Dental (unless accident)",
+    "Circumcision (unless medically necessary)",
+    "External prosthetics",
+    "War / nuclear / chemical / biological",
+    "Hormonal therapies",
+    "Substance abuse",
+    "Sleep disorders",
+    "STDs except HIV",
+    "Professional hazardous sports",
+    "External congenital anomaly",
+    "Spinal subluxation / skeletal manipulation",
+    "PED until waiting period",
+    "Investigation-only admissions",
+    "Rest cure / respite care",
+    "Obesity surgery (unless BMI criteria)",
+    "Change-of-gender",
+    "Cosmetic/plastic (unless reconstructive)",
+    "Breach of law",
+    "Health hydros / spas",
+    "OTC supplements",
+    "Refractive error < 7.5 diopters",
+    "Unproven / experimental",
+    "Sterility / infertility / IVF / surrogacy",
+    "Maternity (except ectopic)"
+  ],
+  "notable_exclusions_summary": "Standard IRDAI 16-section exclusions plus permanent exclusions. Maternity, OPD, and worldwide treatment all need explicit add-on cover.",
+  "available_riders": [
+    "Worldwide In-Patient Hospitalization",
+    "Restore Sum Insured",
+    "Cumulative Bonus",
+    "NCB Sum Insured",
+    "No Claim Discount",
+    "Inflation Protect SI",
+    "Reduction in Specific Illness Waiting Period (Comprehensive/Essential)",
+    "Initial 30 Days Waiting Period Waiver",
+    "Preventive Health Check-up",
+    "Waiver of Non-payable Expenses",
+    "All medically necessary hospitalization",
+    "First Notification of Claim",
+    "Preferred Providers Network",
+    "Co-Pay",
+    "Floater Deductible",
+    "Individual Deductible",
+    "Doctor-on-call",
+    "Value Added Services"
+  ],
+  "claim_process_summary": "Cashless or reimbursement; planned cashless 2 days before admission, emergency within 48 hours, pre-auth TAT 1 hour, final TAT 3 hours. Reimbursement within 15 days. Penal interest 2% above bank rate.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/acko/acko-health-iii__wordings.pdf",
+  "extraction_confidence_pct": 88
+}

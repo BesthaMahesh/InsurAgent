@@ -1,0 +1,131 @@
+{
+  "policy_id": "national-insurance__national-mediclaim-plus__wordings",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Mediclaim Plus Policy",
+  "policy_type": "individual",
+  "uin_code": "NICHLIP25038V032425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids", "self+spouse+kids+parents"],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000, 1500000, 2000000, 2500000, 3000000, 4000000, 5000000],
+  "premium_payment_modes": ["annual"],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Per policy wordings — same plan structure as CIS/Prospectus.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Plan-tiered room/ICU limits",
+    "notes": null
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "140+ day care procedures",
+    "notes": null
+  },
+  "domiciliary_treatment": null,
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH inpatient up to SI",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Plan-tiered (Rs 30K/50K up to Rs 80K/100K)",
+    "notes": null
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "First 3 months auto-covered under mother's SI",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor hospitalisation",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Plan-tiered (Rs 2,500 - Rs 5,000/year)",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional rider Rs 2-25L lumpsum on CI diagnosis",
+    "notes": null
+  },
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Every 2 years",
+    "notes": null
+  },
+  "room_rent_capping": "Plan A: 1% SI/day; Plan B: Rs 15K/day or actual; Plan C: Rs 20K/day or actual",
+  "icu_capping": "Plan A: 2% SI/day; Plan B/C: actual",
+  "copayment_pct": 10.0,
+  "copayment_trigger_notes": "Optional 10/20% copay",
+  "disease_wise_sub_limits": {
+    "cataract": "Plan-tiered",
+    "modern_treatments": "25% SI/treatment"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Cosmetic / Plastic",
+    "Obesity",
+    "Hazardous Sports",
+    "Drug Abuse",
+    "Refractive Error",
+    "Sterility / Infertility",
+    "Self-inflicted",
+    "Vaccination",
+    "Dental",
+    "Domiciliary / OPD",
+    "War",
+    "Radioactivity",
+    "Outside India"
+  ],
+  "temporary_exclusions": [
+    "30 days initial",
+    "90 days lifestyle",
+    "1/2/3 yrs specific",
+    "PED 36 months"
+  ],
+  "notable_exclusions_summary": "Tiered indemnity health policy; same as CIS / prospectus.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA; 1-hour pre-auth; reimbursement within 15 days; settlement 15 days.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": ["Critical Illness", "Outpatient Treatment"],
+  "top_rider_examples": ["Critical Illness", "Outpatient Treatment"],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-mediclaim-plus__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 88
+}

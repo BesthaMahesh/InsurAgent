@@ -1,0 +1,221 @@
+{
+  "policy_id": "royal-sundaram__lifeline__cis",
+  "insurer_name": "Royal Sundaram General Insurance Co. Limited",
+  "insurer_slug": "royal-sundaram",
+  "policy_name": "Lifeline",
+  "policy_type": "family_floater",
+  "uin_code": "RSAHLIP24146V032324",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    200000,
+    300000,
+    400000,
+    500000,
+    750000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    3000000,
+    5000000,
+    10000000,
+    15000000
+  ],
+  "premium_payment_modes": [
+    "monthly",
+    "quarterly",
+    "half_yearly",
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Stones in biliary and urinary systems",
+    "Lumps/cysts/nodules/polyps/internal tumours",
+    "Gastric and Duodenal Ulcers",
+    "Surgery on tonsils/adenoids",
+    "Osteoarthrosis/Arthritis/Gout/Rheumatism/Spondylosis/Spondylitis/Intervertebral Disc Prolapse",
+    "Cataract",
+    "Fissure/Fistula/Hemorrhoids",
+    "Hernia/Hydrocele",
+    "Chronic Renal Failure or end stage Renal Failure",
+    "Sinusitis/Deviated Nasal Septum/Tympanoplasty/Chronic Suppurative Otitis Media",
+    "Benign Prostatic Hypertrophy",
+    "Knee/Hip Joint replacement",
+    "Dilatation and Curettage",
+    "Varicose veins",
+    "Dysfunctional Uterine Bleeding/Fibroids/Prolapse Uterus/Endometriosis",
+    "Hysterectomy for any benign disorder"
+  ],
+  "maternity_waiting_months": 36,
+  "sub_limits_waiting_notes": "Critical Illness initial 90 days. Bariatric Surgery: 72 months (Supreme Plus), 48 months (Elite Plus). IVF Treatment: 48 months. PED: 24 months for Elite only.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Covered up to Sum Insured. Modern Treatments up to 50% of SI.",
+    "notes": "Covers Medical Practitioner fees, diagnostics, medicines, OT, ICU, IV fluids, blood, prosthetics implanted internally."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All Day Care Procedures covered",
+    "notes": "Pre and post hospitalization expenses included."
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to SI; 3-day minimum continuous treatment",
+    "notes": "Pre-hospitalization expenses payable; post-hospitalization not payable."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to 100% of Sum Insured",
+    "notes": "Inpatient under Ayurveda, Yoga & Naturopathy, Unani, Siddha, Homeopathy"
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": 250000,
+    "limit_text": "Rs.2L-2.5L based on SI (Elite Plan only)",
+    "notes": "3-year (36 month) waiting period; both husband and wife covered."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "25% of Sum Insured (Rs.6.25L-37.5L); vaccinations up to Rs.10,000 first year",
+    "notes": "Maternity Benefit must be accepted. Elite Plan only."
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Medical expenses for harvesting; up to SI",
+    "notes": "Excludes pre/post hospitalization and screening expenses of donor."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 10000,
+    "limit_text": "Rs.3,000 Classic / Rs.5,000 Supreme / Rs.10,000 Elite per hospitalization",
+    "notes": "Surface transport to nearest hospital following emergency."
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Second Opinion for 11 CIs (Supreme/Elite); International Treatment for 11 CIs (Elite); +11 more CIs under Supreme Plus/Elite Plus",
+    "notes": "Critical illness must be diagnosed in India. 20% co-payment on international treatment claims."
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Re-load of Sum Insured up to 100% of Base SI",
+    "notes": "For different illness or different insured for same illness. Not for 1st claim. Not for worldwide emergency hospitalization."
+  },
+  "no_claim_bonus_pct": 20.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Annual (Supreme/Elite); biennial (Classic). Over and above SI for insured 18+",
+    "notes": null
+  },
+  "room_rent_capping": "No Room Rent Cap",
+  "icu_capping": "No cap",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "Zone 2 is priced 25% lower than Zone 1. 20% co-payment on International Treatment for specified CIs under Elite.",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "worldwide_ex_usa_canada",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": 2000000,
+    "limit_text": "50% of SI or Rs.20 lakhs, whichever lower; USD 2,000 deductible per hospitalization",
+    "notes": "Elite Plan only. US/Canada included only via separate optional cover."
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation (Excl04)",
+    "Rest Cure/Rehabilitation/Respite Care (Excl05)",
+    "Obesity/Weight Control (Excl06)",
+    "Change-of-Gender treatments (Excl07)",
+    "Cosmetic or plastic Surgery (Excl08)",
+    "Hazardous or Adventure sports (Excl09)",
+    "Breach of law (Excl10)",
+    "Excluded Providers (Excl11)",
+    "Alcoholism/drug/substance abuse (Excl12)",
+    "Treatments in health hydros, nature cure clinics, spas (Excl13)",
+    "Dietary supplements without prescription (Excl14)",
+    "Refractive Error (Excl15)",
+    "Unproven Treatments (Excl16)",
+    "Sterility and Infertility (Excl17)",
+    "Maternity (Excl18) - covered only Elite",
+    "Alternative treatment",
+    "Ancillary Hospital Charges",
+    "Charges for medical papers",
+    "Circumcision",
+    "Conflict and disaster",
+    "Congenital conditions (External)",
+    "Convalescence and Rehabilitation",
+    "Dental/oral treatment",
+    "Drugs/dressings for OPD or take-home",
+    "Hereditary conditions",
+    "Items of personal comfort",
+    "OPD Treatment",
+    "Preventive Care",
+    "Self-inflicted injuries",
+    "Sexual problems",
+    "STDs",
+    "Sleep disorders",
+    "Alopecia treatment",
+    "Developmental problems treatment",
+    "Treatment received outside India",
+    "Artificial life maintenance",
+    "Nuclear/chemical/biological attack"
+  ],
+  "temporary_exclusions": [
+    "30-day initial waiting period (Excl03)",
+    "24-month specific disease waiting period (Excl02) - 16 conditions",
+    "Pre-existing 36 months Classic/Supreme; 24 months Elite (Excl01)",
+    "Critical Illness initial 90 days",
+    "Maternity 36 months",
+    "Bariatric Surgery 72 months (Supreme Plus) / 48 months (Elite Plus)",
+    "IVF 48 months (Elite Plus)"
+  ],
+  "notable_exclusions_summary": "Lifeline excludes treatments outside India (except worldwide emergency for Elite), refractive error, unproven treatments, infertility (except IVF rider under Elite Plus), congenital external anomalies, and all forms of OPD. Maternity is excluded except under Elite Plan after 36-month waiting period.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless and reimbursement both via TPA. For cashless: call TPA helpline, furnish membership number, get pre-authorization. Settlement within 15 days of last document; 2% above bank rate interest for delays.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Top-up plan with deductible (Rs.1-10 lakhs) - Endorsement 1",
+    "Hospital Cash (Rs.1,000-5,000/day) - Endorsement 2",
+    "US/Canada inclusion for Worldwide Hospitalization - Endorsement 3",
+    "Supreme Plus (Elite-like benefits for Supreme)",
+    "Elite Plus (Premium add-on with IVF, 22 CI Second Opinion)"
+  ],
+  "top_rider_examples": [
+    "Elite Plus (IVF + Maternity + International Treatment for 14 CIs)",
+    "Supreme Plus (Bariatric Surgery + Mobility Devices + Refresh of SI)",
+    "Top-up plan",
+    "Hospital Cash"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/royal-sundaram/lifeline__cis.pdf",
+  "source_pdf_url": "https://www.royalsundaram.in",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 92.0
+}

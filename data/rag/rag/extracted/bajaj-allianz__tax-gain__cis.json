@@ -1,0 +1,71 @@
+{
+  "policy_id": "bajaj-allianz__tax-gain__cis",
+  "insurer_name": "Bajaj Allianz General Insurance Co. Ltd.",
+  "insurer_slug": "bajaj-allianz",
+  "policy_name": "Tax Gain",
+  "policy_type": "family_floater",
+  "uin_code": "BAJHLIP21184V022021",
+  "sum_insured_options_inr": [300000],
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Gastric/duodenal ulcers",
+    "Benign prostatic hypertrophy",
+    "All types of sinuses",
+    "Hemorrhoids",
+    "Dysfunctional uterine bleeding",
+    "Endometriosis",
+    "Stones in urinary and biliary systems",
+    "Surgery on ears/tonsils/adenoids/paranasal sinuses",
+    "Cataracts",
+    "Hernia and Hydrocele of all types",
+    "Fistulae",
+    "Fissure in ano",
+    "Fibromyoma",
+    "Hysterectomy",
+    "Surgery for any skin ailment",
+    "Surgery on internal/external tumours/cysts/nodules/polyps/breast lumps",
+    "Parkinson's Disease",
+    "Alzheimer's Disease",
+    "Mental Illness"
+  ],
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 1000,
+    "limit_text": "Maximum Rs 1,000 per valid hospitalization claim."
+  },
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_text": "Preventive health check-up after every 4 continuous policy years."
+  },
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "free_look_period_days": 30,
+  "tat_cashless_authorization_hours": 2,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids"],
+  "permanent_exclusions": [
+    "Pregnancy and complications",
+    "Obesity/Weight Control",
+    "Change-of-gender treatments",
+    "Cosmetic surgery (except post-accident)",
+    "Breach of law with criminal intent",
+    "Alcoholism, drug or substance abuse",
+    "Sterility and infertility",
+    "Cosmetic dental procedures",
+    "War, invasion, acts of foreign enemies",
+    "Congenital external diseases or defects",
+    "Intentional self-injury",
+    "Vaccination or inoculation",
+    "Treatment outside India",
+    "Treatment under any system other than modern medicine and AYUSH"
+  ],
+  "claim_process_summary": "Cashless via network hospital with 48-hour planned/24-hour emergency intimation. Reimbursement documents within 30 days of discharge. Settlement within 30 working days; pre-auth within 120 minutes.",
+  "disease_wise_sub_limits": {
+    "spectacles": "After 1 year, max 25% of OPD limit",
+    "dentures": "After 2 years, max 25% of OPD limit",
+    "hearing_aids": "After 2 years, max 25% of OPD limit"
+  },
+  "source_pdf_path": "rag/corpus/bajaj-allianz/tax-gain__cis.pdf",
+  "extraction_confidence_pct": 85
+}

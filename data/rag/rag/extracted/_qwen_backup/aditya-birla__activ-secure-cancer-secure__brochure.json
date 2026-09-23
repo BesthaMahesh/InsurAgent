@@ -1,0 +1,130 @@
+{
+  "policy_id": "aditya-birla__activ-secure-cancer-secure__brochure",
+  "insurer_name": "Aditya Birla Health Insurance Co. Limited",
+  "insurer_slug": "aditya-birla",
+  "policy_name": "Activ Secure - Cancer Secure Plan",
+  "policy_type": "critical_illness",
+  "uin_code": "ADIHLIP18076V011718",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": null,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": null,
+  "residency_requirement": null,
+  "sum_insured_options_inr": [
+    500000,
+    600000,
+    700000,
+    800000,
+    900000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    3000000,
+    4000000,
+    5000000,
+    10000000
+  ],
+  "premium_payment_modes": null,
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 3,
+  "grace_period_days": null,
+  "free_look_period_days": null,
+  "initial_waiting_period_days": 90,
+  "pre_existing_disease_waiting_months": 3,
+  "specific_disease_waiting_months": 180,
+  "specific_diseases_listed": [
+    "early stage cancer"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": null,
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 30,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": null,
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": 10.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "room_rent_capping": "no_capping",
+  "icu_capping": "no_capping",
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "sexually transmitted disease or HIV/AIDS",
+    "influence of intoxicating liquor or drugs",
+    "suicide or attempted suicide, intentional self-injury",
+    "congenital external diseases, defects or anomalies",
+    "insured person committing any breach of law",
+    "birth control procedures and hormone replacement therapy"
+  ],
+  "temporary_exclusions": [
+    "illness/injury diagnosed within first 90 days"
+  ],
+  "notable_exclusions_summary": "Claims arising from pre-existing conditions diagnosed within initial waiting period, or due to illegal activities, substance abuse, or congenital defects are excluded.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Intimate insurer within 7 days of cancer diagnosis and submit claims documents within 30 days. Required documents: completed claim form, medical certificate confirming diagnosis, certificate confirming non-relativity to pre-existing disease, photocopy of indoor case papers and first consultation letter with prescriptions.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Second E Opinion",
+    "Wellness Coach"
+  ],
+  "top_rider_examples": [
+    "Second E Opinion",
+    "Wellness Coach"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "aditya-birla__activ-secure-cancer-secure__brochure",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 95.0
+}

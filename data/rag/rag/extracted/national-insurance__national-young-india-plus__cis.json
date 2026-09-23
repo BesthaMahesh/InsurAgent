@@ -1,0 +1,164 @@
+{
+  "policy_id": "national-insurance__national-young-india-plus__cis",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Young India Mediclaim Plus",
+  "policy_type": "individual",
+  "uin_code": "NICHLIP24127V012324",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 45,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    500000,
+    1000000,
+    1500000,
+    2500000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 24,
+  "sub_limits_waiting_notes": "PED 36 months. Maternity/Surrogacy: 24 months. Infertility: 24 months. Mental Illnesses (Depression, Schizophrenia): 2 years. 90 days for 3 conditions, 1 year for 5, 2 years for 19, 3 years for 4.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Basic Sum Insured + CB + Reinstated SI",
+    "notes": "Single AC base room category; proportionate deduction if higher category; no cap in PPN packaged procedure"
+  },
+  "pre_hospitalization_days": 45,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "Less than 24 hours hospitalization"
+  },
+  "domiciliary_treatment": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": "Excluded (Excl 5.23)",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "Inpatient AYUSH at AYUSH Hospital"
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "INR 30,000 (SI 5L), INR 40,000 (SI 10L), INR 50,000 (SI 15L/25L); 1 delivery/termination",
+    "notes": "24-month waiting; female 18-45. Surrogate Mother covered within maternity limits if no living child"
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Auto-covered for 3 months from birth under mother's SI",
+    "notes": null
+  },
+  "organ_donor_expenses": null,
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2000,
+    "limit_text": "INR 2,000/year road + INR 50,000/year air ambulance",
+    "notes": "Air ambulance with medical practitioner prescription"
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Reinstatement of Basic SI if exhausted",
+    "notes": "Once per policy year; not applicable to 11 defined Critical Illnesses"
+  },
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "Single AC base room category single occupancy; proportionate deduction if higher category. No cap in PPN packaged procedure.",
+  "icu_capping": "Actual ICU charges; no per-day cap",
+  "copayment_pct": 25.0,
+  "copayment_trigger_notes": "25% copayment if Zone II premium paid but Zone I treatment availed. Zone I = Delhi NCR, Mumbai metro, Gujarat, Hyderabad, Chennai, Indore. Zone II = Rest of India.",
+  "disease_wise_sub_limits": {
+    "cataract": "INR 40,000 per eye per year",
+    "hazardous_sports": "25% of SI",
+    "ambulance_road": "INR 2,000/year",
+    "ambulance_air": "INR 50,000/year",
+    "maternity_5L": "INR 30,000",
+    "maternity_10L": "INR 40,000",
+    "maternity_15L_25L": "INR 50,000",
+    "infertility_5_10_15L": "INR 50,000 lifetime",
+    "infertility_25L": "INR 75,000 lifetime",
+    "modern_treatments": "SI-dependent, with specific per-hospitalisation caps"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Diseases (Excl 01)",
+    "Specified disease/procedure waiting period (Excl 02)",
+    "First 30 days waiting (Excl 03)",
+    "Investigation & Evaluation",
+    "Rest Cure, Rehabilitation",
+    "Obesity/Weight Control",
+    "Change-of-Gender",
+    "Cosmetic Surgery",
+    "Hazardous Sports",
+    "Breach of Law",
+    "Drug/Alcohol Abuse",
+    "Non-Medical Admissions",
+    "Refractive Error <7.5D",
+    "Unproven Treatments",
+    "Birth control, Sterility, Infertility (Excl 17)",
+    "Hormone Replacement Therapy",
+    "General Debility, Congenital External Anomaly",
+    "Self Inflicted Injury",
+    "Stem Cell Surgery",
+    "Vaccination",
+    "Dental treatment",
+    "Domiciliary Hospitalisation",
+    "OPD",
+    "War",
+    "Radioactivity",
+    "Treatment outside India"
+  ],
+  "temporary_exclusions": [
+    "Pre-Existing Diseases - 36 months",
+    "Maternity/Surrogacy - 24 months",
+    "Infertility - 24 months",
+    "Morbid Obesity - 36 months",
+    "Refractive Error - 36 months",
+    "Depression and Schizophrenia - 2 years"
+  ],
+  "notable_exclusions_summary": "Young-adult oriented (max entry 45) policy with maternity/surrogacy/infertility benefits, in-built Personal Accident and Domestic Travel cover. PED wait 36 months. No domiciliary hospitalization.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA - 1 hour pre-auth, 3 hour final. Reimbursement: documents within 30 days of discharge/treatment. Claim settled in 15 days of last document.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Waiver of pre-existing Diabetes/Hypertension waiting period"
+  ],
+  "top_rider_examples": [
+    "Diabetes/Hypertension waiver"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-young-india-plus__cis.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 87
+}

@@ -1,0 +1,49 @@
+{
+  "policy_id": "bajaj-allianz__criti-care__wordings",
+  "insurer_name": "Bajaj Allianz General Insurance Co. Ltd.",
+  "insurer_slug": "bajaj-allianz",
+  "policy_name": "Criti Care",
+  "policy_type": "critical_illness",
+  "uin_code": "BAJHLIP20140V011920",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids"],
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 90,
+  "pre_existing_disease_waiting_months": 48,
+  "sum_insured_options_inr": [500000, 1000000, 2000000, 5000000, 10000000, 20000000, 50000000],
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_text": "Covers 43+ Critical Illnesses (varies by plan: 10/20/43 CI variants). Lump-sum payout on diagnosis confirmed by specialist.",
+    "notes": "Major CIs covered: Cancer of specified severity, First Heart Attack, Open Chest CABG, Open Heart Valve Replacement/Repair, Coma, Kidney Failure requiring regular dialysis, Stroke, Major Organ/Bone Marrow Transplant, Permanent Paralysis of Limbs, Motor Neurone Disease, Multiple Sclerosis, Third Degree Burns, Blindness, Benign Brain Tumor, End Stage Lung Failure, End Stage Liver Failure, Aplastic Anaemia, Parkinson's Disease, Alzheimer's Disease, Bacterial Meningitis, Loss of Speech, Loss of Limbs, Major Head Trauma, Primary Pulmonary Hypertension, Encephalitis, Apallic Syndrome, Cardiomyopathy, Systemic Lupus Erythematosus with Lupus Nephritis"
+  },
+  "inpatient_hospitalization": {"covered": false, "notes": "Benefit / fixed-payout plan - no hospitalization indemnity"},
+  "geographic_coverage": "worldwide",
+  "worldwide_emergency_cover": {"covered": true, "notes": "Critical illness diagnosis worldwide eligible"},
+  "cashless_treatment_supported": false,
+  "permanent_exclusions": [
+    "Critical illness diagnosed within 90-day initial waiting period",
+    "Pre-existing CI / pre-existing diseases until 48-month waiting",
+    "Self-harm, suicide attempts",
+    "Substance abuse, drug or alcohol intoxication",
+    "War, nuclear, chemical, biological events",
+    "Adventure sports as professional",
+    "Criminal acts",
+    "Cancer in situ / non-invasive (T1N0M0)",
+    "Tumors in presence of HIV infection",
+    "Cancer due to nuclear / war / chemical",
+    "Pregnancy / childbirth related conditions"
+  ],
+  "notable_exclusions_summary": "Fixed-benefit critical illness plan. Survival period: 30 days post-diagnosis required. Single payout on first qualifying CI diagnosis - policy terminates for that insured. Multi-pay option available on some variants. CI definitions per IRDAI standardization.",
+  "available_riders": [
+    "Hospital cash daily allowance",
+    "Premium waiver after CI diagnosis",
+    "Income protection",
+    "Loss of income / disability cover",
+    "Survival period waiver options"
+  ],
+  "claim_process_summary": "Submit diagnosis certificate from specialist medical practitioner, histopathology/imaging reports, claim form with bank details. Survival period of 30 days required. Lump-sum payment within 30 days of complete claim documentation.",
+  "source_pdf_path": "rag/corpus/bajaj-allianz/criti-care__wordings.pdf",
+  "extraction_confidence_pct": 75
+}

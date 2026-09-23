@@ -1,0 +1,160 @@
+{
+  "policy_id": "star-health__star-assure__wordings",
+  "insurer_name": "Star Health and Allied Insurance Company Limited",
+  "insurer_slug": "star-health",
+  "policy_name": "Star Assure",
+  "policy_type": "family_floater",
+  "uin_code": "SHAHLIP26048V032526",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": null,
+  "sum_insured_options_inr": [
+    500000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    5000000,
+    7500000,
+    10000000
+  ],
+  "premium_payment_modes": [
+    "monthly",
+    "quarterly",
+    "half_yearly",
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "PED waiting: 30 months for 3-year policy term, 36 months for 1/2-year policy terms. Optional aggregate deductible reduces premium.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured (Room, Boarding, Nursing, OT, ICU, surgeon, anaesthetist, drugs, diagnostics, dialysis, chemo, radio, pacemaker, stent)",
+    "notes": "Forms part of Sum Insured."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All day-care procedures up to Sum Insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Treatment exceeding 3 days at home",
+    "notes": "Excludes asthma, bronchitis, hypertension, diabetes, epilepsy, influenza, psychiatric disorders, arthritis."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH in-patient up to SI (form part of SI)",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Delivery Expenses covered (forms part of SI). In-Utero Fetal Surgery/Intervention covered.",
+    "notes": "Forms part of Sum Insured."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Hospitalization expenses for treatment of newborn baby (forms part of SI)",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Forms part of Sum Insured; Donor's complications requiring redo surgery/ICU are in addition to Sum Insured.",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Road and Air ambulance covered (forms part of SI)",
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Automatic Restoration unlimited times, up to 100% of SI each time",
+    "notes": "Triggers on partial or full utilization. Restored SI usable for all claims including modern treatment in subsequent hospitalizations. Per-claim cap = Sum Insured. In addition to Sum Insured."
+  },
+  "no_claim_bonus_pct": 25.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "In addition to Sum Insured",
+    "notes": null
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Optional voluntary co-payment for premium discount. Mandatory 20% for entry age above set thresholds (per renewal terms).",
+  "disease_wise_sub_limits": {
+    "assisted_reproduction": "Forms part of Sum Insured",
+    "home_care_treatment": "Forms part of Sum Insured (covers fever, UTI, asthma/COPD home nebulization, gastroenteritis, IV chemo, palliative cancer, vertigo, diabetic foot, IVDP, post-discharge IV antibiotics, brain/spinal injury care, post-CVA care, refractory asthma)",
+    "rehabilitation_pain_management": "Forms part of Sum Insured"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": 14000,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Diseases (Code Excl 01)",
+    "Specified disease/procedure waiting (Code Excl 02)",
+    "Investigation & Evaluation only",
+    "Rest Cure, Rehabilitation, Respite Care",
+    "Cosmetic / Plastic Surgery",
+    "Change of Gender",
+    "Obesity/Weight Control",
+    "Hazardous activities",
+    "Substance abuse",
+    "Self-inflicted injury",
+    "Unproven treatments",
+    "Breach of law"
+  ],
+  "temporary_exclusions": [
+    "Pre-existing diseases: 30 months (3-year policy) or 36 months (1-2 year policy)",
+    "Specified disease/procedure: 24 months"
+  ],
+  "notable_exclusions_summary": "PED waiting 30-36 months. Standard IRDAI permanent exclusions. Diagnostic-only admissions and rest-cure expenses excluded. Optional aggregate deductible (e.g. Rs 50,000) lowers premium.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless at 14,000+ network hospitals. Portability allowed (request 30-60 days before renewal). 7-day notice for cancellation.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Voluntary Aggregate Deductible",
+    "Voluntary Co-payment",
+    "Star Wellness Program"
+  ],
+  "top_rider_examples": [
+    "Aggregate Deductible (premium discount)",
+    "Wellness Program"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/star-health/star-assure__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 85
+}

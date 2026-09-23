@@ -1,0 +1,169 @@
+{
+  "policy_id": "national-insurance__national-parivar-plus__wordings",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Parivar Mediclaim Plus (Floater)",
+  "policy_type": "family_floater",
+  "uin_code": "NICHLIP25039V032425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    600000,
+    700000,
+    800000,
+    900000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    3000000,
+    4000000,
+    5000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 24,
+  "sub_limits_waiting_notes": "Morbid obesity: 36 months. Correction of refractive error: 24 months. Infertility: 24 months continuous coverage. Mental Illnesses Depression and Schizophrenia: 2 years.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Floater Sum Insured",
+    "notes": "Reasonable and Customary Charges; Plan A has per-day caps for room/ICU"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "Less than 24 hours at Hospital/Day Care Centre"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to limit shown in Table of Benefits",
+    "notes": "Excludes treatments <3 days, alternative treatment, maternity/infertility, asthma/bronchitis/epilepsy/etc."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "In-patient Care under Ayurveda/Yoga/Naturopathy/Unani/Siddha/Homeopathy at AYUSH Hospital"
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Per Table of Benefits",
+    "notes": "24-month continuous coverage required; covered age 18-45; max 2 deliveries/terminations lifetime"
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Auto-covered for 3 months from birth under mother's SI",
+    "notes": "Includes vaccination expenses"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor's hospitalisation expenses",
+    "notes": "Per Transplantation of Human Organs Act 1994"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Per Table of Benefits",
+    "notes": "Includes road and air ambulance"
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional cover",
+    "notes": "Available as optional add-on"
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Reinstatement after Road Traffic Accident",
+    "notes": "Once per policy year, after RTA-related exhaustion"
+  },
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 5.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "End of every block of two continuous policy years",
+    "notes": "Subject to continuous renewal without break"
+  },
+  "room_rent_capping": "Plan A only: per-day limit as Table of Benefits; Plan B and C: higher caps. No cap if PPN packaged listed procedure.",
+  "icu_capping": "Plan A only: per-day limit as Table of Benefits; Plan B/C: higher caps. No cap in PPN packaged procedure.",
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Optional Co-payment: 20% with 25% discount or 10% with 12.5% discount.",
+  "disease_wise_sub_limits": {
+    "cataract": "Plan A only - per Table of Benefits",
+    "modern_treatments": "25% of SI per modern procedure",
+    "hazardous_sports": "25% of SI"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation",
+    "Rest Cure, Rehabilitation and Respite Care",
+    "Obesity/Weight Control (except morbid obesity per criteria)",
+    "Change-of-Gender Treatments",
+    "Cosmetic or Plastic Surgery",
+    "Hazardous or Adventure Sports (professional)",
+    "Breach of Law",
+    "Drug/Alcohol Abuse",
+    "Self Inflicted Injury",
+    "Refractive Error <7.5 dioptres",
+    "Unproven Treatments",
+    "War",
+    "Radioactivity",
+    "Treatment outside India"
+  ],
+  "temporary_exclusions": [
+    "Pre-Existing Diseases - 36 months",
+    "Specified diseases - 90 days/1 year/2 years/3 years",
+    "Maternity - 24 months",
+    "Infertility - 24 months",
+    "Morbid Obesity - 36 months",
+    "Correction of Refractive Error - 24 months"
+  ],
+  "notable_exclusions_summary": "Standard IRDAI exclusions plus 30-day initial wait, 36-month PED wait, 24-month wait for maternity/infertility. Treatment outside India not covered.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA approval; pre-auth 1 hour, final auth 3 hours. Reimbursement: documents within 30 days of discharge. Claim decision within 15 days of last necessary document.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Pre-existing Diabetes/Hypertension",
+    "Outpatient Treatment",
+    "Critical Illness"
+  ],
+  "top_rider_examples": [
+    "Critical Illness",
+    "OPD"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-parivar-plus__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 80
+}

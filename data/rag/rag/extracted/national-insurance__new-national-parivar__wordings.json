@@ -1,0 +1,163 @@
+{
+  "policy_id": "national-insurance__new-national-parivar__wordings",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "New National Parivar Mediclaim",
+  "policy_type": "family_floater",
+  "uin_code": "NICHLIP25037V022425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    100000,
+    200000,
+    300000,
+    400000,
+    500000,
+    600000,
+    700000,
+    800000,
+    900000,
+    1000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 36,
+  "sub_limits_waiting_notes": "PED 36, maternity 36, infertility 36, morbid obesity 36, refractive 24, mental illness 2 years.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Floater Sum Insured",
+    "notes": "Room 1% SI/day; ICU 2% SI/day; no cap in PPN package"
+  },
+  "pre_hospitalization_days": 45,
+  "post_hospitalization_days": 75,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": 50000,
+    "limit_text": "20% of SI max INR 50,000",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "10% of SI; INR 30k/50k by type",
+    "notes": "36-month wait"
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "3 months under mother's SI",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor hospitalisation",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2500,
+    "limit_text": "INR 1,000/illness, INR 2,500/year",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional",
+    "notes": null
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Reinstatement (Floater 6L+)",
+    "notes": "Once per policy year"
+  },
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "End of 3-year claim-free block",
+    "notes": null
+  },
+  "room_rent_capping": "1% of SI per day",
+  "icu_capping": "2% of SI per day; no cap in PPN",
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Three-zone copay 13%/28%/13.5%. Optional voluntary copay 10% or 20%.",
+  "disease_wise_sub_limits": {
+    "cataract": "10% of SI or INR 40,000 per eye",
+    "modern_treatments": "25% of SI per procedure"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Cosmetic Surgery",
+    "Hazardous Sports",
+    "Refractive Error <7.5D",
+    "Self Inflicted Injury",
+    "Drug/Alcohol Abuse",
+    "War",
+    "Radioactivity",
+    "Treatment outside India",
+    "Dental",
+    "OPD",
+    "Investigation & Evaluation"
+  ],
+  "temporary_exclusions": [
+    "PED 36 months",
+    "Maternity 36 months",
+    "Infertility 36 months",
+    "Morbid Obesity 36 months",
+    "Refractive 24 months",
+    "Mental illness 2 years"
+  ],
+  "notable_exclusions_summary": "Floater family product. 45-day pre / 75-day post hospitalization. Optional Diabetes/Hypertension, Critical Illness, OPD.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA. Pre-auth 1h, final 3h. Reimbursement 15 days. Settlement 15 days of last document.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Diabetes/Hypertension",
+    "OPD",
+    "Critical Illness"
+  ],
+  "top_rider_examples": [
+    "Critical Illness"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/new-national-parivar__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 80
+}

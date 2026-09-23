@@ -1,0 +1,87 @@
+{
+  "policy_id": "new-india__asha-kiran-policy__cis",
+  "insurer_name": "The New India Assurance Co. Ltd.",
+  "insurer_slug": "new-india",
+  "policy_name": "Asha Kiran Policy",
+  "policy_type": "family_floater",
+  "uin_code": "NIAHLIP25047V042425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": [
+    "self+spouse+kids"
+  ],
+  "residency_requirement": "Designed for parents with only girl children; daughter cover up to 25 yrs",
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "sub_limits_waiting_notes": "Specific waiting 90 days / 24 months / 36 months for listed conditions; PED 36 months; moratorium 5 years",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "Room rent up to 1% of SI/day; ICU up to 2% of SI/day"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "Listed day care procedures plus 12 Modern Treatments"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_text": "Up to 100% of Sum Insured"
+  },
+  "ambulance_cover": {
+    "covered": true
+  },
+  "maternity_coverage": {
+    "covered": false
+  },
+  "organ_donor_expenses": {
+    "covered": true
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_text": "Critical Care Benefit: flat 10% of Sum Insured on diagnosis of listed critical illness, in addition to claim"
+  },
+  "no_claim_bonus_pct": 0.0,
+  "room_rent_capping": "1% of Sum Insured per day",
+  "icu_capping": "2% of Sum Insured per day",
+  "copayment_pct": 20.0,
+  "copayment_trigger_notes": "20% co-pay if treatment is outside the Area of Coverage (Zone) on the schedule",
+  "disease_wise_sub_limits": {
+    "cataract": "10% of SI or Rs 50,000 per eye, whichever less",
+    "hospital_cash": "0.1% of SI per day, max 1% of SI per any-one-illness"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & evaluation",
+    "Rest Cure / Rehabilitation",
+    "Obesity / weight control",
+    "Change of gender",
+    "Cosmetic or Plastic Surgery",
+    "Unproven treatments",
+    "Sterility and infertility",
+    "Maternity expenses",
+    "Treatment outside India",
+    "Vaccination / inoculation",
+    "Spectacles, contact lenses, hearing aids",
+    "Dental treatment (unless accident)",
+    "Acupressure, acupuncture, magnetic therapies",
+    "Domiciliary hospitalisation",
+    "Stem cell implantation other than listed"
+  ],
+  "notable_exclusions_summary": "Cover restricted to India. Maternity expenses not covered. Standard IRDAI exclusions plus dental/vision aids and naturopathy.",
+  "claim_process_summary": "Cashless and reimbursement supported. Helpline 1800-209-1415. Pre-auth within 1 hr of request; final authorisation within 3 hrs of hospital request. Claim form downloadable from newindia.co.in.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/new-india/asha-kiran-policy__cis.pdf",
+  "extraction_confidence_pct": 86
+}

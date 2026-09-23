@@ -1,0 +1,160 @@
+{
+  "policy_id": "star-health__star-comprehensive__wordings",
+  "insurer_name": "Star Health and Allied Insurance Company Limited",
+  "insurer_slug": "star-health",
+  "policy_name": "Star Comprehensive",
+  "policy_type": "family_floater",
+  "uin_code": "SHAHLIP26044V092526",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": null,
+  "sum_insured_options_inr": [
+    500000,
+    750000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    5000000,
+    7500000,
+    10000000
+  ],
+  "premium_payment_modes": [
+    "monthly",
+    "quarterly",
+    "half_yearly",
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 36,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Specific Waiting Period up to 36 months for listed diseases/treatments (except accident).",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured; proportionate deduction on associated medical expenses if higher room category chosen",
+    "notes": "Associated Medical Expenses = nursing, OT, professional fees; pharmacy/consumables/implants/diagnostics/ICU NOT subject to proportionate deduction."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All day-care procedures up to Sum Insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Coverage for treatment exceeding 3 days at home where hospital admission is not possible or unavailable."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH in-patient up to Sum Insured (except Yoga & Naturopathy)",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Delivery expenses covered (after waiting)",
+    "notes": "Subject to specific waiting period."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Newborn from day 1 (contingent on maternity benefit)",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Basic Sum Insured (in addition to Limit of Coverage)",
+    "notes": "Includes donor complications requiring redo surgery/ICU."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 500000,
+    "limit_text": "Road actual; Air ambulance Rs 2,50,000/hosp, max Rs 5,00,000/policy period",
+    "notes": "Air ambulance from place of first occurrence to nearest hospital."
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Automatic Restoration of Sum Insured (refer schedule)",
+    "notes": null
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Health Check-up benefit (limits per SI per claim-free year)",
+    "notes": null
+  },
+  "room_rent_capping": "Single Private A/C Room or per-day cap per SI tier",
+  "icu_capping": "No cap (no proportionate deduction on ICU charges)",
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Voluntary co-payment with premium discount option. Age-based mandatory copay (per renewal terms).",
+  "disease_wise_sub_limits": {
+    "home_care_treatment": "10% of SI or max Rs 5 lakhs per policy year",
+    "modern_treatment": "Per Annex limits (refer wordings)"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": 14000,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Diseases (Code Excl 01)",
+    "Specified disease/procedure waiting (Code Excl 02)",
+    "Investigation & Evaluation",
+    "Rest Cure, Rehabilitation, Respite Care",
+    "Obesity/Weight Control",
+    "Hazardous activities (skiing, skydiving, winter sports etc.)",
+    "Cosmetic / Plastic Surgery",
+    "Change of Gender",
+    "Substance Abuse",
+    "Self-inflicted injury",
+    "Breach of Law",
+    "Unproven Treatments"
+  ],
+  "temporary_exclusions": [
+    "Pre-existing diseases: 36 months",
+    "Specific waiting: 36 months for listed diseases/treatments"
+  ],
+  "notable_exclusions_summary": "PED 36 months; specified disease 36 months. Standard IRDAI permanent exclusions. Hazardous sports/activities excluded.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless at 14,000+ network hospitals. Reimbursement via insurer portal. Pre-authorization through TPA.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Star Wellness Program",
+    "Voluntary Co-payment",
+    "Out-patient Consultation"
+  ],
+  "top_rider_examples": [
+    "Wellness Program",
+    "OPD Consultation"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/star-health/star-comprehensive__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 84
+}

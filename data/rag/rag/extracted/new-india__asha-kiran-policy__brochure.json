@@ -1,0 +1,135 @@
+{
+  "policy_id": "new-india__asha-kiran-policy__brochure",
+  "insurer_name": "The New India Assurance Co. Ltd.",
+  "insurer_slug": "new-india",
+  "policy_name": "Asha Kiran Policy",
+  "policy_type": "family_floater",
+  "uin_code": "NIAHLIP21233V022021",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": [
+    "self+spouse+kids"
+  ],
+  "residency_requirement": "Indian resident; designed for parents with only girl children; dependent daughter cover up to 25 yrs (unlimited for mentally challenged or unmarried dependent daughter)",
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 48,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Diabetes Mellitus (90 days)",
+    "Hypertension (90 days)",
+    "Cardiac conditions (90 days)",
+    "Benign tumours, cysts, polyps (24 months)",
+    "Benign ENT disorders (24 months)",
+    "Benign prostate hypertrophy (24 months)",
+    "Cataract and age related eye ailments (24 months)",
+    "Gastric / Duodenal Ulcer (24 months)",
+    "Gout and Rheumatism (24 months)",
+    "Hernia of all types (24 months)",
+    "Hydrocele (24 months)",
+    "Non-infective Arthritis (24 months)",
+    "Piles, Fissures and Fistula (24 months)",
+    "Pilonidal sinus, Sinusitis (24 months)",
+    "Prolapse inter vertebral disc and spinal diseases (24 months)",
+    "Skin Disorders (24 months)",
+    "Stone in Gall bladder / Bile duct (24 months)",
+    "Stones in Urinary system (24 months)",
+    "Menorrhagia / Fibromyoma / Prolapsed uterus (24 months)",
+    "Varicose Veins (24 months)",
+    "Puberty and Menopause related Disorders (24 months)",
+    "Joint Replacement due to Degenerative Condition (48 months)",
+    "Age-related Osteoarthritis / Osteoporosis (48 months)",
+    "Mental illness / neurodegenerative disorders (48 months)",
+    "ARMD (48 months)",
+    "Genetic diseases (48 months)",
+    "External Congenital Diseases (48 months)"
+  ],
+  "sub_limits_waiting_notes": "PED 48 months; specific waiting 90 days/24 months/48 months by condition class",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_text": "Room rent up to 1% of SI/day; ICU up to 2% of SI/day; proportionate deduction on associate medical expenses if higher room category opted"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "Listed day care procedures plus 12 Modern Treatments with per-procedure caps (e.g. robotic surgery 50% SI max Rs 2L, stem cell therapy 50% SI max Rs 1.5L)"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_text": "Up to 100% of Sum Insured for AYUSH inpatient treatment"
+  },
+  "ambulance_cover": {
+    "covered": true
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "notes": "Maternity expenses excluded under Excl18 (only ectopic pregnancy treatment covered)"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Donor hospitalisation expenses (excluding cost of organ) for covered organ transplant"
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_text": "Critical Care Benefit: flat 10% of Sum Insured paid in addition to claim for 11 listed critical illnesses (cancer, heart attack, CABG, organ transplant, etc.)",
+    "notes": "Once-in-lifetime per insured; not payable if condition is pre-existing"
+  },
+  "no_claim_bonus_pct": 0.0,
+  "room_rent_capping": "1% of Sum Insured per day",
+  "icu_capping": "2% of Sum Insured per day",
+  "copayment_pct": 20.0,
+  "copayment_trigger_notes": "20% co-pay when treatment is outside the Area of Coverage (zone) declared in schedule; otherwise none",
+  "disease_wise_sub_limits": {
+    "cataract": "10% of SI or Rs 50,000 per eye, whichever less",
+    "modern_treatments_robotic": "50% of SI, max Rs 2,00,000",
+    "modern_treatments_stem_cell": "50% of SI, max Rs 1,50,000",
+    "mental_illness": "25% of SI per policy period after 48-month waiting",
+    "armd": "10% of SI, max Rs 75,000 after 48 months",
+    "puberty_menopause": "25% of SI after 24 months",
+    "hospital_cash": "0.1% of SI per day; max 1% of SI per any-one-illness",
+    "personal_accident": "100% of SI per spouse, 200% of SI both"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & evaluation (Excl04)",
+    "Rest Cure / Rehabilitation / Respite Care (Excl05)",
+    "Obesity / weight control (Excl06)",
+    "Change of gender (Excl07)",
+    "Cosmetic or Plastic Surgery (Excl08)",
+    "Hazardous or Adventure Sports (Excl09)",
+    "Breach of law (Excl10)",
+    "Excluded providers (Excl11)",
+    "Alcohol / drug abuse (Excl12)",
+    "Health hydros / nature cure clinics (Excl13)",
+    "Dietary supplements (Excl14)",
+    "Refractive error <7.5 dioptres (Excl15)",
+    "Unproven treatments (Excl16)",
+    "Sterility and infertility (Excl17)",
+    "Maternity expenses (Excl18)",
+    "War / nuclear / biological / chemical (Excl19/20)",
+    "Vaccination / inoculation",
+    "Spectacles, hearing aids, cochlear implants",
+    "Dental unless due to accident",
+    "Domiciliary hospitalisation",
+    "Naturopathy",
+    "Acupressure, acupuncture, magnetic therapies",
+    "Stem cell other than listed",
+    "RFQMR, ECP, EECP, hyperbaric oxygen therapy",
+    "Self-inflicted injury, suicide"
+  ],
+  "notable_exclusions_summary": "Niche product for parents of only-girl children; maternity expenses NOT covered. Standard IRDAI exclusion list applies including infertility, cosmetic, hazardous sports, war and nuclear, dental (unless accident), naturopathy.",
+  "claim_process_summary": "Cashless via TPA: pre-authorisation within 1 hour, final discharge authorisation within 3 hours. Helpline 1800-209-1415. Reimbursement via claim form download from insurer website.",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/new-india/asha-kiran-policy__brochure.pdf",
+  "extraction_confidence_pct": 87
+}

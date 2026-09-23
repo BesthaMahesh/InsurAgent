@@ -1,0 +1,28 @@
+{
+  "policy_id": "bajaj-allianz__group-health-guard-silver__wordings",
+  "insurer_name": "Bajaj Allianz General Insurance Co. Ltd.",
+  "insurer_slug": "bajaj-allianz",
+  "policy_name": "Health Guard (Group) - Silver Plan",
+  "policy_type": "group",
+  "uin_code": "BAJHLGP21181V022021",
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "pre_existing_disease_waiting_months": 36,
+  "grace_period_days": 30,
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "AYUSH hospitalisation cover under Ayurveda, Yoga, Naturopathy, Unani, Siddha and Homeopathy systems."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "notes": "Newborn baby aged up to 90 days covered during policy period."
+  },
+  "cashless_treatment_supported": true,
+  "geographic_coverage": "pan_india",
+  "source_pdf_path": "rag/corpus/bajaj-allianz/group-health-guard-gold__wordings.pdf",
+  "extraction_confidence_pct": 70
+}

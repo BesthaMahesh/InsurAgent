@@ -1,0 +1,17 @@
+{
+  "policy_id": "cholamandalam__chola-healthline__wordings",
+  "insurer_name": "Cholamandalam MS General Insurance Company Limited",
+  "insurer_slug": "cholamandalam",
+  "policy_name": "Chola Healthline",
+  "policy_type": "family_floater",
+  "uin_code": "CHOHLIP24153V062526",
+  "grace_period_days": 30,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids", "self+spouse+kids+parents", "custom"],
+  "ayush_coverage": {"covered": true, "notes": "AYUSH hospitalization in registered AYUSH hospitals."},
+  "maternity_coverage": {"covered": true, "notes": "Maternity expenses defined; sub-limit applies per policy schedule."},
+  "cashless_treatment_supported": true,
+  "geographic_coverage": "pan_india",
+  "available_riders": ["Medical Second Opinion", "Flexi OP Care", "Home Care Treatment"],
+  "source_pdf_path": "rag/corpus/cholamandalam/chola-healthline__wordings.pdf",
+  "extraction_confidence_pct": 60
+}

@@ -1,0 +1,164 @@
+{
+  "policy_id": "tata-aig__medicare-select__brochure",
+  "insurer_name": "Tata AIG General Insurance Company Limited",
+  "insurer_slug": "tata-aig",
+  "policy_name": "MediCare Select",
+  "policy_type": "family_floater",
+  "uin_code": "TATHLIP25051V012425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 0,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": null,
+  "sum_insured_options_inr": [
+    500000,
+    750000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    5000000,
+    7500000,
+    10000000,
+    20000000,
+    30000000
+  ],
+  "premium_payment_modes": [
+    "annual",
+    "single"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": null,
+  "specific_disease_waiting_months": null,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 24,
+  "sub_limits_waiting_notes": "Maternity Care: 2-year waiting (reducible to 1 year via add-on). Newborn from day 0 if both parents insured (up to 5 years). Cover ceasing age: none.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured (Medical Expenses for medically necessary treatment)",
+    "notes": "Indemnity-based. Optional 'Room Category Select' allows upgrade."
+  },
+  "pre_hospitalization_days": 90,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "When treatment exceeds 3 consecutive days",
+    "notes": "Excludes enteral feeding and end-of-life care."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "In-patient/Day care AYUSH plus pre/post hospitalization",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Maternity Care add-on (Maternity expenses + Delivery Complications + First-year Vaccinations of newborn)",
+    "notes": "2-year waiting (reducible to 1 year via Reduction of Maternity Care Waiting Period add-on)."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Newborn from day 0 (if both parents insured)",
+    "notes": "Covered to age 5 under family floater."
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Organ donor harvesting expenses (insured must be recipient)",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Registered ambulance transportation",
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Restore Infinity Plus - unlimited reinstatement of base SI if SI + Cumulative Bonus insufficient",
+    "notes": null
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "Per Schedule; Room Category Select add-on lets policyholder choose category",
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": "Aggregate Deductible add-on optionally lowers premium with policy-level deductible.",
+  "disease_wise_sub_limits": {
+    "daily_cash_twin_sharing": "Per Schedule (per day for 24-hour periods)",
+    "daily_cash_multi_sharing": "Per Schedule (per day for 24-hour periods)",
+    "infinite_advantage_addon": "Removes annual SI limit for one claim during policy lifetime",
+    "early_access_addon": "Single premium multi-year SI available any time within policy period"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Standard IRDAI permanent exclusions (Codes Excl 04-18)",
+    "Investigation & Evaluation only",
+    "Rest cure, rehabilitation, respite care",
+    "Obesity (unless via bariatric add-on)",
+    "Change of Gender",
+    "Cosmetic / Plastic Surgery",
+    "Hazardous Activities",
+    "Substance Abuse",
+    "Self-inflicted injury",
+    "Unproven Treatments",
+    "Sterility/Infertility (unless add-on)",
+    "Maternity (unless Maternity Care add-on with waiting completed)",
+    "War / Nuclear / Chemical / Biological",
+    "Naval/military operations"
+  ],
+  "temporary_exclusions": [
+    "Initial waiting: 30 days",
+    "Maternity Care: 24 months (or 12 months via add-on)"
+  ],
+  "notable_exclusions_summary": "Wide-relationship indemnity plan with Restore Infinity Plus (unlimited reinstatement). Multiple optional add-ons (Maternity, Infinite Advantage, Room Category, Aggregate Deductible). Zone-based premium with discounts up to 25% (Young Family / Professional / Multi-Individual).",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via Tata AIG network. Toll-free 1800 266 7780 (senior citizens 1800 22 9966).",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Consumables Benefit",
+    "Maternity Care",
+    "Reduction of Maternity Care Waiting Period",
+    "Infinite Advantage",
+    "Early Access",
+    "Room Category Select",
+    "Aggregate Deductible"
+  ],
+  "top_rider_examples": [
+    "Restore Infinity Plus",
+    "Maternity Care",
+    "Infinite Advantage"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/tata-aig/medicare-select__brochure.pdf",
+  "source_pdf_url": "https://www.tataaig.com",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 86
+}

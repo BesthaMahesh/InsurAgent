@@ -1,0 +1,200 @@
+{
+  "policy_id": "sbi-general__arogya-supreme__brochure",
+  "insurer_name": "SBI General Insurance Company Limited",
+  "insurer_slug": "sbi-general",
+  "policy_name": "Arogya Supreme",
+  "policy_type": "family_floater",
+  "uin_code": "SBIHLIP21043V012122",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    300000,
+    400000,
+    500000,
+    600000,
+    700000,
+    800000,
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    5000000,
+    7500000,
+    10000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": {
+    "35y_SI_5L_floater": 38903,
+    "35y_SI_15L_floater": 62424
+  },
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Internal Congenital Anomaly (24 months)",
+    "Cataract (24 months)",
+    "Hypertension/Diabetes/Cardiac Conditions (90 days unless pre-existing & disclosed)",
+    "Major Illness Benefit (90 days)",
+    "COVID-19 (15 days)"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Specific Illnesses & Procedures 2 years. Hypertension/Diabetes/Cardiac 90 days except if disclosed pre-existing. Major Illness-Benefit 90 days. COVID-19 15 days.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Pro Plan (3-5L): Single Pvt AC Room. Plus Plan (6-20L): Single Pvt AC Room. Premium Plan (25L+ up to 1 Cr): Actuals up to SI",
+    "notes": "Covers Mental Healthcare, HIV/AIDS, Genetic Disorder (max Rs.1L), Internal Congenital (25% SI), Bariatric, Advance Procedures (25% SI), Cataract (Rs.50K-1L per eye)."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Covered up to Sum Insured - 537 Day Care Procedures",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured (includes pre and post hospitalization cover)",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured (Ayurvedic, Unani, Siddha, Homeopathy)",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Maternity excluded under base policy."
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Covered up to Sum Insured",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 7000,
+    "limit_text": "Rs.3,000 (Pro) / Rs.5,000 (Plus) / Rs.7,000 (Premium) per hospitalization",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": 2500000,
+    "limit_text": "Major Illness Benefit (optional rider): up to 100% SI or max Rs.25 lakhs whichever lower; Survival 30 days; IWP 90 days",
+    "notes": "Eligibility 18+ years."
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Sum Insured Refill: 100% Basic SI on complete or partial utilization, once per policy year (including CB or Enhanced CB)",
+    "notes": null
+  },
+  "no_claim_bonus_pct": 15.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Annual from 1st renewal year (CBC, Haemoglobin, FBS, Lipid Profile, LFT, KFT, TSH, Urine etc.)",
+    "notes": "Tier of tests varies by plan (Pro/Plus/Premium)."
+  },
+  "room_rent_capping": "Pro 3-4L: Single Pvt AC Room (1% restriction option); Pro 5L: Single Pvt AC Room (Upgrade option). Plus: Single Pvt AC Room (Upgrade excluding suite & above). Premium: Actuals up to SI.",
+  "icu_capping": "Pro 3-4L: Actuals (2% restriction option); Pro 5L/Plus/Premium: Actuals",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "10% or 20% optional Co-payment available (rider). Default no co-payment.",
+  "disease_wise_sub_limits": {
+    "cataract_pro": "Rs.50,000 per eye",
+    "cataract_plus_premium": "Rs.1,00,000 per eye",
+    "genetic_disorder": "Rs.1,00,000 max",
+    "internal_congenital_anomaly": "25% of SI",
+    "advance_procedures": "25% of SI"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Domestic Emergency Assistance Services (including Air Ambulance) up to Rs.5 lakhs (Plus) / Rs.10 lakhs (Premium) within India for travel 150+ km from home."
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Admission primarily for investigation & evaluation",
+    "Rest Cure, rehabilitation, respite care",
+    "Surgical treatment of obesity not fulfilling necessary conditions",
+    "Change-of-Gender treatments",
+    "Cosmetic or plastic surgery",
+    "Hazardous or adventure sports",
+    "Breach of Law",
+    "Excluded Providers",
+    "Treatment for alcoholism/drug/substance abuse",
+    "Dietary supplements without prescription",
+    "Refractive Error",
+    "Unproven Treatments",
+    "Sterility and Infertility",
+    "Maternity",
+    "War and war-like situations",
+    "Nuclear weapons/materials injury",
+    "Treatment taken outside India",
+    "Circumcision (unless medically necessary)"
+  ],
+  "temporary_exclusions": [
+    "30-day generic policy waiting (except accidents)",
+    "2-year specific illnesses & procedures waiting",
+    "3-year pre-existing diseases waiting",
+    "90-day waiting for Hypertension/Diabetes/Cardiac (unless disclosed)",
+    "90-day Major Illness-Benefit waiting",
+    "15-day COVID-19 waiting"
+  ],
+  "notable_exclusions_summary": "Arogya Supreme excludes maternity and infertility, refractive error, unproven treatments, and treatment outside India. The policy notably covers 20 basic benefits including HIV/AIDS, Mental Healthcare, Genetic Disorders, and Internal Congenital Anomaly. 8 optional add-ons available including Major Illness Benefit (lump-sum up to Rs.25L).",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Call 1800 210 3366 / 1800 210 6366 or email sbig.health@sbigeneral.in. SMS HEALTHCLAIM to 561612. Visit www.sbigeneral.in.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Hospital Cash Benefit (Rs.500/1000/2500/5000 for 5/10/15/45 days)",
+    "Major Illness Benefit (up to Rs.25L lump sum)",
+    "Additional Sum Insured for Accidental Hospitalization (1.5x or 2x)",
+    "Enhanced Cumulative Bonus (25%/50% up to 200%)",
+    "No Claim Bonus Protector",
+    "Co-Payment (10%/20%)",
+    "Any Room Upgrade (excluding suite & above)",
+    "Deductible (Rs.10,000 or Rs.25,000)"
+  ],
+  "top_rider_examples": [
+    "Major Illness Benefit",
+    "Additional SI for Accidental Hospitalization",
+    "Enhanced Cumulative Bonus",
+    "Hospital Cash Benefit"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/sbi-general/arogya-supreme__brochure.pdf",
+  "source_pdf_url": "https://www.sbigeneral.in",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 92.0
+}

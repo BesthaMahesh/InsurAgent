@@ -1,0 +1,183 @@
+{
+  "policy_id": "sbi-general__health-edge__cis",
+  "insurer_name": "SBI General Insurance Company Limited",
+  "insurer_slug": "sbi-general",
+  "policy_name": "Health Edge",
+  "policy_type": "family_floater",
+  "uin_code": "SBIHLIP23173V012223",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": null,
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Bariatric Surgery",
+    "Critical Illness Cover (90 days)",
+    "Maternity (48 months)"
+  ],
+  "maternity_waiting_months": 48,
+  "sub_limits_waiting_notes": "Both Indemnity and Benefit product. Critical Illness rider: 28-day survival period, ages 18-45 eligible. Maternity 48 months. Length of stay options: 5/10/unlimited days for inpatient.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Admission beyond 24 hours - up to Sum Insured with opted number of days (5/10/unlimited)",
+    "notes": "Includes room rent, ICU, OT, fees, telemedicine, medicines, diagnostics, prosthetics. Booster Benefit increases SI 50% per claim-free year."
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All Day Care procedures up to Sum Insured",
+    "notes": "More than 2 hours; covers angiography, dialysis, radiotherapy, chemotherapy."
+  },
+  "domiciliary_treatment": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured for inpatient hospitalization under AYUSH Hospital",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to amount specified in Schedule (Women Care Benefit - optional)",
+    "notes": "48-month waiting period. Optional rider."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Base Sum Insured (Women Care Benefit - optional)",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": null,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 3000,
+    "limit_text": "Rs.3,000 per hospitalization (Emergency Road Ambulance)",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": 300000,
+    "limit_text": "Lump sum Rs.3,00,000 for 60 listed critical illnesses (optional rider)",
+    "notes": "Ages 18-45 eligible. 28-day survival period. Can only opt at inception. Pre-existing CI excluded."
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Unlimited Refill (optional): 100% Base SI from first paid claim onwards, all subsequent claims in Policy Year (related + unrelated illness)",
+    "notes": "Anyone Illness Waiver applies."
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": 5000,
+    "limit_text": "Stay Fit Health Check-Up up to Rs.5,000 once per Policy Year (individual basis, 18+ adults)",
+    "notes": null
+  },
+  "room_rent_capping": "Per Policy Schedule",
+  "icu_capping": "Per Policy Schedule",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "Optional 10% or 20% co-payment per Policy Schedule on each admissible claim.",
+  "disease_wise_sub_limits": {
+    "bariatric_surgery": "Rs.50,000",
+    "assisted_reproduction": "Rs.1,00,000"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Global Treatment (Women Care Benefit - optional): Planned In-patient care outside India up to Base SI",
+    "notes": "Planned treatment, not emergency."
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "PED until 36 months",
+    "30-day initial waiting",
+    "Investigation & Evaluation",
+    "Obesity (waived if Bariatric opted)",
+    "Cosmetic/Plastic Surgery",
+    "Hazardous/Adventure Sports",
+    "Breach of Law",
+    "Alcohol/Drug Abuse",
+    "Refractive Error",
+    "Unproven Treatments",
+    "Sterility/Infertility (covered as Assisted Reproduction Rider)",
+    "Maternity (covered as Women Care rider)",
+    "War/Nuclear",
+    "Treatment outside India (covered as Global Treatment rider)"
+  ],
+  "temporary_exclusions": [
+    "30-day initial",
+    "24 months Bariatric Surgery",
+    "36 months PED",
+    "90 days Critical Illness rider",
+    "48 months Maternity rider"
+  ],
+  "notable_exclusions_summary": "Health Edge is flexible policy with extensive optional covers - Domestic Help Indemnity, Hospital Daily Cash, Accidental Death, Healing Benefit, Unlimited Refill (Anyone Illness Waiver), Vector Borne Fixed Benefit, 60-CI Critical Illness lump sum, OPD, Booster Benefit (50% SI), Women Care (Maternity/Newborn/IVF), Global Treatment. Base policy excludes maternity, infertility, refractive error, treatment outside India unless those riders opted.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA at network hospitals; reimbursement claims. Toll-free 18001021111. Process per Section G.B.II.b of policy wordings.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Domestic Help/Staff Indemnity (Rs.50K/Rs.1L)",
+    "Hospital Daily Cash (Rs.1000/2000 x 10 days)",
+    "Accidental Death (Rs.10L/Rs.20L)",
+    "Healing Benefit (>5 days hospitalization Rs.5K/10K)",
+    "Unlimited Refill (Anyone Illness Waiver)",
+    "Vector Borne Fixed Benefit (Rs.50K/Rs.1L)",
+    "Critical Illness Cover (60 CIs, lump sum Rs.3L)",
+    "Claims Safeguard (covers List-I items)",
+    "OPD Cover",
+    "Booster Benefit (50% SI per claim-free year)",
+    "E-Opinion (Unlimited)",
+    "Maternity Expenses (Women Care)",
+    "Newborn Baby Cover (Women Care)",
+    "Assisted Reproduction Treatment (Rs.1L)",
+    "Global Treatment (Planned outside India)",
+    "Wellness Benefit (AI Coaching, Gym Membership)",
+    "Co-payment (10%/20%)"
+  ],
+  "top_rider_examples": [
+    "Critical Illness Cover (60 CIs)",
+    "Unlimited Refill",
+    "Booster Benefit",
+    "Women Care (Maternity)",
+    "OPD Cover"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/sbi-general/health-edge__cis.pdf",
+  "source_pdf_url": "https://www.sbigeneral.in",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 92.0
+}

@@ -1,0 +1,139 @@
+{
+  "policy_id": "royal-sundaram__arogya-sanjeevani__wordings",
+  "insurer_name": "Royal Sundaram General Insurance Co. Limited",
+  "insurer_slug": "royal-sundaram",
+  "policy_name": "Arogya Sanjeevani",
+  "policy_type": "individual",
+  "uin_code": "RSAHLIP25013V022425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident; treatment in India only",
+  "sum_insured_options_inr": [
+    100000,
+    150000,
+    200000,
+    250000,
+    300000,
+    350000,
+    400000,
+    450000,
+    500000,
+    600000,
+    800000,
+    1000000,
+    1500000,
+    2000000
+  ],
+  "premium_payment_modes": [
+    "annual",
+    "half_yearly",
+    "quarterly",
+    "monthly"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Standard IRDAI Arogya Sanjeevani product (latest UIN v22425). 30-day free look applies.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured plus cumulative bonus",
+    "notes": "Standard indemnity inpatient cover"
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All listed day care treatments up to sum insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured (no sub-limits)",
+    "notes": null
+  },
+  "maternity_coverage": null,
+  "newborn_coverage": null,
+  "organ_donor_expenses": null,
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2000,
+    "limit_text": "Up to Rs. 2,000 per hospitalization",
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "Up to 2% of sum insured subject to maximum Rs. 5,000 per day",
+  "icu_capping": "Up to 5% of sum insured subject to maximum Rs. 10,000 per day",
+  "copayment_pct": 5.0,
+  "copayment_trigger_notes": "Mandatory 5% co-payment on every admissible claim (standard Arogya Sanjeevani feature)",
+  "disease_wise_sub_limits": {
+    "cataract": "25% of sum insured or Rs. 40,000 per eye in one policy year, whichever is lower",
+    "modern_treatments": "Up to 50% of sum insured for all listed modern treatments combined"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Treatment in India only"
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "investigation and evaluation (Excl04)",
+    "rest cure and respite care (Excl05)",
+    "obesity/weight control (Excl06)",
+    "change-of-gender treatments (Excl07)",
+    "cosmetic or plastic surgery (Excl08)",
+    "hazardous or adventure sports (Excl09)",
+    "breach of law (Excl10)",
+    "alcohol/drug/substance abuse (Excl12)",
+    "refractive error (Excl15)",
+    "unproven treatments (Excl16)",
+    "sterility and infertility (Excl17)",
+    "maternity expenses (Excl18)"
+  ],
+  "temporary_exclusions": [
+    "pre-existing diseases (36 months)",
+    "specific listed diseases (24 months)",
+    "initial 30 days for non-accident illness"
+  ],
+  "notable_exclusions_summary": "Standard IRDAI Arogya Sanjeevani. Maternity, cosmetic, refractive error, infertility and out-of-India treatment excluded. Mandatory 5% co-payment.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via Royal Sundaram network hospitals through MediAssist/Paramount TPA; reimbursement within 30 days of discharge.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": null,
+  "top_rider_examples": null,
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/royal-sundaram/arogya-sanjeevani__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 86.0
+}

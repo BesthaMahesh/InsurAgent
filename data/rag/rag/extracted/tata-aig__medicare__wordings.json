@@ -1,0 +1,168 @@
+{
+  "policy_id": "tata-aig__medicare__wordings",
+  "insurer_name": "Tata AIG General Insurance Company Limited",
+  "insurer_slug": "tata-aig",
+  "policy_name": "MediCare",
+  "policy_type": "family_floater",
+  "uin_code": "TATHLIP21224V022021",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": null,
+  "sum_insured_options_inr": [
+    500000,
+    1000000,
+    2000000,
+    5000000,
+    10000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 36,
+  "sub_limits_waiting_notes": "Hepatitis B + HPV vaccinations covered after 2 years continuous coverage. PED 36 months.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": "Each benefit subject to its Sum Insured; aggregate cap = Sum Insured."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Listed day-care procedures (refer website)",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Treatment exceeding 3 days at home",
+    "notes": "Excludes enteral feeding and end-of-life care."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "In-patient AYUSH treatment up to Sum Insured",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Maternity benefit (per Schedule)",
+    "notes": "Subject to maternity waiting period."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "First-year vaccinations (Typhoid, HPV after 2 yrs, Hep B after 2 yrs)",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Medical/surgical expenses for harvesting (donor in compliance with Transplantation of Human Organs Act)",
+    "notes": "Insured must be the recipient; in-patient claim must be admitted."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 3000,
+    "limit_text": "Rs 3,000 per hospitalization",
+    "notes": "Emergency or hospital-to-hospital transfer."
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Automatic restore of Basic Sum Insured once per policy period",
+    "notes": "Usable for unrelated illness or related illness after 45 days from earlier discharge. Family floater: applies to all insured. Annual basis for multi-year. Unutilized not carried forward. Not for Global Cover (B13)."
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Per Schedule",
+    "notes": null
+  },
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": {
+    "ambulance": "Rs 3,000 per hospitalization",
+    "vaccination_post_2yr": "Hepatitis B, HPV vaccines (excludes doctor/nurse incidental fees)",
+    "global_cover": "Per Schedule (exchange rate per RBI)"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Global Cover for planned hospitalisation (Section B13)",
+    "notes": "Only basic SI + Cumulative Bonus usable (not restored SI)."
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Diseases (Code Excl 01)",
+    "Specified disease/procedure waiting (Code Excl 02)",
+    "Investigation & Evaluation (Code Excl 04)",
+    "Rest cure, rehabilitation, respite care (Code Excl 05)",
+    "Obesity (Code Excl 06)",
+    "Change of Gender (Code Excl 07)",
+    "Cosmetic / Plastic Surgery (Code Excl 08)",
+    "Hazardous Activities (Code Excl 09)",
+    "Breach of Law (Code Excl 10)",
+    "Excluded Providers (Code Excl 11)",
+    "Alcoholism (Code Excl 12)",
+    "Admission for domestic reasons (Code Excl 13)",
+    "Dietary Supplements (Code Excl 14)",
+    "Refractive Error (Code Excl 15)",
+    "Unproven Treatments (Code Excl 16)",
+    "Sterility/Infertility (Code Excl 17)",
+    "War / Nuclear / Chemical / Biological",
+    "Naval/military operations",
+    "Intentional self-injury"
+  ],
+  "temporary_exclusions": [
+    "Initial waiting: 30 days",
+    "Specified disease/procedure: 24 months",
+    "Pre-existing diseases: 36 months",
+    "Maternity: 36 months",
+    "Hepatitis B / HPV vaccines: 24 months"
+  ],
+  "notable_exclusions_summary": "Indemnity policy with restore benefit and global cover for planned hospitalisation. Standard IRDAI permanent exclusions. PED waiting 36 months.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via Tata AIG network. Toll-free 1800 266 7780 (senior 1800 22 9966).",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Wellness",
+    "Cumulative Bonus or Renewal Discount"
+  ],
+  "top_rider_examples": [
+    "Global Cover",
+    "Restore Benefit"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/tata-aig/medicare__wordings.pdf",
+  "source_pdf_url": "https://www.tataaig.com",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 84
+}

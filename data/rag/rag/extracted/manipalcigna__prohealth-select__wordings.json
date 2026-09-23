@@ -1,0 +1,185 @@
+{
+  "policy_id": "manipalcigna__prohealth-select__wordings",
+  "insurer_name": "ManipalCigna Health Insurance Company Limited",
+  "insurer_slug": "manipalcigna",
+  "policy_name": "ProHealth Select",
+  "policy_type": "family_floater",
+  "uin_code": "IRDAI/HLT/CTTK/P-H/V.I/72/2016-17",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    50000,
+    100000,
+    200000,
+    300000,
+    400000,
+    500000,
+    700000,
+    1000000,
+    1500000,
+    2000000,
+    2500000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 48,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Cataract",
+    "Hernia",
+    "Hysterectomy",
+    "Joint replacement",
+    "ENT surgeries",
+    "Sinusitis",
+    "Stones in urinary system",
+    "Polyps / Cysts / Nodules"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "30-day initial wait. 24-month specific disease. 48-month PED. 90-day waiting on Critical Illness add-on / Re-Assurance Cover.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Room rent up to 2% of SI per day capped at Rs.3,000; ICU up to 4% of SI capped at Rs.7,000",
+    "notes": null
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Not included in ProHealth Select base; not available as optional cover under this variant"
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to full Sum Insured",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2000,
+    "limit_text": "Rs.2,000 per hospitalisation event",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Critical Illness Add-on (lump sum); 90-day waiting period; covers listed CIs",
+    "notes": "Optional add-on"
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "100% restoration of Sum Insured once in a Policy Year for unrelated illnesses (not available for SI Rs.0.5L and 1L under Select A)",
+    "notes": null
+  },
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Healthy Rewards — 1% of paid premium as reward points each year",
+    "notes": "Reward points redeemable as premium discount or wellness services"
+  },
+  "room_rent_capping": "2% of Sum Insured per day, max Rs.3,000",
+  "icu_capping": "4% of Sum Insured per day, max Rs.7,000",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "Voluntary Co-Pay add-on available with deductible options for premium discount",
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "network_hospital_count": 8500,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Investigation & Evaluation (Excl04)",
+    "Cosmetic or plastic surgery",
+    "Cost of donor screening",
+    "Non-Allopathic treatment other than AYUSH",
+    "Adventure sports injuries",
+    "Ionising radiation / nuclear contamination",
+    "War / warlike operations",
+    "Sterility and infertility",
+    "Maternity (not covered)",
+    "Refractive errors",
+    "Unproven treatments",
+    "Obesity / weight control",
+    "Change of gender",
+    "Substance abuse",
+    "Self-inflicted injury"
+  ],
+  "temporary_exclusions": [
+    "30-day initial waiting period",
+    "48-month PED waiting",
+    "24-month specific disease waiting",
+    "90-day Critical Illness Add-on / Re-Assurance Cover waiting"
+  ],
+  "notable_exclusions_summary": "Affordable indemnity plan (Select A from Rs.0.5L SI, Select B from Rs.2L SI). Room rent capped 2% SI/day (max Rs.3,000); ICU 4%/day (max Rs.7,000). 48-month PED, 24-month specific disease, 30-day initial waits. Maternity not covered. Optional Critical Illness add-on with 90-day waiting. Restoration of SI once per year for unrelated illnesses.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via ManipalCigna empanelled network and TPA pre-authorisation.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Critical Illness Add-on",
+    "Re-Assurance Cover",
+    "Voluntary Co-Pay / Deductible (Rs.1/2/3/4/5 Lacs)",
+    "Cumulative Bonus Booster",
+    "Health Maintenance Benefit (HMB)",
+    "Personal Accident",
+    "Hospital Daily Cash"
+  ],
+  "top_rider_examples": [
+    "Critical Illness Add-on",
+    "Cumulative Bonus Booster",
+    "Healthy Rewards"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/manipalcigna/prohealth-select__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 75.0
+}

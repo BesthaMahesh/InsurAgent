@@ -1,0 +1,98 @@
+{
+  "policy_id": "acko__acko-health-iii-platinum__brochure",
+  "insurer_name": "Acko General Insurance Limited",
+  "insurer_slug": "acko",
+  "policy_name": "ACKO Health III Platinum",
+  "policy_type": "family_floater",
+  "uin_code": "ACKHLIP26036V012526",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "sum_insured_options_inr": [
+    10000000,
+    100000000
+  ],
+  "free_look_period_days": 30,
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "initial_waiting_period_days": 0,
+  "inpatient_hospitalization": {
+    "covered": true,
+    "notes": "100% hospital bill payment, including consumables and medical/surgical needs - zero out-of-pocket"
+  },
+  "day_care_treatments": {
+    "covered": true,
+    "notes": "All day-care procedures <24 hours"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "Home treatment due to medical conditions or non-availability of hospital beds"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "Alternative treatment under Ayurveda, Yoga & Naturopathy, Unani, Siddha, Homeopathy"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "All surgery and hospitalization expenses incurred by donor"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Multiple road ambulance trips for emergency care between home and hospital"
+  },
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_text": "Free yearly health check-up for all insured members aged above 18"
+  },
+  "no_claim_bonus_pct": 10.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "no_claim_bonus_notes": "Insurance Inflation Protection: 10% Sum Insured increase every year up to 100% of Base SI, whether claim or not",
+  "modern_treatments": {
+    "covered": true
+  },
+  "room_rent_capping": "No room rent limits - any hospital room, ICU no charge or day limits",
+  "icu_capping": "No cap on charges or number of days",
+  "maternity_coverage": {
+    "covered": false,
+    "notes": "Hospitalisation related to childbirth not covered; ectopic pregnancy / miscarriage due to accident covered"
+  },
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "notes": "Worldwide emergency hospitalisation explicitly excluded in this plan variant"
+  },
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "network_hospital_count": 11500,
+  "claim_settlement_ratio_pct": 96.0,
+  "permanent_exclusions": [
+    "Maternity (except ectopic pregnancy / accident-related miscarriage)",
+    "OPD doctor consultations without hospitalization",
+    "Worldwide emergency hospitalization (treatment outside India)",
+    "Infertility treatment",
+    "Bariatric surgery (unless life-threatening)",
+    "Cosmetic/plastic procedures (unless life-threatening or medically necessary)",
+    "External congenital illness",
+    "Pre-existing diseases until waiting period",
+    "Investigation-only admissions",
+    "Substance abuse",
+    "War / nuclear",
+    "Self-harm"
+  ],
+  "notable_exclusions_summary": "Plan covers vision care (incl refractive >=7.5 dioptres), accident-related dental, COVID-19. Excludes maternity (except ectopic), OPD without hospitalization, worldwide emergency, infertility, bariatric (unless life-threatening), cosmetic, external congenital.",
+  "available_riders": [
+    "Free Unlimited Doctor Teleconsultations",
+    "Second Opinion Consultations",
+    "Domestic Evacuation (On-site Rescue)",
+    "Vision Care Treatment (incl refractive error correction)",
+    "Accident-related Dental Treatment",
+    "COVID-19 Treatment"
+  ],
+  "claim_process_summary": "Cashless via 11,500+ network hospitals (TPA desk processes within 60 minutes); Reimbursement via ACKO app processed within 5 days. 96% claims settlement ratio (FY 2024-25).",
+  "tat_cashless_authorization_hours": 1.0,
+  "source_pdf_path": "rag/corpus/acko/acko-health-iii-platinum__brochure.pdf",
+  "extraction_confidence_pct": 80
+}

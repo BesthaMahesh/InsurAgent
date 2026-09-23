@@ -1,0 +1,93 @@
+{
+  "policy_id": "go-digit__digit-top-up__wordings",
+  "insurer_name": "Go Digit General Insurance Limited",
+  "insurer_slug": "go-digit",
+  "policy_name": "Digit Top-Up",
+  "policy_type": "super_top_up",
+  "uin_code": "GODHLIP24056V012324",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "residency_requirement": "Indian resident",
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "sub_limits_waiting_notes": "Top-up plan with per-claim or aggregate deductible option (chosen by insured). Pays only above deductible.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "notes": "Section 1 — paid above deductible up to SI."
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 180,
+  "day_care_treatments": {
+    "covered": true
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "Section 4 — home hospitalisation > 3 days with listed exclusions."
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "Section 9 — AYUSH inpatient in certified AYUSH hospital."
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "Section 3 — donor harvesting expenses."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Road ambulance + Section 5 Emergency Air Ambulance within India."
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "notes": "Section 7 Critical Illness Benefit Cover (lump sum)."
+  },
+  "maternity_coverage": {
+    "covered": false
+  },
+  "newborn_coverage": {
+    "covered": false
+  },
+  "restoration_benefit": {
+    "covered": false
+  },
+  "preventive_health_checkup": {
+    "covered": false
+  },
+  "copayment_pct": 0.0,
+  "deductible_amount_inr": 300000,
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "PED for first 36 months",
+    "Cosmetic / aesthetic surgery",
+    "Hazardous adventure sports (professional)",
+    "Self-inflicted injury / suicide",
+    "Substance abuse / alcoholism",
+    "Investigation-only admissions",
+    "Unproven / experimental treatments",
+    "Maternity / infertility",
+    "Treatment outside India"
+  ],
+  "notable_exclusions_summary": "Top-up product paying above deductible (per claim or aggregate). Includes in-built PA Section 6, optional Critical Illness Section 7, optional consumables/bariatric/psychiatric add-ons.",
+  "available_riders": [
+    "Personal Accident (Section 6)",
+    "Critical Illness Benefit (Section 7)",
+    "Consumables Cover",
+    "Bariatric Surgery Limit Booster",
+    "Psychiatric Illness Sub-limit"
+  ],
+  "claim_process_summary": "1800-258-4242 / healthclaims@godigit.com. Network cashless with deductible applied first; reimbursement otherwise.",
+  "source_pdf_path": "rag/corpus/go-digit/digit-top-up__wordings.pdf",
+  "extraction_confidence_pct": 76
+}

@@ -1,0 +1,145 @@
+{
+  "policy_id": "national-insurance__bob-national-health__wordings",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "BOB National Health",
+  "policy_type": "family_floater",
+  "uin_code": "NICHLIP22045V012122",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": "Bank of Baroda account holder",
+  "sum_insured_options_inr": [
+    300000,
+    500000,
+    1000000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 12,
+  "sub_limits_waiting_notes": "Per policy wordings — same as CIS / Prospectus.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Hospitalisation up to SI, with 1% room rent and 2% ICU caps",
+    "notes": null
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "140+ procedures",
+    "notes": null
+  },
+  "domiciliary_treatment": null,
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH inpatient up to SI",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": 50000,
+    "limit_text": "Optional cover, Rs. 50,000 per year (max 2 lifetime claims, 12-month wait)",
+    "notes": null
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Newborn auto-covered under mother's SI",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor hospitalisation expenses",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 1000,
+    "limit_text": "Rs. 1,000 per hospitalisation",
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Good Health Incentive — preventive check-up reimbursement at 4th renewal",
+    "notes": null
+  },
+  "room_rent_capping": "1% of SI per day",
+  "icu_capping": "2% of SI per day",
+  "copayment_pct": 10.0,
+  "copayment_trigger_notes": "Optional 10% co-pay for 8% premium discount",
+  "disease_wise_sub_limits": {
+    "cataract": "10% of SI, max Rs. 40,000 per eye/year",
+    "modern_treatments": "25% of SI",
+    "hospital_cash": "Rs. 500/day max 5 days"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Cosmetic / Plastic Surgery",
+    "Obesity / Weight Control",
+    "Hazardous Sports",
+    "Drug / Alcohol Abuse",
+    "Refractive Error",
+    "Unproven Treatments",
+    "Birth control / Sterility / Infertility",
+    "Hormone Replacement Therapy",
+    "Self-inflicted injury",
+    "Stem Cell Surgery",
+    "Vaccination",
+    "Massages / Steam Bath",
+    "Dental",
+    "Domiciliary / OPD",
+    "War",
+    "Radioactivity",
+    "Treatment outside India"
+  ],
+  "temporary_exclusions": [
+    "30 days initial",
+    "90 days / 1-3 yrs specific diseases",
+    "PED 36 months",
+    "Maternity 12 months (optional)"
+  ],
+  "notable_exclusions_summary": "Bank of Baroda customer-only product. Standard IRDAI exclusions with PED at 36 months. Optional 10% copay.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless TPA-mediated; 1-hour pre-auth TAT; reimbursement 30-day submission; 15-day claim decision.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Maternity Benefit"
+  ],
+  "top_rider_examples": [
+    "Maternity Benefit"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/bob-national-health__wordings.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 88
+}

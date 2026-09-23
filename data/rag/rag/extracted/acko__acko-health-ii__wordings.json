@@ -1,0 +1,140 @@
+{
+  "policy_id": "acko__acko-health-ii__wordings",
+  "insurer_name": "Acko General Insurance Limited",
+  "insurer_slug": "acko",
+  "policy_name": "ACKO Health II",
+  "policy_type": "family_floater",
+  "uin_code": "ACKHLIP26036V012526",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 36,
+  "specific_diseases_listed": [
+    "Cataract, Glaucoma and other disorders of lens, disorders of Retina",
+    "Pancreatitis and Stones in Biliary and Urinary System",
+    "Abnormal Utero-vaginal bleeding, female genital Prolapse, Endometriosis/Adenomyosis, Fibroids, PCOD, Hysterectomy",
+    "All internal or external benign or In Situ Neoplasms/Tumors, Cyst, Sinus, Polyp, Nodules, Swelling, Mass or Lump",
+    "Hyperplasia of Prostate, Hydrocele, Varicocele and spermatocele",
+    "Hemorrhoids, Fissure or Fistula or Abscess of anal and rectal region, Pilonidal Sinus & Rectal Prolapse",
+    "Hernia of all sites",
+    "Osteoarthritis, Rheumatoid Arthritis, Gout, Intervertebral Disc disorders, Joint Replacement Surgeries",
+    "Chronic kidney disease and failure",
+    "Varicose veins of lower extremities",
+    "Disease of middle ear and mastoid, Tonsils and Adenoids, Nasal Septum and Nasal Sinuses/Polyp",
+    "Internal Congenital Anomaly",
+    "Gastritis, Gastroesophageal Reflux Disorder, Ulcer, Erosion and Varices of Upper Gastrointestinal Tract",
+    "Ligament, Tendon & Meniscal Tear",
+    "Neurodegenerative disorders (Parkinson's, Alzheimer's, Dementia)"
+  ],
+  "inpatient_hospitalization": {
+    "covered": true,
+    "notes": "Includes room rent, ICU/CCU/HDU, OT, doctor fees, medicines, diagnostics, prosthetics implanted internally during surgery"
+  },
+  "day_care_treatments": {
+    "covered": true,
+    "limit_text": "All listed day-care procedures covered"
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "Covered if domiciliary hospitalization continues for at least 3 consecutive days"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "In-patient AYUSH treatment at recognised AYUSH hospitals/day care centres (Ayurveda, Yoga, Naturopathy, Unani, Siddha, Homeopathy)"
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "notes": "In-patient hospitalization expenses for organ donor for harvesting, subject to Transplantation of Human Organs Act 1994"
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Road ambulance to hospital/day care centre; limit per policy schedule"
+  },
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": 900,
+    "limit_text": "Optional benefit; covers 12 specified tests (CBC, ESR, HbA1C, Sr Creatinine, Lipid profile, RUA, SGOT/SGPT, GGT, Uric Acid) for insured above 18 years",
+    "notes": "Reimbursable up to Rs 900 if network not available"
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "notes": "Excluded under Excl18 except ectopic pregnancy"
+  },
+  "modern_treatments": {
+    "covered": true,
+    "notes": "Includes Uterine Artery Embolization, HIFU, Balloon Sinuplasty, Deep Brain Stimulation, Oral chemotherapy, Immunotherapy, Intravitreal injections, Robotic surgeries, Stereotactic radiosurgeries, Bronchial Thermoplasty, Stem cell therapy (hematopoietic for BMT), IONM"
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_text": "100% restoration of sum insured (optional add-on)",
+    "notes": "Available for related and unrelated conditions per schedule; not triggered for first claim of policy year"
+  },
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "notes": "Worldwide in-patient hospitalization is an optional basic benefit (3.3.1)"
+  },
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-existing diseases until waiting period",
+    "Investigation & evaluation only admissions",
+    "Rest cure, rehabilitation and respite care",
+    "Obesity / weight control surgery not meeting BMI criteria",
+    "Change-of-gender treatments",
+    "Cosmetic or plastic surgery (unless reconstructive)",
+    "Breach of law with criminal intent",
+    "Treatments at health hydros, nature cure clinics, spas",
+    "Dietary supplements without prescription",
+    "Refractive error correction < 7.5 diopters",
+    "Unproven / experimental treatments",
+    "Sterility and infertility (IVF, ZIFT, GIFT, ICSI, surrogacy)",
+    "Maternity (except ectopic pregnancy)",
+    "Suicide / self-harm",
+    "Dental treatment unless accident",
+    "Circumcision (unless medically necessary)",
+    "External prosthetics",
+    "War, nuclear, radiological, chemical, biological events",
+    "Hormonal therapies / HRT",
+    "Substance abuse and addictions",
+    "Sleep disorders (sleep apnea, snoring)",
+    "Hazardous / adventure sports (professional)",
+    "Treatment outside India (unless worldwide benefit opted)",
+    "External congenital anomalies",
+    "OPD treatment unless add-on 3.4.3 opted",
+    "STDs other than HIV"
+  ],
+  "notable_exclusions_summary": "Standard IRDAI exclusions plus permanent exclusions for adventure sports, treatment outside India (unless worldwide benefit opted), external congenital anomalies, OPD (unless add-on opted), maternity (except ectopic). Some Set-1 exclusions can be waived if 'All medically necessary hospitalization' option is opted.",
+  "available_riders": [
+    "Worldwide in-patient hospitalization",
+    "Restore Sum Insured",
+    "Cumulative Bonus",
+    "No Claim Bonus Sum Insured",
+    "No Claim Discount",
+    "Super Top-up",
+    "Waiver of non-payable expenses",
+    "All medically necessary hospitalization",
+    "Reduction in specific illness waiting period (Comprehensive / Essential)",
+    "Preventive Health Check-up",
+    "Inflation Protect Sum Insured",
+    "Initial 30 days waiting period waiver",
+    "Doctor-on-call",
+    "Family physician",
+    "OPD Medical Services",
+    "Monthly NCB OPD Sum Insured",
+    "Daily Hospital Cash",
+    "Accidental Death or Disability Cover",
+    "Accidental Disability Cover",
+    "Value Added Services / Wellness"
+  ],
+  "claim_process_summary": "Two modes: cashless at network hospitals (planned: notify 3 days before admission; emergency: notify within 48 hours) and reimbursement (submit claim within 15 days of discharge). Pre-authorization required for cashless. Settlement within 15 days of complete documentation; 2% above bank rate penal interest on delay.",
+  "source_pdf_path": "rag/corpus/acko/acko-health-ii__wordings.pdf",
+  "extraction_confidence_pct": 88
+}

@@ -1,0 +1,55 @@
+{
+  "policy_id": "go-digit__digit-complete-care__wordings",
+  "insurer_name": "Go Digit General Insurance Limited",
+  "insurer_slug": "go-digit",
+  "policy_name": "Digit Complete Care",
+  "policy_type": "group",
+  "uin_code": "GODHLGP21492V022021",
+  "premium_payment_modes": [
+    "annual",
+    "single"
+  ],
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "sub_limits_waiting_notes": "Group policy combining personal accident, accidental hospitalisation, daily hospital cash and complementary benefits, primarily attached to motor / dealer programmes.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "notes": "Accidental Hospitalization Cover when insured sustains accidental bodily injury while travelling in the named vehicle; reasonable and customary charges paid up to SI."
+  },
+  "day_care_treatments": {
+    "covered": true,
+    "notes": "Day care procedures included under Accidental Hospitalization Cover."
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Road ambulance expenses included under accidental hospitalisation."
+  },
+  "critical_illness_cover": {
+    "covered": false
+  },
+  "maternity_coverage": {
+    "covered": false
+  },
+  "newborn_coverage": {
+    "covered": false
+  },
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-existing diseases (PED)",
+    "Self-inflicted injury / suicide attempts",
+    "Alcohol or drug abuse",
+    "Hazardous sports (professional)",
+    "War / nuclear / terrorism (subject to specific clause)",
+    "Treatment outside India",
+    "Cosmetic / aesthetic surgery"
+  ],
+  "notable_exclusions_summary": "Digit Complete Care is a group policy attached to motor / dealer programmes. Covers Personal Accident, Accidental Hospitalization, Daily Hospital Cash. Excludes illness-based hospitalisation, PED, cosmetic, hazardous sports.",
+  "claim_process_summary": "24x7 claim helpline 1800-258-4242; email healthclaims@godigit.com. Pre-authorisation via network or reimbursement.",
+  "source_pdf_path": "rag/corpus/go-digit/digit-complete-care__wordings.pdf",
+  "extraction_confidence_pct": 70
+}

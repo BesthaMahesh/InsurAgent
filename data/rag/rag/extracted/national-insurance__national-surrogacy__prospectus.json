@@ -1,0 +1,120 @@
+{
+  "policy_id": "national-insurance__national-surrogacy__prospectus",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Surrogacy Insurance",
+  "policy_type": "other",
+  "uin_code": "NICHLIP25042V012425",
+  "min_entry_age_years": 25,
+  "max_entry_age_years": 35,
+  "max_renewal_age_years": null,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": [
+    "custom"
+  ],
+  "residency_requirement": "Indian resident; Surrogate Mother per Surrogacy Regulation Act 2021",
+  "sum_insured_options_inr": [
+    200000,
+    300000
+  ],
+  "premium_payment_modes": [
+    "single"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 3,
+  "grace_period_days": null,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": null,
+  "specific_disease_waiting_months": null,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Policy issued for 36 months only; not renewable. SI options INR 6L or INR 9L over 3 years (i.e., 2L or 3L per annual policy year). 10% direct discount available for online/walk-in. Proposal at least 30 days before embryo transfer.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Annual Sum Insured",
+    "notes": "Covers Surrogate Mother only, for surrogacy pregnancy complications and post-partum delivery complications"
+  },
+  "pre_hospitalization_days": null,
+  "post_hospitalization_days": null,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Less than 24 hours hospitalization",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": "Excluded",
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to Sum Insured",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Surrogacy pregnancy and post-partum delivery complications only",
+    "notes": "Not regular maternity"
+  },
+  "newborn_coverage": null,
+  "organ_donor_expenses": null,
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 2000,
+    "limit_text": "INR 2,000 per policy year",
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "Single AC/Non-AC base single room; proportionate deduction if higher",
+  "icu_capping": "5% of annual SI per day; proportionate deduction if higher",
+  "copayment_pct": null,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": {
+    "modern_treatments": "25% of Annual SI (except IONM)",
+    "ambulance": "INR 2,000 per year"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Birth control, Sterility, Infertility",
+    "Surrogacy-related expenses (other than complications)",
+    "Hormone Replacement Therapy",
+    "Domiciliary and OPD",
+    "Dental",
+    "Cosmetic Surgery",
+    "Hazardous Sports",
+    "Drug/Alcohol Abuse",
+    "Vaccination",
+    "Self Inflicted Injury",
+    "War",
+    "Radioactivity",
+    "Treatment outside India"
+  ],
+  "temporary_exclusions": [
+    "Initial 30 days waiting period (except accidents)"
+  ],
+  "notable_exclusions_summary": "Surrogacy-specific product covering only complications of surrogacy pregnancy and post-partum delivery for the surrogate mother. Non-renewable 36-month policy issued by Intending Couple/Woman per Surrogacy Regulation Act 2021.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA - 1 hour pre-auth, 3 hour final. Reimbursement within 30 days of discharge. Claim decision within 15 days.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": null,
+  "top_rider_examples": null,
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-surrogacy__prospectus.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 82
+}

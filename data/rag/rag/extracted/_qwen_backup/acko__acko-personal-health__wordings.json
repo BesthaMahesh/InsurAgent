@@ -1,0 +1,152 @@
+{
+  "policy_id": "acko__acko-personal-health__wordings",
+  "insurer_name": "Acko General Insurance Limited",
+  "insurer_slug": "acko",
+  "policy_name": "Acko Personal Health Policy",
+  "policy_type": "other",
+  "uin_code": "ACKHLIP25035V022425",
+  "min_entry_age_years": null,
+  "max_entry_age_years": null,
+  "max_renewal_age_years": null,
+  "min_child_entry_age_days": null,
+  "family_composition_allowed": null,
+  "residency_requirement": null,
+  "sum_insured_options_inr": [],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": null,
+  "grace_period_days": null,
+  "free_look_period_days": 15,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 24,
+  "specific_disease_waiting_months": null,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": 0,
+  "sub_limits_waiting_notes": null,
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "newborn_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "critical_illness_cover": null,
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "no_claim_bonus_pct": 50.0,
+  "no_claim_bonus_cap_pct": 100.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "room_rent_capping": "no_capping",
+  "icu_capping": "no_capping",
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": null,
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": null
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Pre-Existing Diseases",
+    "Specified disease/procedure waiting period",
+    "30-day waiting period",
+    "Investigation & Evaluation",
+    "Rest Cure, rehabilitation and respite care",
+    "Obesity/ Weight Control",
+    "Change-of-Gender treatments",
+    "Cosmetic or plastic Surgery",
+    "Refractive Error",
+    "Sterility and Infertility",
+    "Maternity"
+  ],
+  "temporary_exclusions": [
+    "30-day waiting period",
+    "Pre-Existing Diseases",
+    "Specified disease/procedure waiting period"
+  ],
+  "notable_exclusions_summary": "Maternity, pre-existing diseases, cosmetic surgery, refractive error, and infertility are excluded. 30-day and pre-existing disease waiting periods apply.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": null,
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Doctor-on-call",
+    "Family physician",
+    "Out-Patient Department (OPD) Medical Services",
+    "Monthly No Claim Bonus OPD Sum Insured",
+    "Daily Hospital Cash",
+    "Accidental Death or Disability Cover",
+    "Accidental Disability Cover",
+    "Value Added Services"
+  ],
+  "top_rider_examples": [
+    "Out-Patient Department (OPD) Medical Services",
+    "Daily Hospital Cash",
+    "Accidental Death or Disability Cover",
+    "Restore Sum Insured",
+    "No Claim Bonus Sum Insured"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": null,
+  "source_pdf_url": "www.acko.com/gi",
+  "last_updated_date": null,
+  "extraction_confidence_pct": 90.0
+}

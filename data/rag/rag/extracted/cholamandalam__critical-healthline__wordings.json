@@ -1,0 +1,29 @@
+{
+  "policy_id": "cholamandalam__critical-healthline__wordings",
+  "insurer_name": "Cholamandalam MS General Insurance Company Limited",
+  "insurer_slug": "cholamandalam",
+  "policy_name": "Chola MS Critical Healthline",
+  "policy_type": "critical_illness",
+  "uin_code": "CHOHLIP21302V022021",
+  "grace_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_text": "Lump-sum benefit on first diagnosis of listed critical illnesses.",
+    "notes": "Covers Cancer of Specified Severity, Stroke with permanent neurological deficit, Myocardial Infarction, Open Chest CABG, Kidney Failure requiring Regular Dialysis, and other listed CIs per policy schedule."
+  },
+  "permanent_exclusions": [
+    "Pre-existing diseases (until waiting period served)",
+    "Congenital anomalies",
+    "Self-inflicted injury",
+    "Treatment outside India unless specifically covered"
+  ],
+  "geographic_coverage": "pan_india",
+  "source_pdf_path": "rag/corpus/cholamandalam/critical-healthline__wordings.pdf",
+  "extraction_confidence_pct": 70
+}

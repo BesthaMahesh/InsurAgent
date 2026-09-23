@@ -1,0 +1,134 @@
+{
+  "policy_id": "national-insurance__national-mediclaim-plus__prospectus",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Mediclaim Plus Policy",
+  "policy_type": "individual",
+  "uin_code": "NICHLIP25038V032425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": ["self", "self+spouse", "self+spouse+kids", "self+spouse+kids+parents"],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000, 1500000, 2000000, 2500000, 3000000, 4000000, 5000000],
+  "premium_payment_modes": ["annual"],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": null,
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Plan A: Rs 2-10L (9 slabs, 1L multiples). Plan B: Rs 15/20/25L. Plan C: Rs 30/40/50L. For age 70+, only Plan A available (plan change not allowed).",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Plan-tiered room/ICU limits (1%/2% SI in Plan A; absolute Rs caps in Plan B/C)",
+    "notes": null
+  },
+  "pre_hospitalization_days": 30,
+  "post_hospitalization_days": 60,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "140+ day care procedures",
+    "notes": null
+  },
+  "domiciliary_treatment": null,
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "AYUSH inpatient up to SI",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Plan A: Rs 30K/50K (normal/caesarean). Plan B: Rs 60K/75K. Plan C: Rs 80K/100K.",
+    "notes": "Newborn auto-covered first 3 months under mother's SI."
+  },
+  "newborn_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Auto-covered first 3 months",
+    "notes": null
+  },
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Donor hospitalisation expenses",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Plan A: Rs 2,500 / B: Rs 4,000 / C: Rs 5,000 per year",
+    "notes": null
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional: lump-sum Rs 2-25 lakh on CI diagnosis",
+    "notes": null
+  },
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": 5.0,
+  "no_claim_bonus_cap_pct": 50.0,
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Every 2 years if no break in renewal",
+    "notes": null
+  },
+  "room_rent_capping": "Plan-tiered (1% SI in A; Rs 15-20K in B/C)",
+  "icu_capping": "Plan-tiered (2% SI in A; actual in B/C)",
+  "copayment_pct": 10.0,
+  "copayment_trigger_notes": "Optional 10% or 20% copay for 12.5% or 25% premium discount.",
+  "disease_wise_sub_limits": {
+    "cataract": "Plan-tiered Rs 60K-1L per eye or 15% SI",
+    "hospital_cash": "Plan-tiered Rs 500-1000/day max 5 days",
+    "air_ambulance": "Plan B/C: 5% SI per year",
+    "modern_treatments": "25% SI per treatment"
+  },
+  "deductible_amount_inr": 0,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": null,
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "Cosmetic / Plastic",
+    "Obesity",
+    "Hazardous Sports",
+    "Drug Abuse",
+    "Refractive Error",
+    "Unproven Treatments",
+    "Sterility / Infertility",
+    "Self-inflicted injury",
+    "Stem Cell",
+    "Vaccination",
+    "Dental",
+    "Domiciliary / OPD (except optional)",
+    "War",
+    "Radioactivity",
+    "Outside India"
+  ],
+  "temporary_exclusions": [
+    "30 days initial",
+    "90 days / 1-3 yr specific",
+    "PED 36 months"
+  ],
+  "notable_exclusions_summary": "Tiered indemnity health policy with 3 plans. Higher plans add air ambulance / emergency reunion / home doctor. Maternity included with plan-tiered limits. Optional CI lump-sum and OPD covers.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via TPA. Document submission 15 days. Settlement 15 days.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": ["Critical Illness", "Outpatient Treatment"],
+  "top_rider_examples": ["Critical Illness", "Outpatient Treatment"],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-mediclaim-plus__prospectus.pdf",
+  "source_pdf_url": "https://nationalinsurance.nic.co.in/en/health-insurance",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 90
+}

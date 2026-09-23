@@ -1,0 +1,186 @@
+{
+  "policy_id": "royal-sundaram__advanced-top-up__brochure",
+  "insurer_name": "Royal Sundaram General Insurance Co. Limited",
+  "insurer_slug": "royal-sundaram",
+  "policy_name": "Advanced Top Up",
+  "policy_type": "super_top_up",
+  "uin_code": "RSAHLIP23029V012223",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 91,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    1000000,
+    1500000,
+    2000000,
+    2500000,
+    3000000,
+    3500000,
+    4000000,
+    4500000,
+    5000000,
+    5500000,
+    6000000,
+    6500000,
+    7000000,
+    7500000,
+    8000000,
+    8500000,
+    9000000,
+    9500000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": {
+    "26-45_SI_45L_deductible_5L_1A": 2494,
+    "46-60_SI_45L_deductible_5L_1A": 5542,
+    "61-65_SI_45L_deductible_5L_1A": 9976
+  },
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "Cataract",
+    "Stones in biliary and urinary systems",
+    "Hernia/Hydrocele",
+    "Hysterectomy for benign disorder",
+    "Lumps/cysts/nodules/polyps/internal tumours",
+    "Gastric and Duodenal Ulcers",
+    "Surgery on tonsils/adenoids",
+    "Osteoarthrosis/Arthritis/Gout/Rheumatism/Spondylosis/IVD Prolapse",
+    "Fissure/Fistula/Haemorrhoid",
+    "Sinusitis/Deviated Nasal Septum/Tympanoplasty/CSOM",
+    "Benign Prostatic Hypertrophy",
+    "Knee/Hip Joint replacement",
+    "Dilatation and Curettage",
+    "Varicose veins",
+    "Dysfunctional Uterine Bleeding/Fibroids/Prolapse Uterus/Endometriosis",
+    "Chronic Renal Failure or end-stage Renal Failure or Chronic Liver Failure"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Top-up with annual aggregate deductible (Rs. 5L to Rs. 25L). Optional benefit to reduce PED waiting from 36 to 24 months.",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured (once deductible exhausted)",
+    "notes": "Deductible applies on annual aggregate basis per policy year"
+  },
+  "pre_hospitalization_days": 60,
+  "post_hospitalization_days": 90,
+  "day_care_treatments": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "All day care treatments up to sum insured (pre/post limited to 30 days under day-care procedures)",
+    "notes": null
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured; pre/post up to 60/90 days respectively",
+    "notes": "Minimum 3-day continuous treatment"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Up to sum insured in any AYUSH hospital",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Maternity expenses excluded (Excl18)"
+  },
+  "newborn_coverage": null,
+  "organ_donor_expenses": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Inpatient donor expenses up to sum insured",
+    "notes": null
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "limit_inr": 3000,
+    "limit_text": "Up to Rs. 3,000 per hospitalization (including app-based cab service to hospital)",
+    "notes": "Not applicable for day care procedures"
+  },
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Second Opinion for 22 specified critical illnesses, once per policy year",
+    "notes": "Reimbursement basis only with prior intimation"
+  },
+  "restoration_benefit": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Life Protect Benefit — additional 10% of sum insured per policy year for life-threatening conditions",
+    "notes": "Available once per policy year; certification by treating practitioner required"
+  },
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": null,
+  "room_rent_capping": "No room rent capping",
+  "icu_capping": null,
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": "No co-payment under base plan",
+  "disease_wise_sub_limits": {
+    "home_care_treatment": "Up to Rs. 50,000 per event and Rs. 1,00,000 per policy year per insured person"
+  },
+  "deductible_amount_inr": 500000,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Domestic claims only"
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": true,
+  "permanent_exclusions": [
+    "investigation and evaluation (Excl04)",
+    "rest cure (Excl05)",
+    "obesity/weight control (Excl06)",
+    "change-of-gender treatments (Excl07)",
+    "cosmetic or plastic surgery (Excl08)",
+    "hazardous or adventure sports (Excl09)",
+    "breach of law (Excl10)",
+    "excluded providers (Excl11)",
+    "alcohol/drug/substance abuse (Excl12)",
+    "treatment in health hydros/nature cure (Excl13)",
+    "dietary supplements without prescription (Excl14)",
+    "refractive error (Excl15)",
+    "unproven treatments (Excl16)",
+    "sterility and infertility (Excl17)",
+    "maternity expenses (Excl18)"
+  ],
+  "temporary_exclusions": [
+    "pre-existing diseases (36 months, optional reduction to 24)",
+    "specific listed diseases (24 months)",
+    "initial 30 days for non-accident illness"
+  ],
+  "notable_exclusions_summary": "Top-up plan with annual aggregate deductible (Rs. 5L-25L) and SI up to Rs. 95L. Pays only on exhaustion of deductible. Maternity, cosmetic surgery, refractive error and adventure sports excluded.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Cashless via Royal Sundaram network hospitals (MediAssist TPA / Paramount TPA); reimbursement claims to be filed within 30 days of discharge. TAT pre-auth 1 hour, final bill 3 hours.",
+  "tat_cashless_authorization_hours": 1.0,
+  "available_riders": [
+    "Optional Reduction in PED waiting period (36 to 24 months)"
+  ],
+  "top_rider_examples": [
+    "PED waiting reduction"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/royal-sundaram/advanced-top-up__brochure.pdf",
+  "source_pdf_url": null,
+  "last_updated_date": null,
+  "extraction_confidence_pct": 90.0
+}

@@ -1,0 +1,110 @@
+{
+  "policy_id": "acko__acko-health-iii__cis",
+  "insurer_name": "Acko General Insurance Limited",
+  "insurer_slug": "acko",
+  "policy_name": "ACKO Health III",
+  "policy_type": "family_floater",
+  "uin_code": "ACKHLIP27040V012627",
+  "max_renewal_age_years": 999,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids",
+    "self+spouse+kids+parents"
+  ],
+  "free_look_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 36,
+  "initial_waiting_period_days": 30,
+  "inpatient_hospitalization": {
+    "covered": true,
+    "notes": "Admissions >24 hours"
+  },
+  "day_care_treatments": {
+    "covered": true
+  },
+  "domiciliary_treatment": {
+    "covered": true,
+    "notes": "Home treatment when hospitalization not possible"
+  },
+  "ayush_coverage": {
+    "covered": true,
+    "notes": "In-patient AYUSH treatment"
+  },
+  "organ_donor_expenses": {
+    "covered": true
+  },
+  "ambulance_cover": {
+    "covered": true,
+    "notes": "Road ambulance limit"
+  },
+  "preventive_health_checkup": {
+    "covered": true,
+    "limit_inr": 900
+  },
+  "modern_treatments": {
+    "covered": true
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "notes": "Maternity expenses excluded except ectopic"
+  },
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "notes": "Optional add-on (2.12.7 Worldwide In-Patient Hospitalization)"
+  },
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_notes": "Multiple bonus / NCB options available: Cumulative Bonus (2.12.8), NCB Sum Insured (2.12.9), No Claim Discount (2.12.10), Restore SI (2.12.11), Inflation Protect SI (2.12.5)",
+  "restoration_benefit": {
+    "covered": true,
+    "notes": "Restore Sum Insured (2.12.11) optional"
+  },
+  "geographic_coverage": "pan_india",
+  "cashless_treatment_supported": true,
+  "tat_cashless_authorization_hours": 1.0,
+  "permanent_exclusions": [
+    "Pre-existing diseases until waiting period (3.1.1)",
+    "Specified disease/procedure waiting period (3.1.2)",
+    "30-day initial waiting period (3.1.3)",
+    "Investigation & evaluation only (3.1.4)",
+    "Rest cure, rehabilitation, respite care (3.1.5)",
+    "Obesity / weight control (3.1.6)",
+    "Change-of-gender treatments (3.1.7)",
+    "Cosmetic / plastic surgery (3.1.8)",
+    "Breach of law (3.1.9)",
+    "Excluded providers (3.1.10)",
+    "Health hydros / spas / nature cure (3.1.11)",
+    "OTC dietary supplements (3.1.12)",
+    "Refractive error < 7.5 dioptres (3.1.13)",
+    "Unproven treatment (3.1.14)",
+    "Sterility / infertility (3.1.15)",
+    "Maternity (3.1.16)",
+    "Named ailment waiting period (3.2.2)",
+    "Medical practitioner sharing residence (3.2.3)"
+  ],
+  "available_riders": [
+    "Waiver of non-payable medical expenses (2.12.1)",
+    "Reduction in Specific Illness Waiting Period - Comprehensive (2.12.2)",
+    "Reduction in Specific Illness Waiting Period - Essential (2.12.3)",
+    "Preventive Health Check-up (2.12.4)",
+    "Inflation Protect Sum Insured (2.12.5)",
+    "Initial 30 Days Waiting Period Waiver (2.12.6)",
+    "Worldwide In-Patient Hospitalization (2.12.7)",
+    "Cumulative Bonus (2.12.8)",
+    "No Claim Bonus Sum Insured (2.12.9)",
+    "No Claim Discount (2.12.10)",
+    "Restore Sum Insured (2.12.11)",
+    "First Notification of Claim (2.12.12)",
+    "Preferred Providers Network (2.12.13)",
+    "Co-Pay (2.12.14)",
+    "Floater Deductible (2.12.15)",
+    "Individual Deductible (2.12.16)",
+    "All medically necessary hospitalization (2.12.17)",
+    "Doctor-on-call (2.13.1)",
+    "Value Added Services (2.13.2)"
+  ],
+  "claim_process_summary": "Cashless at network hospitals (TAT: pre-auth 1 hr, final 3 hr) or Reimbursement via Acko App. Helpline 1800 266 2256. Free look 30 days. Moratorium 5 years.",
+  "notable_exclusions_summary": "CIS lists 17 standard exclusions plus permanent exclusions, named ailment waiting, and medical practitioner exclusion. Refer policy wordings for full details. After 5-year moratorium, no claim contestable except for proven fraud.",
+  "source_pdf_path": "rag/corpus/acko/acko-health-iii__cis.pdf",
+  "extraction_confidence_pct": 88
+}

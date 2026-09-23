@@ -1,0 +1,137 @@
+{
+  "policy_id": "national-insurance__national-hospi-cash__cis",
+  "insurer_name": "National Insurance Company Limited",
+  "insurer_slug": "national-insurance",
+  "policy_name": "National Hospi Cash",
+  "policy_type": "other",
+  "uin_code": "NICHLIP25046V012425",
+  "min_entry_age_years": 18,
+  "max_entry_age_years": 65,
+  "max_renewal_age_years": 999,
+  "min_child_entry_age_days": 90,
+  "family_composition_allowed": [
+    "self",
+    "self+spouse",
+    "self+spouse+kids"
+  ],
+  "residency_requirement": "Indian resident",
+  "sum_insured_options_inr": [
+    500,
+    1000,
+    2000,
+    3000,
+    5000
+  ],
+  "premium_payment_modes": [
+    "annual"
+  ],
+  "premium_range_indicative_inr": null,
+  "premium_payment_term_years": 1,
+  "grace_period_days": 30,
+  "free_look_period_days": 30,
+  "initial_waiting_period_days": 30,
+  "pre_existing_disease_waiting_months": 36,
+  "specific_disease_waiting_months": 24,
+  "specific_diseases_listed": [
+    "90 days for 3 diseases",
+    "1 year for 5 diseases",
+    "2 years for 19 diseases",
+    "3 years for 4 diseases"
+  ],
+  "maternity_waiting_months": null,
+  "sub_limits_waiting_notes": "Hospital Cash benefit policy. Daily Cash Amount options Rs 500/1000/2000/3000/5000 per day. Indemnity Period 30 or 60 days/year. Time Excess 1 or 2 days (deductible).",
+  "inpatient_hospitalization": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Illness: 100% Daily Cash; Accident: 150%; ICU: 200%; AYUSH: 100% (one only, highest applies)",
+    "notes": "Benefit policy paid per 24-hour hospitalisation after Time Excess deductible. No indemnity for actual hospital bills."
+  },
+  "pre_hospitalization_days": null,
+  "post_hospitalization_days": null,
+  "day_care_treatments": null,
+  "domiciliary_treatment": null,
+  "ayush_coverage": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "100% of Daily Cash Amount for AYUSH hospitalisation",
+    "notes": null
+  },
+  "maternity_coverage": {
+    "covered": false,
+    "limit_inr": null,
+    "limit_text": null,
+    "notes": "Maternity excluded."
+  },
+  "newborn_coverage": null,
+  "organ_donor_expenses": null,
+  "ambulance_cover": null,
+  "critical_illness_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Optional Cover: 100% Daily Cash plus 450% lumpsum on CI hospitalisation >10 days post Time Excess (37 listed CIs)",
+    "notes": "Optional rider on additional premium."
+  },
+  "restoration_benefit": null,
+  "no_claim_bonus_pct": null,
+  "no_claim_bonus_cap_pct": null,
+  "preventive_health_checkup": null,
+  "room_rent_capping": null,
+  "icu_capping": null,
+  "copayment_pct": 0.0,
+  "copayment_trigger_notes": null,
+  "disease_wise_sub_limits": {
+    "convalescence_benefit": "500% of Daily Cash Amount as lumpsum after 10 days continuous hospitalisation (once/year)",
+    "funeral_grant": "200% of Daily Cash Amount on death during hospitalisation in India",
+    "worldwide_hospi_cash": "Optional Cover: 200% of Daily Cash for hospitalisation outside India (max 10 days/year, only Rs 3000/5000 Daily Cash option)"
+  },
+  "deductible_amount_inr": null,
+  "geographic_coverage": "pan_india",
+  "worldwide_emergency_cover": {
+    "covered": true,
+    "limit_inr": null,
+    "limit_text": "Worldwide Hospi Cash optional cover: 200% Daily Cash, max 10 days/year",
+    "notes": "Available only on Rs 3000/5000 Daily Cash option as optional rider."
+  },
+  "network_hospital_count": null,
+  "cashless_treatment_supported": false,
+  "permanent_exclusions": [
+    "Cosmetic / Plastic Surgery",
+    "Obesity / Weight Control",
+    "Hazardous Sports",
+    "Drug / Alcohol Abuse",
+    "Birth control / Sterility / Infertility",
+    "Maternity",
+    "Hormone Replacement Therapy",
+    "Self-inflicted injury",
+    "Stem Cell Surgery",
+    "Massages / Steam Bath",
+    "Dental",
+    "Domiciliary / OPD",
+    "Stay not medically necessary",
+    "War",
+    "Radioactivity",
+    "Treatment outside India (except Worldwide Hospi Cash optional)"
+  ],
+  "temporary_exclusions": [
+    "30 days initial waiting",
+    "90 days to 3 years specific diseases",
+    "PED 36 months",
+    "Time Excess (1-2 days deductible)"
+  ],
+  "notable_exclusions_summary": "Daily cash benefit policy — pays fixed daily amount for hospitalisation. Not indemnity. Time Excess deductible 1/2 days. Indemnity period capped at 30 or 60 days/year. PED 36 months.",
+  "claim_settlement_ratio_pct": null,
+  "claim_process_summary": "Notification within 24 hours (emergency) or 72 hours (planned). Document submission within 30 days of discharge. Settlement within 15 days of last document.",
+  "tat_cashless_authorization_hours": null,
+  "available_riders": [
+    "Critical Illness Hospi Cash",
+    "Worldwide Hospi Cash"
+  ],
+  "top_rider_examples": [
+    "Critical Illness Hospi Cash"
+  ],
+  "rider_premium_indicative_inr": null,
+  "source_pdf_path": "rag/corpus/national-insurance/national-hospi-cash__cis.pdf",
+  "source_pdf_url": "https://nationalinsurance.nic.co.in/en/health-insurance",
+  "last_updated_date": "2026-05-14",
+  "extraction_confidence_pct": 90
+}
