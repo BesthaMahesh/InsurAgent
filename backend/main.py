@@ -16,9 +16,15 @@ async def lifespan(app: FastAPI):
     """Application startup and shutdown events."""
     logger.info("Starting up InsurAgent Multi-Agent Claims Backend...")
     init_db()
+    try:
+        from backend.rag.ingest import ingest_all_documents
+        ingest_all_documents()
+    except Exception as e:
+        logger.warning(f"RAG startup document ingestion warning: {e}")
     logger.info("Database and subsystem initialization completed.")
     yield
     logger.info("InsurAgent backend shutdown.")
+
 
 
 app = FastAPI(
