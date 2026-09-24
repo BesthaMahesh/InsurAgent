@@ -7,7 +7,7 @@ import textwrap
 
 def render_header(current_persona: str = "Claims Adjuster") -> None:
     """Renders the top enterprise header bar."""
-    user_email = st.session_state.get("user_email", "wrenchwise@gmail.com")
+    user_email = st.session_state.get("user_email", "Enterprise User")
     st.markdown(textwrap.dedent(f"""
     <div class="top-header-bar">
         <div class="header-brand">

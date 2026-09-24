@@ -40,8 +40,8 @@ def render_login_view() -> None:
                 st.markdown("<div class='login-input-label'>Authorized Email Address</div>", unsafe_allow_html=True)
                 email_input = st.text_input(
                     "Email",
-                    value=st.session_state.get("prefill_email", "wrenchwise@gmail.com"),
-                    placeholder="e.g. wrenchwise@gmail.com",
+                    value="",
+                    placeholder="Enter your enterprise email address",
                     label_visibility="collapsed"
                 )
 
@@ -49,8 +49,8 @@ def render_login_view() -> None:
                 password_input = st.text_input(
                     "Password",
                     type="password",
-                    value=st.session_state.get("prefill_password", ""),
-                    placeholder="Enter security key",
+                    value="",
+                    placeholder="Enter your security key / password",
                     label_visibility="collapsed"
                 )
 
@@ -76,21 +76,9 @@ def render_login_view() -> None:
 
             st.markdown('</div>', unsafe_allow_html=True)
 
-        # Security & Authorized Credentials Information Card
-        st.markdown(textwrap.dedent(f"""
-        <div class="login-info-card">
-            <div style="font-size:12px; font-weight:700; color:#0f2744; margin-bottom:6px; display:flex; align-items:center; justify-content:space-between;">
-                <span>🔐 Authorized Access Credentials</span>
-                <span class="status-badge badge-blue">Restricted Access</span>
-            </div>
-            <div style="font-size:12px; color:#475569; line-height:1.6;">
-                This production environment is locked to authorized enterprise personnel only.<br>
-                <b>Authorized Email:</b> <code style="color:#0284c7; background:#e0f2fe; padding:2px 6px; border-radius:4px;">{AUTHORIZED_EMAIL}</code><br>
-                <b>Password:</b> <code style="color:#0284c7; background:#e0f2fe; padding:2px 6px; border-radius:4px;">12345</code>
-            </div>
-        </div>
-        
-        <div style="text-align:center; margin-top:20px; font-size:11.5px; color:#94a3b8; line-height:1.6;">
+        # Enterprise Compliance & Security Footer
+        st.markdown(textwrap.dedent("""
+        <div style="text-align:center; margin-top:24px; font-size:11.5px; color:#94a3b8; line-height:1.6;">
             🛡️ <b>InsurAgent Governance &amp; AI Security Layer</b> &bull; SOC 2 Type II Certified<br>
             All multi-agent actions, claim decisions, and audit trails are logged &amp; timestamped.
         </div>

@@ -65,7 +65,7 @@ def render_sidebar() -> Tuple[str, str]:
         st.session_state.active_nav_page = selected_page
 
         # Logged-in user information & Sign Out
-        user_email = st.session_state.get("user_email", "wrenchwise@gmail.com")
+        user_email = st.session_state.get("user_email", "Enterprise User")
         st.markdown(textwrap.dedent(f"""
         <div style="background:#0f2744; border:1px solid #1e3a5f; border-radius:8px; padding:10px 12px; margin-bottom:12px;">
             <div style="font-size:10px; font-weight:700; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px;">Active Account</div>
