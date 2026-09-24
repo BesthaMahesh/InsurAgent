@@ -8,6 +8,7 @@ from frontend.styles import ENTERPRISE_CSS
 from frontend.components.header import render_header
 from frontend.components.sidebar import render_sidebar
 from frontend.views import (
+    render_login_view,
     render_dashboard_view,
     render_claims_view,
     render_assistant_view,
@@ -33,13 +34,18 @@ st.set_page_config(
 # 2. Inject Enterprise Stylesheet
 st.markdown(ENTERPRISE_CSS, unsafe_allow_html=True)
 
-# 3. Sidebar Navigation & Active Persona
+# 3. Enterprise Authentication Gate
+if not st.session_state.get("authenticated", False):
+    render_login_view()
+    st.stop()
+
+# 4. Sidebar Navigation & Active Persona
 selected_page, current_persona = render_sidebar()
 
-# 4. Top Executive Brand Header Bar
+# 5. Top Executive Brand Header Bar
 render_header(current_persona=current_persona)
 
-# 5. Page Dispatcher
+# 6. Page Dispatcher
 if selected_page == "Dashboard":
     render_dashboard_view()
 elif selected_page == "Claims":
@@ -66,3 +72,4 @@ elif selected_page == "System Monitoring":
     render_monitoring_view()
 else:
     render_dashboard_view()
+

@@ -294,6 +294,90 @@ ENTERPRISE_CSS = """
         color: #0f172a;
     }
 
+    /* ---------- Enterprise Login Page Styling ---------- */
+    .login-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .login-header-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .login-brand-badge {
+        width: 68px;
+        height: 68px;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #091524 0%, #0f2744 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.35);
+        border: 1px solid #1e3a5f;
+        margin-bottom: 16px;
+    }
+
+    .login-title {
+        font-size: 26px;
+        font-weight: 800;
+        color: #0f172a;
+        letter-spacing: -0.6px;
+        line-height: 1.2;
+    }
+
+    .login-subtitle {
+        font-size: 13.5px;
+        color: #64748b;
+        margin-top: 6px;
+        font-weight: 500;
+    }
+
+    .login-security-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #f0fdf4;
+        color: #166534;
+        border: 1px solid #bbf7d0;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 11.5px;
+        font-weight: 600;
+        margin-top: 14px;
+    }
+
+    .login-card-inner {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        padding: 24px 28px;
+        box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+        margin-top: 8px;
+    }
+
+    .login-input-label {
+        font-size: 12.5px;
+        font-weight: 700;
+        color: #334155;
+        margin-bottom: 4px;
+    }
+
+    .login-info-card {
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        border-left: 4px solid #0284c7;
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin-top: 18px;
+    }
+
     /* ---------- Clean Streamlit Overrides ---------- */
     #MainMenu, footer, header {
         visibility: hidden !important;

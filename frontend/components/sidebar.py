@@ -64,6 +64,21 @@ def render_sidebar() -> Tuple[str, str]:
         )
         st.session_state.active_nav_page = selected_page
 
+        # Logged-in user information & Sign Out
+        user_email = st.session_state.get("user_email", "wrenchwise@gmail.com")
+        st.markdown(textwrap.dedent(f"""
+        <div style="background:#0f2744; border:1px solid #1e3a5f; border-radius:8px; padding:10px 12px; margin-bottom:12px;">
+            <div style="font-size:10px; font-weight:700; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px;">Active Account</div>
+            <div style="font-size:12px; font-weight:600; color:#38bdf8; word-break:break-all; margin-top:2px;">{user_email}</div>
+            <div style="font-size:10px; color:#10b981; margin-top:4px;">● Authorized Session</div>
+        </div>
+        """), unsafe_allow_html=True)
+
+        if st.button("🚪 Sign Out", key="sidebar_logout_btn", use_container_width=True):
+            st.session_state["authenticated"] = False
+            st.session_state["user_email"] = None
+            st.rerun()
+
         st.divider()
 
         # Enterprise System Status Panel at Sidebar Bottom
@@ -80,3 +95,4 @@ def render_sidebar() -> Tuple[str, str]:
         st.caption("v2.4 Enterprise Release")
 
     return selected_page, persona
+

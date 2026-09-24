@@ -1,4 +1,5 @@
 """InsurAgent Enterprise UI Views."""
+from frontend.views.login_view import render_login_view
 from frontend.views.dashboard_view import render_dashboard_view
 from frontend.views.claims_view import render_claims_view
 from frontend.views.assistant_view import render_assistant_view
@@ -13,6 +14,7 @@ from frontend.views.cost_view import render_cost_view
 from frontend.views.monitoring_view import render_monitoring_view
 
 __all__ = [
+    "render_login_view",
     "render_dashboard_view",
     "render_claims_view",
     "render_assistant_view",
@@ -26,3 +28,4 @@ __all__ = [
     "render_cost_view",
     "render_monitoring_view"
 ]
+
