@@ -379,8 +379,19 @@ ENTERPRISE_CSS = """
     }
 
     /* ---------- Clean Streamlit Overrides ---------- */
-    #MainMenu, footer, header {
+    #MainMenu, footer {
         visibility: hidden !important;
+    }
+
+    header[data-testid="stHeader"] {
+        background: transparent !important;
+    }
+
+    button[data-testid="stSidebarCollapseButton"], 
+    div[data-testid="collapsedControl"] {
+        visibility: visible !important;
+        display: block !important;
+        z-index: 999999 !important;
     }
 
     div.stButton > button {
