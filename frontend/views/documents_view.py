@@ -48,6 +48,7 @@ def render_documents_view() -> None:
         with c_btn:
             if st.button("👁️ View Clauses", type="primary", use_container_width=True, key="doc_view_clauses_btn"):
                 st.session_state["active_nav_page"] = "Knowledge Center"
+                st.session_state["main_user_nav_radio"] = "📚  Knowledge Center"
                 st.rerun()
 
 

@@ -98,16 +98,25 @@ def render_sidebar() -> Tuple[str, str]:
 
             all_formatted = [icons_map[p] for p in user_nav_items]
             current_fmt = icons_map.get(curr_page, icons_map["Dashboard"])
-            default_index = all_formatted.index(current_fmt) if current_fmt in all_formatted else 0
+
+            if "main_user_nav_radio" not in st.session_state or st.session_state["main_user_nav_radio"] not in all_formatted:
+                st.session_state["main_user_nav_radio"] = current_fmt
+
+            def _on_user_nav_change():
+                sel = st.session_state.get("main_user_nav_radio")
+                if sel in rev_map:
+                    st.session_state["active_nav_page"] = rev_map[sel]
+
+            rev_map = {v: k for k, v in icons_map.items()}
 
             selected_fmt = st.radio(
                 "",
                 all_formatted,
-                index=default_index,
+                key="main_user_nav_radio",
+                on_change=_on_user_nav_change,
                 label_visibility="collapsed"
             )
 
-            rev_map = {v: k for k, v in icons_map.items()}
             selected_page = rev_map.get(selected_fmt, "Dashboard")
             st.session_state["active_nav_page"] = selected_page
 
@@ -201,17 +210,26 @@ def render_sidebar() -> Tuple[str, str]:
 
             all_formatted = [icons_map[p] for p in all_nav_items]
             current_fmt = icons_map.get(curr_page, icons_map[default_home_page])
-            default_index = all_formatted.index(current_fmt) if current_fmt in all_formatted else 0
+
+            if "main_dev_nav_radio" not in st.session_state or st.session_state["main_dev_nav_radio"] not in all_formatted:
+                st.session_state["main_dev_nav_radio"] = current_fmt
+
+            rev_map = {v: k for k, v in icons_map.items()}
+
+            def _on_dev_nav_change():
+                sel = st.session_state.get("main_dev_nav_radio")
+                if sel in rev_map:
+                    st.session_state["active_nav_page"] = rev_map[sel]
 
             st.markdown("<div class='sidebar-section-header'>TECHNICAL OVERVIEW</div>", unsafe_allow_html=True)
             selected_fmt = st.radio(
                 "",
                 all_formatted,
-                index=default_index,
+                key="main_dev_nav_radio",
+                on_change=_on_dev_nav_change,
                 label_visibility="collapsed"
             )
 
-            rev_map = {v: k for k, v in icons_map.items()}
             selected_page = rev_map.get(selected_fmt, default_home_page)
             st.session_state["active_nav_page"] = selected_page
 
