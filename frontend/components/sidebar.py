@@ -59,7 +59,7 @@ def render_sidebar() -> Tuple[str, str]:
             persona_idx = persona_options.index(saved_persona) if saved_persona in persona_options else 0
             
             selected_persona = st.selectbox(
-                "Persona",
+                "Persona Selector",
                 persona_options,
                 index=persona_idx,
                 label_visibility="collapsed",
@@ -100,16 +100,11 @@ def render_sidebar() -> Tuple[str, str]:
             current_fmt = icons_map.get(curr_page, icons_map["Dashboard"])
             default_index = all_formatted.index(current_fmt) if current_fmt in all_formatted else 0
 
-            # Synchronize radio widget state if changed by a dashboard button
-            if "user_nav_radio" in st.session_state and st.session_state["user_nav_radio"] != current_fmt:
-                st.session_state["user_nav_radio"] = current_fmt
-
             selected_fmt = st.radio(
-                "Navigation Menu",
+                "User Navigation Menu",
                 all_formatted,
                 index=default_index,
-                label_visibility="collapsed",
-                key="user_nav_radio"
+                label_visibility="collapsed"
             )
 
             rev_map = {v: k for k, v in icons_map.items()}
@@ -122,9 +117,9 @@ def render_sidebar() -> Tuple[str, str]:
             st.markdown("<div class='sidebar-section-header' style='margin-top:0;'>ACCOUNT</div>", unsafe_allow_html=True)
             account_html = f"""
             <div class="sidebar-account-box">
-                <div style="font-size:9.5px; font-weight:800; color:#94a3b8; text-transform:uppercase; letter-spacing:0.6px;">Active Account</div>
-                <div style="font-size:12px; font-weight:700; color:#38bdf8; word-break:break-all; margin-top:2px;">{user_email}</div>
-                <div style="font-size:10px; color:#10b981; font-weight:600; margin-top:3px; display:flex; align-items:center; gap:4px;">
+                <div style="font-size:12px; font-weight:750; color:#ffffff;">Claims Adjuster</div>
+                <div style="font-size:11px; font-weight:600; color:#38bdf8; word-break:break-all; margin-top:2px;">{user_email}</div>
+                <div style="font-size:10px; color:#10b981; font-weight:600; margin-top:4px; display:flex; align-items:center; gap:4px;">
                     <span>●</span> Authorized Session
                 </div>
             </div>
@@ -152,7 +147,7 @@ def render_sidebar() -> Tuple[str, str]:
             dev_idx = dev_personas.index(saved_persona) if saved_persona in dev_personas else 0
 
             selected_persona = st.selectbox(
-                "Persona",
+                "Dev Persona Selector",
                 dev_personas,
                 index=dev_idx,
                 label_visibility="collapsed",
@@ -208,17 +203,12 @@ def render_sidebar() -> Tuple[str, str]:
             current_fmt = icons_map.get(curr_page, icons_map[default_home_page])
             default_index = all_formatted.index(current_fmt) if current_fmt in all_formatted else 0
 
-            # Synchronize radio widget state if changed by a button
-            if "dev_nav_radio" in st.session_state and st.session_state["dev_nav_radio"] != current_fmt:
-                st.session_state["dev_nav_radio"] = current_fmt
-
             st.markdown("<div class='sidebar-section-header'>TECHNICAL OVERVIEW</div>", unsafe_allow_html=True)
             selected_fmt = st.radio(
-                "Developer Navigation",
+                "Developer Navigation Menu",
                 all_formatted,
                 index=default_index,
-                label_visibility="collapsed",
-                key="dev_nav_radio"
+                label_visibility="collapsed"
             )
 
             rev_map = {v: k for k, v in icons_map.items()}
@@ -231,9 +221,9 @@ def render_sidebar() -> Tuple[str, str]:
             st.markdown("<div class='sidebar-section-header' style='margin-top:0;'>ACCOUNT</div>", unsafe_allow_html=True)
             account_html = f"""
             <div class="sidebar-account-box">
-                <div style="font-size:9.5px; font-weight:800; color:#94a3b8; text-transform:uppercase; letter-spacing:0.6px;">Active Account</div>
-                <div style="font-size:12px; font-weight:700; color:#38bdf8; word-break:break-all; margin-top:2px;">{user_email}</div>
-                <div style="font-size:10px; color:#10b981; font-weight:600; margin-top:3px; display:flex; align-items:center; gap:4px;">
+                <div style="font-size:12px; font-weight:750; color:#ffffff;">Technical Operations</div>
+                <div style="font-size:11px; font-weight:600; color:#38bdf8; word-break:break-all; margin-top:2px;">{user_email}</div>
+                <div style="font-size:10px; color:#10b981; font-weight:600; margin-top:4px; display:flex; align-items:center; gap:4px;">
                     <span>●</span> Authorized Session
                 </div>
             </div>

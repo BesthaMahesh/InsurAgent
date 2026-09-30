@@ -105,7 +105,7 @@ ENTERPRISE_CSS = """
     }
 
     section[data-testid="stSidebar"] * {
-        color: #f1f5f9 !important;
+        color: #f1f5f9;
     }
 
     .sidebar-subtitle-text {
@@ -117,72 +117,106 @@ ENTERPRISE_CSS = """
     }
 
     /* Sidebar Selectbox / Persona Dropdown (Dark Theme) */
-    section[data-testid="stSidebar"] [data-baseweb="select"],
-    section[data-testid="stSidebar"] [data-baseweb="select"] > div,
-    section[data-testid="stSidebar"] [data-baseweb="select"] div,
-    section[data-testid="stSidebar"] div[data-baseweb="select"],
-    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] > div {
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] {
+        margin-bottom: 6px;
+    }
+
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-baseweb="select"] {
+        background-color: transparent !important;
+    }
+
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-baseweb="select"] > div {
         background-color: #0f2744 !important;
         border: 1px solid #1e3a5f !important;
-        color: #ffffff !important;
         border-radius: 8px !important;
+        min-height: 42px !important;
+        padding-left: 8px !important;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
 
-    section[data-testid="stSidebar"] [data-baseweb="select"] span,
-    section[data-testid="stSidebar"] [data-baseweb="select"] input,
-    section[data-testid="stSidebar"] [data-baseweb="select"] [role="button"],
-    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] * {
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-baseweb="select"] > div:hover {
+        border-color: #38bdf8 !important;
+        box-shadow: 0 0 0 1px #38bdf8 !important;
+    }
+
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-baseweb="select"] span,
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-baseweb="select"] [role="button"],
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-baseweb="select"] [aria-selected="true"],
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-testid="stMarkdownContainer"] p {
         color: #ffffff !important;
+        font-size: 12.5px !important;
+        font-weight: 600 !important;
     }
 
-    section[data-testid="stSidebar"] [data-baseweb="select"] svg,
     section[data-testid="stSidebar"] div[data-testid="stSelectbox"] svg {
         fill: #38bdf8 !important;
         color: #38bdf8 !important;
     }
 
     /* Sidebar Dropdown Menu Popover Options */
-    ul[data-baseweb="menu"],
     div[data-baseweb="popover"],
-    div[data-baseweb="popover"] ul {
+    ul[data-baseweb="menu"] {
         background-color: #0d1e34 !important;
         border: 1px solid #1e3a5f !important;
         border-radius: 8px !important;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.4) !important;
     }
 
-    ul[data-baseweb="menu"] li,
-    ul[data-baseweb="menu"] li * {
+    ul[data-baseweb="menu"] li {
         color: #f1f5f9 !important;
         background-color: transparent !important;
+        padding: 9px 14px !important;
+        font-size: 12.5px !important;
+        font-weight: 500 !important;
+        border-bottom: 1px solid rgba(30, 46, 66, 0.5) !important;
+    }
+
+    ul[data-baseweb="menu"] li:last-child {
+        border-bottom: none !important;
     }
 
     ul[data-baseweb="menu"] li:hover,
-    ul[data-baseweb="menu"] li:hover * {
+    ul[data-baseweb="menu"] li[aria-selected="true"] {
         background-color: #0284c7 !important;
         color: #ffffff !important;
     }
 
     /* Sidebar Radio Navigation */
-    section[data-testid="stSidebar"] .stRadio label {
+    section[data-testid="stSidebar"] div[data-testid="stRadio"] > div {
+        gap: 2px !important;
+    }
+
+    section[data-testid="stSidebar"] div[data-testid="stRadio"] label {
         font-size: 13px !important;
         font-weight: 500 !important;
-        padding: 7px 12px !important;
+        padding: 8px 12px !important;
         border-radius: 8px !important;
         margin-bottom: 2px !important;
         transition: all 0.15s ease;
         display: flex;
         align-items: center;
         gap: 8px;
+        cursor: pointer;
+        color: #cbd5e1 !important;
     }
 
-    section[data-testid="stSidebar"] .stRadio label:hover {
+    section[data-testid="stSidebar"] div[data-testid="stRadio"] label:hover {
         background: rgba(255, 255, 255, 0.08) !important;
+        color: #ffffff !important;
     }
 
-    section[data-testid="stSidebar"] div[data-testid="stRadio"] label[data-checked="true"] {
+    section[data-testid="stSidebar"] div[data-testid="stRadio"] label[data-checked="true"],
+    section[data-testid="stSidebar"] div[data-testid="stRadio"] label:has(input:checked) {
         background: #0284c7 !important;
+        color: #ffffff !important;
         font-weight: 700 !important;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    }
+
+    section[data-testid="stSidebar"] div[data-testid="stRadio"] label[data-checked="true"] p,
+    section[data-testid="stSidebar"] div[data-testid="stRadio"] label:has(input:checked) p {
+        color: #ffffff !important;
+        font-weight: 700 !important;
     }
 
     .sidebar-section-header {
@@ -191,15 +225,15 @@ ENTERPRISE_CSS = """
         color: #94a3b8 !important;
         letter-spacing: 0.8px;
         text-transform: uppercase;
-        margin-top: 16px;
+        margin-top: 14px;
         margin-bottom: 6px;
-        padding-left: 4px;
+        padding-left: 2px;
     }
 
     .sidebar-divider {
         height: 1px;
         background: #1e2e42;
-        margin: 14px 0;
+        margin: 12px 0;
     }
 
     .sidebar-account-box {
@@ -207,36 +241,32 @@ ENTERPRISE_CSS = """
         border: 1px solid #1e3a5f;
         border-radius: 8px;
         padding: 10px 12px;
-        margin-top: 8px;
+        margin-top: 6px;
         margin-bottom: 10px;
     }
 
     /* Custom Sign Out Button in Sidebar (Dark Red / Crimson Theme) */
-    section[data-testid="stSidebar"] div[data-testid="stButton"] > button,
-    section[data-testid="stSidebar"] .stButton > button,
-    section[data-testid="stSidebar"] button {
-        background: #1e293b !important;
+    section[data-testid="stSidebar"] div[data-testid="stButton"] > button {
+        background: #111e33 !important;
         color: #fca5a5 !important;
-        border: 1px solid #dc2626 !important;
+        border: 1px solid #ef4444 !important;
         border-radius: 8px !important;
         font-weight: 700 !important;
         font-size: 13px !important;
         padding: 8px 14px !important;
         width: 100% !important;
         transition: all 0.2s ease !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2) !important;
     }
 
-    section[data-testid="stSidebar"] div[data-testid="stButton"] > button:hover,
-    section[data-testid="stSidebar"] .stButton > button:hover,
-    section[data-testid="stSidebar"] button:hover {
-        background: #991b1b !important;
+    section[data-testid="stSidebar"] div[data-testid="stButton"] > button:hover {
+        background: #b91c1c !important;
         color: #ffffff !important;
-        border-color: #ef4444 !important;
-        box-shadow: 0 2px 8px rgba(220, 38, 38, 0.35) !important;
+        border-color: #f87171 !important;
+        box-shadow: 0 2px 8px rgba(220, 38, 38, 0.4) !important;
     }
 
-    section[data-testid="stSidebar"] div[data-testid="stButton"] > button p,
-    section[data-testid="stSidebar"] .stButton > button p {
+    section[data-testid="stSidebar"] div[data-testid="stButton"] > button p {
         color: inherit !important;
         font-weight: 700 !important;
     }

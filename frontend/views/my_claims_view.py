@@ -75,7 +75,6 @@ def render_my_claims_view() -> None:
         if st.button("👁️ View Full File", type="primary", use_container_width=True, key="my_claims_view_btn"):
             st.session_state["active_claim_id"] = target_claim_id
             st.session_state["active_nav_page"] = "Claims"
-            st.session_state["user_nav_radio"] = "📋  Claims"
             st.rerun()
 
 
