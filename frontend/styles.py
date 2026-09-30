@@ -116,6 +116,53 @@ ENTERPRISE_CSS = """
         margin-top: 2px;
     }
 
+    /* Sidebar Selectbox / Persona Dropdown (Dark Theme) */
+    section[data-testid="stSidebar"] [data-baseweb="select"],
+    section[data-testid="stSidebar"] [data-baseweb="select"] > div,
+    section[data-testid="stSidebar"] [data-baseweb="select"] div,
+    section[data-testid="stSidebar"] div[data-baseweb="select"],
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] > div {
+        background-color: #0f2744 !important;
+        border: 1px solid #1e3a5f !important;
+        color: #ffffff !important;
+        border-radius: 8px !important;
+    }
+
+    section[data-testid="stSidebar"] [data-baseweb="select"] span,
+    section[data-testid="stSidebar"] [data-baseweb="select"] input,
+    section[data-testid="stSidebar"] [data-baseweb="select"] [role="button"],
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] * {
+        color: #ffffff !important;
+    }
+
+    section[data-testid="stSidebar"] [data-baseweb="select"] svg,
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] svg {
+        fill: #38bdf8 !important;
+        color: #38bdf8 !important;
+    }
+
+    /* Sidebar Dropdown Menu Popover Options */
+    ul[data-baseweb="menu"],
+    div[data-baseweb="popover"],
+    div[data-baseweb="popover"] ul {
+        background-color: #0d1e34 !important;
+        border: 1px solid #1e3a5f !important;
+        border-radius: 8px !important;
+    }
+
+    ul[data-baseweb="menu"] li,
+    ul[data-baseweb="menu"] li * {
+        color: #f1f5f9 !important;
+        background-color: transparent !important;
+    }
+
+    ul[data-baseweb="menu"] li:hover,
+    ul[data-baseweb="menu"] li:hover * {
+        background-color: #0284c7 !important;
+        color: #ffffff !important;
+    }
+
+    /* Sidebar Radio Navigation */
     section[data-testid="stSidebar"] .stRadio label {
         font-size: 13px !important;
         font-weight: 500 !important;
@@ -164,25 +211,34 @@ ENTERPRISE_CSS = """
         margin-bottom: 10px;
     }
 
-    /* Custom Sign Out Button in Sidebar */
-    section[data-testid="stSidebar"] button[key="sidebar_logout_btn"],
-    section[data-testid="stSidebar"] button:has(div:contains("Sign Out")) {
+    /* Custom Sign Out Button in Sidebar (Dark Red / Crimson Theme) */
+    section[data-testid="stSidebar"] div[data-testid="stButton"] > button,
+    section[data-testid="stSidebar"] .stButton > button,
+    section[data-testid="stSidebar"] button {
         background: #1e293b !important;
         color: #fca5a5 !important;
-        border: 1px solid #334155 !important;
+        border: 1px solid #dc2626 !important;
         border-radius: 8px !important;
         font-weight: 700 !important;
-        font-size: 12.5px !important;
+        font-size: 13px !important;
         padding: 8px 14px !important;
+        width: 100% !important;
         transition: all 0.2s ease !important;
     }
 
-    section[data-testid="stSidebar"] button[key="sidebar_logout_btn"]:hover,
-    section[data-testid="stSidebar"] button:has(div:contains("Sign Out")):hover {
-        background: #7f1d1d !important;
+    section[data-testid="stSidebar"] div[data-testid="stButton"] > button:hover,
+    section[data-testid="stSidebar"] .stButton > button:hover,
+    section[data-testid="stSidebar"] button:hover {
+        background: #991b1b !important;
         color: #ffffff !important;
-        border-color: #991b1b !important;
-        box-shadow: 0 2px 6px rgba(220, 38, 38, 0.25) !important;
+        border-color: #ef4444 !important;
+        box-shadow: 0 2px 8px rgba(220, 38, 38, 0.35) !important;
+    }
+
+    section[data-testid="stSidebar"] div[data-testid="stButton"] > button p,
+    section[data-testid="stSidebar"] .stButton > button p {
+        color: inherit !important;
+        font-weight: 700 !important;
     }
 
     /* ---------- Page Headers ---------- */
