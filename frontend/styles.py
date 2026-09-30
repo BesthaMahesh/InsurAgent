@@ -531,5 +531,110 @@ ENTERPRISE_CSS = """
         color: #0284c7 !important;
         border-bottom: 2px solid #0284c7 !important;
     }
+
+    /* ======================================================
+       RESPONSIVE DESIGN: MOBILE & TABLET MEDIA QUERIES
+       ====================================================== */
+    @media (max-width: 768px) {
+        /* Mobile Block Container & Spacing */
+        .block-container {
+            padding-top: 0.6rem !important;
+            padding-bottom: 2.0rem !important;
+            padding-left: 0.65rem !important;
+            padding-right: 0.65rem !important;
+        }
+
+        /* Top Header Bar Mobile Stacking */
+        .top-header-bar {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 10px !important;
+            padding: 10px 14px !important;
+            margin-bottom: 14px !important;
+        }
+
+        .header-brand {
+            width: 100% !important;
+        }
+
+        .header-right-meta {
+            width: 100% !important;
+            justify-content: flex-start !important;
+            flex-wrap: wrap !important;
+            gap: 6px !important;
+        }
+
+        /* Titles & Subtitles */
+        .page-title {
+            font-size: 18px !important;
+            line-height: 1.25 !important;
+        }
+
+        .page-subtitle {
+            font-size: 11.5px !important;
+            margin-bottom: 12px !important;
+        }
+
+        /* KPI Cards on Mobile */
+        .kpi-card {
+            padding: 12px 14px !important;
+            margin-bottom: 8px !important;
+        }
+
+        .kpi-value {
+            font-size: 20px !important;
+        }
+
+        .kpi-title {
+            font-size: 10px !important;
+        }
+
+        /* Chat Bubbles on Mobile */
+        .chat-msg-user {
+            max-width: 95% !important;
+            font-size: 12px !important;
+            padding: 10px 12px !important;
+        }
+
+        .chat-msg-ai {
+            max-width: 100% !important;
+            font-size: 12px !important;
+            padding: 12px 14px !important;
+        }
+
+        /* Responsive Grids & Columns */
+        div[data-testid="stHorizontalBlock"] {
+            flex-wrap: wrap !important;
+            gap: 8px !important;
+        }
+
+        /* DataTables & Charts Mobile Horizontal Scroll */
+        .stDataFrame,
+        div[data-testid="stDataFrame"],
+        div[data-testid="stVegaLiteChart"] {
+            width: 100% !important;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+        }
+
+        /* Mobile Forms & Buttons */
+        .stApp .main div[data-testid="stButton"] > button[kind="primary"],
+        .stApp .main div.stButton > button,
+        .stApp .main button {
+            font-size: 12px !important;
+            padding: 6px 12px !important;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .block-container {
+            padding-left: 1.2rem !important;
+            padding-right: 1.2rem !important;
+        }
+
+        .kpi-value {
+            font-size: 22px !important;
+        }
+    }
 </style>
 """
