@@ -1,5 +1,7 @@
 """
-System Monitoring & Observability View for InsurAgent enterprise UI.
+System Health & Observability View for InsurAgent enterprise UI.
+Provides real-time visibility into all 5 core subsystems, SLO compliance,
+agent execution telemetry, and active system alerts.
 """
 import streamlit as st
 import pandas as pd
@@ -9,26 +11,26 @@ from frontend.components.charts import render_performance_table
 
 
 def render_monitoring_view() -> None:
-    st.markdown('<div class="page-title">System Monitoring &amp; Observability</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">Real-time system health, component connectivity, agent telemetry, and Service Level Objectives (SLOs).</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-title">System Health</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-subtitle">Real-time status of backend services, vector databases, integration connectors, and Service Level Objectives (SLOs).</div>', unsafe_allow_html=True)
 
     telemetry = insuragent_client.get_observability()
     agent_perf = telemetry.get("agent_performance", {})
     slos = telemetry.get("slos", [])
     alerts = telemetry.get("active_alerts", [])
 
-    # ---------- Component Health Cards ----------
+    # ---------- 5 Core Subsystem Health Cards ----------
     c1, c2, c3, c4, c5 = st.columns(5)
     with c1:
-        st.metric("FastAPI Backend", "Operational", "Port 8000 • 200 OK")
+        st.metric("FastAPI Backend", "Operational", "Port 8000 &bull; 200 OK")
     with c2:
         st.metric("LangGraph DAG", "Operational", "Stateful Multi-Agent")
     with c3:
-        st.metric("ChromaDB RAG", "Connected", "41 Chunks Indexed")
+        st.metric("Knowledge Base", "Connected", "ChromaDB v0.5.x")
     with c4:
         st.metric("MCP Integrations", "Connected", "4 Core Services")
     with c5:
-        st.metric("SQLite Database", "Connected", "Active Schema")
+        st.metric("Claims Database", "Connected", "SQLite Active Schema")
 
     st.write("")
 
@@ -48,18 +50,18 @@ def render_monitoring_view() -> None:
 
     with col_b:
         with st.container(border=True):
-            st.markdown("##### 🔌 MCP Integration Tool Calls")
+            st.markdown("##### 🔌 External MCP Integration Tool Calls")
             tool_data = [
-                {"Tool Name": "get_policy_details", "Category": "Policy PAS", "Calls": 580, "Avg Latency": "45 ms", "Status": "Healthy"},
-                {"Tool Name": "get_claim_details", "Category": "Claims DB", "Calls": 312, "Avg Latency": "40 ms", "Status": "Healthy"},
-                {"Tool Name": "get_customer_details", "Category": "Customer CRM", "Calls": 290, "Avg Latency": "38 ms", "Status": "Healthy"},
-                {"Tool Name": "get_risk_indicators", "Category": "Fraud Bureau", "Calls": 512, "Avg Latency": "85 ms", "Status": "Healthy"}
+                {"Tool Name": "get_policy_details", "Service": "Policy PAS", "Calls": 580, "Avg Latency": "45 ms", "Status": "Healthy"},
+                {"Tool Name": "get_claim_details", "Service": "Claims DB", "Calls": 312, "Avg Latency": "40 ms", "Status": "Healthy"},
+                {"Tool Name": "get_customer_details", "Service": "Customer CRM", "Calls": 290, "Avg Latency": "38 ms", "Status": "Healthy"},
+                {"Tool Name": "get_risk_indicators", "Service": "Fraud Bureau", "Calls": 512, "Avg Latency": "85 ms", "Status": "Healthy"}
             ]
             st.dataframe(pd.DataFrame(tool_data), use_container_width=True, hide_index=True)
 
     # ---------- Active System & Security Alerts ----------
     with st.container(border=True):
-        st.markdown("##### 🚨 Active System & Anomaly Alerts")
+        st.markdown("##### 🚨 System & Anomaly Notifications")
         if alerts:
             for alt in alerts:
                 st.markdown(textwrap.dedent(f"""
@@ -69,7 +71,7 @@ def render_monitoring_view() -> None:
                         <span class="status-badge {'badge-amber' if alt.get('severity')=='Medium' else 'badge-blue'}">{alt.get('severity')} Severity</span>
                     </div>
                     <div style="font-size:12px; color:#64748b; margin-top:2px;">{alt.get('description')}</div>
-                    <div style="font-size:10px; color:#94a3b8; margin-top:3px;">Timestamp: {alt.get('timestamp')} | Status: {alt.get('status')}</div>
+                    <div style="font-size:10px; color:#94a3b8; margin-top:3px;">Timestamp: {alt.get('timestamp')} &bull; Status: {alt.get('status')}</div>
                 </div>
                 """), unsafe_allow_html=True)
         else:

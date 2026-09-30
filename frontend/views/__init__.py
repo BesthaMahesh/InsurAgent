@@ -11,6 +11,7 @@ from frontend.views.audit_view import render_audit_view
 from frontend.views.governance_view import render_governance_view
 from frontend.views.evaluation_view import render_evaluation_view
 from frontend.views.cost_view import render_cost_view
+from frontend.views.usage_view import render_usage_view
 from frontend.views.monitoring_view import render_monitoring_view
 
 __all__ = [
@@ -26,6 +27,6 @@ __all__ = [
     "render_governance_view",
     "render_evaluation_view",
     "render_cost_view",
+    "render_usage_view",
     "render_monitoring_view"
 ]
-

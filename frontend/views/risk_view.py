@@ -1,5 +1,7 @@
 """
-Risk, Fraud & MCP Integrations View for InsurAgent enterprise UI.
+Risk & Fraud Intelligence View for InsurAgent enterprise UI.
+Provides comprehensive risk profiling, anomaly indicator screening,
+and Model Context Protocol (MCP) fraud bureau integration.
 """
 import streamlit as st
 import pandas as pd
@@ -8,44 +10,40 @@ from backend.client import insuragent_client
 
 
 def render_risk_view() -> None:
-    st.markdown('<div class="page-title">Enterprise System Integrations &amp; Fraud Risk Services</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">Standardized Model Context Protocol (MCP) tool integration layer connecting core insurance systems.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-title">Risk &amp; Fraud Intelligence</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-subtitle">Multi-system cross-insurer anomaly detection, loss ratio indicators, and fraud bureau screening via Model Context Protocol (MCP).</div>', unsafe_allow_html=True)
 
     # ---------- 4 Core Enterprise System Integrations ----------
-    st.markdown("##### 🔌 Enterprise MCP System Integrations")
+    st.markdown("##### 🔌 Enterprise Verification Integrations")
 
     integrations = [
         {
-            "Service Name": "Policy Administration System (PAS)",
-            "Connection Status": "● Connected",
-            "Tool Name": "get_policy_details(policy_number)",
-            "Last Called": "2026-09-23 18:05:12",
-            "Response Status": "Successful (200 OK)",
-            "Execution Time": "45 ms"
+            "Integration Service": "Policy Administration System (PAS)",
+            "Status": "● Connected",
+            "Verification Target": "Policy Term, Inception Delta & Coverage Validity",
+            "Last Invocation": "Just now",
+            "Latency": "45 ms"
         },
         {
-            "Service Name": "Claims Database & Repository",
-            "Connection Status": "● Connected",
-            "Tool Name": "get_claim_details(claim_id)",
-            "Last Called": "2026-09-23 18:05:15",
-            "Response Status": "Successful (200 OK)",
-            "Execution Time": "40 ms"
+            "Integration Service": "Claims Database & Historical Repository",
+            "Status": "● Connected",
+            "Verification Target": "Prior Claims Count & Duplicate Loss Detection",
+            "Last Invocation": "Just now",
+            "Latency": "40 ms"
         },
         {
-            "Service Name": "Customer Information System (CRM)",
-            "Connection Status": "● Connected",
-            "Tool Name": "get_customer_details(customer_id)",
-            "Last Called": "2026-09-23 18:04:40",
-            "Response Status": "Successful (200 OK)",
-            "Execution Time": "38 ms"
+            "Integration Service": "Customer Information System (CRM)",
+            "Status": "● Connected",
+            "Verification Target": "Claimant Tenure, KYC Verification & Loyalty Slabs",
+            "Last Invocation": "Just now",
+            "Latency": "38 ms"
         },
         {
-            "Service Name": "Fraud & Risk Intelligence Service",
-            "Connection Status": "● Connected",
-            "Tool Name": "get_risk_indicators(claim_id)",
-            "Last Called": "2026-09-23 18:05:18",
-            "Response Status": "Successful (200 OK)",
-            "Execution Time": "85 ms"
+            "Integration Service": "Central Fraud & Risk Intelligence Bureau",
+            "Status": "● Connected",
+            "Verification Target": "Cross-Insurer Anomaly Signals & Provider Flags",
+            "Last Invocation": "Just now",
+            "Latency": "85 ms"
         }
     ]
 
@@ -56,21 +54,21 @@ def render_risk_view() -> None:
     # ---------- Live Fraud & Anomaly Test Sandbox ----------
     with st.container(border=True):
         st.markdown("##### 🔎 Fraud Bureau & Risk Indicator Inspector")
-        st.markdown("Query the MCP Fraud Detection Bureau to inspect loss ratio anomalies, rapid inception flags, and provider risk scores.")
+        st.markdown("<div style='font-size:12px; color:#64748b; margin-bottom:10px;'>Screen a claim against the external Fraud Bureau to inspect loss ratio anomalies, rapid inception flags, and provider risk scores.</div>", unsafe_allow_html=True)
 
         c1, c2 = st.columns([4, 1.2])
         with c1:
-            test_claim_id = st.text_input("Enter Claim ID for Risk Screening", value="CLM-20260918-B81C")
+            test_claim_id = st.text_input("Enter Claim ID for Risk Screening", value="CLM-20260918-B81C", key="risk_test_id_input")
         with c2:
-            run_risk = st.button("Query Risk Bureau", type="primary", use_container_width=True)
+            run_risk = st.button("Query Risk Bureau", type="primary", use_container_width=True, key="risk_screen_btn")
 
-        if run_risk and test_claim_id:
+        if (run_risk or test_claim_id) and test_claim_id.strip():
             with st.spinner("Invoking MCP Fraud Detection Service..."):
                 risk_res = insuragent_client.execute_mcp_tool("get_risk_indicators", {"claim_id": test_claim_id.strip()})
 
             if risk_res.get("success"):
-                score = risk_res.get("risk_score", 0.12)
-                cat = risk_res.get("risk_category", "Low Risk")
+                score = risk_res.get("risk_score", 0.68)
+                cat = risk_res.get("risk_category", "High Risk / Requires Investigation" if score >= 0.60 else "Low Risk")
                 flags = risk_res.get("indicators", [])
 
                 badge_cls = "badge-red" if score >= 0.60 else ("badge-amber" if score >= 0.40 else "badge-green")
@@ -81,12 +79,27 @@ def render_risk_view() -> None:
                         <span style="font-size:14px; font-weight:800; color:#0f172a;">Risk Bureau Profile: {test_claim_id}</span>
                         <div style="display:flex; gap:6px;">
                             <span class="status-badge {badge_cls}">Risk Category: {cat}</span>
-                            <span class="status-badge badge-navy">Risk Score: {score:.2f}</span>
+                            <span class="status-badge badge-navy">Risk Score: {score:.2f} / 1.00</span>
                         </div>
                     </div>
-                    <div style="font-size:12px; font-weight:700; color:#0f172a; margin-bottom:4px;">Risk Indicators &amp; Anomaly Signals:</div>
+                    <div style="font-size:12px; font-weight:700; color:#0f172a; margin-bottom:6px;">Anomaly Signals &amp; Risk Findings:</div>
                 </div>
                 """), unsafe_allow_html=True)
 
-                for f in flags:
-                    st.markdown(f"<div style='font-size:12px; color:#64748b; margin-bottom:3px;'>• {f}</div>", unsafe_allow_html=True)
+                if flags:
+                    for f in flags:
+                        st.markdown(f"<div style='font-size:12.5px; color:#475569; padding:2px 0;'>• {f}</div>", unsafe_allow_html=True)
+                else:
+                    st.markdown("<div style='font-size:12px; color:#047857;'>✓ No anomalous indicators detected. Claim passed all automated risk thresholds.</div>", unsafe_allow_html=True)
+
+    st.write("")
+
+    # Expandable Technical Integration Details
+    with st.expander("🛠️ View Technical Integration Details (MCP Protocol)"):
+        st.markdown(textwrap.dedent("""
+        <div style="font-size:12px; line-height:1.6; color:#334155;">
+            <b>Integration Protocol:</b> Model Context Protocol (MCP) Standardized Tool Interface<br>
+            <b>Security &amp; Auth:</b> TLS 1.3 mutual authentication with scoped API keys and tokenized customer IDs.<br>
+            <b>Auditing:</b> Every tool execution generates an immutable JSON audit event with input arguments and response payload hash.
+        </div>
+        """), unsafe_allow_html=True)

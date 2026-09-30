@@ -6,16 +6,18 @@ Provides a clean, professional, minimal, and trustworthy corporate SaaS design.
 ENTERPRISE_CSS = """
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-    /* ---------- Base Resets & Typography ---------- */
-    * {
+    /* ---------- Base Resets & Enterprise Typography ---------- */
+    *, *::before, *::after {
+        box-sizing: border-box;
         font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
-    code, pre, .mono-text {
+    code, pre, .mono-text, [data-testid="stMarkdown"] code {
         font-family: 'JetBrains Mono', monospace !important;
+        font-size: 0.9em;
     }
 
     .stApp {
@@ -24,9 +26,11 @@ ENTERPRISE_CSS = """
     }
 
     .block-container {
-        max-width: 1440px;
+        max-width: 1480px;
         padding-top: 1.0rem !important;
-        padding-bottom: 2.5rem;
+        padding-bottom: 2.5rem !important;
+        padding-left: 2.0rem !important;
+        padding-right: 2.0rem !important;
     }
 
     /* ---------- Top Header Bar ---------- */
@@ -38,7 +42,7 @@ ENTERPRISE_CSS = """
         border: 1px solid #e2e8f0;
         border-radius: 12px;
         padding: 12px 20px;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
         box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
     }
 
@@ -51,36 +55,37 @@ ENTERPRISE_CSS = """
     .header-logo-icon {
         width: 38px;
         height: 38px;
-        border-radius: 10px;
-        background: #0f2744;
+        border-radius: 9px;
+        background: linear-gradient(135deg, #091524 0%, #0f2744 100%);
         display: flex;
         align-items: center;
         justify-content: center;
         color: #38bdf8;
         font-size: 20px;
         font-weight: 800;
-        box-shadow: 0 2px 6px rgba(15, 39, 68, 0.2);
+        border: 1px solid #1e3a5f;
+        box-shadow: 0 2px 6px rgba(15, 39, 68, 0.15);
     }
 
     .header-title-text {
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 800;
         color: #0f172a;
         letter-spacing: -0.4px;
-        line-height: 1.1;
+        line-height: 1.15;
     }
 
     .header-subtitle-text {
-        font-size: 11px;
+        font-size: 11.5px;
         font-weight: 600;
-        color: #0369a1;
+        color: #0284c7;
         margin-top: 1px;
     }
 
     .header-right-meta {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
     }
 
     /* ---------- Sidebar Enterprise Styling ---------- */
@@ -96,51 +101,95 @@ ENTERPRISE_CSS = """
     section[data-testid="stSidebar"] .stRadio label {
         font-size: 13px !important;
         font-weight: 500 !important;
-        padding: 6px 10px !important;
-        border-radius: 6px !important;
+        padding: 7px 12px !important;
+        border-radius: 8px !important;
         margin-bottom: 2px !important;
         transition: all 0.15s ease;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 
     section[data-testid="stSidebar"] .stRadio label:hover {
-        background: rgba(255, 255, 255, 0.07);
+        background: rgba(255, 255, 255, 0.08) !important;
     }
 
     section[data-testid="stSidebar"] div[data-testid="stRadio"] label[data-checked="true"] {
         background: #0284c7 !important;
         font-weight: 700 !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .sidebar-section-header {
+        font-size: 10px;
+        font-weight: 800;
+        color: #64748b !important;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        margin-top: 14px;
+        margin-bottom: 6px;
+        padding-left: 4px;
+    }
+
+    .sidebar-divider {
+        height: 1px;
+        background: #1e2e42;
+        margin: 12px 0;
+    }
+
+    .sidebar-account-box {
+        background: #0d1e34;
+        border: 1px solid #1e3a5f;
+        border-radius: 8px;
+        padding: 10px 12px;
+        margin-top: 12px;
+        margin-bottom: 10px;
     }
 
     /* ---------- Page Headers ---------- */
     .page-title {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 800;
         color: #0f172a;
-        letter-spacing: -0.3px;
-        margin-bottom: 2px;
+        letter-spacing: -0.4px;
+        margin-bottom: 3px;
+        line-height: 1.2;
     }
 
     .page-subtitle {
-        font-size: 12.5px;
+        font-size: 13px;
         color: #64748b;
-        margin-bottom: 16px;
+        margin-bottom: 18px;
     }
 
     /* ---------- Executive KPI Cards ---------- */
     .kpi-card {
         background: #ffffff;
         border: 1px solid #e2e8f0;
-        border-radius: 10px;
-        padding: 14px 16px;
-        box-shadow: 0 1px 3px rgba(15, 23, 42, 0.02);
+        border-radius: 12px;
+        padding: 16px 18px;
+        box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .kpi-card:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    }
+
+    .kpi-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4px;
     }
 
     .kpi-title {
-        font-size: 11px;
+        font-size: 11.5px;
         font-weight: 700;
         color: #64748b;
         text-transform: uppercase;
@@ -148,31 +197,33 @@ ENTERPRISE_CSS = """
     }
 
     .kpi-value {
-        font-size: 24px;
+        font-size: 26px;
         font-weight: 800;
         color: #0f172a;
-        margin: 6px 0 3px 0;
-        letter-spacing: -0.5px;
+        margin: 6px 0 4px 0;
+        letter-spacing: -0.6px;
+        line-height: 1.1;
     }
 
     .kpi-footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 4px;
-        font-size: 11px;
+        margin-top: 6px;
+        font-size: 11.5px;
     }
 
-    /* ---------- Status Pills & Badges ---------- */
+    /* ---------- Status Badges & Pills ---------- */
     .status-badge {
         display: inline-flex;
         align-items: center;
         gap: 4px;
-        padding: 2.5px 8px;
+        padding: 3px 8px;
         border-radius: 6px;
         font-size: 11px;
         font-weight: 600;
         letter-spacing: 0.1px;
+        white-space: nowrap;
     }
 
     .badge-green {
@@ -211,171 +262,88 @@ ENTERPRISE_CSS = """
         border: 1px solid #e9d5ff;
     }
 
-    /* ---------- Search Box Container ---------- */
-    .search-box-card {
+    /* ---------- Card / Container Styling ---------- */
+    .enterprise-card {
         background: #ffffff;
         border: 1px solid #e2e8f0;
         border-radius: 12px;
-        padding: 16px 20px;
+        padding: 18px 20px;
         margin-bottom: 16px;
-        box-shadow: 0 1px 4px rgba(15, 23, 42, 0.02);
+        box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
     }
 
-    /* ---------- Enterprise Reasoning Box ---------- */
-    .reasoning-box {
-        background: #f8fafc;
-        border: 1px solid #e2e8f0;
-        border-left: 4px solid #0284c7;
-        border-radius: 8px;
-        padding: 14px 16px;
-        margin-top: 10px;
-        color: #1e293b;
-        font-size: 13px;
-        line-height: 1.6;
-    }
-
-    /* ---------- Timeline Items ---------- */
-    .timeline-node {
-        display: flex;
-        gap: 12px;
-        padding: 10px 0;
-        border-bottom: 1px solid #f1f5f9;
-    }
-
-    .timeline-step-badge {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        background: #0284c7;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 11px;
-        font-weight: 800;
-        flex-shrink: 0;
-    }
-
-    .timeline-content {
-        flex: 1;
-    }
-
-    .timeline-title {
-        font-size: 12.5px;
-        font-weight: 700;
+    .card-title {
+        font-size: 14.5px;
+        font-weight: 750;
         color: #0f172a;
+        margin-bottom: 2px;
     }
 
-    .timeline-desc {
-        font-size: 11.5px;
+    .card-subtitle {
+        font-size: 12px;
         color: #64748b;
-        margin-top: 1px;
+        margin-bottom: 12px;
     }
 
-    /* ---------- Agent Execution Card ---------- */
-    .agent-card {
+    /* ---------- Document Upload Dropzone & File List ---------- */
+    .upload-box-wrapper {
         background: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 10px;
-        padding: 14px;
-        margin-bottom: 10px;
+        border: 2px dashed #cbd5e1;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        transition: border-color 0.2s ease;
     }
 
-    .agent-card-header {
+    .upload-box-wrapper:hover {
+        border-color: #0284c7;
+    }
+
+    .file-chip {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 6px;
-    }
-
-    .agent-card-title {
-        font-size: 13.5px;
-        font-weight: 750;
-        color: #0f172a;
-    }
-
-    /* ---------- Enterprise Login Page Styling ---------- */
-    .login-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 2rem;
-        margin-bottom: 1.5rem;
-        text-align: center;
-    }
-
-    .login-header-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .login-brand-badge {
-        width: 68px;
-        height: 68px;
-        border-radius: 18px;
-        background: linear-gradient(135deg, #091524 0%, #0f2744 100%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.35);
-        border: 1px solid #1e3a5f;
-        margin-bottom: 16px;
-    }
-
-    .login-title {
-        font-size: 26px;
-        font-weight: 800;
-        color: #0f172a;
-        letter-spacing: -0.6px;
-        line-height: 1.2;
-    }
-
-    .login-subtitle {
-        font-size: 13.5px;
-        color: #64748b;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 8px 12px;
         margin-top: 6px;
-        font-weight: 500;
+        font-size: 12px;
     }
 
-    .login-security-pill {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        background: #f0fdf4;
-        color: #166534;
-        border: 1px solid #bbf7d0;
-        padding: 4px 12px;
-        border-radius: 20px;
-        font-size: 11.5px;
-        font-weight: 600;
-        margin-top: 14px;
+    /* ---------- Chat Bubbles ---------- */
+    .chat-msg-user {
+        background: #0f2744;
+        color: #ffffff;
+        padding: 12px 16px;
+        border-radius: 12px 12px 2px 12px;
+        font-size: 13.5px;
+        margin-bottom: 12px;
+        max-width: 80%;
+        margin-left: auto;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
 
-    .login-card-inner {
+    .chat-msg-ai {
         background: #ffffff;
         border: 1px solid #e2e8f0;
-        border-radius: 14px;
-        padding: 24px 28px;
-        box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
-        margin-top: 8px;
-    }
-
-    .login-input-label {
-        font-size: 12.5px;
-        font-weight: 700;
-        color: #334155;
-        margin-bottom: 4px;
-    }
-
-    .login-info-card {
-        background: #f8fafc;
-        border: 1px solid #cbd5e1;
-        border-left: 4px solid #0284c7;
-        border-radius: 10px;
+        border-radius: 12px 12px 12px 2px;
         padding: 14px 18px;
-        margin-top: 18px;
+        font-size: 13.5px;
+        margin-bottom: 12px;
+        max-width: 90%;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+        line-height: 1.6;
+    }
+
+    .source-citation-card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-left: 3px solid #0284c7;
+        border-radius: 6px;
+        padding: 8px 12px;
+        margin-top: 8px;
+        font-size: 11.5px;
     }
 
     /* ---------- Clean Streamlit Overrides ---------- */
@@ -399,13 +367,35 @@ ENTERPRISE_CSS = """
         font-weight: 600;
         font-size: 13px;
         padding: 6px 14px;
+        transition: all 0.15s ease;
     }
 
     div[data-testid="stExpander"] {
         border: 1px solid #e2e8f0 !important;
-        border-radius: 8px !important;
+        border-radius: 10px !important;
         background: #ffffff !important;
         box-shadow: none !important;
+        margin-top: 8px !important;
+    }
+
+    /* Tab styling */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 8px;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .stTabs [data-baseweb="tab"] {
+        border-radius: 6px 6px 0 0;
+        padding: 8px 16px;
+        font-weight: 600;
+        font-size: 13px;
+        color: #64748b;
+    }
+
+    .stTabs [aria-selected="true"] {
+        background-color: transparent !important;
+        color: #0284c7 !important;
+        border-bottom: 2px solid #0284c7 !important;
     }
 </style>
 """

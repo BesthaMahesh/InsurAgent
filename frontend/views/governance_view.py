@@ -1,5 +1,7 @@
 """
-Responsible AI & Governance View for InsurAgent enterprise UI.
+Trust & Responsible AI View for InsurAgent enterprise UI.
+Provides algorithmic fairness evaluation, automated adversarial safety batteries,
+PII data governance, and regulatory compliance oversight.
 """
 import streamlit as st
 import pandas as pd
@@ -8,26 +10,26 @@ from backend.client import insuragent_client
 
 
 def render_governance_view() -> None:
-    st.markdown('<div class="page-title">Governance, Security &amp; Responsible AI Layer</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">Algorithmic fairness evaluation, PII data protection, regulatory compliance matrix, and automated adversarial red-teaming.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-title">Trust &amp; Responsible AI</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-subtitle">Algorithmic fairness evaluation, PII data protection, responsible AI controls, and automated adversarial safety testing.</div>', unsafe_allow_html=True)
 
     gov_data = insuragent_client.get_governance_overview()
     bias_data = gov_data.get("bias_fairness", {})
     matrix = gov_data.get("compliance_matrix", {})
 
     tab_adv, tab_bias, tab_comp, tab_data, tab_model = st.tabs([
-        "🛡️ Adversarial Red-Teaming",
-        "⚖️ Bias & Fairness Audit",
-        "📋 Regulatory Policy Compliance",
-        "🗄️ Data Governance & Privacy",
-        "🤖 Model Governance & Registry"
+        "🛡️ Adversarial Safety Testing",
+        "⚖️ Algorithmic Fairness",
+        "📋 Regulatory Compliance",
+        "🗄️ Data Protection & Privacy",
+        "🤖 Model Governance"
     ])
 
     with tab_adv:
         st.markdown("##### Automated Adversarial Safety Battery (Red-Teaming)")
-        st.markdown("Simulates jailbreaks, prompt injections, system prompt extractions, and malicious payloads against the Input Guardrail.")
+        st.markdown("<div style='font-size:12px; color:#64748b; margin-bottom:10px;'>Simulates jailbreak attempts, prompt injections, and system prompt extraction attacks against the Input Guardrail layer.</div>", unsafe_allow_html=True)
 
-        if st.button("⚡ Run Adversarial Test Suite", type="primary"):
+        if st.button("⚡ Run Adversarial Safety Test", type="primary", key="gov_run_adv_btn"):
             with st.spinner("Executing adversarial attack vectors..."):
                 adv_results = insuragent_client.run_adversarial_test()
                 st.session_state["adv_results"] = adv_results
@@ -48,7 +50,7 @@ def render_governance_view() -> None:
 
     with tab_bias:
         st.markdown("##### Algorithmic Bias & Demographic Parity Evaluation")
-        st.markdown("Evaluates demographic parity and four-fifths rule compliance across age, geography, and provider networks.")
+        st.markdown("<div style='font-size:12px; color:#64748b; margin-bottom:10px;'>Evaluates demographic parity and four-fifths rule compliance across age, geography, and provider networks.</div>", unsafe_allow_html=True)
 
         f_index = bias_data.get("overall_fairness_index", 0.97) * 100
         st.markdown(textwrap.dedent(f"""
@@ -65,7 +67,7 @@ def render_governance_view() -> None:
         st.dataframe(pd.DataFrame(matrix.get("frameworks", [])), use_container_width=True, hide_index=True)
 
     with tab_data:
-        st.markdown("##### Data Governance, Catalogs & PII Protection")
+        st.markdown("##### Data Protection, Encryption & PII Masking")
         data_gov = gov_data.get("data_governance", {})
         st.markdown(textwrap.dedent(f"""
         <div style="display:flex; gap:12px; margin-bottom:12px;">
