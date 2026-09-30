@@ -1,119 +1,108 @@
 """
 Processing Workflow View for InsurAgent enterprise UI.
-Presents the claim adjudication journey in clear, client-friendly business terminology
-with expandable technical architecture details for engineering and compliance review.
+Presents the Claim Processing Journey in a clean, uncluttered business layout
+with expandable Technical Processing Details for full architectural transparency.
 """
 import streamlit as st
-import textwrap
-from frontend.components.workflow import render_workflow_diagram
-from frontend.components.agent_status import render_agent_card
+from frontend.styles import render_html
 
 
 def render_workflow_view() -> None:
-    st.markdown('<div class="page-title">Processing Workflow</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">End-to-end claim adjudication journey orchestrating autonomous specialized agents with deterministic guardrails.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-title">Claim Processing Journey</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-subtitle">Track how your claim moves through intake verification, document analysis, policy coverage check, risk assessment, and audit sealing.</div>', unsafe_allow_html=True)
 
-    # 1. Visual Claim Processing Journey
-    render_workflow_diagram()
-
-    st.write("")
-
-    # 2. 6 Specialized Collaborative Workers Registry
-    st.markdown("##### 🤖 Specialized Collaborative Agents Registry")
-
-    # Supervisor
-    render_agent_card(
-        agent_name="Supervisor / Orchestrator Agent",
-        purpose="Task Decomposition, Routing Plan Formulation & State Memory Management",
-        status="Healthy",
-        execution_time_ms=145,
-        tools_used="LangGraph State Engine, Memory Manager",
-        input_desc="Claim Submission Payload or Natural Language Query",
-        output_desc="Decomposed Execution Plan with 7 Sequenced Subtasks",
-        confidence=1.00
-    )
-
-    # 1. Claim Intake Agent
-    render_agent_card(
-        agent_name="1. Claim Intake Agent",
-        purpose="Classifies line of business, normalizes claimant entities, and checks record completeness",
-        status="Completed",
-        execution_time_ms=180,
-        tools_used="Intake Validation Rules, Entity Normalizer",
-        input_desc="Claimant Profile, Policy Number, Incident Particulars",
-        output_desc="Normalized Claim JSON with Completeness Score (100%)",
-        confidence=0.98
-    )
-
-    # 2. Document Analysis Agent
-    render_agent_card(
-        agent_name="2. Document Analysis Agent",
-        purpose="Performs computer vision OCR, parses itemized invoices, and checks document consistency",
-        status="Completed",
-        execution_time_ms=420,
-        tools_used="Vision-OCR Engine, Invoice Parser",
-        input_desc="Base64 Document Byte Streams (PDF/Images)",
-        output_desc="Extracted Table Entities, Invoice Totals & Validation Flags",
-        confidence=0.95
-    )
-
-    # 3. Policy Verification Agent
-    render_agent_card(
-        agent_name="3. Policy Verification Agent",
-        purpose="Retrieves relevant policy clauses from ChromaDB RAG, validates eligibility, waiting periods, and exclusions",
-        status="Completed",
-        execution_time_ms=680,
-        tools_used="ChromaDB Vector Store, all-MiniLM-L6-v2",
-        input_desc="Claim Line, Incident Description, Policy Identifier",
-        output_desc="Retrieved Grounded Policy Clauses (Coverage: Covered)",
-        confidence=0.91
-    )
-
-    # 4. Fraud / Risk Analysis Agent
-    render_agent_card(
-        agent_name="4. Fraud / Risk Analysis Agent",
-        purpose="Evaluates anomaly indicators, loss ratios, and calls MCP Fraud Bureau",
-        status="Completed",
-        execution_time_ms=310,
-        tools_used="MCP Fraud Bureau API, Anomaly Rules Engine",
-        input_desc="Claim ID, Incurred Amount, Provider Geolocation",
-        output_desc="Risk Index Score: 0.12 (Low Risk), Zero Anomaly Flags",
-        confidence=0.94
-    )
-
-    # 5. Claim Assessment Agent
-    render_agent_card(
-        agent_name="5. Claim Assessment Agent",
-        purpose="Synthesizes findings, computes itemized deductible/co-pay payouts, and determines HITL review need",
-        status="Completed",
-        execution_time_ms=550,
-        tools_used="Synthesized Multi-Agent Adjudication Engine",
-        input_desc="Intake Data, Policy Clauses, OCR Invoices, Risk Profile",
-        output_desc="Recommendation: Approved, Net Payable: ₹1,20,000",
-        confidence=0.90
-    )
-
-    # 6. Audit & Compliance Agent
-    render_agent_card(
-        agent_name="6. Audit & Compliance Agent",
-        purpose="Generates immutable audit trail, verifies IRDAI/GDPR regulatory compliance, and stamps cryptographic token",
-        status="Completed",
-        execution_time_ms=120,
-        tools_used="SQLite Audit Store, SHA-256 Hasher",
-        input_desc="Chronological Audit Events from all Nodes",
-        output_desc="Sealed Audit Trace (Token: A7F43E2910BC), IRDAI Certified",
-        confidence=1.00
-    )
-
-    st.write("")
-
-    # 3. Expandable Technical Architecture Details
-    with st.expander("🛠️ View Technical Architecture Details (LangGraph & Control Plane)"):
-        st.markdown(textwrap.dedent("""
-        <div style="font-size:12.5px; line-height:1.6; color:#334155;">
-            <b>Orchestration Engine:</b> LangGraph v0.2.x Stateful Graph Engine<br>
-            <b>State Schema:</b> <code>AgentState</code> TypedDict capturing 28 distinct workflow fields including <code>reproducibility_token</code>, <code>episodic_memory</code>, and <code>guardrail_result</code>.<br>
-            <b>Conditional Routing:</b> Deterministic branching routes to <code>HumanReviewNode</code> if <code>confidence &lt; 0.75</code> or <code>risk_score &gt; 0.40</code>.<br>
-            <b>Integration Protocol:</b> Model Context Protocol (MCP) tool standard for external core insurance systems.
+    # 1. Top Journey Summary Card
+    journey_header_html = """
+    <div class="enterprise-card" style="margin-bottom:16px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #f1f5f9; padding-bottom:10px; margin-bottom:12px;">
+            <div>
+                <div class="card-title">Autonomous Adjudication Lifecycle</div>
+                <div class="card-subtitle" style="margin-bottom:0;">Continuous 8-stage verification pipeline with automated straight-through execution.</div>
+            </div>
+            <span class="status-badge badge-green">● Route: Straight-Through Adjudication</span>
         </div>
-        """), unsafe_allow_html=True)
+    </div>
+    """
+    render_html(journey_header_html)
+
+    # 2. 8-Stage Clean Grid (2 rows of 4 columns to avoid horizontal overflow on smaller screens)
+    stages = [
+        ("1", "Claim Received", "Intake payload captured & parsed", "Completed", "badge-green"),
+        ("2", "Information Verified", "Entity records & policy validity checked", "Completed", "badge-green"),
+        ("3", "Documents Reviewed", "Vision-OCR extracted & invoices verified", "Completed", "badge-green"),
+        ("4", "Coverage Verified", "Policy terms & limits retrieved via RAG", "Completed", "badge-purple"),
+        ("5", "Risk Assessed", "Anomaly indicators & bureau flags evaluated", "Completed", "badge-green"),
+        ("6", "Claim Evaluated", "Itemized deduction & net payout calculated", "Completed", "badge-blue"),
+        ("7", "Human Review", "Automated checkpoint / Adjuster queue", "Straight-Through", "badge-green"),
+        ("8", "Finalized & Audited", "Immutable audit seal & token generated", "Certified", "badge-green")
+    ]
+
+    st.markdown("##### 📍 Claim Processing Stages")
+    
+    # Row 1: Stages 1 to 4
+    r1_cols = st.columns(4)
+    for idx, (num, title, desc, status_text, badge_cls) in enumerate(stages[:4]):
+        with r1_cols[idx]:
+            card_html = f"""
+            <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:14px 12px; margin-bottom:10px; min-height:120px; display:flex; flex-direction:column; justify-content:space-between; box-shadow:0 1px 3px rgba(0,0,0,0.02);">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <span style="width:22px; height:22px; border-radius:50%; background:#0284c7; color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800;">{num}</span>
+                    <span class="status-badge {badge_cls}">{status_text}</span>
+                </div>
+                <div style="font-size:13px; font-weight:750; color:#0f172a; margin-top:6px; line-height:1.2;">{title}</div>
+                <div style="font-size:11px; color:#64748b; margin-top:2px;">{desc}</div>
+            </div>
+            """
+            render_html(card_html)
+
+    # Row 2: Stages 5 to 8
+    r2_cols = st.columns(4)
+    for idx, (num, title, desc, status_text, badge_cls) in enumerate(stages[4:]):
+        with r2_cols[idx]:
+            card_html = f"""
+            <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:14px 12px; margin-bottom:10px; min-height:120px; display:flex; flex-direction:column; justify-content:space-between; box-shadow:0 1px 3px rgba(0,0,0,0.02);">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <span style="width:22px; height:22px; border-radius:50%; background:#0284c7; color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800;">{num}</span>
+                    <span class="status-badge {badge_cls}">{status_text}</span>
+                </div>
+                <div style="font-size:13px; font-weight:750; color:#0f172a; margin-top:6px; line-height:1.2;">{title}</div>
+                <div style="font-size:11px; color:#64748b; margin-top:2px;">{desc}</div>
+            </div>
+            """
+            render_html(card_html)
+
+    st.write("")
+
+    # 3. Expandable Technical Processing Details (Preserving full architectural depth)
+    with st.expander("🛠️ View Technical Processing Details (Multi-Agent Control Plane)"):
+        st.markdown("<div style='font-size:12.5px; color:#64748b; margin-bottom:12px;'>Inspect specialized collaborative agents, underlying tools, state schema, and execution latencies.</div>", unsafe_allow_html=True)
+
+        agents = [
+            ("Supervisor / Orchestrator Agent", "Goal Understanding, Task Decomposition, Tool Routing & Memory Context Management", "145 ms", "LangGraph State Engine, Memory Manager", "Raw Claim Payload", "Decomposed Execution Plan (7 Subtasks)", "100%"),
+            ("1. Claim Intake Agent", "Classifies line of business, normalizes entity fields, and validates record completeness", "180 ms", "Intake Validation Rules, Entity Normalizer", "Claimant Profile, Policy Number, Incident Particulars", "Normalized Claim JSON (100% Completeness)", "98%"),
+            ("2. Document Analysis Agent", "Performs computer vision OCR, parses itemized invoices, and checks document consistency", "420 ms", "Vision-OCR Engine, Invoice Parser", "Base64 Document Byte Streams (PDF/Images)", "Extracted Table Entities & Invoice Totals", "95%"),
+            ("3. Policy Verification Agent", "Retrieves relevant policy clauses from ChromaDB RAG, validates eligibility and waiting periods", "680 ms", "ChromaDB Vector Store, all-MiniLM-L6-v2", "Claim Line, Incident Description, Policy Identifier", "Retrieved Grounded Policy Clauses (Coverage: Covered)", "91%"),
+            ("4. Fraud / Risk Analysis Agent", "Evaluates anomaly indicators, loss ratios, and queries MCP Fraud Bureau", "310 ms", "MCP Fraud Bureau API, Anomaly Rules Engine", "Claim ID, Incurred Amount, Provider Geolocation", "Risk Index Score: 0.12 (Low Risk), Zero Flags", "94%"),
+            ("5. Claim Assessment Agent", "Synthesizes findings, computes itemized deductible/co-pay payouts, and evaluates HITL need", "550 ms", "Synthesized Multi-Agent Adjudication Engine", "Intake Data, Policy Clauses, OCR Invoices, Risk Profile", "Recommendation: Approved, Net Payable: ₹1,20,000", "90%"),
+            ("6. Audit & Compliance Agent", "Generates immutable audit trail, verifies IRDAI regulatory compliance, and stamps token", "120 ms", "SQLite Audit Store, SHA-256 Hasher", "Chronological Audit Events from all Nodes", "Sealed Audit Trace (Token: A7F43E2910BC)", "100%")
+        ]
+
+        for name, purpose, latency, tools, in_desc, out_desc, conf in agents:
+            agent_html = f"""
+            <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px 14px; margin-bottom:8px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                    <span style="font-weight:750; color:#0284c7; font-size:13px;">{name}</span>
+                    <div style="display:flex; gap:6px;">
+                        <span class="status-badge badge-navy">Latency: {latency}</span>
+                        <span class="status-badge badge-green">Confidence: {conf}</span>
+                    </div>
+                </div>
+                <div style="font-size:12px; color:#1e293b; line-height:1.4;">{purpose}</div>
+                <div style="margin-top:6px; font-size:11px; color:#64748b; display:grid; grid-template-columns: repeat(3, 1fr); gap:8px;">
+                    <div><b>Tools:</b> {tools}</div>
+                    <div><b>Input:</b> {in_desc}</div>
+                    <div><b>Output:</b> {out_desc}</div>
+                </div>
+            </div>
+            """
+            render_html(agent_html)

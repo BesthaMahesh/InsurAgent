@@ -1,67 +1,71 @@
 """
-Model Evaluation & Benchmark Quality View for InsurAgent enterprise UI.
+Model Evaluation View for InsurAgent enterprise UI.
 Provides transparent RAG Triad evaluation metrics, response groundedness indexes,
 and certified benchmark test suite results.
 """
 import streamlit as st
 import pandas as pd
-import altair as alt
-import textwrap
 from frontend.components.cards import render_kpi_card
+from frontend.components.charts import render_ai_evaluation_chart
+from frontend.styles import render_html
 
 
 def render_evaluation_view() -> None:
     st.markdown('<div class="page-title">Model Evaluation</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">RAG Triad benchmarks, response quality indexes, hallucination detection rates, and decision consistency scores.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-subtitle">AI Quality &amp; Reliability Monitoring &bull; RAG Triad benchmarks, response groundedness, and decision consistency scores.</div>', unsafe_allow_html=True)
 
     # ---------- Row 1: Top Evaluation KPIs ----------
     c1, c2, c3, c4 = st.columns(4)
     with c1:
-        render_kpi_card("Overall AI Quality", "0.96 / 1.00", "Composite benchmark score", "Optimal", "green", trend_text="2.1% improvement", trend_positive=True)
+        render_kpi_card("Overall AI Quality", "0.96 / 1.00", "Composite benchmark index", "Optimal", "green", trend_text="2.1% improvement", trend_positive=True)
     with c2:
         render_kpi_card("RAG Groundedness", "98.2%", "Zero ungrounded assertions", "Verified", "purple")
     with c3:
         render_kpi_card("Retrieval Quality", "94.5%", "Top-3 semantic precision", "High Precision", "blue")
     with c4:
-        render_kpi_card("Hallucinations", "0 Cases", "Zero-tolerance policy engine", "Passed", "green")
+        render_kpi_card("Hallucination Cases", "0 Cases", "Zero-tolerance policy engine", "Passed", "green")
 
     st.write("")
 
-    # ---------- Row 2: Evaluation Benchmark Scores Chart & Grounding Principle ----------
+    # ---------- Row 2: AI Quality Trend Chart & Grounding Principle ----------
     col1, col2 = st.columns([1.5, 1])
 
     with col1:
         with st.container(border=True):
-            eval_chart_data = pd.DataFrame({
-                "Evaluation Dimension": ["Groundedness", "Context Relevance", "Answer Completeness", "Fairness Parity", "Compliance Adherence"],
-                "Score": [98.2, 95.0, 94.8, 97.4, 100.0]
-            })
-
-            chart = alt.Chart(eval_chart_data).mark_bar(cornerRadiusTopRight=4, cornerRadiusBottomRight=4, color="#0284c7").encode(
-                y=alt.Y("Evaluation Dimension:N", title=None, sort="-x", axis=alt.Axis(labelColor="#475569")),
-                x=alt.X("Score:Q", title="Evaluation Score (%)", scale=alt.Scale(domain=[80, 100]), axis=alt.Axis(labelColor="#64748b", gridColor="#f1f5f9")),
-                tooltip=["Evaluation Dimension", alt.Tooltip("Score:Q", format=".1f", title="Score (%)")]
-            ).properties(
-                height=220,
-                title=alt.TitleParams(text="Benchmark Performance by Evaluation Dimension", fontSize=13, fontWeight="bold", color="#0f172a")
-            ).configure_view(strokeWidth=0)
-
-            st.altair_chart(chart, use_container_width=True)
+            render_ai_evaluation_chart()
 
     with col2:
         with st.container(border=True):
             st.markdown("##### 🛡️ Grounded Policy Adjudication Principle")
-            st.markdown("""
-            InsurAgent operates under a **zero-fabrication principle**:
-            
-            1. **Strict Context Grounding**: If no relevant clause is retrieved from ChromaDB, the system routes the claim to a human adjuster rather than guessing coverage.
-            2. **Deterministic Mathematical Formulations**: Deductibles, copays, and sub-limits are computed using exact policy rules, not probabilistic estimates.
-            3. **Audit Reproducibility**: All decision paths generate cryptographic SHA-256 tokens for full post-adjudication verification.
-            """)
+            principle_html = """
+            <div style="font-size:12.5px; line-height:1.6; color:#334155;">
+                InsurAgent operates under a strict <b>zero-fabrication principle</b>:
+                <ul style="margin-top:6px; padding-left:18px;">
+                    <li><b>Context Grounding:</b> If no relevant clause is retrieved from ChromaDB, claims are automatically routed to human adjusters rather than guessing coverage.</li>
+                    <li><b>Deterministic Formulation:</b> Deductibles, copays, and sub-limits are computed using exact policy rules, not probabilistic estimates.</li>
+                    <li><b>Audit Reproducibility:</b> All decision paths generate cryptographic SHA-256 tokens for post-adjudication verification.</li>
+                </ul>
+            </div>
+            """
+            render_html(principle_html)
 
     st.write("")
 
-    # ---------- Row 3: Historical Benchmark Evaluation Runs Table ----------
+    # ---------- Row 3: Evaluation Breakdown Table ----------
+    with st.container(border=True):
+        st.markdown("##### 📋 Evaluation Dimension Breakdown")
+        breakdown_data = [
+            {"Evaluation Dimension": "Policy Context Groundedness", "Target": ">= 95.0%", "Current Score": "98.2%", "Benchmark Dataset": "Gold Health & Motor Corpus", "Status": "Optimal (Passed)"},
+            {"Evaluation Dimension": "Semantic Context Relevance", "Target": ">= 90.0%", "Current Score": "95.0%", "Benchmark Dataset": "Travel Shield Perils Slabs", "Status": "Optimal (Passed)"},
+            {"Evaluation Dimension": "Adjudication Answer Completeness", "Target": ">= 90.0%", "Current Score": "94.8%", "Benchmark Dataset": "GNOTHEIA SBVR Synthetic Benchmark", "Status": "Optimal (Passed)"},
+            {"Evaluation Dimension": "Demographic Fairness & Parity", "Target": ">= 80.0% (4/5ths)", "Current Score": "97.4%", "Benchmark Dataset": "Cross-Demographic Evaluation Battery", "Status": "Certified (Passed)"},
+            {"Evaluation Dimension": "Regulatory IRDAI Compliance", "Target": "100.0%", "Current Score": "100.0%", "Benchmark Dataset": "IRDAI Health Mandate 2026", "Status": "Certified (Passed)"}
+        ]
+        st.dataframe(pd.DataFrame(breakdown_data), use_container_width=True, hide_index=True)
+
+    st.write("")
+
+    # ---------- Row 4: Historical Benchmark Evaluation Runs Table ----------
     with st.container(border=True):
         st.markdown("##### 🎯 Certified Benchmark Evaluation Runs")
         runs = [

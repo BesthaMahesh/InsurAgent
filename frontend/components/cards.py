@@ -2,8 +2,8 @@
 Reusable Card and KPI components for InsurAgent enterprise UI.
 """
 import streamlit as st
-import textwrap
 from typing import Optional
+from frontend.styles import render_html
 
 
 def render_kpi_card(
@@ -25,7 +25,7 @@ def render_kpi_card(
         t_arrow = "↑" if trend_positive else "↓"
         trend_html = f'<span style="font-size:11px; font-weight:700; color:{t_color}; margin-left:6px;">{t_arrow} {trend_text}</span>'
 
-    st.markdown(textwrap.dedent(f"""
+    card_html = f"""
     <div class="kpi-card">
         <div class="kpi-header">
             <div class="kpi-title">{title}</div>
@@ -38,7 +38,8 @@ def render_kpi_card(
             <span style="color:#64748b; font-size:11px;">{description}</span>
         </div>
     </div>
-    """), unsafe_allow_html=True)
+    """
+    render_html(card_html)
 
 
 def render_status_badge(text: str, badge_type: str = "blue") -> str:

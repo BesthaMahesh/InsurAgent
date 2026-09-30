@@ -1,7 +1,17 @@
 """
-Enterprise CSS Stylesheet for InsurAgent UI.
+Enterprise CSS Stylesheet and HTML rendering utilities for InsurAgent UI.
 Provides a clean, professional, minimal, and trustworthy corporate SaaS design.
 """
+import streamlit as st
+
+def render_html(html_str: str) -> None:
+    """
+    Safely renders HTML in Streamlit without markdown parser treating
+    indented lines as raw code blocks.
+    """
+    clean_lines = [line.strip() for line in html_str.strip().splitlines() if line.strip()]
+    st.markdown("\n".join(clean_lines), unsafe_allow_html=True)
+
 
 ENTERPRISE_CSS = """
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,7 +95,7 @@ ENTERPRISE_CSS = """
     .header-right-meta {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
     }
 
     /* ---------- Sidebar Enterprise Styling ---------- */
@@ -96,6 +106,14 @@ ENTERPRISE_CSS = """
 
     section[data-testid="stSidebar"] * {
         color: #f1f5f9 !important;
+    }
+
+    .sidebar-subtitle-text {
+        font-size: 10.5px !important;
+        font-weight: 600 !important;
+        color: #38bdf8 !important;
+        letter-spacing: 0.3px;
+        margin-top: 2px;
     }
 
     section[data-testid="stSidebar"] .stRadio label {
@@ -123,10 +141,10 @@ ENTERPRISE_CSS = """
     .sidebar-section-header {
         font-size: 10px;
         font-weight: 800;
-        color: #64748b !important;
+        color: #94a3b8 !important;
         letter-spacing: 0.8px;
         text-transform: uppercase;
-        margin-top: 14px;
+        margin-top: 16px;
         margin-bottom: 6px;
         padding-left: 4px;
     }
@@ -134,7 +152,7 @@ ENTERPRISE_CSS = """
     .sidebar-divider {
         height: 1px;
         background: #1e2e42;
-        margin: 12px 0;
+        margin: 14px 0;
     }
 
     .sidebar-account-box {
@@ -142,8 +160,29 @@ ENTERPRISE_CSS = """
         border: 1px solid #1e3a5f;
         border-radius: 8px;
         padding: 10px 12px;
-        margin-top: 12px;
+        margin-top: 8px;
         margin-bottom: 10px;
+    }
+
+    /* Custom Sign Out Button in Sidebar */
+    section[data-testid="stSidebar"] button[key="sidebar_logout_btn"],
+    section[data-testid="stSidebar"] button:has(div:contains("Sign Out")) {
+        background: #1e293b !important;
+        color: #fca5a5 !important;
+        border: 1px solid #334155 !important;
+        border-radius: 8px !important;
+        font-weight: 700 !important;
+        font-size: 12.5px !important;
+        padding: 8px 14px !important;
+        transition: all 0.2s ease !important;
+    }
+
+    section[data-testid="stSidebar"] button[key="sidebar_logout_btn"]:hover,
+    section[data-testid="stSidebar"] button:has(div:contains("Sign Out")):hover {
+        background: #7f1d1d !important;
+        color: #ffffff !important;
+        border-color: #991b1b !important;
+        box-shadow: 0 2px 6px rgba(220, 38, 38, 0.25) !important;
     }
 
     /* ---------- Page Headers ---------- */

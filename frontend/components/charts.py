@@ -1,14 +1,13 @@
 """
 Chart and telemetry rendering helpers for InsurAgent enterprise UI.
-Uses Altair to generate responsive, high-fidelity corporate data visualizations.
+Generates responsive, high-fidelity corporate data visualizations with INR currency.
 """
 import streamlit as st
 import pandas as pd
 import altair as alt
 from typing import Dict, Any, List
 
-
-# Enterprise Color Palette Constants
+# Enterprise Color Palette
 COLOR_BLUE = "#0284c7"
 COLOR_NAVY = "#0f2744"
 COLOR_GREEN = "#10b981"
@@ -16,6 +15,25 @@ COLOR_AMBER = "#f59e0b"
 COLOR_RED = "#ef4444"
 COLOR_PURPLE = "#8b5cf6"
 COLOR_SLATE = "#64748b"
+
+
+def render_ai_evaluation_chart() -> None:
+    """Renders AI Evaluation Performance benchmark chart."""
+    data = pd.DataFrame({
+        "Metric": ["Groundedness", "Context Relevance", "Answer Quality", "Fairness Parity", "Compliance Adherence"],
+        "Score (%)": [98.2, 95.0, 94.8, 97.4, 100.0]
+    })
+    
+    chart = alt.Chart(data).mark_bar(cornerRadiusTopRight=4, cornerRadiusBottomRight=4, color=COLOR_BLUE).encode(
+        y=alt.Y("Metric:N", title=None, axis=alt.Axis(labelColor="#475569", labelFontSize=12)),
+        x=alt.X("Score (%):Q", title="Evaluation Score (%)", scale=alt.Scale(domain=[75, 100]), axis=alt.Axis(labelColor="#64748b", gridColor="#f1f5f9")),
+        tooltip=["Metric", alt.Tooltip("Score (%):Q", format=".1f")]
+    ).properties(
+        height=240,
+        title=alt.TitleParams(text="AI Benchmark Quality & Adjudication Indexes", fontSize=13, fontWeight="bold", color="#0f172a")
+    ).configure_view(strokeWidth=0)
+
+    st.altair_chart(chart, use_container_width=True)
 
 
 def render_claims_trend_chart() -> None:
@@ -54,8 +72,7 @@ def render_claims_status_distribution() -> None:
     """Renders a donut chart of claim status distribution."""
     data = pd.DataFrame({
         "Status": ["Completed (Auto)", "In Review (HITL)", "Escalated (SIU)"],
-        "Count": [845, 12, 6],
-        "Color": [COLOR_GREEN, COLOR_AMBER, COLOR_RED]
+        "Count": [845, 12, 6]
     })
 
     chart = alt.Chart(data).mark_arc(innerRadius=55, stroke="#ffffff", strokeWidth=2).encode(
@@ -75,8 +92,7 @@ def render_risk_distribution_chart() -> None:
     """Renders a distribution chart of claim risk tiers."""
     data = pd.DataFrame({
         "Risk Tier": ["Low Risk (0.0 - 0.3)", "Medium Risk (0.3 - 0.6)", "High Risk (> 0.6)"],
-        "Count": [810, 41, 12],
-        "Color": [COLOR_GREEN, COLOR_AMBER, COLOR_RED]
+        "Count": [810, 41, 12]
     })
 
     chart = alt.Chart(data).mark_bar(cornerRadiusTopLeft=4, cornerRadiusTopRight=4).encode(
@@ -138,6 +154,64 @@ def render_agent_latency_chart() -> None:
     st.altair_chart(chart, use_container_width=True)
 
 
+def render_cost_by_agent_inr_chart() -> None:
+    """Renders cost by agent bar chart in INR (₹)."""
+    data = pd.DataFrame({
+        "Agent Node": [
+            "Policy Verification",
+            "Claim Assessment",
+            "Document Analysis",
+            "Risk & Fraud",
+            "Audit & Compliance",
+            "Claim Intake"
+        ],
+        "Cost_INR": [0.062, 0.048, 0.039, 0.032, 0.026, 0.022]
+    })
+
+    chart = alt.Chart(data).mark_bar(cornerRadiusTopRight=4, cornerRadiusBottomRight=4, color=COLOR_GREEN).encode(
+        y=alt.Y("Agent Node:N", title=None, axis=alt.Axis(labelColor="#475569")),
+        x=alt.X("Cost_INR:Q", title="Cost per Claim (₹ INR)", axis=alt.Axis(labelColor="#64748b", gridColor="#f1f5f9")),
+        tooltip=["Agent Node", alt.Tooltip("Cost_INR:Q", format=".3f", title="Cost (₹)")]
+    ).properties(
+        height=240,
+        title=alt.TitleParams(text="Adjudication Cost Breakdown by Processing Stage (₹ INR)", fontSize=13, fontWeight="bold", color="#0f172a")
+    ).configure_view(strokeWidth=0)
+
+    st.altair_chart(chart, use_container_width=True)
+
+
+def render_cost_trend_inr_chart() -> None:
+    """Renders cumulative cost trend over time in INR (₹)."""
+    data = pd.DataFrame({
+        "Date": ["Sep 17", "Sep 18", "Sep 19", "Sep 20", "Sep 21", "Sep 22", "Sep 23"],
+        "Daily Spend (₹)": [7.42, 8.85, 9.60, 11.20, 12.45, 14.10, 15.30],
+        "Cumulative Spend (₹)": [18.50, 27.35, 36.95, 48.15, 60.60, 74.70, 89.96]
+    })
+
+    base = alt.Chart(data).encode(
+        x=alt.X("Date:N", title=None, axis=alt.Axis(labelAngle=0, labelColor="#64748b"))
+    )
+
+    bar = base.mark_bar(color=COLOR_BLUE, opacity=0.7).encode(
+        y=alt.Y("Daily Spend (₹):Q", title="Daily Spend (₹)", axis=alt.Axis(labelColor="#64748b", gridColor="#f1f5f9")),
+        tooltip=["Date", alt.Tooltip("Daily Spend (₹):Q", format="₹.2f")]
+    )
+
+    line = base.mark_line(color=COLOR_GREEN, strokeWidth=3).encode(
+        y=alt.Y("Cumulative Spend (₹):Q", title="Cumulative (₹)", axis=alt.Axis(labelColor="#047857", orient="right")),
+        tooltip=["Date", alt.Tooltip("Cumulative Spend (₹):Q", format="₹.2f")]
+    )
+
+    chart = (bar + line).resolve_scale(
+        y="independent"
+    ).properties(
+        height=240,
+        title=alt.TitleParams(text="Daily & Cumulative AI Expenditure (₹ INR)", fontSize=13, fontWeight="bold", color="#0f172a")
+    ).configure_view(strokeWidth=0)
+
+    st.altair_chart(chart, use_container_width=True)
+
+
 def render_token_trend_chart() -> None:
     """Renders daily token consumption chart."""
     data = pd.DataFrame({
@@ -169,45 +243,19 @@ def render_token_agent_breakdown_chart() -> None:
             "Claim Assessment",
             "Document Analysis",
             "Risk & Fraud",
-            "Claim Intake",
-            "Audit & Compliance"
+            "Audit & Compliance",
+            "Claim Intake"
         ],
-        "Avg Tokens / Claim": [1130, 870, 720, 580, 405, 465]
+        "Avg Tokens / Claim": [1130, 870, 720, 580, 465, 405]
     })
 
     chart = alt.Chart(data).mark_bar(cornerRadiusTopRight=4, cornerRadiusBottomRight=4, color=COLOR_PURPLE).encode(
-        y=alt.Y("Agent Node:N", title=None, sort="-x", axis=alt.Axis(labelColor="#475569")),
+        y=alt.Y("Agent Node:N", title=None, axis=alt.Axis(labelColor="#475569")),
         x=alt.X("Avg Tokens / Claim:Q", title="Average Tokens Consumed", axis=alt.Axis(labelColor="#64748b", gridColor="#f1f5f9")),
         tooltip=["Agent Node", "Avg Tokens / Claim"]
     ).properties(
         height=240,
         title=alt.TitleParams(text="Token Consumption by Agent Node", fontSize=13, fontWeight="bold", color="#0f172a")
-    ).configure_view(strokeWidth=0)
-
-    st.altair_chart(chart, use_container_width=True)
-
-
-def render_cost_by_agent_chart() -> None:
-    """Renders cost by agent bar chart."""
-    data = pd.DataFrame({
-        "Agent Node": [
-            "Policy Verification",
-            "Claim Assessment",
-            "Document Analysis",
-            "Claim Intake",
-            "Risk & Fraud",
-            "Audit & Compliance"
-        ],
-        "Cost_USD": [0.00072, 0.00056, 0.00046, 0.00026, 0.00037, 0.00030]
-    })
-
-    chart = alt.Chart(data).mark_bar(cornerRadiusTopRight=4, cornerRadiusBottomRight=4, color=COLOR_GREEN).encode(
-        y=alt.Y("Agent Node:N", title=None, sort="-x", axis=alt.Axis(labelColor="#475569")),
-        x=alt.X("Cost_USD:Q", title="Cost per Adjudication (USD)", axis=alt.Axis(labelColor="#64748b", gridColor="#f1f5f9", format="$.5f")),
-        tooltip=["Agent Node", alt.Tooltip("Cost_USD:Q", format="$.5f", title="Cost / Claim")]
-    ).properties(
-        height=240,
-        title=alt.TitleParams(text="Adjudication Cost Breakdown by Agent", fontSize=13, fontWeight="bold", color="#0f172a")
     ).configure_view(strokeWidth=0)
 
     st.altair_chart(chart, use_container_width=True)
@@ -227,15 +275,16 @@ def render_performance_table(agent_metrics: Dict[str, Any]) -> None:
     st.dataframe(df, use_container_width=True, hide_index=True)
 
 
-def render_cost_breakdown_table(cost_data: Dict[str, Any]) -> None:
-    """Renders token and cost breakdown table."""
+def render_cost_breakdown_table_inr(cost_data: Dict[str, Any]) -> None:
+    """Renders token and cost breakdown table exclusively in INR (₹)."""
     total_tokens = cost_data.get("total_tokens_consumed", 1420800)
     prompt_tokens = int(total_tokens * 0.68)
     completion_tokens = total_tokens - prompt_tokens
     total_usd = cost_data.get("total_cost_usd", 1.04)
+    total_inr = total_usd * 86.50
 
     items = [
-        {"Model / Provider": "Groq Llama-3.3-70B (Primary)", "Prompt Tokens": f"{prompt_tokens:,}", "Completion Tokens": f"{completion_tokens:,}", "Total Tokens": f"{total_tokens:,}", "Cost (USD)": f"${total_usd:.4f}", "Status": "Active"},
-        {"Model / Provider": "OpenAI GPT-4o (Fallback)", "Prompt Tokens": "42,500", "Completion Tokens": "14,200", "Total Tokens": "56,700", "Cost (USD)": "$0.2480", "Status": "Standby"}
+        {"Model / Provider": "Groq Llama-3.3-70B (Primary)", "Prompt Tokens": f"{prompt_tokens:,}", "Completion Tokens": f"{completion_tokens:,}", "Total Tokens": f"{total_tokens:,}", "Cost (₹ INR)": f"₹{total_inr:.2f}", "Status": "Active"},
+        {"Model / Provider": "OpenAI GPT-4o (Fallback)", "Prompt Tokens": "42,500", "Completion Tokens": "14,200", "Total Tokens": "56,700", "Cost (₹ INR)": "₹21.45", "Status": "Standby"}
     ]
     st.dataframe(pd.DataFrame(items), use_container_width=True, hide_index=True)

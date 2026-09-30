@@ -5,8 +5,8 @@ Policy Evidence, Risk Findings, Financial Assessment, Audit Trail, and Historica
 """
 import streamlit as st
 import pandas as pd
-import textwrap
 from typing import Dict, Any, Optional
+from frontend.styles import render_html
 from frontend.components.timeline import render_claim_processing_timeline, render_audit_trace_timeline
 
 
@@ -34,8 +34,8 @@ def render_claim_overview(claim_data: Dict[str, Any]) -> None:
     status_badge_class = "badge-green" if "Approv" in status or "Completed" in status else ("badge-amber" if "Review" in status or "In Review" in status else "badge-red")
     risk_badge_class = "badge-red" if "High" in risk_level or "Investig" in risk_level else ("badge-amber" if "Medium" in risk_level else "badge-green")
 
-    # 1. Top Executive Banner
-    st.markdown(textwrap.dedent(f"""
+    # 1. Top Executive Banner (rendered with render_html to prevent raw markdown escaping)
+    banner_html = f"""
     <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:12px; padding:18px 20px; margin-bottom:16px; box-shadow:0 1px 3px rgba(15,23,42,0.03);">
         <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #f1f5f9; padding-bottom:12px; margin-bottom:14px;">
             <div>
@@ -51,15 +51,15 @@ def render_claim_overview(claim_data: Dict[str, Any]) -> None:
                 <div style="font-size:22px; font-weight:800; color:#0284c7;">₹{amount:,.2f}</div>
             </div>
         </div>
-
         <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:16px; font-size:12.5px;">
-            <div><span style="color:#64748b; font-size:11px; font-weight:700; text-transform:uppercase;">Claimant Name</span><br><b style="color:#0f172a;">{claimant}</b>{f"<br><span style='color:#64748b;font-size:11px;'>{email}</span>" if email else ""}</div>
+            <div><span style="color:#64748b; font-size:11px; font-weight:700; text-transform:uppercase;">Claimant Name</span><br><b style="color:#0f172a;">{claimant}</b><br><span style="color:#64748b;font-size:11px;">{email}</span></div>
             <div><span style="color:#64748b; font-size:11px; font-weight:700; text-transform:uppercase;">Policy Identification</span><br><b style="color:#0f172a;">{policy_id}</b><br><span style="color:#0284c7; font-size:11px; font-weight:600;">Line: {claim_type}</span></div>
             <div><span style="color:#64748b; font-size:11px; font-weight:700; text-transform:uppercase;">Incident Date</span><br><b style="color:#0f172a;">{submission_date}</b><br><span style="color:#10b981; font-size:11px; font-weight:600;">Within Policy Active Term</span></div>
             <div><span style="color:#64748b; font-size:11px; font-weight:700; text-transform:uppercase;">Adjudication Outcome</span><br><b style="color:#0f172a;">{rec}</b><br><span style="color:#047857; font-size:11px; font-weight:600;">Confidence: {confidence*100:.0f}%</span></div>
         </div>
     </div>
-    """), unsafe_allow_html=True)
+    """
+    render_html(banner_html)
 
     # 2. Detailed Tabs for Investigation
     t_desc, t_docs, t_time, t_pol, t_risk, t_assess, t_audit, t_prev = st.tabs([
@@ -74,7 +74,7 @@ def render_claim_overview(claim_data: Dict[str, Any]) -> None:
     ])
 
     with t_desc:
-        st.markdown(textwrap.dedent(f"""
+        desc_html = f"""
         <div class="enterprise-card">
             <div class="card-title">Clinical &amp; Incident Particulars</div>
             <div class="card-subtitle">Verified statement submitted by claimant and hospital/garage intake logs.</div>
@@ -87,21 +87,23 @@ def render_claim_overview(claim_data: Dict[str, Any]) -> None:
                 <span><b>PII Masking:</b> Active (AES-256 Tokenized)</span>
             </div>
         </div>
-        """), unsafe_allow_html=True)
+        """
+        render_html(desc_html)
 
     with t_docs:
-        st.markdown(textwrap.dedent("""
+        docs_header = """
         <div class="enterprise-card">
             <div class="card-title">Supporting Documents &amp; Vision-OCR Verification</div>
             <div class="card-subtitle">Itemized invoices, medical reports, discharge summaries, and estimates.</div>
         </div>
-        """), unsafe_allow_html=True)
+        """
+        render_html(docs_header)
 
         if documents:
             for d in documents:
                 doc_name = d.get("filename") if isinstance(d, dict) else str(d)
                 doc_ext = doc_name.split(".")[-1].upper()
-                st.markdown(textwrap.dedent(f"""
+                chip_html = f"""
                 <div class="file-chip">
                     <div style="display:flex; align-items:center; gap:10px;">
                         <span style="font-size:20px;">📄</span>
@@ -112,7 +114,8 @@ def render_claim_overview(claim_data: Dict[str, Any]) -> None:
                     </div>
                     <span class="status-badge badge-green">Verified</span>
                 </div>
-                """), unsafe_allow_html=True)
+                """
+                render_html(chip_html)
         else:
             st.info("No documents attached to this claim.")
 
@@ -120,7 +123,7 @@ def render_claim_overview(claim_data: Dict[str, Any]) -> None:
         render_claim_processing_timeline(8)
 
     with t_pol:
-        st.markdown(textwrap.dedent(f"""
+        pol_html = f"""
         <div class="enterprise-card">
             <div class="card-title">Grounded Policy Evidence (RAG Retrieval)</div>
             <div class="card-subtitle">Zero-hallucination policy clauses retrieved from ChromaDB vector store for policy {policy_id}.</div>
@@ -143,7 +146,8 @@ def render_claim_overview(claim_data: Dict[str, Any]) -> None:
                 </div>
             </div>
         </div>
-        """), unsafe_allow_html=True)
+        """
+        render_html(pol_html)
 
     with t_risk:
         risk_flags = assessment.get("risk_indicators", [
@@ -151,7 +155,7 @@ def render_claim_overview(claim_data: Dict[str, Any]) -> None:
             "No prior rapid-inception claims recorded.",
             "Provider hospital verified in national network database."
         ])
-        st.markdown(textwrap.dedent(f"""
+        risk_header = f"""
         <div class="enterprise-card">
             <div class="card-title">MCP Fraud Detection &amp; Risk Indicator Profiling</div>
             <div class="card-subtitle">Multi-system cross-insurer bureau screening and anomaly indicators.</div>
@@ -161,7 +165,8 @@ def render_claim_overview(claim_data: Dict[str, Any]) -> None:
                 <span class="status-badge badge-green">Bureau Screening: Complete</span>
             </div>
         </div>
-        """), unsafe_allow_html=True)
+        """
+        render_html(risk_header)
         for rf in risk_flags:
             st.markdown(f"<div style='font-size:12.5px; color:#334155; padding:4px 0;'>• {rf}</div>", unsafe_allow_html=True)
 
@@ -171,7 +176,7 @@ def render_claim_overview(claim_data: Dict[str, Any]) -> None:
         deduct = assessment.get("deductible_applied", 5000.0 if "Health" in claim_type else 1000.0)
         net = assessment.get("net_payable_amount", gross - copay - deduct)
 
-        st.markdown(textwrap.dedent(f"""
+        assess_html = f"""
         <div class="enterprise-card">
             <div class="card-title">Financial Assessment &amp; Deductible Calculation</div>
             <div class="card-subtitle">Transparent mathematical payout formulation based on policy schedule.</div>
@@ -194,29 +199,31 @@ def render_claim_overview(claim_data: Dict[str, Any]) -> None:
                 </div>
             </div>
         </div>
-        """), unsafe_allow_html=True)
+        """
+        render_html(assess_html)
 
     with t_audit:
         if audit_events:
             render_audit_trace_timeline(audit_events, trace_id=f"TRC-{claim_id[-6:]}")
         else:
             sample_events = [
-                {"timestamp": "09:30:01", "agent": "ClaimIntakeAgent", "action": "Normalized entity records & checked completeness.", "source": "Intake Normalizer", "status": "success"},
-                {"timestamp": "09:30:03", "agent": "DocumentAnalysisAgent", "action": "Vision-OCR extracted supporting invoices.", "source": "Vision Engine", "status": "success"},
-                {"timestamp": "09:30:06", "agent": "PolicyVerificationAgent", "action": "Retrieved grounded coverage clauses from ChromaDB.", "source": "Policy RAG", "status": "success"},
-                {"timestamp": "09:30:09", "agent": "RiskAnalysisAgent", "action": f"Evaluated fraud indicators. Risk Score: {risk_score:.2f}.", "source": "MCP Fraud Bureau", "status": "success"},
-                {"timestamp": "09:30:12", "agent": "ClaimAssessmentAgent", "action": f"Payout calculated: ₹{amount - 5000:,.2f}. Decision: {rec}.", "source": "Assessment Engine", "status": "success"},
-                {"timestamp": "09:30:14", "agent": "AuditComplianceAgent", "action": f"Cryptographic audit seal recorded. Token: {token}.", "source": "Audit Store", "status": "success"}
+                {"timestamp": "09:30:01", "agent": "Input Validation", "action": "Normalized entity records & checked completeness.", "source": "Intake Normalizer", "status": "success"},
+                {"timestamp": "09:30:03", "agent": "Document Verification", "action": "Vision-OCR extracted supporting invoices.", "source": "Vision Engine", "status": "success"},
+                {"timestamp": "09:30:06", "agent": "Coverage Verification", "action": "Retrieved grounded coverage clauses from ChromaDB.", "source": "Policy RAG", "status": "success"},
+                {"timestamp": "09:30:09", "agent": "Risk Assessment", "action": f"Evaluated fraud indicators. Risk Score: {risk_score:.2f}.", "source": "Fraud Bureau", "status": "success"},
+                {"timestamp": "09:30:12", "agent": "Financial Assessment", "action": f"Payout calculated: ₹{amount - 5000:,.2f}. Decision: {rec}.", "source": "Assessment Engine", "status": "success"},
+                {"timestamp": "09:30:14", "agent": "Audit Seal", "action": f"Cryptographic audit seal recorded. Token: {token}.", "source": "Audit Store", "status": "success"}
             ]
             render_audit_trace_timeline(sample_events, trace_id=f"TRC-{claim_id[-6:]}")
 
     with t_prev:
-        st.markdown(textwrap.dedent(f"""
+        prev_header = f"""
         <div class="enterprise-card">
             <div class="card-title">Historical Claims History for {claimant} ({policy_id})</div>
             <div class="card-subtitle">Prior claims across this policyholder profile to detect recurrence and cross-period loss patterns.</div>
         </div>
-        """), unsafe_allow_html=True)
+        """
+        render_html(prev_header)
 
         from backend.services.claim_service import ClaimService
         prev_claims = ClaimService.get_claims_by_policy_or_claimant(policy_id, claimant_name=claimant, exclude_claim_id=claim_id)

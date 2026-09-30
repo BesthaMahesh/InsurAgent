@@ -2,8 +2,8 @@
 Timeline components for InsurAgent claim processing and audit traces.
 """
 import streamlit as st
-import textwrap
 from typing import List, Dict, Any, Optional
+from frontend.styles import render_html
 
 
 def render_claim_processing_timeline(current_stage_idx: int = 8) -> None:
@@ -19,59 +19,64 @@ def render_claim_processing_timeline(current_stage_idx: int = 8) -> None:
     8. Audit Recorded
     """
     stages = [
-        ("1", "Claim Received", "Intake payload captured & parsed", "Claim Intake Agent"),
-        ("2", "Input Validated", "PII masked, prompt injection filtered", "Input Guardrail"),
-        ("3", "Documents Analyzed", "OCR extraction & invoice verification", "Document Analysis Agent"),
-        ("4", "Policy Verified", "Coverage terms & limits retrieved via RAG", "Policy Verification Agent"),
-        ("5", "Risk Assessed", "Anomaly indicators evaluated via MCP", "Fraud / Risk Agent"),
-        ("6", "Claim Evaluated", "Itemized deduction & payout calculated", "Claim Assessment Agent"),
-        ("7", "Decision Generated", "Grounded reasoning & explainability output", "Output Guardrail"),
-        ("8", "Audit Recorded", "Immutable audit trail stamped & sealed", "Audit & Compliance Agent")
+        ("1", "Claim Received", "Intake captured", "Claim Intake Agent"),
+        ("2", "Input Validated", "PII masked & safe", "Input Guardrail"),
+        ("3", "Documents Analyzed", "OCR extraction", "Document Analysis Agent"),
+        ("4", "Policy Verified", "Coverage terms", "Policy Verification Agent"),
+        ("5", "Risk Assessed", "Anomaly check", "Fraud / Risk Agent"),
+        ("6", "Claim Evaluated", "Payout calculated", "Claim Assessment Agent"),
+        ("7", "Decision Generated", "Explainability output", "Output Guardrail"),
+        ("8", "Audit Recorded", "Immutable seal", "Audit & Compliance Agent")
     ]
 
-    st.markdown(textwrap.dedent("""
-    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:16px; margin-bottom:16px;">
-        <div style="font-size:14px; font-weight:750; color:#0f172a; margin-bottom:12px;">Claim Processing Timeline</div>
-    </div>
-    """), unsafe_allow_html=True)
-
-    cols = st.columns(8)
-    for idx, ((num, name, desc, agent), col) in enumerate(zip(stages, cols)):
+    items_html = ""
+    for idx, (num, name, desc, agent) in enumerate(stages):
         is_completed = (idx + 1) <= current_stage_idx
         badge_bg = "#0284c7" if is_completed else "#e2e8f0"
         badge_color = "#ffffff" if is_completed else "#64748b"
         border_color = "#0284c7" if is_completed else "#e2e8f0"
+        status_text = "✓ Completed" if is_completed else "Pending"
+        status_color = "#047857" if is_completed else "#64748b"
 
-        with col:
-            st.markdown(textwrap.dedent(f"""
-            <div style="background:#ffffff; border:1px solid {border_color}; border-radius:8px; padding:10px 8px; min-height:105px; display:flex; flex-direction:column; justify-content:space-between;">
-                <div>
-                    <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <span style="width:20px; height:20px; border-radius:50%; background:{badge_bg}; color:{badge_color}; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:800;">{num}</span>
-                        <span style="font-size:9.5px; color:{'#047857' if is_completed else '#64748b'}; font-weight:700;">{'✓ Done' if is_completed else 'Pending'}</span>
-                    </div>
-                    <div style="font-size:11px; font-weight:700; color:#0f172a; margin-top:6px; line-height:1.2;">{name}</div>
+        items_html += f"""
+        <div style="background:#ffffff; border:1px solid {border_color}; border-radius:8px; padding:10px 8px; min-height:95px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <span style="width:20px; height:20px; border-radius:50%; background:{badge_bg}; color:{badge_color}; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:800;">{num}</span>
+                    <span style="font-size:9.5px; color:{status_color}; font-weight:700;">{status_text}</span>
                 </div>
-                <div style="font-size:9px; color:#64748b; margin-top:4px;">{agent}</div>
+                <div style="font-size:11px; font-weight:700; color:#0f172a; margin-top:6px; line-height:1.2;">{name}</div>
             </div>
-            """), unsafe_allow_html=True)
+            <div style="font-size:9px; color:#64748b; margin-top:4px;">{agent}</div>
+        </div>
+        """
+
+    render_html(f"""
+    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:16px; margin-bottom:16px;">
+        <div style="font-size:14px; font-weight:750; color:#0f172a; margin-bottom:12px;">Claim Processing Timeline</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(115px, 1fr)); gap:8px;">
+            {items_html}
+        </div>
+    </div>
+    """)
 
 
 def render_audit_trace_timeline(audit_events: List[Dict[str, Any]], trace_id: Optional[str] = None) -> None:
     """Renders the detailed chronological end-to-end audit trace timeline."""
-    st.markdown(textwrap.dedent(f"""
-    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:16px;">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #f1f5f9; padding-bottom:8px;">
+    render_html(f"""
+    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:16px; margin-bottom:12px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #f1f5f9; padding-bottom:8px;">
             <div style="font-size:14px; font-weight:750; color:#0f172a;">Chronological Audit &amp; Traceability Trail</div>
             <span class="status-badge badge-navy">Trace ID: <code>{trace_id or 'TRC-LIVE-ORCH'}</code></span>
         </div>
     </div>
-    """), unsafe_allow_html=True)
+    """)
 
     if not audit_events:
         st.info("No audit events recorded for this trace yet.")
         return
 
+    nodes_html = ""
     for ev in audit_events:
         t = ev.get("timestamp", "00:00:00")
         agent = ev.get("agent", "System")
@@ -79,8 +84,9 @@ def render_audit_trace_timeline(audit_events: List[Dict[str, Any]], trace_id: Op
         src = ev.get("source", "")
         status = ev.get("status", "success")
         badge_cls = "badge-green" if status == "success" else "badge-amber"
+        src_html = f'<div style="font-size:10px; color:#64748b; margin-top:2px;">Source: <code>{src}</code></div>' if src else ''
 
-        st.markdown(textwrap.dedent(f"""
+        nodes_html += f"""
         <div class="timeline-node">
             <div style="font-size:11px; font-weight:700; color:#64748b; width:70px; padding-top:2px;">{t}</div>
             <div class="timeline-content">
@@ -89,7 +95,9 @@ def render_audit_trace_timeline(audit_events: List[Dict[str, Any]], trace_id: Op
                     <span class="status-badge {badge_cls}" style="font-size:9.5px;">{status}</span>
                 </div>
                 <div style="font-size:12px; color:#1e293b; margin-top:2px;">{act}</div>
-                {f'<div style="font-size:10px; color:#64748b; margin-top:2px;">Source: <code>{src}</code></div>' if src else ''}
+                {src_html}
             </div>
         </div>
-        """), unsafe_allow_html=True)
+        """
+
+    render_html(nodes_html)

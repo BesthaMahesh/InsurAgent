@@ -5,7 +5,6 @@ live query synthesis, and active claims operations queue.
 """
 import streamlit as st
 import pandas as pd
-import textwrap
 from backend.client import insuragent_client
 from backend.services.claim_service import ClaimService
 from frontend.components.cards import render_kpi_card
@@ -17,6 +16,7 @@ from frontend.components.charts import (
     render_agent_latency_chart
 )
 from frontend.components.adjudication_panel import render_adjudication_panel
+from frontend.styles import render_html
 
 
 def render_dashboard_view() -> None:
@@ -81,7 +81,7 @@ def render_dashboard_view() -> None:
                 ("6. Audit & Compliance Agent", "IRDAI compliance & cryptographic seal", "Healthy")
             ]
             for name, role, st_val in agents:
-                st.markdown(textwrap.dedent(f"""
+                agent_row_html = f"""
                 <div style="display:flex; justify-content:space-between; align-items:center; padding:4px 0; border-bottom:1px solid #f8fafc; font-size:11.5px;">
                     <div>
                         <span style="font-weight:700; color:#0f172a;">{name}</span>
@@ -89,13 +89,14 @@ def render_dashboard_view() -> None:
                     </div>
                     <span class="status-badge badge-green" style="font-size:9.5px;">● {st_val}</span>
                 </div>
-                """), unsafe_allow_html=True)
+                """
+                render_html(agent_row_html)
 
     st.write("")
 
     # ---------- Main Query Area: "Ask InsurAgent" ----------
     with st.container(border=True):
-        st.markdown(textwrap.dedent("""
+        ask_header_html = """
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
             <div>
                 <div style="font-size:15px; font-weight:800; color:#0f172a;">🔍 Ask InsurAgent</div>
@@ -103,7 +104,8 @@ def render_dashboard_view() -> None:
             </div>
             <span class="status-badge badge-blue">● LangGraph Orchestrator Connected</span>
         </div>
-        """), unsafe_allow_html=True)
+        """
+        render_html(ask_header_html)
 
         st.markdown("<div style='font-size:11px;font-weight:700;color:#64748b;margin-bottom:6px;'>EXAMPLE ENTERPRISE QUERIES:</div>", unsafe_allow_html=True)
         p1, p2, p3, p4 = st.columns(4)
@@ -139,7 +141,7 @@ def render_dashboard_view() -> None:
         if (analyze_clicked or preset_query) and user_query.strip():
             progress_placeholder = st.empty()
             with progress_placeholder.container():
-                st.markdown(textwrap.dedent("""
+                progress_html = """
                 <div style="background:#ffffff; border:1px solid #bfdbfe; border-radius:10px; padding:14px 16px; margin-top:12px; box-shadow:0 2px 6px rgba(2,132,199,0.05);">
                     <div style="display:flex; align-items:center; gap:8px; font-weight:800; font-size:13.5px; color:#0369a1;">
                         <span style="font-size:16px;">⏳</span> InsurAgent is analyzing policy and claim intelligence...
@@ -155,7 +157,8 @@ def render_dashboard_view() -> None:
                         <span class="status-badge badge-green">Output Guardrails</span>
                     </div>
                 </div>
-                """), unsafe_allow_html=True)
+                """
+                render_html(progress_html)
 
             try:
                 chat_res = insuragent_client.post_chat(user_query)
@@ -190,8 +193,9 @@ def render_dashboard_view() -> None:
         recent_claims = ClaimService.list_recent_claims(limit=10)
         if recent_claims:
             df_recent = pd.DataFrame(recent_claims)
-            display_df = df_recent[["claim_id", "claimant_name", "claim_type", "policy_number", "amount", "status", "recommendation"]]
-            display_df.columns = ["Claim ID", "Claimant", "Line", "Policy", "Amount (₹)", "Status", "AI Recommendation"]
+            display_df = df_recent[["claim_id", "claimant_name", "claim_type", "policy_number", "amount", "status", "recommendation"]].copy()
+            display_df["amount"] = display_df["amount"].apply(lambda a: f"₹{a:,.2f}")
+            display_df.columns = ["Claim ID", "Claimant", "Line", "Policy", "Claim Amount (₹)", "Status", "AI Recommendation"]
             st.dataframe(display_df, use_container_width=True, hide_index=True)
         else:
             st.info("No claims currently in the queue.")

@@ -5,13 +5,13 @@ and Model Context Protocol (MCP) fraud bureau integration.
 """
 import streamlit as st
 import pandas as pd
-import textwrap
 from backend.client import insuragent_client
+from frontend.styles import render_html
 
 
 def render_risk_view() -> None:
-    st.markdown('<div class="page-title">Risk &amp; Fraud Intelligence</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">Multi-system cross-insurer anomaly detection, loss ratio indicators, and fraud bureau screening via Model Context Protocol (MCP).</div>', unsafe_allow_html=True)
+    render_html('<div class="page-title">Risk &amp; Fraud Intelligence</div>')
+    render_html('<div class="page-subtitle">Multi-system cross-insurer anomaly detection, loss ratio indicators, and fraud bureau screening via Model Context Protocol (MCP).</div>')
 
     # ---------- 4 Core Enterprise System Integrations ----------
     st.markdown("##### 🔌 Enterprise Verification Integrations")
@@ -54,7 +54,7 @@ def render_risk_view() -> None:
     # ---------- Live Fraud & Anomaly Test Sandbox ----------
     with st.container(border=True):
         st.markdown("##### 🔎 Fraud Bureau & Risk Indicator Inspector")
-        st.markdown("<div style='font-size:12px; color:#64748b; margin-bottom:10px;'>Screen a claim against the external Fraud Bureau to inspect loss ratio anomalies, rapid inception flags, and provider risk scores.</div>", unsafe_allow_html=True)
+        render_html("<div style='font-size:12px; color:#64748b; margin-bottom:10px;'>Screen a claim against the external Fraud Bureau to inspect loss ratio anomalies, rapid inception flags, and provider risk scores.</div>")
 
         c1, c2 = st.columns([4, 1.2])
         with c1:
@@ -73,7 +73,7 @@ def render_risk_view() -> None:
 
                 badge_cls = "badge-red" if score >= 0.60 else ("badge-amber" if score >= 0.40 else "badge-green")
 
-                st.markdown(textwrap.dedent(f"""
+                render_html(f"""
                 <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:14px; margin-top:12px;">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
                         <span style="font-size:14px; font-weight:800; color:#0f172a;">Risk Bureau Profile: {test_claim_id}</span>
@@ -84,22 +84,22 @@ def render_risk_view() -> None:
                     </div>
                     <div style="font-size:12px; font-weight:700; color:#0f172a; margin-bottom:6px;">Anomaly Signals &amp; Risk Findings:</div>
                 </div>
-                """), unsafe_allow_html=True)
+                """)
 
                 if flags:
                     for f in flags:
-                        st.markdown(f"<div style='font-size:12.5px; color:#475569; padding:2px 0;'>• {f}</div>", unsafe_allow_html=True)
+                        render_html(f"<div style='font-size:12.5px; color:#475569; padding:2px 0;'>• {f}</div>")
                 else:
-                    st.markdown("<div style='font-size:12px; color:#047857;'>✓ No anomalous indicators detected. Claim passed all automated risk thresholds.</div>", unsafe_allow_html=True)
+                    render_html("<div style='font-size:12px; color:#047857;'>✓ No anomalous indicators detected. Claim passed all automated risk thresholds.</div>")
 
     st.write("")
 
     # Expandable Technical Integration Details
     with st.expander("🛠️ View Technical Integration Details (MCP Protocol)"):
-        st.markdown(textwrap.dedent("""
+        render_html("""
         <div style="font-size:12px; line-height:1.6; color:#334155;">
             <b>Integration Protocol:</b> Model Context Protocol (MCP) Standardized Tool Interface<br>
             <b>Security &amp; Auth:</b> TLS 1.3 mutual authentication with scoped API keys and tokenized customer IDs.<br>
             <b>Auditing:</b> Every tool execution generates an immutable JSON audit event with input arguments and response payload hash.
         </div>
-        """), unsafe_allow_html=True)
+        """)

@@ -1,31 +1,46 @@
 """
 AI Claims & Policy Assistant View for InsurAgent enterprise UI.
-Directly grounded in ChromaDB policy repository, MCP Fraud bureau, and LangGraph multi-agent reasoning.
+Features pre-RAG conversational intent handling, rapid greeting responses,
+progressive retrieval loading indicators, and grounded ChromaDB policy source citations.
 """
 import time
-import textwrap
+import re
 import streamlit as st
 from backend.client import insuragent_client
 from backend.rag.retriever import PolicyRetriever
+from frontend.styles import render_html
+
+
+# Conversational Intent Filter
+GREETING_PATTERNS = [
+    r'^\s*hi\s*$', r'^\s*hello\s*$', r'^\s*hey\s*$', r'^\s*good morning\s*$',
+    r'^\s*good afternoon\s*$', r'^\s*good evening\s*$', r'^\s*namaste\s*$',
+    r'^\s*who are you\s*$', r'^\s*help\s*$', r'^\s*what can you do\s*$'
+]
+
+def is_greeting(query: str) -> bool:
+    """Detects simple conversational greeting queries."""
+    q = query.strip().lower()
+    return any(re.search(pat, q) for pat in GREETING_PATTERNS)
 
 
 def render_assistant_view() -> None:
     st.markdown('<div class="page-title">AI Assistant</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">Ask questions about policies, coverage terms, exclusions, deductibles, waiting periods, and claims procedures.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-subtitle">Insurance Knowledge &amp; Claims Assistant &bull; Ask questions about policies, coverage, claims, procedures, and documentation.</div>', unsafe_allow_html=True)
 
     # Initialize chat history in session_state
     if "assistant_messages" not in st.session_state:
         st.session_state["assistant_messages"] = [
             {
                 "role": "assistant",
-                "content": "Hello! I am your InsurAgent Policy & Claims Assistant. I can help answer questions regarding coverage terms, waiting periods, deductibles, exclusion clauses, or claim adjudication files using our verified knowledge base.",
+                "content": "Hello! I am the InsurAgent Claims & Policy Assistant. I can help you with insurance policy coverage, waiting periods, exclusions, deductibles, required claim documentation, and claim status inquiries. How can I assist you today?",
                 "sources": [],
                 "timestamp": "Just now"
             }
         ]
 
     # Quick Example Queries
-    st.markdown("<div style='font-size:11.5px; font-weight:700; color:#64748b; margin-bottom:6px;'>EXAMPLE POLICY & CLAIMS QUERIES:</div>", unsafe_allow_html=True)
+    st.markdown("<div style='font-size:11.5px; font-weight:700; color:#64748b; margin-bottom:6px;'>EXAMPLE POLICY &amp; CLAIMS QUERIES:</div>", unsafe_allow_html=True)
     c1, c2, c3 = st.columns(3)
     preset_q = None
     with c1:
@@ -45,12 +60,13 @@ def render_assistant_view() -> None:
     with chat_container:
         for msg in st.session_state["assistant_messages"]:
             if msg["role"] == "user":
-                st.markdown(textwrap.dedent(f"""
+                user_msg_html = f"""
                 <div class="chat-msg-user">
                     <div style="font-size:11px; color:#93c5fd; margin-bottom:4px; font-weight:700;">You</div>
                     <div>{msg['content']}</div>
                 </div>
-                """), unsafe_allow_html=True)
+                """
+                render_html(user_msg_html)
             else:
                 sources_html = ""
                 if msg.get("sources"):
@@ -80,7 +96,7 @@ def render_assistant_view() -> None:
                     </div>
                     """
 
-                st.markdown(textwrap.dedent(f"""
+                ai_msg_html = f"""
                 <div class="chat-msg-ai">
                     <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
                         <span style="font-size:14px;">🛡️</span>
@@ -90,7 +106,8 @@ def render_assistant_view() -> None:
                     <div>{msg['content']}</div>
                     {sources_html}
                 </div>
-                """), unsafe_allow_html=True)
+                """
+                render_html(ai_msg_html)
 
     # Chat Input Box at Bottom
     with st.container():
@@ -108,7 +125,22 @@ def render_assistant_view() -> None:
 
     # Handle Query Submission
     if (ask_btn or preset_q) and user_input.strip():
-        # Append user message
+        # Check greeting intent
+        if is_greeting(user_input):
+            st.session_state["assistant_messages"].append({
+                "role": "user",
+                "content": user_input,
+                "timestamp": time.strftime("%H:%M")
+            })
+            st.session_state["assistant_messages"].append({
+                "role": "assistant",
+                "content": "Hello! I am your InsurAgent Insurance Knowledge & Claims Assistant. I can help answer questions regarding policy coverage terms, waiting periods, exclusions, deductibles, required claim documentation, and claim adjudication procedures. How can I help you today?",
+                "sources": [],
+                "timestamp": time.strftime("%H:%M")
+            })
+            st.rerun()
+
+        # Regular Policy / Claims RAG query
         st.session_state["assistant_messages"].append({
             "role": "user",
             "content": user_input,
@@ -117,23 +149,22 @@ def render_assistant_view() -> None:
 
         progress_box = st.empty()
         with progress_box.container():
-            st.markdown(textwrap.dedent("""
+            p_html = """
             <div style="background:#ffffff; border:1px solid #bfdbfe; border-radius:8px; padding:12px 16px; margin-top:8px; box-shadow:0 1px 4px rgba(2,132,199,0.06);">
                 <div style="display:flex; align-items:center; gap:8px; font-weight:700; font-size:13px; color:#0369a1;">
-                    <span>⏳</span> Searching policy knowledge base &amp; generating grounded response...
+                    <span>⏳</span> Searching policy knowledge &amp; reviewing relevant coverage information...
                 </div>
             </div>
-            """), unsafe_allow_html=True)
+            """
+            render_html(p_html)
 
         try:
-            # Query backend RAG & chat pipeline
             res = insuragent_client.post_chat(user_input)
             progress_box.empty()
 
             if res and not res.get("error"):
                 answer = res.get("answer", "")
                 
-                # Fetch grounded context sources directly from ChromaDB PolicyRetriever
                 try:
                     retriever = PolicyRetriever()
                     clauses = retriever.retrieve(user_input, top_k=3)

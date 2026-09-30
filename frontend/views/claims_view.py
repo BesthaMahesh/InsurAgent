@@ -10,11 +10,11 @@ import pandas as pd
 from datetime import datetime
 import uuid
 import base64
-import textwrap
 from backend.client import insuragent_client
 from backend.services.claim_service import ClaimService
 from frontend.components.claim_view import render_claim_overview
 from frontend.components.timeline import render_claim_processing_timeline, render_audit_trace_timeline
+from frontend.styles import render_html
 
 
 def render_claims_view() -> None:
@@ -27,12 +27,13 @@ def render_claims_view() -> None:
     # TAB 1: SUBMIT NEW CLAIM
     # ==========================================
     with tab_new:
-        st.markdown(textwrap.dedent("""
+        submit_card_html = """
         <div class="enterprise-card" style="margin-bottom:14px;">
             <div class="card-title">Submit Insurance Claim</div>
             <div class="card-subtitle">Complete claimant information, incident particulars, and upload mandatory supporting documentation.</div>
         </div>
-        """), unsafe_allow_html=True)
+        """
+        render_html(submit_card_html)
 
         # Section 1: Claimant Information
         st.markdown("##### 👤 1. Claimant Information")
@@ -78,7 +79,7 @@ def render_claims_view() -> None:
             st.markdown(f"<div style='font-size:12px; font-weight:700; color:#047857; margin-top:6px;'>✓ {len(attached_files)} document(s) staged for ingestion</div>", unsafe_allow_html=True)
             for f in attached_files:
                 size_kb = round(f.size / 1024, 1)
-                st.markdown(textwrap.dedent(f"""
+                file_chip_html = f"""
                 <div class="file-chip">
                     <div style="display:flex; align-items:center; gap:8px;">
                         <span>📄</span>
@@ -87,13 +88,15 @@ def render_claims_view() -> None:
                     </div>
                     <span class="status-badge badge-green">✓ Ready</span>
                 </div>
-                """), unsafe_allow_html=True)
+                """
+                render_html(file_chip_html)
         else:
-            st.markdown("""
+            warn_html = """
             <div style="background:#fffbeb; border:1px solid #fde68a; border-radius:8px; padding:10px 14px; margin-top:6px; font-size:12px; color:#92400e; display:flex; align-items:center; gap:8px;">
                 <span>⚠️</span> <b>Supporting documentation is required before submitting this claim.</b> Please attach at least one invoice, medical report, or bill.
             </div>
-            """, unsafe_allow_html=True)
+            """
+            render_html(warn_html)
 
         st.write("")
         submit_btn = st.button("🚀 Submit Claim for Adjudication", type="primary", use_container_width=True, key="submit_claim_action_btn")
@@ -101,9 +104,9 @@ def render_claims_view() -> None:
         if submit_btn:
             # Mandatory Document & Field Validation
             if not attached_files:
-                st.error("❌ Supporting documentation is required before submitting this claim. Please upload at least one supporting document (PDF, PNG, JPG, or TXT).")
+                st.error("Supporting documentation is required before submitting this claim. Please upload at least one supporting document (PDF, PNG, JPG, or TXT).")
             elif not name.strip() or not policy_no.strip() or not desc.strip():
-                st.error("❌ Please complete all mandatory fields: Claimant Full Name, Policy Number, and Incident Description.")
+                st.error("Please complete all mandatory fields: Claimant Full Name, Policy Number, and Incident Description.")
             else:
                 new_id = f"CLM-{datetime.now():%Y%m%d}-{uuid.uuid4().hex[:4].upper()}"
                 st.session_state["active_claim_id"] = new_id
@@ -155,9 +158,9 @@ def render_claims_view() -> None:
                         assessment_data=assessment_data
                     )
 
-                st.success(f"✅ Claim `{new_id}` submitted and processed successfully!")
+                st.success(f"Claim `{new_id}` submitted and processed successfully!")
 
-                # Provide direct View Claim action
+                # Direct View Claim Action
                 v_col1, v_col2 = st.columns([1.5, 4])
                 with v_col1:
                     if st.button(f"🔍 Inspect Claim File ({new_id})", type="primary", key="view_just_submitted"):
@@ -190,12 +193,13 @@ def render_claims_view() -> None:
     # TAB 2: CLAIMS REPOSITORY
     # ==========================================
     with tab_list:
-        st.markdown(textwrap.dedent("""
+        repo_header_html = """
         <div class="enterprise-card" style="margin-bottom:12px;">
             <div class="card-title">Enterprise Claims Repository</div>
             <div class="card-subtitle">Search, filter, and inspect registered claims across all lines of insurance.</div>
         </div>
-        """), unsafe_allow_html=True)
+        """
+        render_html(repo_header_html)
 
         # Filters
         f1, f2, f3 = st.columns([2, 1.5, 1.5])
@@ -222,7 +226,6 @@ def render_claims_view() -> None:
                 filtered_claims.append(c)
 
         if filtered_claims:
-            # Display Clean Table
             table_data = []
             for c in filtered_claims:
                 risk_tag = "Requires Investigation" if c.get("requires_human_review") else "Low Risk"

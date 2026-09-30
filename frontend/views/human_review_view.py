@@ -5,14 +5,14 @@ multi-source evidence synthesis, and formal adjudication decision actions.
 """
 import streamlit as st
 import pandas as pd
-import textwrap
 from backend.client import insuragent_client
 from frontend.components.timeline import render_audit_trace_timeline
+from frontend.styles import render_html
 
 
 def render_human_review_view() -> None:
-    st.markdown('<div class="page-title">Human Review</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">Manual adjudication and review workspace for claims flagged with elevated risk, unverified policy clauses, or missing documentation.</div>', unsafe_allow_html=True)
+    render_html('<div class="page-title">Human Review</div>')
+    render_html('<div class="page-subtitle">Manual adjudication and review workspace for claims flagged with elevated risk, unverified policy clauses, or missing documentation.</div>')
 
     # Initialize review queue in session_state if not present
     if "hitl_queue" not in st.session_state:
@@ -34,7 +34,7 @@ def render_human_review_view() -> None:
         c1, c2 = st.columns([1.5, 1])
 
         with c1:
-            st.markdown(textwrap.dedent("""
+            render_html("""
             <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin-bottom:12px; font-size:12.5px;">
                 <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
                     <span><b>Claimant:</b> Priya Patel &bull; <b>Policy:</b> POL-MOTOR-COMP-2026 &bull; <b>Line:</b> Motor</span>
@@ -43,7 +43,7 @@ def render_human_review_view() -> None:
                 <div><b>Incurred Amount:</b> ₹82,500.00 &bull; <b>Incident Date:</b> 2026-09-15</div>
                 <div style="margin-top:4px;"><b>Description:</b> Front bumper and radiator collision damage repair estimate submitted from Apex Auto Workshop.</div>
             </div>
-            """), unsafe_allow_html=True)
+            """)
 
             st.markdown("###### 🤖 AI Recommendation & Decision Context")
             st.markdown("""

@@ -5,14 +5,14 @@ agent execution telemetry, and active system alerts.
 """
 import streamlit as st
 import pandas as pd
-import textwrap
 from backend.client import insuragent_client
 from frontend.components.charts import render_performance_table
+from frontend.styles import render_html
 
 
 def render_monitoring_view() -> None:
-    st.markdown('<div class="page-title">System Health</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">Real-time status of backend services, vector databases, integration connectors, and Service Level Objectives (SLOs).</div>', unsafe_allow_html=True)
+    render_html('<div class="page-title">System Health</div>')
+    render_html('<div class="page-subtitle">Real-time status of backend services, vector databases, integration connectors, and Service Level Objectives (SLOs).</div>')
 
     telemetry = insuragent_client.get_observability()
     agent_perf = telemetry.get("agent_performance", {})
@@ -64,7 +64,7 @@ def render_monitoring_view() -> None:
         st.markdown("##### 🚨 System & Anomaly Notifications")
         if alerts:
             for alt in alerts:
-                st.markdown(textwrap.dedent(f"""
+                render_html(f"""
                 <div style="padding:10px 12px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; margin-bottom:6px;">
                     <div style="display:flex; justify-content:space-between; align-items:center;">
                         <span style="font-weight:700; color:#0f172a; font-size:12.5px;">{alt.get('title')}</span>
@@ -73,6 +73,6 @@ def render_monitoring_view() -> None:
                     <div style="font-size:12px; color:#64748b; margin-top:2px;">{alt.get('description')}</div>
                     <div style="font-size:10px; color:#94a3b8; margin-top:3px;">Timestamp: {alt.get('timestamp')} &bull; Status: {alt.get('status')}</div>
                 </div>
-                """), unsafe_allow_html=True)
+                """)
         else:
             st.info("No active security or anomaly alerts.")

@@ -5,18 +5,18 @@ model usage distribution, and agent invocation trends.
 """
 import streamlit as st
 import pandas as pd
-import textwrap
 from backend.client import insuragent_client
 from frontend.components.cards import render_kpi_card
 from frontend.components.charts import (
     render_token_trend_chart,
     render_token_agent_breakdown_chart
 )
+from frontend.styles import render_html
 
 
 def render_usage_view() -> None:
-    st.markdown('<div class="page-title">Usage &amp; Token Analytics</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">Real-time token telemetry across all 6 specialized agents, prompt caching efficiency, and throughput metrics.</div>', unsafe_allow_html=True)
+    render_html('<div class="page-title">Usage &amp; Token Analytics</div>')
+    render_html('<div class="page-subtitle">Real-time token telemetry across all 6 specialized agents, prompt caching efficiency, and throughput metrics.</div>')
 
     cost_data = insuragent_client.get_cost_analysis()
     total_tokens = cost_data.get("total_tokens_consumed", 1420800)

@@ -1,43 +1,49 @@
 """
 Enterprise Login View for InsurAgent Platform.
 Provides a secure, high-trust authentication portal matching the enterprise design system.
+Supports Role-Based Access for Internal Developers/Administrators and Claims Adjusters.
 """
 import streamlit as st
 import os
-import textwrap
+import time
+from frontend.styles import render_html
 
-# Default Authorized Credentials (Can also be overridden via environment variables)
-AUTHORIZED_EMAIL = os.getenv("AUTH_EMAIL", "wrenchwise@gmail.com").strip().lower()
-AUTHORIZED_PASSWORD = os.getenv("AUTH_PASSWORD", "12345").strip()
+# Authorized Enterprise Accounts
+ACCOUNTS = {
+    "wrenchwisedevoloper@gmail.com": {
+        "password": os.getenv("ADMIN_AUTH_PASSWORD", "123456").strip(),
+        "role": "Internal Administrator",
+        "default_persona": "Compliance Officer"
+    },
+    "wrenchwise@gmail.com": {
+        "password": os.getenv("USER_AUTH_PASSWORD", "12345").strip(),
+        "role": "Claims Adjuster",
+        "default_persona": "Claims Adjuster (Employee)"
+    }
+}
 
 
 def render_login_view() -> None:
     """Renders the enterprise login screen and handles authentication."""
-    # Center layout container using Streamlit columns
     _, col_main, _ = st.columns([1, 1.8, 1])
 
     with col_main:
-        st.markdown(textwrap.dedent("""
-        <div class="login-wrapper">
-            <div class="login-header-box">
-                <div class="login-brand-badge">
-                    <span style="font-size:32px;">🛡️</span>
-                </div>
-                <div class="login-title">INSURAGENT ENTERPRISE</div>
-                <div class="login-subtitle">Multi-Agent Claims Intelligence &amp; Autonomous Audit System</div>
-                <div class="login-security-pill">
-                    <span style="color:#10b981;font-weight:bold;">●</span> Single Authorized Gateway &bull; 256-bit TLS Encrypted
-                </div>
+        header_html = """
+        <div style="text-align:center; margin-top:2.5rem; margin-bottom:1.5rem;">
+            <div style="width:58px; height:58px; border-radius:14px; background:linear-gradient(135deg, #091524 0%, #0f2744 100%); display:inline-flex; align-items:center; justify-content:center; box-shadow:0 8px 20px -4px rgba(2, 132, 199, 0.35); border:1px solid #1e3a5f; margin-bottom:12px;">
+                <span style="font-size:26px;">🛡️</span>
             </div>
+            <div style="font-size:24px; font-weight:800; color:#0f172a; letter-spacing:-0.5px; line-height:1.2;">INSURAGENT</div>
+            <div style="font-size:13px; font-weight:600; color:#0284c7; margin-top:3px;">Enterprise Insurance Claims Intelligence Platform</div>
+            <div style="font-size:12px; color:#64748b; margin-top:4px;">Sign in to access your enterprise adjudication workspace</div>
         </div>
-        """), unsafe_allow_html=True)
+        """
+        render_html(header_html)
 
         # Login Form Card
-        with st.container():
-            st.markdown('<div class="login-card-inner">', unsafe_allow_html=True)
-
+        with st.container(border=True):
             with st.form("enterprise_login_form", clear_on_submit=False):
-                st.markdown("<div class='login-input-label'>Authorized Email Address</div>", unsafe_allow_html=True)
+                st.markdown("<div style='font-size:12.5px; font-weight:700; color:#334155; margin-bottom:4px;'>Authorized Email Address</div>", unsafe_allow_html=True)
                 email_input = st.text_input(
                     "Email",
                     value="",
@@ -45,7 +51,7 @@ def render_login_view() -> None:
                     label_visibility="collapsed"
                 )
 
-                st.markdown("<div class='login-input-label' style='margin-top:12px;'>Access Key / Password</div>", unsafe_allow_html=True)
+                st.markdown("<div style='font-size:12.5px; font-weight:700; color:#334155; margin-top:10px; margin-bottom:4px;'>Access Key / Password</div>", unsafe_allow_html=True)
                 password_input = st.text_input(
                     "Password",
                     type="password",
@@ -54,9 +60,9 @@ def render_login_view() -> None:
                     label_visibility="collapsed"
                 )
 
-                st.markdown("<div style='margin-top:18px;'></div>", unsafe_allow_html=True)
+                st.write("")
                 submit_button = st.form_submit_button(
-                    "🚀 Authenticate & Enter Platform",
+                    "Sign In",
                     use_container_width=True,
                     type="primary"
                 )
@@ -65,21 +71,23 @@ def render_login_view() -> None:
                     entered_email = email_input.strip().lower()
                     entered_password = password_input.strip()
 
-                    if entered_email == AUTHORIZED_EMAIL and entered_password == AUTHORIZED_PASSWORD:
+                    if entered_email in ACCOUNTS and entered_password == ACCOUNTS[entered_email]["password"]:
+                        account_info = ACCOUNTS[entered_email]
                         st.session_state["authenticated"] = True
                         st.session_state["user_email"] = entered_email
+                        st.session_state["user_role"] = account_info["role"]
+                        st.session_state["current_persona"] = account_info["default_persona"]
                         st.session_state["active_nav_page"] = "Dashboard"
-                        st.toast("✅ Authentication successful. Welcome to InsurAgent!", icon="🛡️")
+                        st.toast(f"Authenticated as {account_info['role']}. Welcome to InsurAgent!", icon="🛡️")
+                        time.sleep(0.3)
                         st.rerun()
                     else:
-                        st.error("❌ Invalid credentials. Please check your authorized email or password.")
+                        st.error("Invalid credentials. Please verify your authorized email address and password.")
 
-            st.markdown('</div>', unsafe_allow_html=True)
-
-        # Enterprise Compliance & Security Footer
-        st.markdown(textwrap.dedent("""
-        <div style="text-align:center; margin-top:24px; font-size:11.5px; color:#94a3b8; line-height:1.6;">
-            🛡️ <b>InsurAgent Governance &amp; AI Security Layer</b> &bull; SOC 2 Type II Certified<br>
-            All multi-agent actions, claim decisions, and audit trails are logged &amp; timestamped.
+        footer_html = """
+        <div style="text-align:center; margin-top:20px; font-size:11.5px; color:#94a3b8; line-height:1.6;">
+            🛡️ <b>InsurAgent Enterprise Security Layer</b> &bull; SOC 2 Type II Certified<br>
+            Multi-agent adjudication trails and decisions are cryptographically signed &amp; timestamped.
         </div>
-        """), unsafe_allow_html=True)
+        """
+        render_html(footer_html)
