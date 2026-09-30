@@ -29,9 +29,16 @@ def render_audit_view() -> None:
     st.write("")
 
     # ---------- Search Audit Trail ----------
+    render_html("<div style='font-size:12px; font-weight:700; color:#334155; margin-bottom:4px;'>Enter Claim ID or Trace ID</div>")
     c1, c2 = st.columns([4, 1.2])
     with c1:
-        target_id = st.text_input("Enter Claim ID or Trace ID", value=st.session_state.get("active_claim_id", "CLM-20260918-A12F"), key="audit_trace_search_input")
+        target_id = st.text_input(
+            "Claim ID or Trace ID",
+            value=st.session_state.get("active_claim_id", "CLM-20260918-A12F"),
+            key="audit_trace_search_input",
+            label_visibility="collapsed",
+            placeholder="Enter Claim ID or Trace ID (e.g. CLM-20260918-A12F)"
+        )
     with c2:
         query_audit = st.button("Search Audit Trail", type="primary", use_container_width=True, key="audit_trace_search_btn")
 

@@ -465,6 +465,45 @@ ENTERPRISE_CSS = """
         transition: all 0.15s ease;
     }
 
+    /* Primary Corporate Action Buttons */
+    .stApp .main div[data-testid="stButton"] > button[kind="primary"],
+    .stApp .main div.stButton > button[kind="primary"],
+    .stApp .main button[data-testid="baseButton-primary"] {
+        background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%) !important;
+        color: #ffffff !important;
+        border: 1px solid #0284c7 !important;
+        border-radius: 8px !important;
+        font-weight: 700 !important;
+        font-size: 13px !important;
+        padding: 8px 16px !important;
+        box-shadow: 0 1px 3px rgba(2, 132, 199, 0.2) !important;
+        transition: all 0.2s ease !important;
+        height: 40px !important;
+        min-height: 40px !important;
+    }
+
+    .stApp .main div[data-testid="stButton"] > button[kind="primary"]:hover,
+    .stApp .main div.stButton > button[kind="primary"]:hover,
+    .stApp .main button[data-testid="baseButton-primary"]:hover {
+        background: linear-gradient(135deg, #0369a1 0%, #075985 100%) !important;
+        border-color: #0369a1 !important;
+        box-shadow: 0 3px 8px rgba(2, 132, 199, 0.35) !important;
+    }
+
+    .stApp .main div[data-testid="stButton"] > button[kind="primary"] p,
+    .stApp .main div.stButton > button[kind="primary"] p,
+    .stApp .main button[data-testid="baseButton-primary"] p {
+        color: #ffffff !important;
+        font-weight: 700 !important;
+    }
+
+    /* Text Input Heights & Alignment */
+    .stApp .main div[data-testid="stTextInput"] > div > div {
+        height: 40px !important;
+        min-height: 40px !important;
+        border-radius: 8px !important;
+    }
+
     div[data-testid="stExpander"] {
         border: 1px solid #e2e8f0 !important;
         border-radius: 10px !important;

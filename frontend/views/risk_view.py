@@ -56,9 +56,16 @@ def render_risk_view() -> None:
         st.markdown("##### 🔎 Fraud Bureau & Risk Indicator Inspector")
         render_html("<div style='font-size:12px; color:#64748b; margin-bottom:10px;'>Screen a claim against the external Fraud Bureau to inspect loss ratio anomalies, rapid inception flags, and provider risk scores.</div>")
 
+        render_html("<div style='font-size:12px; font-weight:700; color:#334155; margin-bottom:4px;'>Enter Claim ID for Risk Screening</div>")
         c1, c2 = st.columns([4, 1.2])
         with c1:
-            test_claim_id = st.text_input("Enter Claim ID for Risk Screening", value="CLM-20260918-B81C", key="risk_test_id_input")
+            test_claim_id = st.text_input(
+                "Claim ID",
+                value="CLM-20260918-B81C",
+                key="risk_test_id_input",
+                label_visibility="collapsed",
+                placeholder="Enter Claim ID (e.g. CLM-20260918-B81C)"
+            )
         with c2:
             run_risk = st.button("Query Risk Bureau", type="primary", use_container_width=True, key="risk_screen_btn")
 
