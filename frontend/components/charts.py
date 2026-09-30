@@ -288,3 +288,8 @@ def render_cost_breakdown_table_inr(cost_data: Dict[str, Any]) -> None:
         {"Model / Provider": "OpenAI GPT-4o (Fallback)", "Prompt Tokens": "42,500", "Completion Tokens": "14,200", "Total Tokens": "56,700", "Cost (₹ INR)": "₹21.45", "Status": "Standby"}
     ]
     st.dataframe(pd.DataFrame(items), use_container_width=True, hide_index=True)
+
+
+# Backwards compatibility alias
+render_cost_breakdown_table = render_cost_breakdown_table_inr
+
