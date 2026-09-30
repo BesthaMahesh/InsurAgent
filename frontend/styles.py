@@ -116,17 +116,22 @@ ENTERPRISE_CSS = """
         margin-top: 2px;
     }
 
-    /* Sidebar Selectbox / Persona Dropdown (Dark Theme) */
+    /* Sidebar Selectbox / Persona Dropdown (Dark Slate Navy matching Signout / Account Box) */
     section[data-testid="stSidebar"] div[data-testid="stSelectbox"] {
         margin-bottom: 6px;
     }
 
-    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-baseweb="select"] {
-        background-color: transparent !important;
+    section[data-testid="stSidebar"] [data-baseweb="select"],
+    section[data-testid="stSidebar"] [data-baseweb="select"] *,
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"],
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] > div,
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] > div > div,
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-baseweb="select"] > div {
+        background-color: #0f2744 !important;
+        background: #0f2744 !important;
     }
 
     section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-baseweb="select"] > div {
-        background-color: #0f2744 !important;
         border: 1px solid #1e3a5f !important;
         border-radius: 8px !important;
         min-height: 42px !important;
@@ -139,7 +144,9 @@ ENTERPRISE_CSS = """
         box-shadow: 0 0 0 1px #38bdf8 !important;
     }
 
-    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-baseweb="select"] span,
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] span,
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] input,
+    section[data-testid="stSidebar"] div[data-testid="stSelectbox"] div,
     section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-baseweb="select"] [role="button"],
     section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-baseweb="select"] [aria-selected="true"],
     section[data-testid="stSidebar"] div[data-testid="stSelectbox"] [data-testid="stMarkdownContainer"] p {
@@ -182,6 +189,14 @@ ENTERPRISE_CSS = """
     }
 
     /* Sidebar Radio Navigation */
+    section[data-testid="stSidebar"] div[data-testid="stRadio"] > label {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
     section[data-testid="stSidebar"] div[data-testid="stRadio"] > div {
         gap: 2px !important;
     }

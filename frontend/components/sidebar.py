@@ -59,7 +59,7 @@ def render_sidebar() -> Tuple[str, str]:
             persona_idx = persona_options.index(saved_persona) if saved_persona in persona_options else 0
             
             selected_persona = st.selectbox(
-                "Persona Selector",
+                "",
                 persona_options,
                 index=persona_idx,
                 label_visibility="collapsed",
@@ -101,7 +101,7 @@ def render_sidebar() -> Tuple[str, str]:
             default_index = all_formatted.index(current_fmt) if current_fmt in all_formatted else 0
 
             selected_fmt = st.radio(
-                "User Navigation Menu",
+                "",
                 all_formatted,
                 index=default_index,
                 label_visibility="collapsed"
@@ -147,7 +147,7 @@ def render_sidebar() -> Tuple[str, str]:
             dev_idx = dev_personas.index(saved_persona) if saved_persona in dev_personas else 0
 
             selected_persona = st.selectbox(
-                "Dev Persona Selector",
+                "",
                 dev_personas,
                 index=dev_idx,
                 label_visibility="collapsed",
@@ -205,7 +205,7 @@ def render_sidebar() -> Tuple[str, str]:
 
             st.markdown("<div class='sidebar-section-header'>TECHNICAL OVERVIEW</div>", unsafe_allow_html=True)
             selected_fmt = st.radio(
-                "Developer Navigation Menu",
+                "",
                 all_formatted,
                 index=default_index,
                 label_visibility="collapsed"
