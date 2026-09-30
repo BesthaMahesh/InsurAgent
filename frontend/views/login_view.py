@@ -17,6 +17,13 @@ ACCOUNTS = {
         "default_persona": "Developer / Technical Operations",
         "default_page": "Technical Dashboard"
     },
+    "wrenchwisedeveloper@gmail.com": {
+        "password": os.getenv("ADMIN_AUTH_PASSWORD", "123456").strip(),
+        "role": "Developer / Technical Operations",
+        "role_type": "developer",
+        "default_persona": "Developer / Technical Operations",
+        "default_page": "Technical Dashboard"
+    },
     "wrenchwise@gmail.com": {
         "password": os.getenv("USER_AUTH_PASSWORD", "12345").strip(),
         "role": "Claims Adjuster",
@@ -77,6 +84,10 @@ def render_login_view() -> None:
 
                     if entered_email in ACCOUNTS and entered_password == ACCOUNTS[entered_email]["password"]:
                         account_info = ACCOUNTS[entered_email]
+                        
+                        # Clear any stale widget session keys
+                        st.session_state.clear()
+                        
                         st.session_state["authenticated"] = True
                         st.session_state["user_email"] = entered_email
                         st.session_state["user_role"] = account_info["role"]
@@ -96,4 +107,5 @@ def render_login_view() -> None:
         </div>
         """
         render_html(footer_html)
+
 

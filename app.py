@@ -54,14 +54,25 @@ if not st.session_state.get("authenticated", False):
     render_login_view()
     st.stop()
 
-# 5. Sidebar Navigation & Active Persona
+# 5. Enforce role consistency strictly from authenticated email
+user_email = (st.session_state.get("user_email") or "").strip().lower()
+if user_email in ("wrenchwisedevoloper@gmail.com", "wrenchwisedeveloper@gmail.com"):
+    st.session_state["role_type"] = "developer"
+    st.session_state["user_role"] = "Developer / Technical Operations"
+    role_type = "developer"
+else:
+    st.session_state["role_type"] = "claims_adjuster"
+    st.session_state["user_role"] = "Claims Adjuster"
+    role_type = "claims_adjuster"
+
+# 6. Sidebar Navigation & Active Persona
 selected_page, current_persona = render_sidebar()
 
-# 6. Top Executive Brand Header Bar
+# 7. Top Executive Brand Header Bar
 render_header(current_persona=current_persona)
 
-# 7. Role-Based Enterprise Page Dispatcher
-role_type = st.session_state.get("role_type", "claims_adjuster")
+# 8. Role-Based Enterprise Page Dispatcher
+
 
 if role_type == "developer":
     if selected_page == "Technical Dashboard":

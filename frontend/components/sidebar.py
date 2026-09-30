@@ -12,21 +12,29 @@ def render_sidebar() -> Tuple[str, str]:
     """
     Renders the role-based enterprise sidebar navigation for Developer or End User.
     """
-    role_type = st.session_state.get("role_type", "claims_adjuster")
-    user_role = st.session_state.get("user_role", "Claims Adjuster")
-    user_email = st.session_state.get("user_email", "wrenchwise@gmail.com")
+    # Enforce role type strictly from authenticated user email
+    user_email = (st.session_state.get("user_email") or "wrenchwise@gmail.com").strip().lower()
+    if user_email in ("wrenchwisedevoloper@gmail.com", "wrenchwisedeveloper@gmail.com"):
+        role_type = "developer"
+        user_role = "Developer / Technical Operations"
+        sidebar_sub = "Technical Operations"
+        role_label = "Developer / Technical Operations"
+        account_title = "Developer"
+        default_home_page = "Technical Dashboard"
+    else:
+        role_type = "claims_adjuster"
+        user_role = "Claims Adjuster"
+        sidebar_sub = "Enterprise Insurance Claims Intelligence Platform"
+        role_label = "Claims Adjuster"
+        account_title = "Claims Adjuster"
+        default_home_page = "Dashboard"
+
+    st.session_state["role_type"] = role_type
+    st.session_state["user_role"] = user_role
+    st.session_state["current_persona"] = role_label
 
     with st.sidebar:
         # Top Brand Header
-        if role_type == "developer":
-            sidebar_sub = "Technical Operations"
-            role_label = "Developer / Technical Operations"
-            account_title = "Developer"
-        else:
-            sidebar_sub = "Enterprise Insurance Claims Intelligence Platform"
-            role_label = "Claims Adjuster"
-            account_title = "Claims Adjuster"
-
         header_html = f"""
         <div style="display:flex;align-items:center;gap:10px;padding:4px 0 12px 0;border-bottom:1px solid #1e2e42;margin-bottom:14px;">
             <div style="width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg, #0284c7 0%, #0369a1 100%);display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 2px 6px rgba(2,132,199,0.3);">🛡️</div>
@@ -49,7 +57,6 @@ def render_sidebar() -> Tuple[str, str]:
         </div>
         """
         render_html(role_card_html)
-        st.session_state["current_persona"] = role_label
 
         # Define Navigation items and formatting based on role
         if role_type == "developer":
@@ -90,12 +97,13 @@ def render_sidebar() -> Tuple[str, str]:
                 "Risk & Fraud": "🚨  Risk & Fraud"
             }
 
-            curr_page = st.session_state.get("active_nav_page", "Technical Dashboard")
+            curr_page = st.session_state.get("active_nav_page", default_home_page)
             if curr_page not in all_nav_items:
-                curr_page = "Technical Dashboard"
+                curr_page = default_home_page
+                st.session_state["active_nav_page"] = default_home_page
 
             all_formatted = [icons_map[p] for p in all_nav_items]
-            current_fmt = icons_map.get(curr_page, icons_map["Technical Dashboard"])
+            current_fmt = icons_map.get(curr_page, icons_map[default_home_page])
             default_index = all_formatted.index(current_fmt) if current_fmt in all_formatted else 0
 
             st.markdown("<div class='sidebar-section-header'>TECHNICAL OVERVIEW</div>", unsafe_allow_html=True)
@@ -108,7 +116,7 @@ def render_sidebar() -> Tuple[str, str]:
             )
 
             rev_map = {v: k for k, v in icons_map.items()}
-            selected_page = rev_map.get(selected_fmt, "Technical Dashboard")
+            selected_page = rev_map.get(selected_fmt, default_home_page)
             st.session_state.active_nav_page = selected_page
 
         else:
@@ -136,12 +144,13 @@ def render_sidebar() -> Tuple[str, str]:
                 "Help & Support": "❓  Help & Support"
             }
 
-            curr_page = st.session_state.get("active_nav_page", "Dashboard")
+            curr_page = st.session_state.get("active_nav_page", default_home_page)
             if curr_page not in all_nav_items:
-                curr_page = "Dashboard"
+                curr_page = default_home_page
+                st.session_state["active_nav_page"] = default_home_page
 
             all_formatted = [icons_map[p] for p in all_nav_items]
-            current_fmt = icons_map.get(curr_page, icons_map["Dashboard"])
+            current_fmt = icons_map.get(curr_page, icons_map[default_home_page])
             default_index = all_formatted.index(current_fmt) if current_fmt in all_formatted else 0
 
             st.markdown("<div class='sidebar-section-header'>MAIN</div>", unsafe_allow_html=True)
@@ -154,7 +163,7 @@ def render_sidebar() -> Tuple[str, str]:
             )
 
             rev_map = {v: k for k, v in icons_map.items()}
-            selected_page = rev_map.get(selected_fmt, "Dashboard")
+            selected_page = rev_map.get(selected_fmt, default_home_page)
             st.session_state.active_nav_page = selected_page
 
         st.markdown("<div class='sidebar-divider'></div>", unsafe_allow_html=True)
@@ -174,16 +183,12 @@ def render_sidebar() -> Tuple[str, str]:
         render_html(account_html)
 
         if st.button("🚪 Sign Out", key="sidebar_logout_btn", use_container_width=True):
-            st.session_state["authenticated"] = False
-            st.session_state["user_email"] = None
-            st.session_state["user_role"] = None
-            st.session_state["role_type"] = None
-            st.session_state["current_persona"] = None
-            st.session_state["active_nav_page"] = "Dashboard"
+            st.session_state.clear()
             st.rerun()
 
         st.caption("v2.4 Enterprise Production Release")
 
     return selected_page, role_label
+
 
 
