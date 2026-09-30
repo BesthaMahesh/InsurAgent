@@ -109,26 +109,30 @@ def render_dashboard_view() -> None:
 
         st.markdown("<div style='font-size:11px;font-weight:700;color:#64748b;margin-bottom:6px;'>EXAMPLE ENTERPRISE QUERIES:</div>", unsafe_allow_html=True)
         p1, p2, p3, p4 = st.columns(4)
-        preset_query = None
+        query_to_run = None
 
         with p1:
             if st.button("✈️ Travel Shield limits & perils", use_container_width=True, key="dash_btn_1"):
-                preset_query = "What are the covered perils and maximum payout limits for trip cancellation under the Travel Shield policy?"
+                query_to_run = "What are the covered perils and maximum payout limits for trip cancellation under the Travel Shield policy?"
+                st.session_state["dash_query_input_box"] = query_to_run
         with p2:
             if st.button("⚠️ Explain human review need", use_container_width=True, key="dash_btn_2"):
-                preset_query = "Explain why claim CLM-20260918-B81C requires human review and identify all risk indicators."
+                query_to_run = "Explain why claim CLM-20260918-B81C requires human review and identify all risk indicators."
+                st.session_state["dash_query_input_box"] = query_to_run
         with p3:
             if st.button("📋 Gold Health waiting period", use_container_width=True, key="dash_btn_3"):
-                preset_query = "What is the waiting period applicable to pre-existing diseases under the Gold Health Policy?"
+                query_to_run = "What is the waiting period applicable to pre-existing diseases under the Gold Health Policy?"
+                st.session_state["dash_query_input_box"] = query_to_run
         with p4:
             if st.button("🏥 Check claim coverage (A12F)", use_container_width=True, key="dash_btn_4"):
-                preset_query = "Check whether claim CLM-20260918-A12F is covered under the policy and explain why."
+                query_to_run = "Check whether claim CLM-20260918-A12F is covered under the policy and explain why."
+                st.session_state["dash_query_input_box"] = query_to_run
 
         q_col, btn_col = st.columns([5, 1.2])
         with q_col:
             user_query = st.text_input(
                 "Ask InsurAgent Input",
-                value=preset_query if preset_query else (st.session_state.get("dash_user_query") or ""),
+                value=query_to_run if query_to_run else (st.session_state.get("dash_user_query") or ""),
                 placeholder="Ask about a claim, policy coverage, risk, documents or compliance...",
                 label_visibility="collapsed",
                 key="dash_query_input_box"
@@ -137,8 +141,10 @@ def render_dashboard_view() -> None:
         with btn_col:
             analyze_clicked = st.button("Analyze", type="primary", use_container_width=True, key="dash_exec_analyze")
 
+        effective_query = (query_to_run or user_query or "").strip()
+
         # Handle Execution
-        if (analyze_clicked or preset_query) and user_query.strip():
+        if (analyze_clicked or query_to_run) and effective_query:
             progress_placeholder = st.empty()
             with progress_placeholder.container():
                 progress_html = """
@@ -161,10 +167,10 @@ def render_dashboard_view() -> None:
                 render_html(progress_html)
 
             try:
-                chat_res = insuragent_client.post_chat(user_query)
+                chat_res = insuragent_client.post_chat(effective_query)
                 progress_placeholder.empty()
                 if chat_res and not chat_res.get("error"):
-                    st.session_state["dash_user_query"] = user_query
+                    st.session_state["dash_user_query"] = effective_query
                     st.session_state["dash_chat_response"] = chat_res
                     st.session_state["dash_error"] = None
                 else:

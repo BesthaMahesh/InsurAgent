@@ -46,12 +46,15 @@ def render_assistant_view() -> None:
     with c1:
         if st.button("✈️ Travel Shield: Covered perils & limits", use_container_width=True, key="asst_chip_1"):
             preset_q = "What are the covered perils and maximum payout limits for trip cancellation under the Travel Shield policy?"
+            st.session_state["asst_text_input_box"] = preset_q
     with c2:
         if st.button("🏥 Gold Health: Pre-existing waiting period", use_container_width=True, key="asst_chip_2"):
             preset_q = "What is the waiting period applicable to pre-existing diseases (PED) under the Gold Health Policy?"
+            st.session_state["asst_text_input_box"] = preset_q
     with c3:
         if st.button("⚠️ Explain human review for CLM-20260918-B81C", use_container_width=True, key="asst_chip_3"):
             preset_q = "Explain why claim CLM-20260918-B81C requires human review and identify all risk indicators."
+            st.session_state["asst_text_input_box"] = preset_q
 
     st.write("")
 
@@ -123,13 +126,15 @@ def render_assistant_view() -> None:
         with c_btn:
             ask_btn = st.button("Ask", type="primary", use_container_width=True, key="asst_send_query_btn")
 
+    effective_query = (preset_q or user_input or "").strip()
+
     # Handle Query Submission
-    if (ask_btn or preset_q) and user_input.strip():
+    if (ask_btn or preset_q) and effective_query:
         # Check greeting intent
-        if is_greeting(user_input):
+        if is_greeting(effective_query):
             st.session_state["assistant_messages"].append({
                 "role": "user",
-                "content": user_input,
+                "content": effective_query,
                 "timestamp": time.strftime("%H:%M")
             })
             st.session_state["assistant_messages"].append({
@@ -143,7 +148,7 @@ def render_assistant_view() -> None:
         # Regular Policy / Claims RAG query
         st.session_state["assistant_messages"].append({
             "role": "user",
-            "content": user_input,
+            "content": effective_query,
             "timestamp": time.strftime("%H:%M")
         })
 
@@ -159,7 +164,7 @@ def render_assistant_view() -> None:
             render_html(p_html)
 
         try:
-            res = insuragent_client.post_chat(user_input)
+            res = insuragent_client.post_chat(effective_query)
             progress_box.empty()
 
             if res and not res.get("error"):
@@ -167,7 +172,7 @@ def render_assistant_view() -> None:
                 
                 try:
                     retriever = PolicyRetriever()
-                    clauses = retriever.retrieve(user_input, top_k=3)
+                    clauses = retriever.retrieve(effective_query, top_k=3)
                     sources = [
                         {
                             "source_doc": c.source_doc,
