@@ -260,28 +260,64 @@ ENTERPRISE_CSS = """
         margin-bottom: 10px;
     }
 
-    /* Custom Sign Out Button in Sidebar (Dark Red / Crimson Theme) */
-    section[data-testid="stSidebar"] div[data-testid="stButton"] > button {
+    /* Sidebar Navigation Buttons */
+    section[data-testid="stSidebar"] div.stButton > button {
+        text-align: left !important;
+        justify-content: flex-start !important;
+        display: flex !important;
+        align-items: center !important;
+        font-size: 12.5px !important;
+        font-weight: 500 !important;
+        padding: 7px 10px !important;
+        border-radius: 8px !important;
+        margin-bottom: 2px !important;
+        background: transparent !important;
+        border: 1px solid transparent !important;
+        color: #cbd5e1 !important;
+        transition: all 0.15s ease !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 36px !important;
+    }
+
+    section[data-testid="stSidebar"] div.stButton > button:hover {
+        background: rgba(255, 255, 255, 0.08) !important;
+        color: #ffffff !important;
+    }
+
+    section[data-testid="stSidebar"] div.stButton > button[kind="primary"] {
+        background: #0284c7 !important;
+        color: #ffffff !important;
+        font-weight: 700 !important;
+        border: 1px solid #0284c7 !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.25) !important;
+    }
+
+    section[data-testid="stSidebar"] div.stButton > button[kind="primary"] p {
+        color: #ffffff !important;
+        font-weight: 700 !important;
+    }
+
+    /* Sidebar Sign Out Button */
+    section[data-testid="stSidebar"] div.sidebar-logout-wrapper div.stButton > button {
+        justify-content: center !important;
+        text-align: center !important;
         background: #111e33 !important;
         color: #fca5a5 !important;
         border: 1px solid #ef4444 !important;
         border-radius: 8px !important;
         font-weight: 700 !important;
-        font-size: 13px !important;
-        padding: 8px 14px !important;
-        width: 100% !important;
-        transition: all 0.2s ease !important;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.2) !important;
+        margin-top: 4px !important;
     }
 
-    section[data-testid="stSidebar"] div[data-testid="stButton"] > button:hover {
+    section[data-testid="stSidebar"] div.sidebar-logout-wrapper div.stButton > button:hover {
         background: #b91c1c !important;
         color: #ffffff !important;
         border-color: #f87171 !important;
         box-shadow: 0 2px 8px rgba(220, 38, 38, 0.4) !important;
     }
 
-    section[data-testid="stSidebar"] div[data-testid="stButton"] > button p {
+    section[data-testid="stSidebar"] div.sidebar-logout-wrapper div.stButton > button p {
         color: inherit !important;
         font-weight: 700 !important;
     }

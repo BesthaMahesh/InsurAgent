@@ -135,9 +135,11 @@ def render_sidebar() -> Tuple[str, str]:
             """
             render_html(account_html)
 
+            st.markdown("<div class='sidebar-logout-wrapper'>", unsafe_allow_html=True)
             if st.button("🚪 Sign Out", key="sidebar_logout_btn", use_container_width=True):
                 st.session_state.clear()
                 st.rerun()
+            st.markdown("</div>", unsafe_allow_html=True)
 
             st.caption("v2.4 Enterprise Production Release")
 
@@ -165,73 +167,61 @@ def render_sidebar() -> Tuple[str, str]:
             st.session_state["current_persona"] = selected_persona
             persona = selected_persona
 
-            # 2. TECHNICAL OVERVIEW Navigation
-            dev_tech_items = [
-                "Technical Dashboard",
-                "Agent Workflow",
-                "Knowledge / RAG",
-                "MCP Tools",
-                "Guardrails",
-                "Human-in-the-Loop",
-                "Model Evaluation",
-                "Cost Analytics",
-                "Token Usage",
-                "Audit & Traceability",
-                "System Health",
-                "Execution Logs"
+            # 2. SECTIONS FOR DEVELOPER HIERARCHY
+            dev_sections = [
+                (
+                    "TECHNICAL OVERVIEW",
+                    [
+                        ("Technical Dashboard", "▣  Technical Dashboard"),
+                        ("Agent Workflow", "⚙️  Agent Workflow"),
+                        ("Knowledge / RAG", "🧠  Knowledge / RAG"),
+                        ("MCP Tools", "🔌  MCP Tools"),
+                        ("Guardrails", "🛡️  Guardrails")
+                    ]
+                ),
+                (
+                    "AI GOVERNANCE",
+                    [
+                        ("Human-in-the-Loop", "👤  Human-in-the-Loop"),
+                        ("Model Evaluation", "📊  Model Evaluation"),
+                        ("Audit & Traceability", "🔍  Audit & Traceability")
+                    ]
+                ),
+                (
+                    "AI OPERATIONS",
+                    [
+                        ("Cost Analytics", "💰  Cost Analytics"),
+                        ("Token Usage", "⚡  Token Usage"),
+                        ("System Health", "❤️  System Health"),
+                        ("Execution Logs", "📋  Execution Logs")
+                    ]
+                ),
+                (
+                    "BUSINESS OPERATIONS",
+                    [
+                        ("Claims", "📄  Claims"),
+                        ("Risk & Fraud", "🚨  Risk & Fraud")
+                    ]
+                )
             ]
-            dev_biz_items = [
-                "Claims",
-                "Risk & Fraud"
-            ]
-            all_nav_items = dev_tech_items + dev_biz_items
 
-            icons_map = {
-                "Technical Dashboard": "📊  Technical Dashboard",
-                "Agent Workflow": "⚙️  Agent Workflow",
-                "Knowledge / RAG": "🧠  Knowledge / RAG",
-                "MCP Tools": "🔌  MCP Tools",
-                "Guardrails": "🛡️  Guardrails",
-                "Human-in-the-Loop": "👤  Human-in-the-Loop",
-                "Model Evaluation": "🎯  Model Evaluation",
-                "Cost Analytics": "💰  Cost Analytics",
-                "Token Usage": "⚡  Token Usage",
-                "Audit & Traceability": "🔍  Audit & Traceability",
-                "System Health": "❤️  System Health",
-                "Execution Logs": "📋  Execution Logs",
-                "Claims": "📋  Claims",
-                "Risk & Fraud": "🚨  Risk & Fraud"
-            }
-
+            valid_pages = [page for _, items in dev_sections for page, _ in items]
             curr_page = st.session_state.get("active_nav_page", default_home_page)
-            if curr_page not in all_nav_items:
+            if curr_page not in valid_pages:
                 curr_page = default_home_page
                 st.session_state["active_nav_page"] = default_home_page
 
-            all_formatted = [icons_map[p] for p in all_nav_items]
-            current_fmt = icons_map.get(curr_page, icons_map[default_home_page])
+            for sec_title, sec_items in dev_sections:
+                st.markdown(f"<div class='sidebar-section-header'>{sec_title}</div>", unsafe_allow_html=True)
+                for page_name, label_text in sec_items:
+                    is_active = (curr_page == page_name)
+                    btn_text = f"{'● ' if is_active else '  '}{label_text}"
+                    btn_key = f"dev_nav_btn_{page_name.replace(' ', '_').replace('/', '_')}"
+                    if st.button(btn_text, key=btn_key, type="primary" if is_active else "secondary", use_container_width=True):
+                        st.session_state["active_nav_page"] = page_name
+                        st.rerun()
 
-            if "main_dev_nav_radio" not in st.session_state or st.session_state["main_dev_nav_radio"] not in all_formatted:
-                st.session_state["main_dev_nav_radio"] = current_fmt
-
-            rev_map = {v: k for k, v in icons_map.items()}
-
-            def _on_dev_nav_change():
-                sel = st.session_state.get("main_dev_nav_radio")
-                if sel in rev_map:
-                    st.session_state["active_nav_page"] = rev_map[sel]
-
-            st.markdown("<div class='sidebar-section-header'>TECHNICAL OVERVIEW</div>", unsafe_allow_html=True)
-            selected_fmt = st.radio(
-                "",
-                all_formatted,
-                key="main_dev_nav_radio",
-                on_change=_on_dev_nav_change,
-                label_visibility="collapsed"
-            )
-
-            selected_page = rev_map.get(selected_fmt, default_home_page)
-            st.session_state["active_nav_page"] = selected_page
+            selected_page = st.session_state.get("active_nav_page", default_home_page)
 
             st.markdown("<div class='sidebar-divider'></div>", unsafe_allow_html=True)
 
@@ -239,7 +229,7 @@ def render_sidebar() -> Tuple[str, str]:
             st.markdown("<div class='sidebar-section-header' style='margin-top:0;'>ACCOUNT</div>", unsafe_allow_html=True)
             account_html = f"""
             <div class="sidebar-account-box">
-                <div style="font-size:12px; font-weight:750; color:#ffffff;">Technical Operations</div>
+                <div style="font-size:12px; font-weight:750; color:#ffffff;">Developer</div>
                 <div style="font-size:11px; font-weight:600; color:#38bdf8; word-break:break-all; margin-top:2px;">{user_email}</div>
                 <div style="font-size:10px; color:#10b981; font-weight:600; margin-top:4px; display:flex; align-items:center; gap:4px;">
                     <span>●</span> Authorized Session
@@ -248,14 +238,12 @@ def render_sidebar() -> Tuple[str, str]:
             """
             render_html(account_html)
 
-            if st.button("🚪 Sign Out", key="sidebar_logout_btn", use_container_width=True):
+            st.markdown("<div class='sidebar-logout-wrapper'>", unsafe_allow_html=True)
+            if st.button("🚪 Sign Out", key="dev_sidebar_logout_btn", use_container_width=True):
                 st.session_state.clear()
                 st.rerun()
+            st.markdown("</div>", unsafe_allow_html=True)
 
             st.caption("v2.4 Enterprise Production Release")
 
     return selected_page, persona
-
-
-
-
