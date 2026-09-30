@@ -11,6 +11,8 @@ from frontend.styles import render_html
 def render_sidebar() -> Tuple[str, str]:
     """
     Renders the role-based enterprise sidebar navigation for Developer or End User.
+    Maintains the original visual design and layout for End Users while providing
+    a dedicated technical navigation for Developers.
     """
     # Enforce role type strictly from authenticated user email
     user_email = (st.session_state.get("user_email") or "wrenchwise@gmail.com").strip().lower()
@@ -18,48 +20,148 @@ def render_sidebar() -> Tuple[str, str]:
         role_type = "developer"
         user_role = "Developer / Technical Operations"
         sidebar_sub = "Technical Operations"
-        role_label = "Developer / Technical Operations"
-        account_title = "Developer"
         default_home_page = "Technical Dashboard"
     else:
         role_type = "claims_adjuster"
         user_role = "Claims Adjuster"
-        sidebar_sub = "Enterprise Insurance Claims Intelligence Platform"
-        role_label = "Claims Adjuster"
-        account_title = "Claims Adjuster"
+        sidebar_sub = "Claims Intelligence Platform"
         default_home_page = "Dashboard"
 
     st.session_state["role_type"] = role_type
     st.session_state["user_role"] = user_role
-    st.session_state["current_persona"] = role_label
 
     with st.sidebar:
-        # Top Brand Header
+        # Top Brand Header (Original InsurAgent Header Placement & Styling)
         header_html = f"""
-        <div style="display:flex;align-items:center;gap:10px;padding:4px 0 12px 0;border-bottom:1px solid #1e2e42;margin-bottom:14px;">
+        <div style="display:flex;align-items:center;gap:10px;padding:4px 0 14px 0;border-bottom:1px solid #1e2e42;margin-bottom:12px;">
             <div style="width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg, #0284c7 0%, #0369a1 100%);display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 2px 6px rgba(2,132,199,0.3);">🛡️</div>
             <div>
                 <div style="font-size:16px;font-weight:800;letter-spacing:-0.3px;color:#ffffff;line-height:1.15;">INSURAGENT</div>
-                <div class="sidebar-subtitle-text" style="font-size:10px; color:#38bdf8;">{sidebar_sub}</div>
+                <div class="sidebar-subtitle-text" style="font-size:10px; color:#38bdf8; font-weight:600; letter-spacing:0.2px; margin-top:2px;">{sidebar_sub}</div>
             </div>
         </div>
         """
         render_html(header_html)
 
-        # Authenticated Persona Status Pill
-        role_card_html = f"""
-        <div style="background:#0f2744; border:1px solid #1e3a5f; border-radius:8px; padding:8px 12px; margin-bottom:14px; display:flex; align-items:center; justify-content:space-between;">
-            <div>
-                <div style="font-size:9.5px; font-weight:800; color:#94a3b8; text-transform:uppercase; letter-spacing:0.6px;">Active Persona</div>
-                <div style="font-size:12.5px; font-weight:750; color:#ffffff; margin-top:2px;">{role_label}</div>
-            </div>
-            <span style="font-size:9.5px; font-weight:700; background:#0284c7; color:#ffffff; padding:2px 8px; border-radius:12px;">Active</span>
-        </div>
-        """
-        render_html(role_card_html)
+        # -----------------------------------------------------------------
+        # END USER SIDEBAR (Original Visual Design & Structure)
+        # -----------------------------------------------------------------
+        if role_type != "developer":
+            # 1. USER / PERSONA Section (Original Dropdown Selector)
+            st.markdown("<div class='sidebar-section-header' style='margin-top:0;'>USER / PERSONA</div>", unsafe_allow_html=True)
+            persona_options = [
+                "Claims Adjuster (Employee)",
+                "Senior Underwriter",
+                "Fraud Investigator (SIU)",
+                "Compliance & Audit Officer"
+            ]
+            saved_persona = st.session_state.get("current_persona", "Claims Adjuster (Employee)")
+            persona_idx = persona_options.index(saved_persona) if saved_persona in persona_options else 0
+            
+            selected_persona = st.selectbox(
+                "Persona",
+                persona_options,
+                index=persona_idx,
+                label_visibility="collapsed",
+                key="end_user_persona_select"
+            )
+            st.session_state["current_persona"] = selected_persona
+            persona = selected_persona
 
-        # Define Navigation items and formatting based on role
-        if role_type == "developer":
+            # 2. NAVIGATION Section (Original Header & Clean Radio Menu)
+            st.markdown("<div class='sidebar-section-header'>NAVIGATION</div>", unsafe_allow_html=True)
+
+            user_nav_items = [
+                "Dashboard",
+                "Claims",
+                "AI Assistant",
+                "My Claims",
+                "Documents",
+                "Knowledge Center",
+                "Help & Support"
+            ]
+
+            icons_map = {
+                "Dashboard": "📊  Dashboard",
+                "Claims": "📋  Claims",
+                "AI Assistant": "💬  AI Assistant",
+                "My Claims": "📑  My Claims",
+                "Documents": "📎  Documents",
+                "Knowledge Center": "📚  Knowledge Center",
+                "Help & Support": "❓  Help & Support"
+            }
+
+            curr_page = st.session_state.get("active_nav_page", "Dashboard")
+            if curr_page not in user_nav_items:
+                curr_page = "Dashboard"
+                st.session_state["active_nav_page"] = "Dashboard"
+
+            all_formatted = [icons_map[p] for p in user_nav_items]
+            current_fmt = icons_map.get(curr_page, icons_map["Dashboard"])
+            default_index = all_formatted.index(current_fmt) if current_fmt in all_formatted else 0
+
+            # Synchronize radio widget state if changed by a dashboard button
+            if "user_nav_radio" in st.session_state and st.session_state["user_nav_radio"] != current_fmt:
+                st.session_state["user_nav_radio"] = current_fmt
+
+            selected_fmt = st.radio(
+                "Navigation Menu",
+                all_formatted,
+                index=default_index,
+                label_visibility="collapsed",
+                key="user_nav_radio"
+            )
+
+            rev_map = {v: k for k, v in icons_map.items()}
+            selected_page = rev_map.get(selected_fmt, "Dashboard")
+            st.session_state["active_nav_page"] = selected_page
+
+            st.markdown("<div class='sidebar-divider'></div>", unsafe_allow_html=True)
+
+            # 3. ACCOUNT Section (Original Enterprise Box & Clean Sign Out)
+            st.markdown("<div class='sidebar-section-header' style='margin-top:0;'>ACCOUNT</div>", unsafe_allow_html=True)
+            account_html = f"""
+            <div class="sidebar-account-box">
+                <div style="font-size:9.5px; font-weight:800; color:#94a3b8; text-transform:uppercase; letter-spacing:0.6px;">Active Account</div>
+                <div style="font-size:12px; font-weight:700; color:#38bdf8; word-break:break-all; margin-top:2px;">{user_email}</div>
+                <div style="font-size:10px; color:#10b981; font-weight:600; margin-top:3px; display:flex; align-items:center; gap:4px;">
+                    <span>●</span> Authorized Session
+                </div>
+            </div>
+            """
+            render_html(account_html)
+
+            if st.button("🚪 Sign Out", key="sidebar_logout_btn", use_container_width=True):
+                st.session_state.clear()
+                st.rerun()
+
+            st.caption("v2.4 Enterprise Production Release")
+
+        # -----------------------------------------------------------------
+        # DEVELOPER SIDEBAR (Technical Operations Navigation)
+        # -----------------------------------------------------------------
+        else:
+            # 1. USER / PERSONA Section
+            st.markdown("<div class='sidebar-section-header' style='margin-top:0;'>USER / PERSONA</div>", unsafe_allow_html=True)
+            dev_personas = [
+                "Developer / Technical Operations",
+                "System Architect",
+                "MLOps / LLM Evaluator"
+            ]
+            saved_persona = st.session_state.get("current_persona", "Developer / Technical Operations")
+            dev_idx = dev_personas.index(saved_persona) if saved_persona in dev_personas else 0
+
+            selected_persona = st.selectbox(
+                "Persona",
+                dev_personas,
+                index=dev_idx,
+                label_visibility="collapsed",
+                key="dev_persona_select"
+            )
+            st.session_state["current_persona"] = selected_persona
+            persona = selected_persona
+
+            # 2. TECHNICAL OVERVIEW Navigation
             dev_tech_items = [
                 "Technical Dashboard",
                 "Agent Workflow",
@@ -106,6 +208,10 @@ def render_sidebar() -> Tuple[str, str]:
             current_fmt = icons_map.get(curr_page, icons_map[default_home_page])
             default_index = all_formatted.index(current_fmt) if current_fmt in all_formatted else 0
 
+            # Synchronize radio widget state if changed by a button
+            if "dev_nav_radio" in st.session_state and st.session_state["dev_nav_radio"] != current_fmt:
+                st.session_state["dev_nav_radio"] = current_fmt
+
             st.markdown("<div class='sidebar-section-header'>TECHNICAL OVERVIEW</div>", unsafe_allow_html=True)
             selected_fmt = st.radio(
                 "Developer Navigation",
@@ -117,78 +223,31 @@ def render_sidebar() -> Tuple[str, str]:
 
             rev_map = {v: k for k, v in icons_map.items()}
             selected_page = rev_map.get(selected_fmt, default_home_page)
-            st.session_state.active_nav_page = selected_page
+            st.session_state["active_nav_page"] = selected_page
 
-        else:
-            # End User Navigation
-            user_main_items = [
-                "Dashboard",
-                "Claims",
-                "AI Assistant",
-                "My Claims",
-                "Documents"
-            ]
-            user_support_items = [
-                "Knowledge Center",
-                "Help & Support"
-            ]
-            all_nav_items = user_main_items + user_support_items
+            st.markdown("<div class='sidebar-divider'></div>", unsafe_allow_html=True)
 
-            icons_map = {
-                "Dashboard": "📊  Dashboard",
-                "Claims": "📋  Claims",
-                "AI Assistant": "💬  AI Assistant",
-                "My Claims": "📑  My Claims",
-                "Documents": "📎  Documents",
-                "Knowledge Center": "📚  Knowledge Center",
-                "Help & Support": "❓  Help & Support"
-            }
-
-            curr_page = st.session_state.get("active_nav_page", default_home_page)
-            if curr_page not in all_nav_items:
-                curr_page = default_home_page
-                st.session_state["active_nav_page"] = default_home_page
-
-            all_formatted = [icons_map[p] for p in all_nav_items]
-            current_fmt = icons_map.get(curr_page, icons_map[default_home_page])
-            default_index = all_formatted.index(current_fmt) if current_fmt in all_formatted else 0
-
-            st.markdown("<div class='sidebar-section-header'>MAIN</div>", unsafe_allow_html=True)
-            selected_fmt = st.radio(
-                "User Navigation",
-                all_formatted,
-                index=default_index,
-                label_visibility="collapsed",
-                key="user_nav_radio"
-            )
-
-            rev_map = {v: k for k, v in icons_map.items()}
-            selected_page = rev_map.get(selected_fmt, default_home_page)
-            st.session_state.active_nav_page = selected_page
-
-        st.markdown("<div class='sidebar-divider'></div>", unsafe_allow_html=True)
-
-        # Bottom Sticky/Fixed Account & Sign Out Section
-        st.markdown("<div class='sidebar-section-header' style='margin-top:0;'>ACCOUNT</div>", unsafe_allow_html=True)
-
-        account_html = f"""
-        <div class="sidebar-account-box">
-            <div style="font-size:12.5px; font-weight:750; color:#ffffff;">{account_title}</div>
-            <div style="font-size:11px; color:#38bdf8; word-break:break-all; margin-top:2px;">{user_email}</div>
-            <div style="font-size:10px; color:#10b981; font-weight:600; margin-top:4px; display:flex; align-items:center; gap:4px;">
-                <span>●</span> Authorized Session
+            # 3. ACCOUNT Section
+            st.markdown("<div class='sidebar-section-header' style='margin-top:0;'>ACCOUNT</div>", unsafe_allow_html=True)
+            account_html = f"""
+            <div class="sidebar-account-box">
+                <div style="font-size:9.5px; font-weight:800; color:#94a3b8; text-transform:uppercase; letter-spacing:0.6px;">Active Account</div>
+                <div style="font-size:12px; font-weight:700; color:#38bdf8; word-break:break-all; margin-top:2px;">{user_email}</div>
+                <div style="font-size:10px; color:#10b981; font-weight:600; margin-top:3px; display:flex; align-items:center; gap:4px;">
+                    <span>●</span> Authorized Session
+                </div>
             </div>
-        </div>
-        """
-        render_html(account_html)
+            """
+            render_html(account_html)
 
-        if st.button("🚪 Sign Out", key="sidebar_logout_btn", use_container_width=True):
-            st.session_state.clear()
-            st.rerun()
+            if st.button("🚪 Sign Out", key="sidebar_logout_btn", use_container_width=True):
+                st.session_state.clear()
+                st.rerun()
 
-        st.caption("v2.4 Enterprise Production Release")
+            st.caption("v2.4 Enterprise Production Release")
 
-    return selected_page, role_label
+    return selected_page, persona
+
 
 
 

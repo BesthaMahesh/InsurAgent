@@ -46,14 +46,17 @@ def render_end_user_dashboard_view() -> None:
         with qa1:
             if st.button("📝 Submit New Claim", use_container_width=True, type="primary", key="user_dash_submit_btn"):
                 st.session_state["active_nav_page"] = "Claims"
+                st.session_state["user_nav_radio"] = "📋  Claims"
                 st.rerun()
         with qa2:
             if st.button("💬 Ask Policy Assistant", use_container_width=True, key="user_dash_ask_btn"):
                 st.session_state["active_nav_page"] = "AI Assistant"
+                st.session_state["user_nav_radio"] = "💬  AI Assistant"
                 st.rerun()
         with qa3:
             if st.button("📚 View Policy Guidelines", use_container_width=True, key="user_dash_kc_btn"):
                 st.session_state["active_nav_page"] = "Knowledge Center"
+                st.session_state["user_nav_radio"] = "📚  Knowledge Center"
                 st.rerun()
 
     st.write("")
@@ -79,6 +82,8 @@ def render_end_user_dashboard_view() -> None:
             for c in recent_claims:
                 table_rows.append({
                     "Claim ID": c["claim_id"],
+                    "Claimant": c.get("claimant_name", ""),
+                    "Line": c.get("claim_type", ""),
                     "Date": c.get("incident_date") or c.get("created_at", ""),
                     "Amount": f"₹{c['amount']:,.2f}",
                     "Policy": c.get("policy_number", ""),
@@ -103,6 +108,8 @@ def render_end_user_dashboard_view() -> None:
                 if st.button("👁️ View Claim Details", type="primary", use_container_width=True, key="user_dash_view_btn"):
                     st.session_state["active_claim_id"] = selected_claim_id
                     st.session_state["active_nav_page"] = "Claims"
+                    st.session_state["user_nav_radio"] = "📋  Claims"
                     st.rerun()
         else:
             st.info("No claims found in the database.")
+
