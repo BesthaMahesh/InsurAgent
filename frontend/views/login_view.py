@@ -34,13 +34,28 @@ ACCOUNTS = {
 }
 
 
+def _do_login(email: str) -> None:
+    if email in ACCOUNTS:
+        account_info = ACCOUNTS[email]
+        st.session_state.clear()
+        st.session_state["authenticated"] = True
+        st.session_state["user_email"] = email
+        st.session_state["user_role"] = account_info["role"]
+        st.session_state["role_type"] = account_info["role_type"]
+        st.session_state["current_persona"] = account_info["default_persona"]
+        st.session_state["active_nav_page"] = account_info["default_page"]
+        st.toast(f"Authenticated as {account_info['role']}. Welcome to InsurAgent!", icon="🛡️")
+        time.sleep(0.2)
+        st.rerun()
+
+
 def render_login_view() -> None:
     """Renders the enterprise login screen and handles authentication."""
     _, col_main, _ = st.columns([1, 1.8, 1])
 
     with col_main:
         header_html = """
-        <div style="text-align:center; margin-top:2.5rem; margin-bottom:1.5rem;">
+        <div style="text-align:center; margin-top:2.0rem; margin-bottom:1.2rem;">
             <div style="width:58px; height:58px; border-radius:14px; background:linear-gradient(135deg, #091524 0%, #0f2744 100%); display:inline-flex; align-items:center; justify-content:center; box-shadow:0 8px 20px -4px rgba(2, 132, 199, 0.35); border:1px solid #1e3a5f; margin-bottom:12px;">
                 <span style="font-size:26px;">🛡️</span>
             </div>
@@ -51,6 +66,19 @@ def render_login_view() -> None:
         """
         render_html(header_html)
 
+        # 1-Click Quick Demo Sign-In Card
+        with st.container(border=True):
+            st.markdown("<div style='font-size:12px; font-weight:700; color:#0369a1; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:8px;'>⚡ 1-Click Instant Demo Access</div>", unsafe_allow_html=True)
+            col_d1, col_d2 = st.columns(2)
+            with col_d1:
+                if st.button("👤 Claims Adjuster", key="btn_quick_adjuster", use_container_width=True, type="primary"):
+                    _do_login("wrenchwise@gmail.com")
+            with col_d2:
+                if st.button("⚙️ Developer Ops", key="btn_quick_dev", use_container_width=True):
+                    _do_login("wrenchwisedeveloper@gmail.com")
+
+        st.markdown("<div style='text-align:center; font-size:11px; font-weight:600; color:#94a3b8; margin:10px 0;'>— OR SIGN IN WITH ENTERPRISE CREDENTIALS —</div>", unsafe_allow_html=True)
+
         # Login Form Card
         with st.container(border=True):
             with st.form("enterprise_login_form", clear_on_submit=False):
@@ -58,7 +86,7 @@ def render_login_view() -> None:
                 email_input = st.text_input(
                     "Email",
                     value="",
-                    placeholder="Enter your enterprise email address",
+                    placeholder="e.g. wrenchwise@gmail.com",
                     label_visibility="collapsed"
                 )
 
@@ -83,29 +111,25 @@ def render_login_view() -> None:
                     entered_password = password_input.strip()
 
                     if entered_email in ACCOUNTS and entered_password == ACCOUNTS[entered_email]["password"]:
-                        account_info = ACCOUNTS[entered_email]
-                        
-                        # Clear any stale widget session keys
-                        st.session_state.clear()
-                        
-                        st.session_state["authenticated"] = True
-                        st.session_state["user_email"] = entered_email
-                        st.session_state["user_role"] = account_info["role"]
-                        st.session_state["role_type"] = account_info["role_type"]
-                        st.session_state["current_persona"] = account_info["default_persona"]
-                        st.session_state["active_nav_page"] = account_info["default_page"]
-                        st.toast(f"Authenticated as {account_info['role']}. Welcome to InsurAgent!", icon="🛡️")
-                        time.sleep(0.3)
-                        st.rerun()
+                        _do_login(entered_email)
                     else:
                         st.error("Invalid credentials. Please verify your authorized email address and password.")
 
+            st.markdown("""
+            <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:8px 12px; margin-top:10px; font-size:11px; color:#64748b; line-height:1.5;">
+                <b style="color:#334155;">Demo Credentials:</b><br>
+                • <b>Adjuster:</b> <code>wrenchwise@gmail.com</code> | <code>12345</code><br>
+                • <b>Developer:</b> <code>wrenchwisedeveloper@gmail.com</code> | <code>123456</code>
+            </div>
+            """, unsafe_allow_html=True)
+
         footer_html = """
-        <div style="text-align:center; margin-top:20px; font-size:11.5px; color:#94a3b8; line-height:1.6;">
+        <div style="text-align:center; margin-top:16px; font-size:11.5px; color:#94a3b8; line-height:1.6;">
             🛡️ <b>InsurAgent Enterprise Security Layer</b> &bull; SOC 2 Type II Certified<br>
             Multi-agent adjudication trails and decisions are cryptographically signed &amp; timestamped.
         </div>
         """
         render_html(footer_html)
+
 
 
