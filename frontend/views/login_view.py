@@ -66,27 +66,14 @@ def render_login_view() -> None:
         """
         render_html(header_html)
 
-        # 1-Click Quick Demo Sign-In Card
-        with st.container(border=True):
-            st.markdown("<div style='font-size:12px; font-weight:700; color:#0369a1; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:8px;'>⚡ 1-Click Instant Demo Access</div>", unsafe_allow_html=True)
-            col_d1, col_d2 = st.columns(2)
-            with col_d1:
-                if st.button("👤 Claims Adjuster", key="btn_quick_adjuster", use_container_width=True, type="primary"):
-                    _do_login("wrenchwise@gmail.com")
-            with col_d2:
-                if st.button("⚙️ Developer Ops", key="btn_quick_dev", use_container_width=True):
-                    _do_login("wrenchwisedeveloper@gmail.com")
-
-        st.markdown("<div style='text-align:center; font-size:11px; font-weight:600; color:#94a3b8; margin:10px 0;'>— OR SIGN IN WITH ENTERPRISE CREDENTIALS —</div>", unsafe_allow_html=True)
-
-        # Login Form Card
+        # Enterprise Login Form Card
         with st.container(border=True):
             with st.form("enterprise_login_form", clear_on_submit=False):
                 st.markdown("<div style='font-size:12.5px; font-weight:700; color:#334155; margin-bottom:4px;'>Authorized Email Address</div>", unsafe_allow_html=True)
                 email_input = st.text_input(
                     "Email",
                     value="",
-                    placeholder="e.g. wrenchwise@gmail.com",
+                    placeholder="Enter your enterprise email address",
                     label_visibility="collapsed"
                 )
 
@@ -114,14 +101,6 @@ def render_login_view() -> None:
                         _do_login(entered_email)
                     else:
                         st.error("Invalid credentials. Please verify your authorized email address and password.")
-
-            st.markdown("""
-            <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:8px 12px; margin-top:10px; font-size:11px; color:#64748b; line-height:1.5;">
-                <b style="color:#334155;">Demo Credentials:</b><br>
-                • <b>Adjuster:</b> <code>wrenchwise@gmail.com</code> | <code>12345</code><br>
-                • <b>Developer:</b> <code>wrenchwisedeveloper@gmail.com</code> | <code>123456</code>
-            </div>
-            """, unsafe_allow_html=True)
 
         footer_html = """
         <div style="text-align:center; margin-top:16px; font-size:11.5px; color:#94a3b8; line-height:1.6;">
