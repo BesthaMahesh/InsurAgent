@@ -1,6 +1,17 @@
+import os
 from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field
+
+# Auto-sync Streamlit secrets to environment if running on Streamlit Cloud
+try:
+    import streamlit as st
+    if hasattr(st, "secrets"):
+        for k, v in st.secrets.items():
+            if isinstance(v, str) and k not in os.environ:
+                os.environ[k] = v
+except Exception:
+    pass
 
 # Base Directory of Project
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -15,7 +26,7 @@ class Settings(BaseSettings):
     MODEL_NAME: str = Field(default="llama-3.3-70b-versatile", description="Model identifier")
 
     # Database & Storage
-    DATABASE_URL: str = Field(default=f"sqlite:///{BASE_DIR}/data/insuragent.db", description="Database URI")
+    DATABASE_URL: str = Field(default=f"sqlite:///{BASE_DIR.as_posix()}/data/insuragent.db", description="Database URI")
     CHROMA_DB_PATH: str = Field(default=str(BASE_DIR / "data" / "chromadb"), description="Chroma Vectorstore storage path")
     UPLOAD_DIR: str = Field(default=str(BASE_DIR / "data" / "uploads"), description="Temporary document upload directory")
 

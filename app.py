@@ -3,6 +3,13 @@ INSURAGENT
 Enterprise Insurance Claims Intelligence Platform
 "Smarter Claims. Fairer Decisions. Greater Trust."
 """
+import sys
+try:
+    __import__("pysqlite3")
+    sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+except ImportError:
+    pass
+
 import streamlit as st
 from backend.database.database import init_db
 from backend.services.claim_service import ClaimService
