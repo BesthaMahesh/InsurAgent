@@ -16,11 +16,13 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application source code
 COPY . .
 
-# Ingest initial demo policy knowledge
-RUN python -m backend.rag.ingest || true
+# Environment configuration
+ENV CHROMA_TELEMETRY_ENABLED="false"
+ENV ANONYMIZED_TELEMETRY="False"
+ENV PORT=8501
 
-# Expose ports: 8000 for FastAPI backend, 8501 for Streamlit UI
-EXPOSE 8000 8501
+# Expose ports
+EXPOSE 8501 8000
 
-# Default command starts FastAPI backend
-CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Start Streamlit application
+CMD streamlit run app.py --server.port ${PORT:-8501} --server.address 0.0.0.0 --server.headless true

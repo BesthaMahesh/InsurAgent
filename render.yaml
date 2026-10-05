@@ -1,11 +1,11 @@
 services:
   - type: web
-    name: insuragent-backend
+    name: insuragent
     env: python
     region: oregon
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
@@ -19,3 +19,11 @@ services:
         value: "0.75"
       - key: HIGH_RISK_THRESHOLD
         value: "0.60"
+      - key: ADMIN_AUTH_PASSWORD
+        value: "123456"
+      - key: USER_AUTH_PASSWORD
+        value: "12345"
+      - key: CHROMA_TELEMETRY_ENABLED
+        value: "false"
+      - key: ANONYMIZED_TELEMETRY
+        value: "False"
