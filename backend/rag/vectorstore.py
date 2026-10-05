@@ -1,5 +1,10 @@
 import os
 import sys
+
+# Disable ChromaDB / PostHog telemetry to prevent cloud container hangs
+os.environ["CHROMA_TELEMETRY_ENABLED"] = "false"
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+
 try:
     __import__("pysqlite3")
     sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
@@ -83,12 +88,16 @@ COLLECTION_NAME = "insuragent_knowledge_base_v3"
 
 
 def get_chroma_client():
-    """Initializes or returns a persistent ChromaDB client."""
+    """Initializes or returns a persistent ChromaDB client with telemetry disabled."""
     global _chroma_client
     if _chroma_client is None:
+        from chromadb.config import Settings as ChromaSettings
         db_path = str(Path(settings.CHROMA_DB_PATH).resolve())
         Path(db_path).mkdir(parents=True, exist_ok=True)
-        _chroma_client = chromadb.PersistentClient(path=db_path)
+        _chroma_client = chromadb.PersistentClient(
+            path=db_path,
+            settings=ChromaSettings(anonymized_telemetry=False)
+        )
     return _chroma_client
 
 
