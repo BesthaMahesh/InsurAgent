@@ -64,11 +64,19 @@ def render_knowledge_center_view() -> None:
 
         st.write("")
         st.markdown("##### 📜 Policy Actions: Inspect Document History")
+        all_doc_names = [d["Document"] for d in sources_data]
+        if "user_kc_target_doc" in st.session_state:
+            target_doc = st.session_state.pop("user_kc_target_doc")
+            for name in all_doc_names:
+                if target_doc in name or name in target_doc:
+                    st.session_state["user_kc_doc_selector"] = name
+                    break
+
         doc_col, btn_view_col, btn_hist_col = st.columns([3.5, 1.2, 1.3])
         with doc_col:
             selected_doc = st.selectbox(
                 "Select Policy Document",
-                [d["Document"] for d in sources_data],
+                all_doc_names,
                 label_visibility="collapsed",
                 key="user_kc_doc_selector"
             )
@@ -80,6 +88,35 @@ def render_knowledge_center_view() -> None:
         # Handle View History Action
         if history_clicked:
             st.session_state["user_kc_active_history_doc"] = selected_doc
+            st.session_state["user_kc_show_clauses_for"] = None
+
+        if view_clicked:
+            st.session_state["user_kc_show_clauses_for"] = selected_doc
+            st.session_state["user_kc_active_history_doc"] = None
+
+        if st.session_state.get("user_kc_show_clauses_for"):
+            clause_doc = st.session_state["user_kc_show_clauses_for"]
+            st.markdown(f"###### 📑 Verified Clauses & Coverage Schedule: `{clause_doc}`")
+            with st.spinner("Retrieving verified clauses..."):
+                try:
+                    retriever = PolicyRetriever()
+                    clauses = retriever.retrieve(clause_doc, top_k=4)
+                    if clauses:
+                        for idx, c in enumerate(clauses, 1):
+                            clause_html = f"""
+                            <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin-bottom:8px;">
+                                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                                    <span style="font-weight:750; color:#0284c7; font-size:12.5px;">[{idx}] {c.source_doc} &bull; Section: {c.section}</span>
+                                    <span class="status-badge badge-blue">Relevance: {c.relevance_score:.2f}</span>
+                                </div>
+                                <div style="font-size:12.5px; color:#1e293b; line-height:1.5;">{c.clause_text}</div>
+                            </div>
+                            """
+                            render_html(clause_html)
+                    else:
+                        st.info(f"Standard clauses are active for {clause_doc}.")
+                except Exception as e:
+                    st.info(f"Verified clauses schedule is active for {clause_doc}.")
 
         if st.session_state.get("user_kc_active_history_doc"):
             hist_doc = st.session_state["user_kc_active_history_doc"]

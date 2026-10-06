@@ -8,6 +8,13 @@ from typing import Tuple
 from frontend.styles import render_html
 
 
+def navigate_to(page: str) -> None:
+    """Safely navigate to another page without StreamlitWidgetAlreadyInstantiatedError."""
+    st.session_state["target_nav_page"] = page
+    st.session_state["active_nav_page"] = page
+    st.rerun()
+
+
 def render_sidebar() -> Tuple[str, str]:
     """
     Renders the role-based enterprise sidebar navigation for Developer or End User.
@@ -99,7 +106,13 @@ def render_sidebar() -> Tuple[str, str]:
             all_formatted = [icons_map[p] for p in user_nav_items]
             current_fmt = icons_map.get(curr_page, icons_map["Dashboard"])
 
-            if "main_user_nav_radio" not in st.session_state or st.session_state["main_user_nav_radio"] not in all_formatted:
+            # Safely apply any programmatic navigation target BEFORE widget instantiation
+            target_page = st.session_state.pop("target_nav_page", None)
+            if target_page and target_page in icons_map:
+                st.session_state["main_user_nav_radio"] = icons_map[target_page]
+                st.session_state["active_nav_page"] = target_page
+                curr_page = target_page
+            elif "main_user_nav_radio" not in st.session_state or st.session_state["main_user_nav_radio"] not in all_formatted:
                 st.session_state["main_user_nav_radio"] = current_fmt
 
             def _on_user_nav_change():
@@ -206,6 +219,10 @@ def render_sidebar() -> Tuple[str, str]:
             ]
 
             valid_pages = [page for _, items in dev_sections for page, _ in items]
+            target_page = st.session_state.pop("target_nav_page", None)
+            if target_page and target_page in valid_pages:
+                st.session_state["active_nav_page"] = target_page
+
             curr_page = st.session_state.get("active_nav_page", default_home_page)
             if curr_page not in valid_pages:
                 curr_page = default_home_page
